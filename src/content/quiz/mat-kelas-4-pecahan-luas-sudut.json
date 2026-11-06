@@ -3,13 +3,67 @@
   "title": "Operasi Pecahan, Luas Bangun, & KPK",
   "category": "matematika",
   "categoryName": "Matematika",
-  "description": "Latihan penjumlahan pecahan berpenyebut sama, mencari luas persegi panjang, keliling, dan menentukan Kelipatan Persekutuan Terkecil (KPK).",
+  "description": "Latihan penjumlahan pecahan berpenyebut sama, mencari luas persegi panjang, keliling, jenis sudut, dan KPK/FPB.",
   "level": "Kelas 4 SD",
   "difficulty": "Sedang",
   "duration": 20,
+  "shuffleCount": 5,
   "questions": [
     {
-      "id": 1,
+      "id": 101,
+      "difficulty": "Mudah",
+      "questionText": "Berapakah hasil dari penjumlahan pecahan berpenyebut sama berikut?\n$$\\frac{1}{5} + \\frac{2}{5} = \\dots$$",
+      "options": [
+        { "id": "A", "text": "$\\frac{3}{10}$" },
+        { "id": "B", "text": "$\\frac{3}{5}$" },
+        { "id": "C", "text": "$\\frac{2}{5}$" },
+        { "id": "D", "text": "$\\frac{1}{5}$" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Pada penyebut yang sama, jumlahkan pembilangnya: $1 + 2 = 3$. Hasilnya adalah $\\frac{3}{5}$."
+    },
+    {
+      "id": 102,
+      "difficulty": "Mudah",
+      "questionText": "Sudut yang besarnya tepat $90^\\circ$ seperti sudut buku tulis dinamakan...",
+      "options": [
+        { "id": "A", "text": "Sudut Lancip" },
+        { "id": "B", "text": "Sudut Siku-siku" },
+        { "id": "C", "text": "Sudut Tumpul" },
+        { "id": "D", "text": "Sudut Lurus" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Sudut berukuran $90^\\circ$ adalah **Sudut Siku-siku**."
+    },
+    {
+      "id": 103,
+      "difficulty": "Mudah",
+      "questionText": "Sebuah ubin berbentuk persegi memiliki panjang sisi $s = 10\\text{ cm}$. Berapakah Luas ($L$) ubin tersebut?\n$$L = s \\times s$$",
+      "options": [
+        { "id": "A", "text": "$40\\text{ cm}^2$" },
+        { "id": "B", "text": "$100\\text{ cm}^2$" },
+        { "id": "C", "text": "$200\\text{ cm}^2$" },
+        { "id": "D", "text": "$10\\text{ cm}^2$" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "$$L = 10 \\times 10 = 100\\text{ cm}^2$$"
+    },
+    {
+      "id": 104,
+      "difficulty": "Mudah",
+      "questionText": "Sudut yang besarnya lebih kecil dari $90^\\circ$ disebut...",
+      "options": [
+        { "id": "A", "text": "Sudut Lancip" },
+        { "id": "B", "text": "Sudut Siku-siku" },
+        { "id": "C", "text": "Sudut Tumpul" },
+        { "id": "D", "text": "Sudut Refleks" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Sudut yang kurang dari $90^\\circ$ adalah **Sudut Lancip**."
+    },
+    {
+      "id": 201,
+      "difficulty": "Sedang",
       "questionText": "Berapakah hasil dari penjumlahan pecahan berikut ini?\n$$\\frac{2}{7} + \\frac{3}{7} = \\dots$$",
       "options": [
         { "id": "A", "text": "$\\frac{5}{14}$" },
@@ -18,11 +72,12 @@
         { "id": "D", "text": "$\\frac{1}{7}$" }
       ],
       "correctAnswer": "B",
-      "explanation": "Pada pecahan dengan penyebut yang sama, kita hanya menjumlahkan pembilangnya saja:\n$$\\frac{2 + 3}{7} = \\frac{5}{7}$$\nPenyebutnya tetap angka 7."
+      "explanation": "$$\\frac{2 + 3}{7} = \\frac{5}{7}$$"
     },
     {
-      "id": 2,
-      "questionText": "Sebuah lapangan bulu tangkis berbentuk persegi panjang memiliki panjang $p = 12\\text{ meter}$ dan lebar $l = 6\\text{ meter}$. Berapakah Luas ($L$) lapangan tersebut?\n$$L = p \\times l$$",
+      "id": 202,
+      "difficulty": "Sedang",
+      "questionText": "Sebuah lapangan berbentuk persegi panjang memiliki panjang $p = 12\\text{ meter}$ dan lebar $l = 6\\text{ meter}$. Berapakah Luas ($L$) lapangan tersebut?\n$$L = p \\times l$$",
       "options": [
         { "id": "A", "text": "$36\\text{ m}^2$" },
         { "id": "B", "text": "$48\\text{ m}^2$" },
@@ -30,10 +85,11 @@
         { "id": "D", "text": "$84\\text{ m}^2$" }
       ],
       "correctAnswer": "C",
-      "explanation": "Gunakan rumus luas persegi panjang:\n$$L = \\text{panjang} \\times \\text{lebar}$$\n$$L = 12 \\times 6 = 72\\text{ m}^2$$"
+      "explanation": "$$L = 12 \\times 6 = 72\\text{ m}^2$$"
     },
     {
-      "id": 3,
+      "id": 203,
+      "difficulty": "Sedang",
       "questionText": "Berapakah Kelipatan Persekutuan Terkecil (KPK) dari bilangan 4 dan 6?",
       "options": [
         { "id": "A", "text": "8" },
@@ -42,20 +98,59 @@
         { "id": "D", "text": "24" }
       ],
       "correctAnswer": "B",
-      "explanation": "Mari kita tulis kelipatan dari masing-masing bilangan:\n- Kelipatan 4: $4, 8, \\mathbf{12}, 16, 20, 24, \\dots$\n- Kelipatan 6: $6, \\mathbf{12}, 18, 24, \\dots$\nKelipatan persekutuan yang paling kecil pertama kali muncul adalah angka **12**."
+      "explanation": "Kelipatan 4: $4, 8, \\mathbf{12}, 16, \\dots$\nKelipatan 6: $6, \\mathbf{12}, 18, \\dots$\nKPK dari 4 dan 6 adalah **12**."
     },
     {
-      "id": 4,
-      "questionText": "Sudut yang besarnya tepat $90^\\circ$ dan berbentuk seperti sudut siku-siku pada sudut meja dinamakan sudut...",
+      "id": 204,
+      "difficulty": "Sedang",
+      "questionText": "Bentuk pecahan paling sederhana dari $\\frac{4}{8}$ adalah...",
       "options": [
-        { "id": "A", "text": "Sudut Lancip (kurang dari $90^\\circ$)" },
-        { "id": "B", "text": "Sudut Siku-siku ($90^\\circ$)" },
-        { "id": "C", "text": "Sudut Tumpul (lebih dari $90^\\circ$)" },
-        { "id": "D", "text": "Sudut Lurus ($180^\\circ$)" }
+        { "id": "A", "text": "$\\frac{1}{2}$" },
+        { "id": "B", "text": "$\\frac{1}{4}$" },
+        { "id": "C", "text": "$\\frac{2}{3}$" },
+        { "id": "D", "text": "$\\frac{3}{4}$" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Bagi pembilang dan penyebut dengan angka 4:\n$$\\frac{4 \\div 4}{8 \\div 4} = \\frac{1}{2}$$"
+    },
+    {
+      "id": 301,
+      "difficulty": "Sulit",
+      "questionText": "Berapakah Faktor Persekutuan Terbesar (FPB) dari 12 dan 18?",
+      "options": [
+        { "id": "A", "text": "2" },
+        { "id": "B", "text": "3" },
+        { "id": "C", "text": "6" },
+        { "id": "D", "text": "9" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Faktor dari 12: $1, 2, 3, 4, \\mathbf{6}, 12$\nFaktor dari 18: $1, 2, 3, \\mathbf{6}, 9, 18$\nFaktor terbesar yang sama adalah **6**."
+    },
+    {
+      "id": 302,
+      "difficulty": "Sulit",
+      "questionText": "Sebuah kolam renang berbentuk persegi panjang memiliki panjang $20\\text{ meter}$ dan keliling $60\\text{ meter}$. Berapakah lebar kolam renang tersebut?",
+      "options": [
+        { "id": "A", "text": "$8\\text{ meter}$" },
+        { "id": "B", "text": "$10\\text{ meter}$" },
+        { "id": "C", "text": "$12\\text{ meter}$" },
+        { "id": "D", "text": "$15\\text{ meter}$" }
       ],
       "correctAnswer": "B",
-      "explanation": "Sudut yang besarnya tepat $90^\\circ$ disebut **Sudut Siku-siku**."
+      "explanation": "$$K = 2 \\times (p + l)$$\n$$60 = 2 \\times (20 + l)$$\n$$30 = 20 + l \\implies l = 10\\text{ meter}$$"
+    },
+    {
+      "id": 303,
+      "difficulty": "Sulit",
+      "questionText": "Ibu mempunyai $\\frac{6}{8}\\text{ kg}$ tepung terigu. Digunakan untuk membuat bolu sebanyak $\\frac{3}{8}\\text{ kg}$. Berapa sisa tepung terigu Ibu?\n$$\\frac{6}{8} - \\frac{3}{8} = \\dots$$",
+      "options": [
+        { "id": "A", "text": "$\\frac{1}{8}\\text{ kg}$" },
+        { "id": "B", "text": "$\\frac{2}{8}\\text{ kg}$" },
+        { "id": "C", "text": "$\\frac{3}{8}\\text{ kg}$" },
+        { "id": "D", "text": "$\\frac{4}{8}\\text{ kg}$" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "$$\\frac{6 - 3}{8} = \\frac{3}{8}\\text{ kg}$$"
     }
   ]
 }
-

@@ -3,35 +3,193 @@
   "title": "Membaca Cerita & Huruf Kapital",
   "category": "bahasa",
   "categoryName": "Bahasa Indonesia",
-  "description": "Latihan membaca cerita anak, menemukan informasi penting, penggunaan huruf kapital untuk nama orang & hari, serta tanda titik.",
+  "description": "Latihan membaca cerita anak, menemukan informasi penting, penggunaan huruf kapital, tanda titik, tanda tanya, dan kata tanya.",
   "level": "Kelas 2 SD",
   "difficulty": "Mudah",
   "duration": 10,
+  "shuffleCount": 5,
   "questions": [
     {
-      "id": 1,
-      "questionText": "Bacalah teks berikut:\n*\"Setiap hari Minggu pagi, Dimas membantu Ayah menyiram tanaman bunga di halaman rumah. Ibu membuatkan teh hangat dan pisang goreng untuk mereka berdua.\"*\n\nSiapa yang membantu Ayah menyiram tanaman bunga?",
+      "id": 101,
+      "difficulty": "Mudah",
+      "questionText": "Bacalah kalimat berikut:\n*\"Dimas menyiram tanaman di halaman rumah.\"*\n\nSiapakah yang menyiram tanaman?",
       "options": [
-        { "id": "A", "text": "Ibu" },
-        { "id": "B", "text": "Dimas" },
+        { "id": "A", "text": "Dimas" },
+        { "id": "B", "text": "Ibu" },
         { "id": "C", "text": "Kakek" },
         { "id": "D", "text": "Paman" }
       ],
-      "correctAnswer": "B",
-      "explanation": "Berdasarkan kalimat pertama teks di atas: *\"Setiap hari Minggu pagi, **Dimas** membantu Ayah menyiram tanaman...\"* Jadi yang membantu Ayah adalah **Dimas**."
+      "correctAnswer": "A",
+      "explanation": "Tokoh yang melakukan kegiatan menyiram tanaman adalah **Dimas**."
     },
     {
-      "id": 2,
-      "questionText": "Penulisan huruf kapital yang benar pada nama orang dan hari berikut ini adalah...",
+      "id": 102,
+      "difficulty": "Mudah",
+      "questionText": "Tanda baca yang diletakkan di akhir kalimat berita atau pernyataan adalah...",
       "options": [
-        { "id": "A", "text": "pada hari senin, siti pergi ke perpustakaan." },
-        { "id": "B", "text": "Pada hari Senin, Siti pergi ke perpustakaan." },
-        { "id": "C", "text": "Pada Hari senin, siti Pergi ke perpustakaan." },
-        { "id": "D", "text": "pada hari Senin, siti pergi ke perpustakaan." }
+        { "id": "A", "text": "Tanda titik (.)" },
+        { "id": "B", "text": "Tanda tanya (?)" },
+        { "id": "C", "text": "Tanda seru (!)" },
+        { "id": "D", "text": "Tanda koma (,)" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Setiap akhir kalimat berita diakhiri dengan **tanda titik (.)**."
+    },
+    {
+      "id": 103,
+      "difficulty": "Mudah",
+      "questionText": "Kata tanya yang tepat untuk menanyakan **tempat** adalah...",
+      "options": [
+        { "id": "A", "text": "Di mana" },
+        { "id": "B", "text": "Kapan" },
+        { "id": "C", "text": "Siapa" },
+        { "id": "D", "text": "Berapa" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Kata tanya **\"Di mana\"** digunakan untuk menanyakan tempat atau lokasi."
+    },
+    {
+      "id": 201,
+      "difficulty": "Sedang",
+      "questionText": "Penulisan huruf kapital yang benar pada nama orang dan hari berikut adalah...",
+      "options": [
+        { "id": "A", "text": "pada hari senin, siti pergi ke sekolah." },
+        { "id": "B", "text": "Pada hari Senin, Siti pergi ke sekolah." },
+        { "id": "C", "text": "Pada Hari senin, siti Pergi ke sekolah." },
+        { "id": "D", "text": "pada hari Senin, siti pergi ke sekolah." }
       ],
       "correctAnswer": "B",
-      "explanation": "Huruf kapital digunakan pada: awal kalimat (**P**ada), nama hari (**S**enin), dan nama orang (**S**iti). Kalimat diakhiri dengan tanda titik."
+      "explanation": "Huruf kapital digunakan pada awal kalimat (**P**ada), nama hari (**S**enin), dan nama orang (**S**iti)."
+    },
+    {
+      "id": 202,
+      "difficulty": "Sedang",
+      "questionText": "Kata tanya yang tepat untuk menanyakan **waktu** terjadinya suatu peristiwa adalah...",
+      "options": [
+        { "id": "A", "text": "Kapan" },
+        { "id": "B", "text": "Bagaimana" },
+        { "id": "C", "text": "Mengapa" },
+        { "id": "D", "text": "Siapa" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Kata tanya **\"Kapan\"** digunakan untuk menanyakan waktu."
+    },
+    {
+      "id": 203,
+      "difficulty": "Sedang",
+      "questionText": "Lawan kata (antonim) dari kata **\"bersih\"** adalah...",
+      "options": [
+        { "id": "A", "text": "Kotor" },
+        { "id": "B", "text": "Rapi" },
+        { "id": "C", "text": "Indah" },
+        { "id": "D", "text": "Wangi" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Lawan kata dari bersih adalah **kotor**."
+    },
+    {
+      "id": 301,
+      "difficulty": "Sulit",
+      "questionText": "Bacalah teks berikut:\n*\"Hari ini adalah hari ulang tahun Nani. Ibu membuatkan kue bolu cokelat yang lezat. Teman-teman sekelas datang memberi ucapan selamat dengan ceria.\"*\n\nSuasana pada teks cerita di atas adalah...",
+      "options": [
+        { "id": "A", "text": "Sedih" },
+        { "id": "B", "text": "Gembira dan menyenangkan" },
+        { "id": "C", "text": "Menakutkan" },
+        { "id": "D", "text": "Sepi" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Suasana ulang tahun yang dihadiri teman-teman dengan kue bolu adalah suasana **gembira dan menyenangkan**."
+    },
+    {
+      "id": 302,
+      "difficulty": "Sulit",
+      "questionText": "Susunan kata acak berikut agar menjadi kalimat yang benar adalah:\n*buku - perpustakaan - di - membaca - Edo*",
+      "options": [
+        { "id": "A", "text": "Edo membaca buku di perpustakaan." },
+        { "id": "B", "text": "Membaca di perpustakaan Edo buku." },
+        { "id": "C", "text": "Di perpustakaan membaca buku Edo." },
+        { "id": "D", "text": "Buku membaca Edo di perpustakaan." }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Pola kalimat SPOK: Subjek (**Edo**) + Predikat (**membaca**) + Objek (**buku**) + Keterangan (**di perpustakaan**)."
+    },
+    {
+      "id": 104,
+      "difficulty": "Mudah",
+      "questionText": "Tanda baca yang tepat untuk mengakhiri kalimat perintah *\"Tolong tutup pintu itu\"* adalah...",
+      "options": [
+        { "id": "A", "text": "Tanda seru (!)" },
+        { "id": "B", "text": "Tanda tanya (?)" },
+        { "id": "C", "text": "Tanda koma (,)" },
+        { "id": "D", "text": "Tanda titik dua (:)" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Kalimat perintah atau ajakan diakhiri dengan **tanda seru (!)**."
+    },
+    {
+      "id": 105,
+      "difficulty": "Mudah",
+      "questionText": "Penulisan huruf kapital nama kota yang tepat di bawah ini adalah...",
+      "options": [
+        { "id": "A", "text": "paman tinggal di surabaya." },
+        { "id": "B", "text": "Paman tinggal di Surabaya." },
+        { "id": "C", "text": "Paman Tinggal Di surabaya." },
+        { "id": "D", "text": "paman Tinggal di Surabaya." }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Nama kota dan awal kalimat ditulis dengan huruf kapital: **P**aman tinggal di **S**urabaya."
+    },
+    {
+      "id": 204,
+      "difficulty": "Sedang",
+      "questionText": "Persamaan kata (sinonim) dari kata **\"pandai\"** adalah...",
+      "options": [
+        { "id": "A", "text": "Pintar" },
+        { "id": "B", "text": "Malas" },
+        { "id": "C", "text": "Bodoh" },
+        { "id": "D", "text": "Lambat" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Kata *pandai* memiliki arti yang sama dengan **pintar** atau cerdas."
+    },
+    {
+      "id": 205,
+      "difficulty": "Sedang",
+      "questionText": "Kata tanya yang tepat untuk menanyakan **alasan atau sebab** terjadinya sesuatu adalah...",
+      "options": [
+        { "id": "A", "text": "Mengapa" },
+        { "id": "B", "text": "Di mana" },
+        { "id": "C", "text": "Siapa" },
+        { "id": "D", "text": "Berapa" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Kata tanya **\"Mengapa\"** digunakan untuk menanyakan alasan atau sebab (jawabannya diawali *karena...*)."
+    },
+    {
+      "id": 303,
+      "difficulty": "Sulit",
+      "questionText": "Saat kamu tidak sengaja menyenggol tempat pensil teman hingga terjatuh ke lantai, kata santun yang harus segera diucapkan adalah...",
+      "options": [
+        { "id": "A", "text": "\"Maafkan saya, biar saya bantu rapikan.\"" },
+        { "id": "B", "text": "\"Bukan salah saya!\"" },
+        { "id": "C", "text": "\"Ambil sendiri!\"" },
+        { "id": "D", "text": "\"Terima kasih banyak.\"" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Saat berbuat salah atau kelalaian, sikap terpuji adalah segera mengucapkan **kata maaf** dan membantu merapikannya."
+    },
+    {
+      "id": 304,
+      "difficulty": "Sulit",
+      "questionText": "Bacalah kalimat berikut:\n*\"Keluarga Pak RT bergotong royong membersihkan selokan agar air mengalir lancar saat musim hujan.\"*\n\nTujuan warga membersihkan selokan adalah...",
+      "options": [
+        { "id": "A", "text": "Mencari ikan" },
+        { "id": "B", "text": "Agar air mengalir lancar dan mencegah banjir" },
+        { "id": "C", "text": "Membuat jalanan menjadi licin" },
+        { "id": "D", "text": "Menghabiskan waktu luang" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Tujuan membersihkan selokan sesuai teks adalah agar **air mengalir lancar** dan lingkungan tidak tergenang banjir."
     }
   ]
 }
-

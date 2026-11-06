@@ -2,48 +2,116 @@
   "id": "ipa-kelas-4-gaya-dan-fotosintesis",
   "title": "Gaya, Energi, & Fotosintesis Tumbuhan",
   "category": "ipa",
-  "categoryName": "IPA & IPAS",
-  "description": "Latihan mengenal pengaruh gaya dorong dan tarik, gaya gravitasi bumi, perubahan bentuk energi, dan proses fotosintesis pada daun.",
+  "categoryName": "IPAS (Sains)",
+  "description": "Latihan mengenal gaya gravitasi, gaya gesek, gaya magnet, perubahan energi, dan proses fotosintesis pada daun.",
   "level": "Kelas 4 SD",
   "difficulty": "Sedang",
   "duration": 15,
+  "shuffleCount": 5,
   "questions": [
     {
-      "id": 1,
-      "questionText": "Buah mangga yang sudah matang di pohon jatuh ke bawah menuju tanah. Hal tersebut disebabkan oleh adanya gaya...",
+      "id": 101,
+      "difficulty": "Mudah",
+      "questionText": "Buah kelapa yang lepas dari tangkainya selalu jatuh ke bawah menuju tanah. Hal tersebut disebabkan oleh adanya...",
       "options": [
         { "id": "A", "text": "Gaya Gesek" },
-        { "id": "B", "text": "Gaya Magnet" },
-        { "id": "C", "text": "Gaya Gravitasi Bumi" },
+        { "id": "B", "text": "Gaya Gravitasi Bumi" },
+        { "id": "C", "text": "Gaya Magnet" },
         { "id": "D", "text": "Gaya Pegas" }
       ],
-      "correctAnswer": "C",
-      "explanation": "**Gaya gravitasi bumi** adalah gaya tarik bumi yang menyebabkan semua benda yang dilepaskan di udara akan selalu jatuh ke bawah menuju permukaan bumi."
+      "correctAnswer": "B",
+      "explanation": "**Gaya gravitasi bumi** menarik seluruh benda di sekitar bumi menuju pusat bumi ke bawah."
     },
     {
-      "id": 2,
-      "questionText": "Tumbuhan hijau mampu membuat makanannya sendiri melalui proses fotosintesis pada daun. Gas yang diserap oleh daun dari udara untuk fotosintesis adalah...",
+      "id": 102,
+      "difficulty": "Mudah",
+      "questionText": "Benda berikut ini yang dapat ditarik kuat oleh magnet adalah...",
+      "options": [
+        { "id": "A", "text": "Paku besi dan klip kertas" },
+        { "id": "B", "text": "Buku tulis dan kertas" },
+        { "id": "C", "text": "Gelas kaca" },
+        { "id": "D", "text": "Penggaris plastik" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Benda berbahan logam besi seperti **paku dan klip kertas** dapat ditarik oleh magnet."
+    },
+    {
+      "id": 103,
+      "difficulty": "Mudah",
+      "questionText": "Saat menyalakan kipas angin di kamar, terjadi perubahan energi listrik menjadi energi...",
+      "options": [
+        { "id": "A", "text": "Gerak" },
+        { "id": "B", "text": "Panas" },
+        { "id": "C", "text": "Kimia" },
+        { "id": "D", "text": "Cahaya" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Kipas angin mengubah **energi listrik menjadi energi gerak** pada baling-balingnya."
+    },
+    {
+      "id": 201,
+      "difficulty": "Sedang",
+      "questionText": "Gas yang diserap dari udara oleh daun tumbuhan hijau untuk proses fotosintesis adalah...",
       "options": [
         { "id": "A", "text": "Oksigen ($O_2$)" },
         { "id": "B", "text": "Karbon Dioksida ($CO_2$)" },
         { "id": "C", "text": "Nitrogen" },
-        { "id": "D", "text": "Uap Minyak" }
+        { "id": "D", "text": "Helium" }
       ],
       "correctAnswer": "B",
-      "explanation": "Pada proses fotosintesis, daun menyerap **Karbon Dioksida ($CO_2$)** dari udara dan air ($H_2O$) dari tanah dengan bantuan cahaya matahari dan klorofil, lalu menghasilkan glukosa (makanan) serta melepaskan gas **Oksigen ($O_2$)** yang kita hirup."
+      "explanation": "Tumbuhan menyerap **Karbon Dioksida ($CO_2$)** dari udara dan air dari tanah untuk membuat makanan."
     },
     {
-      "id": 3,
-      "questionText": "Saat kita menyalakan setrika listrik untuk merapikan pakaian sekolah, terjadi perubahan bentuk energi dari...",
+      "id": 202,
+      "difficulty": "Sedang",
+      "questionText": "Hasil fotosintesis tumbuhan hijau yang dilepaskan ke udara dan sangat dibutuhkan manusia dan hewan untuk bernapas adalah...",
       "options": [
-        { "id": "A", "text": "Energi listrik menjadi energi gerak" },
-        { "id": "B", "text": "Energi listrik menjadi energi panas (kalor)" },
-        { "id": "C", "text": "Energi kimia menjadi energi cahaya" },
-        { "id": "D", "text": "Energi panas menjadi energi bunyi" }
+        { "id": "A", "text": "Karbon Dioksida" },
+        { "id": "B", "text": "Oksigen ($O_2$)" },
+        { "id": "C", "text": "Asap" },
+        { "id": "D", "text": "Debu" }
       ],
       "correctAnswer": "B",
-      "explanation": "Setrika listrik mengubah aliran **energi listrik menjadi energi panas** yang membuat alas setrika menjadi hangat dan licin untuk merapikan baju."
+      "explanation": "Proses fotosintesis menghasilkan gas **Oksigen ($O_2$)** yang menyegarkan udara dan dihirup oleh makhluk hidup."
+    },
+    {
+      "id": 203,
+      "difficulty": "Sedang",
+      "questionText": "Ban sepeda dibuat beralur kasar agar tidak mudah tergelincir di jalan licin. Hal tersebut bertujuan untuk memperbesar...",
+      "options": [
+        { "id": "A", "text": "Gaya Gesek" },
+        { "id": "B", "text": "Gaya Gravitasi" },
+        { "id": "C", "text": "Gaya Magnet" },
+        { "id": "D", "text": "Gaya Pegas" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Alur ban memperbesar **gaya gesek** antara roda dan aspal sehingga sepeda tidak tergelincir."
+    },
+    {
+      "id": 301,
+      "difficulty": "Sulit",
+      "questionText": "Saat kita menyalakan senter baterai, urutan perubahan energi yang terjadi adalah...",
+      "options": [
+        { "id": "A", "text": "Energi Kimia → Energi Listrik → Energi Cahaya" },
+        { "id": "B", "text": "Energi Gerak → Energi Cahaya → Energi Panas" },
+        { "id": "C", "text": "Energi Panas → Energi Listrik → Energi Kimia" },
+        { "id": "D", "text": "Energi Listrik → Energi Kimia → Energi Gerak" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Baterai menyimpan **energi kimia**, diubah menjadi **energi listrik**, lalu disalurkan ke lampu menjadi **energi cahaya**."
+    },
+    {
+      "id": 302,
+      "difficulty": "Sulit",
+      "questionText": "Dua buah kutub magnet yang senama (misalnya kutub Utara didekatkan dengan kutub Utara) akan mengalami...",
+      "options": [
+        { "id": "A", "text": "Tarik-menarik" },
+        { "id": "B", "text": "Tolak-menolak" },
+        { "id": "C", "text": "Menempel erat" },
+        { "id": "D", "text": "Tidak terjadi reaksi apa pun" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Kutub magnet yang senama (U-U atau S-S) akan **saling tolak-menolak**, sedangkan kutub tidak senama (U-S) akan saling tarik-menarik."
     }
   ]
 }
-

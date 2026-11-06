@@ -151,6 +151,84 @@
       ],
       "correctAnswer": "B",
       "explanation": "Hitung bertahap:\n1. $9 + 6 = 15$\n2. $15 - 3 = 12$\nSisa permen Siti adalah **12 permen**."
+    },
+    {
+      "id": 105,
+      "difficulty": "Mudah",
+      "questionText": "Urutan bilangan dari yang **paling kecil** ke yang paling besar berikut ini adalah...",
+      "options": [
+        { "id": "A", "text": "3, 6, 8, 10" },
+        { "id": "B", "text": "10, 8, 6, 3" },
+        { "id": "C", "text": "6, 3, 10, 8" },
+        { "id": "D", "text": "8, 6, 3, 10" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Urutan dari paling kecil ke paling besar adalah 3, 6, 8, lalu 10."
+    },
+    {
+      "id": 106,
+      "difficulty": "Mudah",
+      "questionText": "Berapakah hasil dari pengurangan berikut?\n$$10 - 6 = \\dots$$",
+      "options": [
+        { "id": "A", "text": "3" },
+        { "id": "B", "text": "4" },
+        { "id": "C", "text": "5" },
+        { "id": "D", "text": "6" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "$$10 - 6 = 4$$"
+    },
+    {
+      "id": 205,
+      "difficulty": "Sedang",
+      "questionText": "Benda di rumah seperti kardus mie instan atau lemari es berbentuk...",
+      "options": [
+        { "id": "A", "text": "Bola" },
+        { "id": "B", "text": "Balok" },
+        { "id": "C", "text": "Kerucut" },
+        { "id": "D", "text": "Tabung" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Kardus mie instan dan lemari es adalah bangun ruang berbentuk **Balok**."
+    },
+    {
+      "id": 206,
+      "difficulty": "Sedang",
+      "questionText": "Berapakah hasil dari $20 - 8 = \\dots$?",
+      "options": [
+        { "id": "A", "text": "10" },
+        { "id": "B", "text": "11" },
+        { "id": "C", "text": "12" },
+        { "id": "D", "text": "14" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "$$20 - 8 = 12$$"
+    },
+    {
+      "id": 304,
+      "difficulty": "Sulit",
+      "questionText": "Lanjutan dari urutan pola bilangan loncat 3 berikut adalah:\n$$3, 6, 9, 12, \\dots$$",
+      "options": [
+        { "id": "A", "text": "13" },
+        { "id": "B", "text": "14" },
+        { "id": "C", "text": "15" },
+        { "id": "D", "text": "16" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Pola bertambah 3: $12 + 3 = 15$."
+    },
+    {
+      "id": 305,
+      "difficulty": "Sulit",
+      "questionText": "Di lapangan ada 13 anak sedang bermain bola. Datang lagi 4 anak bergabung. Kemudian 5 anak pulang ke rumah. Berapa anak yang masih bermain di lapangan?",
+      "options": [
+        { "id": "A", "text": "11 anak" },
+        { "id": "B", "text": "12 anak" },
+        { "id": "C", "text": "13 anak" },
+        { "id": "D", "text": "14 anak" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "1. $13 + 4 = 17$\n2. $17 - 5 = 12$\nAnak yang masih di lapangan ada **12 anak**."
     }
   ]
 }

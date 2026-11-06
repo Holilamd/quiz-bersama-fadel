@@ -3,13 +3,67 @@
   "title": "Pecahan Sederhana & Keliling Bangun",
   "category": "matematika",
   "categoryName": "Matematika",
-  "description": "Latihan mengenal pecahan 1/2, 1/4, menghitung pembagian bersisa/tanpa sisa, dan menghitung keliling bangun persegi.",
+  "description": "Latihan mengenal pecahan 1/2, 1/4, pembagian bilangan cacah, keliling persegi dan persegi panjang, serta satuan berat.",
   "level": "Kelas 3 SD",
   "difficulty": "Sedang",
   "duration": 15,
+  "shuffleCount": 5,
   "questions": [
     {
-      "id": 1,
+      "id": 101,
+      "difficulty": "Mudah",
+      "questionText": "Sebuah semangka dibelah menjadi 2 bagian yang sama besar. Satu potong semangka bernilai pecahan...",
+      "options": [
+        { "id": "A", "text": "$\\frac{1}{2}$" },
+        { "id": "B", "text": "$\\frac{1}{3}$" },
+        { "id": "C", "text": "$\\frac{1}{4}$" },
+        { "id": "D", "text": "$\\frac{2}{1}$" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Satu potong dari dua bagian sama besar bernilai setengah atau $\\frac{1}{2}$."
+    },
+    {
+      "id": 102,
+      "difficulty": "Mudah",
+      "questionText": "Berapakah hasil pembagian berikut?\n$$24 \\div 3 = \\dots$$",
+      "options": [
+        { "id": "A", "text": "6" },
+        { "id": "B", "text": "7" },
+        { "id": "C", "text": "8" },
+        { "id": "D", "text": "9" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Karena $3 \\times 8 = 24$, maka $24 \\div 3 = 8$."
+    },
+    {
+      "id": 103,
+      "difficulty": "Mudah",
+      "questionText": "Tali pramuka memiliki panjang $1\\text{ meter}$. Jika diubah ke dalam satuan sentimeter (cm), panjangnya adalah...",
+      "options": [
+        { "id": "A", "text": "$10\\text{ cm}$" },
+        { "id": "B", "text": "$100\\text{ cm}$" },
+        { "id": "C", "text": "$500\\text{ cm}$" },
+        { "id": "D", "text": "$1.000\\text{ cm}$" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "$1\\text{ meter} = 100\\text{ sentimeter}$."
+    },
+    {
+      "id": 104,
+      "difficulty": "Mudah",
+      "questionText": "Sebuah persegi memiliki sisi $s = 5\\text{ cm}$. Berapakah keliling ($K$) persegi tersebut?\n$$K = 4 \\times s$$",
+      "options": [
+        { "id": "A", "text": "$15\\text{ cm}$" },
+        { "id": "B", "text": "$20\\text{ cm}$" },
+        { "id": "C", "text": "$25\\text{ cm}$" },
+        { "id": "D", "text": "$30\\text{ cm}$" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "$$K = 4 \\times 5 = 20\\text{ cm}$$"
+    },
+    {
+      "id": 201,
+      "difficulty": "Sedang",
       "questionText": "Sebuah pizza dipotong menjadi 4 bagian yang sama besar. Rina memakan 1 potong pizza tersebut. Bagian pizza yang dimakan Rina dapat dituliskan dalam bentuk pecahan...",
       "options": [
         { "id": "A", "text": "$\\frac{1}{2}$" },
@@ -18,11 +72,12 @@
         { "id": "D", "text": "$\\frac{4}{1}$" }
       ],
       "correctAnswer": "B",
-      "explanation": "Pecahan dituliskan sebagai $\\frac{\\text{bagian yang diambil}}{\\text{total potongan}}$. Karena Rina memakan 1 dari 4 potongan sama besar, pecahannya adalah: $$\\frac{1}{4}$$"
+      "explanation": "Pecahan dituliskan sebagai $\\frac{\\text{bagian diambil}}{\\text{total potongan}} = \\frac{1}{4}$."
     },
     {
-      "id": 2,
-      "questionText": "Pak Guru memiliki 36 pensil yang akan dibagikan sama rata kepada 4 kelompok belajar siswa. Berapa banyak pensil yang didapat oleh setiap kelompok?\n$$36 \\div 4 = \\dots$$",
+      "id": 202,
+      "difficulty": "Sedang",
+      "questionText": "Pak Guru memiliki 36 pensil yang dibagikan rata kepada 4 kelompok belajar. Berapa pensil yang didapat setiap kelompok?\n$$36 \\div 4 = \\dots$$",
       "options": [
         { "id": "A", "text": "7 pensil" },
         { "id": "B", "text": "8 pensil" },
@@ -30,10 +85,24 @@
         { "id": "D", "text": "10 pensil" }
       ],
       "correctAnswer": "C",
-      "explanation": "Pembagian adalah kebalikan dari perkalian. Karena $4 \\times 9 = 36$, maka:\n$$36 \\div 4 = 9$$\nSetiap kelompok mendapatkan **9 pensil**."
+      "explanation": "$$36 \\div 4 = 9\\text{ pensil}$$"
     },
     {
-      "id": 3,
+      "id": 203,
+      "difficulty": "Sedang",
+      "questionText": "Tanda perbandingan yang tepat untuk mengisi pecahan berikut adalah:\n$$\\frac{1}{2} \\dots \\frac{1}{4}$$",
+      "options": [
+        { "id": "A", "text": "> (Lebih besar dari)" },
+        { "id": "B", "text": "< (Lebih kecil dari)" },
+        { "id": "C", "text": "= (Sama dengan)" },
+        { "id": "D", "text": "+ (Ditambah)" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Satu potong dari 2 bagian (setengah) lebih besar dari satu potong dari 4 bagian (seperempat):\n$$\\frac{1}{2} > \\frac{1}{4}$$"
+    },
+    {
+      "id": 204,
+      "difficulty": "Sedang",
       "questionText": "Sebuah papan catur berbentuk persegi memiliki panjang sisi $s = 20\\text{ cm}$. Berapakah keliling ($K$) papan catur tersebut?\n$$K = 4 \\times s$$",
       "options": [
         { "id": "A", "text": "$40\\text{ cm}$" },
@@ -42,11 +111,12 @@
         { "id": "D", "text": "$100\\text{ cm}$" }
       ],
       "correctAnswer": "C",
-      "explanation": "Rumus keliling persegi adalah menjumlahkan keempat sisinya yang sama panjang:\n$$K = 4 \\times 20 = 80\\text{ cm}$$"
+      "explanation": "$$K = 4 \\times 20 = 80\\text{ cm}$$"
     },
     {
-      "id": 4,
-      "questionText": "Ibu membeli gula pasir seberat $2\\text{ kilogram}$ di pasar. Jika diubah ke dalam satuan gram, berapakah berat gula tersebut?\n(Ingat: $1\\text{ kg} = 1.000\\text{ gram}$)",
+      "id": 205,
+      "difficulty": "Sedang",
+      "questionText": "Ibu membeli gula pasir seberat $2\\text{ kilogram}$. Jika diubah ke dalam satuan gram, beratnya adalah...",
       "options": [
         { "id": "A", "text": "$200\\text{ gram}$" },
         { "id": "B", "text": "$1.500\\text{ gram}$" },
@@ -54,8 +124,46 @@
         { "id": "D", "text": "$20.000\\text{ gram}$" }
       ],
       "correctAnswer": "C",
-      "explanation": "Karena $1\\text{ kg} = 1.000\\text{ gram}$, maka:\n$$2\\text{ kg} = 2 \\times 1.000 = 2.000\\text{ gram}$$"
+      "explanation": "$2\\text{ kg} = 2 \\times 1.000 = 2.000\\text{ gram}$."
+    },
+    {
+      "id": 301,
+      "difficulty": "Sulit",
+      "questionText": "Buku gambar berbentuk persegi panjang memiliki panjang $p = 15\\text{ cm}$ dan lebar $l = 10\\text{ cm}$. Berapakah keliling buku gambar tersebut?\n$$K = 2 \\times (p + l)$$",
+      "options": [
+        { "id": "A", "text": "$25\\text{ cm}$" },
+        { "id": "B", "text": "$40\\text{ cm}$" },
+        { "id": "C", "text": "$50\\text{ cm}$" },
+        { "id": "D", "text": "$60\\text{ cm}$" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Jumlahkan panjang dan lebar: $15 + 10 = 25\\text{ cm}$.\nLalu kalikan dua: $2 \\times 25 = 50\\text{ cm}$."
+    },
+    {
+      "id": 302,
+      "difficulty": "Sulit",
+      "questionText": "Sebuah kue dipotong menjadi 8 bagian sama rata. Budi memakan 2 potong dan Ayah memakan 3 potong. Berapa bagian kue yang sudah dimakan seluruhnya?",
+      "options": [
+        { "id": "A", "text": "$\\frac{3}{8}$" },
+        { "id": "B", "text": "$\\frac{4}{8}$" },
+        { "id": "C", "text": "$\\frac{5}{8}$" },
+        { "id": "D", "text": "$\\frac{6}{8}$" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Jumlahkan potongan yang dimakan Budi dan Ayah: $2 + 3 = 5$ potong dari total 8 potongan, yaitu: $$\\frac{5}{8}$$"
+    },
+    {
+      "id": 303,
+      "difficulty": "Sulit",
+      "questionText": "Di sebuah peternakan terdapat 56 butir telur ayam. Telur tersebut dimasukkan sama rata ke dalam 7 kotak karton. Berapa butir telur di setiap kotak?",
+      "options": [
+        { "id": "A", "text": "6 butir" },
+        { "id": "B", "text": "7 butir" },
+        { "id": "C", "text": "8 butir" },
+        { "id": "D", "text": "9 butir" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "$$56 \\div 7 = 8\\text{ butir}$$"
     }
   ]
 }
-

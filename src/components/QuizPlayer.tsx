@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import MathText from './MathText';
+import CertificateModal from './CertificateModal';
 import type { Quiz, Question, QuestionOption } from '../content/config';
 import {
   Clock,
@@ -13,6 +14,8 @@ import {
   Bookmark,
   RotateCcw,
   RefreshCw,
+  Award,
+  Lock,
 } from 'lucide-react';
 
 interface QuizPlayerProps {
@@ -79,10 +82,12 @@ export const QuizPlayer: React.FC<QuizPlayerProps> = ({ quiz }) => {
   const [timeLeft, setTimeLeft] = useState<number>(initialDurationSeconds);
   const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
 
-  // Modals
+  // Modals & Sertifikat
   const [showConfirmModal, setShowConfirmModal] = useState<boolean>(false);
   const [showNewQuizConfirmModal, setShowNewQuizConfirmModal] = useState<boolean>(false);
   const [pendingDifficulty, setPendingDifficulty] = useState<'Semua' | 'Mudah' | 'Sedang' | 'Sulit' | null>(null);
+  const [studentName, setStudentName] = useState<string>('');
+  const [showCertificateModal, setShowCertificateModal] = useState<boolean>(false);
 
   // Filter pembahasan
   const [reviewFilter, setReviewFilter] = useState<'all' | 'wrong' | 'correct'>('all');
@@ -377,6 +382,92 @@ export const QuizPlayer: React.FC<QuizPlayerProps> = ({ quiz }) => {
           </div>
         </div>
 
+        {/* Kotak Generate Sertifikat Penghargaan (Khusus Nilai >= 90) */}
+        {scoreResults.score >= 90 ? (
+          <div className="bg-white rounded-xl border-2 border-emerald-500 p-5 sm:p-6 shadow-sm">
+            <div className="flex items-start gap-3">
+              <div className="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
+                <Award className="w-5 h-5" />
+              </div>
+              <div className="flex-1">
+                <div className="flex items-center gap-2">
+                  <span className="text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">
+                    Sertifikat Terbuka ✓
+                  </span>
+                  <span className="text-xs text-slate-500">Nilai {scoreResults.score}/100 (Syarat: Minimal 90)</span>
+                </div>
+                <h3 className="text-base font-bold text-slate-900 mt-1">
+                  Selamat! Kamu Berhak Mendapatkan Piagam Penghargaan
+                </h3>
+                <p className="text-xs text-slate-600 mt-0.5 leading-relaxed">
+                  Ketik nama lengkap siswa untuk menerbitkan piagam resmi tanda kelulusan dengan predikat istimewa. Sertifikat dapat dicetak atau disimpan ke PDF.
+                </p>
+
+                <form
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    if (studentName.trim()) {
+                      try {
+                        localStorage.setItem('asah_otak_student_name', studentName.trim());
+                      } catch {}
+                      setShowCertificateModal(true);
+                    }
+                  }}
+                  className="mt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-2"
+                >
+                  <input
+                    type="text"
+                    value={studentName}
+                    onChange={(e) => setStudentName(e.target.value)}
+                    placeholder="Ketik Nama Lengkap Siswa (Contoh: Ahmad Fauzan)"
+                    className="flex-1 px-3.5 py-2 text-xs sm:text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-transparent text-slate-900 bg-white"
+                  />
+                  <button
+                    type="submit"
+                    disabled={!studentName.trim()}
+                    className="px-4 py-2 text-xs sm:text-sm font-bold text-white bg-emerald-700 hover:bg-emerald-800 active:bg-emerald-900 disabled:opacity-40 disabled:cursor-not-allowed rounded-lg transition inline-flex items-center justify-center gap-1.5 shrink-0"
+                  >
+                    <Award className="w-4 h-4" />
+                    <span>Lihat & Cetak Sertifikat</span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        ) : (
+          <div className="bg-white rounded-xl border border-slate-200 p-5 sm:p-6 shadow-sm">
+            <div className="flex items-start gap-3">
+              <div className="w-10 h-10 rounded-lg bg-slate-100 text-slate-500 flex items-center justify-center shrink-0">
+                <Lock className="w-5 h-5 text-slate-500" />
+              </div>
+              <div className="flex-1">
+                <div className="flex items-center gap-2">
+                  <span className="text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-slate-100 text-slate-600">
+                    Sertifikat Terkunci 🔒
+                  </span>
+                  <span className="text-xs text-slate-500">Nilai saat ini: {scoreResults.score}/100</span>
+                </div>
+                <h3 className="text-base font-bold text-slate-800 mt-1">
+                  Sertifikat Penghargaan Terbuka untuk Nilai 90 ke Atas
+                </h3>
+                <p className="text-xs text-slate-600 mt-1 leading-relaxed">
+                  Piagam penghargaan resmi hanya diberikan bagi siswa yang mencapai nilai <b>minimal 90</b>. Jangan berkecil hati, pelajari kunci dan cara penyelesaian soal di bawah, lalu ulangi kuis untuk meraih nilai 90+!
+                </p>
+
+                <div className="mt-3.5 flex items-center gap-2">
+                  <button
+                    onClick={handleRetrySameQuestions}
+                    className="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-lg transition"
+                  >
+                    <RotateCcw className="w-3.5 h-3.5" />
+                    Ulangi Soal Ini untuk Kejar Nilai 90+
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Filter Pembahasan */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pt-2">
           <div>
@@ -500,6 +591,20 @@ export const QuizPlayer: React.FC<QuizPlayerProps> = ({ quiz }) => {
             );
           })}
         </div>
+
+        {/* Modal Sertifikat */}
+        {showCertificateModal && (
+          <CertificateModal
+            studentName={studentName}
+            quizTitle={quiz.title}
+            categoryName={quiz.categoryName || quiz.category}
+            level={quiz.level}
+            score={scoreResults.score}
+            correctCount={scoreResults.correct}
+            totalQuestions={totalQuestions}
+            onClose={() => setShowCertificateModal(false)}
+          />
+        )}
       </div>
     );
   }

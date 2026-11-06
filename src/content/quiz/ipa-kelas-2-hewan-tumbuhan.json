@@ -2,15 +2,17 @@
   "id": "ipa-kelas-2-hewan-tumbuhan",
   "title": "Tempat Hidup Hewan & Bagian Tumbuhan",
   "category": "ipa",
-  "categoryName": "IPA & IPAS",
-  "description": "Latihan mengenal tempat hidup hewan di darat dan di air, serta memahami fungsi akar, batang, daun, dan bunga pada tanaman.",
+  "categoryName": "IPAS (Sains)",
+  "description": "Latihan mengenal tempat hidup hewan di darat dan di air, hewan bertelur/melahirkan, serta memahami fungsi akar, batang, daun, dan bunga.",
   "level": "Kelas 2 SD",
   "difficulty": "Mudah",
   "duration": 10,
+  "shuffleCount": 5,
   "questions": [
     {
-      "id": 1,
-      "questionText": "Bagian tumbuhan yang berada di dalam tanah dan bertugas menyerap air serta mineral dari dalam tanah adalah...",
+      "id": 101,
+      "difficulty": "Mudah",
+      "questionText": "Bagian tumbuhan yang berada di dalam tanah dan bertugas menyerap air serta mineral adalah...",
       "options": [
         { "id": "A", "text": "Daun" },
         { "id": "B", "text": "Bunga" },
@@ -18,23 +20,25 @@
         { "id": "D", "text": "Buah" }
       ],
       "correctAnswer": "C",
-      "explanation": "**Akar** tumbuh ke dalam tanah untuk menopang tumbuhan agar berdiri kokoh serta menyerap air dan zat hara dari dalam tanah."
+      "explanation": "**Akar** menancap ke tanah untuk menyerap air dan zat hara."
     },
     {
-      "id": 2,
-      "questionText": "Katak dapat hidup di dua alam, yaitu di daratan dan di air. Hewan yang dapat hidup di dua alam disebut...",
+      "id": 102,
+      "difficulty": "Mudah",
+      "questionText": "Ikan mas dan lumba-lumba hidup dan bernapas di...",
       "options": [
-        { "id": "A", "text": "Herbivora" },
-        { "id": "B", "text": "Karnivora" },
-        { "id": "C", "text": "Amfibi" },
-        { "id": "D", "text": "Reptil" }
+        { "id": "A", "text": "Darat" },
+        { "id": "B", "text": "Air" },
+        { "id": "C", "text": "Pohon" },
+        { "id": "D", "text": "Udara" }
       ],
-      "correctAnswer": "C",
-      "explanation": "Hewan yang dapat hidup di dua alam (darat dan air) disebut **hewan amfibi**, contohnya katak dan salamander."
+      "correctAnswer": "B",
+      "explanation": "Ikan adalah hewan yang hidup di lingkungan **air**."
     },
     {
-      "id": 3,
-      "questionText": "Bagian tumbuhan yang berwarna hijau dan berfungsi sebagai tempat memasak makanan bagi tumbuhan adalah...",
+      "id": 103,
+      "difficulty": "Mudah",
+      "questionText": "Bagian tumbuhan yang berwarna hijau dan bertugas membuat makanan dengan bantuan sinar matahari adalah...",
       "options": [
         { "id": "A", "text": "Batang" },
         { "id": "B", "text": "Daun" },
@@ -42,8 +46,150 @@
         { "id": "D", "text": "Biji" }
       ],
       "correctAnswer": "B",
-      "explanation": "**Daun** mengandung zat hijau daun (klorofil) yang berfungsi membuat makanan bagi tumbuhan dengan bantuan sinar matahari."
+      "explanation": "**Daun** memiliki zat klorofil yang membuat makanan bagi tumbuhan."
+    },
+    {
+      "id": 201,
+      "difficulty": "Sedang",
+      "questionText": "Katak dapat hidup di dua alam, yaitu di darat dan di air. Hewan jenis ini disebut...",
+      "options": [
+        { "id": "A", "text": "Herbivora" },
+        { "id": "B", "text": "Karnivora" },
+        { "id": "C", "text": "Amfibi" },
+        { "id": "D", "text": "Reptil" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Hewan yang hidup di darat dan air dinamakan **amfibi**."
+    },
+    {
+      "id": 202,
+      "difficulty": "Sedang",
+      "questionText": "Hewan berikut ini yang berkembang biak dengan cara **bertelur** adalah...",
+      "options": [
+        { "id": "A", "text": "Ayam dan Bebek" },
+        { "id": "B", "text": "Kucing dan Kelinci" },
+        { "id": "C", "text": "Sapi dan Kambing" },
+        { "id": "D", "text": "Kuda dan Kerbau" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Unggas seperti **ayam dan bebek** berkembang biak dengan cara bertelur (ovipar)."
+    },
+    {
+      "id": 203,
+      "difficulty": "Sedang",
+      "questionText": "Bagian tumbuhan yang berfungsi sebagai alat perkembangbiakan dan memiliki warna-warni indah untuk memikat serangga adalah...",
+      "options": [
+        { "id": "A", "text": "Akar" },
+        { "id": "B", "text": "Batang" },
+        { "id": "C", "text": "Bunga" },
+        { "id": "D", "text": "Kulit" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "**Bunga** adalah alat perkembangbiakan pada tumbuhan biji."
+    },
+    {
+      "id": 301,
+      "difficulty": "Sulit",
+      "questionText": "Batang pada pohon mangga berfungsi untuk...",
+      "options": [
+        { "id": "A", "text": "Menyalurkan air dari akar ke daun serta menopang pohon" },
+        { "id": "B", "text": "Menyerap udara dari tanah" },
+        { "id": "C", "text": "Menghasilkan madu" },
+        { "id": "D", "text": "Menghangatkan akar" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "**Batang** berfungsi menopang tegaknya tumbuhan dan mengangkut air serta nutrisi ke seluruh bagian pohon."
+    },
+    {
+      "id": 302,
+      "difficulty": "Sulit",
+      "questionText": "Burung elang memiliki cakar yang tajam dan melengkung yang berguna untuk...",
+      "options": [
+        { "id": "A", "text": "Berenang di air" },
+        { "id": "B", "text": "Mencengkeram mangsanya" },
+        { "id": "C", "text": "Menghangatkan tubuh" },
+        { "id": "D", "text": "Membuat sarang di tanah" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Cakar tajam elang dirancang untuk **mencengkeram mangsa** seperti tikus atau ikan dengan kuat saat berburu."
+    },
+    {
+      "id": 104,
+      "difficulty": "Mudah",
+      "questionText": "Sapi dan kambing memakan rumput dan dedaunan hijau. Hewan pemakan tumbuhan disebut...",
+      "options": [
+        { "id": "A", "text": "Karnivora" },
+        { "id": "B", "text": "Herbivora" },
+        { "id": "C", "text": "Omnivora" },
+        { "id": "D", "text": "Insektivora" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Hewan pemakan rumput atau dedaunan dinamakan **herbivora**."
+    },
+    {
+      "id": 105,
+      "difficulty": "Mudah",
+      "questionText": "Bagian dari buah mangga atau pepaya yang manis dan biasa kita makan adalah...",
+      "options": [
+        { "id": "A", "text": "Daging buah" },
+        { "id": "B", "text": "Akar" },
+        { "id": "C", "text": "Batang" },
+        { "id": "D", "text": "Bunga" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Bagian buah yang empuk, manis, dan melindungi biji di dalamnya adalah **daging buah**."
+    },
+    {
+      "id": 204,
+      "difficulty": "Sedang",
+      "questionText": "Tanaman berikut yang hidup dan terapung di permukaan air kolam dengan daun bundar lebar adalah...",
+      "options": [
+        { "id": "A", "text": "Pohon pisang" },
+        { "id": "B", "text": "Bunga teratai dan eceng gondok" },
+        { "id": "C", "text": "Pohon mangga" },
+        { "id": "D", "text": "Tanaman kaktus" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "**Teratai dan eceng gondok** adalah tanaman air yang memiliki rongga udara di batangnya sehingga dapat terapung di air."
+    },
+    {
+      "id": 205,
+      "difficulty": "Sedang",
+      "questionText": "Bebek dan angsa dapat berenang dengan lincah di danau karena memiliki...",
+      "options": [
+        { "id": "A", "text": "Sirip seperti ikan" },
+        { "id": "B", "text": "Selaput renang di antara jari kakinya" },
+        { "id": "C", "text": "Kuku yang tajam" },
+        { "id": "D", "text": "Sayap yang sangat lebar" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Kaki bebek memiliki **selaput renang** yang berfungsi seperti dayung saat berenang di air."
+    },
+    {
+      "id": 303,
+      "difficulty": "Sulit",
+      "questionText": "Tanaman kaktus memiliki batang tebal dan daun yang berubah menjadi duri tajam. Duri tajam pada kaktus berfungsi untuk...",
+      "options": [
+        { "id": "A", "text": "Mengurangi penguapan air dan melindungi diri dari hewan" },
+        { "id": "B", "text": "Menarik perhatian kupu-kupu" },
+        { "id": "C", "text": "Menyerap air hujan dari udara" },
+        { "id": "D", "text": "Menghasilkan madu manis" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Duri kaktus berfungsi **mengurangi penguapan air di tempat kering** serta melindungi diri dari gangguan hewan pemangsa."
+    },
+    {
+      "id": 304,
+      "difficulty": "Sulit",
+      "questionText": "Singa dan harimau memiliki taring yang runcing dan kuat. Hal tersebut menunjukkan bahwa singa adalah hewan...",
+      "options": [
+        { "id": "A", "text": "Pemakan rumput" },
+        { "id": "B", "text": "Pemakan daging (Karnivora)" },
+        { "id": "C", "text": "Pemakan buah" },
+        { "id": "D", "text": "Pemakan biji-bijian" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Gigi taring yang runcing berguna untuk merobek daging mangsa pada **hewan karnivora**."
     }
   ]
 }
-

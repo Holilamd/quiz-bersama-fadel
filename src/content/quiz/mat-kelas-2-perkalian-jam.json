@@ -112,6 +112,84 @@
       ],
       "correctAnswer": "C",
       "explanation": "Hitung perkalian dulu: $4 \\times 10 = 40$.\nLalu kurangi yang terjual: $40 - 8 = 32$.\nSisa pensil warna adalah **32 pensil**."
+    },
+    {
+      "id": 104,
+      "difficulty": "Mudah",
+      "questionText": "Setiap bilangan yang dikalikan dengan angka 1 hasilnya adalah bilangan itu sendiri. Berapakah hasil dari:\n$$7 \\times 1 = \\dots$$",
+      "options": [
+        { "id": "A", "text": "1" },
+        { "id": "B", "text": "7" },
+        { "id": "C", "text": "8" },
+        { "id": "D", "text": "0" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Semua bilangan dikalikan 1 menghasilkan bilangan itu sendiri: $7 \\times 1 = 7$."
+    },
+    {
+      "id": 105,
+      "difficulty": "Mudah",
+      "questionText": "Berapakah hasil dari bilangan apa pun jika dikalikan dengan angka nol (0)?\n$$8 \\times 0 = \\dots$$",
+      "options": [
+        { "id": "A", "text": "0" },
+        { "id": "B", "text": "8" },
+        { "id": "C", "text": "80" },
+        { "id": "D", "text": "1" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Semua bilangan jika dikalikan dengan nol hasilnya adalah **0**."
+    },
+    {
+      "id": 204,
+      "difficulty": "Sedang",
+      "questionText": "Jika panjang sebuah pensil diukur menggunakan penggaris dari angka 0 cm sampai angka 12 cm, maka panjang pensil tersebut adalah...",
+      "options": [
+        { "id": "A", "text": "10 cm" },
+        { "id": "B", "text": "11 cm" },
+        { "id": "C", "text": "12 cm" },
+        { "id": "D", "text": "13 cm" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Panjang dari titik 0 ke angka 12 pada penggaris adalah **12 cm**."
+    },
+    {
+      "id": 205,
+      "difficulty": "Sedang",
+      "questionText": "Di tempat parkir terdapat 5 buah sepeda motor. Setiap motor memiliki 2 buah roda. Berapakah jumlah seluruh roda sepeda motor tersebut?",
+      "options": [
+        { "id": "A", "text": "7 roda" },
+        { "id": "B", "text": "8 roda" },
+        { "id": "C", "text": "10 roda" },
+        { "id": "D", "text": "12 roda" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "$$5 \\times 2 = 10\\text{ roda}$$"
+    },
+    {
+      "id": 303,
+      "difficulty": "Sulit",
+      "questionText": "Pembagian adalah pengurangan berulang sampai habis bernilai 0. Bentuk $15 \\div 3$ jika dihitung dengan pengurangan berulang adalah...",
+      "options": [
+        { "id": "A", "text": "$15 - 5 - 5 = 0$ (hasil 2)" },
+        { "id": "B", "text": "$15 - 3 - 3 - 3 - 3 - 3 = 0$ (hasil 5)" },
+        { "id": "C", "text": "$15 - 3 = 12$ (hasil 1)" },
+        { "id": "D", "text": "$15 - 15 = 0$ (hasil 0)" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Angka 15 dikurangi angka 3 sebanyak 5 kali sampai menghasilkan 0. Maka $15 \\div 3 = 5$."
+    },
+    {
+      "id": 304,
+      "difficulty": "Sulit",
+      "questionText": "Rani mulai belajar pukul 18.30 dan selesai pukul 19.30 malam. Berapa lama waktu Rani belajar?",
+      "options": [
+        { "id": "A", "text": "30 menit" },
+        { "id": "B", "text": "45 menit" },
+        { "id": "C", "text": "1 jam (60 menit)" },
+        { "id": "D", "text": "2 jam" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Dari pukul 18.30 sampai pukul 19.30 adalah selang waktu **1 jam (60 menit)**."
     }
   ]
 }

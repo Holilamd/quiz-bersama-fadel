@@ -2,14 +2,16 @@
   "id": "ipa-kelas-3-daur-hidup-benda",
   "title": "Daur Hidup Kupu-kupu & Wujud Benda",
   "category": "ipa",
-  "categoryName": "IPA & IPAS",
-  "description": "Latihan metamorfosis sempurna pada serangga, katak, serta perubahan wujud zat mencair, membeku, dan menguap.",
+  "categoryName": "IPAS (Sains)",
+  "description": "Latihan metamorfosis kupu-kupu dan katak, serta perubahan wujud zat mencair, membeku, menguap, dan mengembun.",
   "level": "Kelas 3 SD",
   "difficulty": "Sedang",
   "duration": 15,
+  "shuffleCount": 5,
   "questions": [
     {
-      "id": 1,
+      "id": 101,
+      "difficulty": "Mudah",
       "questionText": "Urutan daur hidup (metamorfosis sempurna) kupu-kupu yang benar adalah...",
       "options": [
         { "id": "A", "text": "Telur → Ulat (Larva) → Kepompong (Pupa) → Kupu-kupu" },
@@ -18,32 +20,98 @@
         { "id": "D", "text": "Ulat → Telur → Kepompong → Kupu-kupu" }
       ],
       "correctAnswer": "A",
-      "explanation": "Tahapan daur hidup kupu-kupu dimulai dari **Telur** yang menetas menjadi **Ulat (Larva)** yang suka makan daun, kemudian berubah menjadi **Kepompong (Pupa)**, dan akhirnya keluar menjadi **Kupu-kupu dewasa** yang indah."
+      "explanation": "Tahapan daur hidup kupu-kupu: **Telur → Ulat (Larva) → Kepompong (Pupa) → Kupu-kupu dewasa**."
     },
     {
-      "id": 2,
-      "questionText": "Ketika es batu diletakkan di tempat terbuka di bawah terik matahari, es batu tersebut berubah menjadi air. Peristiwa perubahan wujud dari padat menjadi cair disebut...",
+      "id": 102,
+      "difficulty": "Mudah",
+      "questionText": "Peristiwa perubahan wujud es batu menjadi air ketika terkena sinar matahari disebut...",
       "options": [
         { "id": "A", "text": "Membeku" },
-        { "id": "B", "text": "Mencair / Melebur" },
+        { "id": "B", "text": "Mencair" },
         { "id": "C", "text": "Menguap" },
         { "id": "D", "text": "Mengembun" }
       ],
       "correctAnswer": "B",
-      "explanation": "Perubahan wujud benda dari **padat menjadi cair** akibat menerima panas dinamakan **mencair**."
+      "explanation": "Perubahan wujud dari padat menjadi cair disebut **mencair**."
     },
     {
-      "id": 3,
-      "questionText": "Benda berikut yang memiliki sifat bentuknya selalu berubah-ubah mengikuti bentuk wadahnya, namun volumenya tetap adalah benda...",
+      "id": 103,
+      "difficulty": "Mudah",
+      "questionText": "Air yang dimasukkan ke dalam freezer kulkas akan berubah menjadi es batu yang keras. Perubahan wujud ini disebut...",
       "options": [
-        { "id": "A", "text": "Padat (seperti batu)" },
-        { "id": "B", "text": "Cair (seperti minyak goreng dan air)" },
-        { "id": "C", "text": "Gas (seperti udara di dalam balon)" },
-        { "id": "D", "text": "Besi" }
+        { "id": "A", "text": "Membeku" },
+        { "id": "B", "text": "Mencair" },
+        { "id": "C", "text": "Menguap" },
+        { "id": "D", "text": "Menyublim" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Perubahan dari cair menjadi padat karena didinginkan disebut **membeku**."
+    },
+    {
+      "id": 201,
+      "difficulty": "Sedang",
+      "questionText": "Benda berikut yang memiliki sifat bentuknya berubah mengikuti bentuk wadahnya, namun volumenya tetap adalah...",
+      "options": [
+        { "id": "A", "text": "Batu kerikil" },
+        { "id": "B", "text": "Minyak goreng di botol" },
+        { "id": "C", "text": "Buku tulis" },
+        { "id": "D", "text": "Pensil" }
       ],
       "correctAnswer": "B",
-      "explanation": "Ciri khas **benda cair** adalah bentuknya selalu mengikuti wadahnya (misal saat dituangkan ke botol atau gelas), namun ukuran volumenya tetap."
+      "explanation": "Ciri khas **benda cair** seperti minyak goreng adalah bentuknya mengikuti bentuk wadahnya tetapi volumenya tetap."
+    },
+    {
+      "id": 202,
+      "difficulty": "Sedang",
+      "questionText": "Pada pagi hari yang dingin, terlihat tetesan air di ujung daun rumput padahal malam hari tidak turun hujan. Peristiwa pembentukan tetes air dari uap udara ini disebut...",
+      "options": [
+        { "id": "A", "text": "Menguap" },
+        { "id": "B", "text": "Mencair" },
+        { "id": "C", "text": "Mengembun" },
+        { "id": "D", "text": "Membeku" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Perubahan wujud dari gas (uap air) menjadi cair disebut **mengembun**."
+    },
+    {
+      "id": 203,
+      "difficulty": "Sedang",
+      "questionText": "Sebelum menjadi katak dewasa, katak bernapas dengan insang dan berenang menggunakan ekor. Fase tersebut dinamakan...",
+      "options": [
+        { "id": "A", "text": "Kecebong (Berudu)" },
+        { "id": "B", "text": "Ulat" },
+        { "id": "C", "text": "Kepompong" },
+        { "id": "D", "text": "Nimfa" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Anak katak yang baru menetas dari telur disebut **kecebong atau berudu** yang bernapas dengan insang di air."
+    },
+    {
+      "id": 301,
+      "difficulty": "Sulit",
+      "questionText": "Baju basah yang dijemur di bawah terik matahari lama-kelamaan menjadi kering. Air pada baju tersebut berubah wujud menjadi uap air melalui proses...",
+      "options": [
+        { "id": "A", "text": "Menguap" },
+        { "id": "B", "text": "Membeku" },
+        { "id": "C", "text": "Mencair" },
+        { "id": "D", "text": "Mengembun" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Perubahan wujud dari cair menjadi gas akibat panas matahari dinamakan **menguap**."
+    },
+    {
+      "id": 302,
+      "difficulty": "Sulit",
+      "questionText": "Nyamuk berkembang biak di tempat genangan air. Urutan tahapan daur hidup nyamuk adalah...",
+      "options": [
+        { "id": "A", "text": "Telur → Jentik-jentik (Larva) → Pupa → Nyamuk Dewasa" },
+        { "id": "B", "text": "Telur → Nyamuk kecil → Kepompong → Nyamuk dewasa" },
+        { "id": "C", "text": "Pupa → Telur → Jentik-jentik → Nyamuk" },
+        { "id": "D", "text": "Telur → Nyamuk langsung terbang" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Nyamuk mengalami metamorfosis sempurna: **Telur → Jentik (Larva) → Pupa → Nyamuk dewasa**."
     }
   ]
 }
-

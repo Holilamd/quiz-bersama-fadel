@@ -2,15 +2,30 @@
   "id": "ipa-kelas-1-panca-indra-tubuh",
   "title": "Mengenal Panca Indra & Tubuh Kita",
   "category": "ipa",
-  "categoryName": "IPA & IPAS",
+  "categoryName": "IPAS (Sains)",
   "description": "Latihan mengenal fungsi mata, telinga, hidung, lidah, kulit, serta membedakan benda hidup dan tak hidup di sekitar kita.",
   "level": "Kelas 1 SD",
   "difficulty": "Mudah",
   "duration": 10,
+  "shuffleCount": 5,
   "questions": [
     {
-      "id": 1,
-      "questionText": "Saat mendengarkan suara lonceng sekolah berbunyi atau kicauan burung di pagi hari, kita menggunakan panca indra...",
+      "id": 101,
+      "difficulty": "Mudah",
+      "questionText": "Saat melihat pelangi berwarna-warni di langit setelah hujan, kita menggunakan panca indra...",
+      "options": [
+        { "id": "A", "text": "Mata" },
+        { "id": "B", "text": "Hidung" },
+        { "id": "C", "text": "Telinga" },
+        { "id": "D", "text": "Lidah" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "**Mata** adalah indra penglihatan untuk melihat bentuk dan warna benda di sekitar kita."
+    },
+    {
+      "id": 102,
+      "difficulty": "Mudah",
+      "questionText": "Saat mendengarkan suara lonceng sekolah berbunyi, kita menggunakan panca indra...",
       "options": [
         { "id": "A", "text": "Mata" },
         { "id": "B", "text": "Telinga" },
@@ -18,11 +33,12 @@
         { "id": "D", "text": "Lidah" }
       ],
       "correctAnswer": "B",
-      "explanation": "**Telinga** adalah indra pendengaran yang berfungsi untuk menangkap suara di sekitar kita."
+      "explanation": "**Telinga** adalah indra pendengaran untuk menangkap bunyi dan suara."
     },
     {
-      "id": 2,
-      "questionText": "Bagian tubuh yang kita gunakan untuk mengecap rasa manis permen, asin garam, dan pahit obat adalah...",
+      "id": 103,
+      "difficulty": "Mudah",
+      "questionText": "Bagian tubuh yang kita gunakan untuk mengecap rasa manis permen dan asin garam adalah...",
       "options": [
         { "id": "A", "text": "Gigi" },
         { "id": "B", "text": "Bibir" },
@@ -30,10 +46,24 @@
         { "id": "D", "text": "Hidung" }
       ],
       "correctAnswer": "C",
-      "explanation": "**Lidah** adalah indra pengecap yang memiliki bintil perasa untuk mendeteksi rasa manis, asin, asam, dan pahit."
+      "explanation": "**Lidah** adalah indra pengecap rasa makanan."
     },
     {
-      "id": 3,
+      "id": 104,
+      "difficulty": "Mudah",
+      "questionText": "Panca indra yang kita gunakan untuk mencium wangi bunga mawar atau aroma masakan ibu adalah...",
+      "options": [
+        { "id": "A", "text": "Hidung" },
+        { "id": "B", "text": "Mata" },
+        { "id": "C", "text": "Telinga" },
+        { "id": "D", "text": "Kulit" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "**Hidung** adalah indra penciuman untuk membaui aroma wangi maupun bau tak sedap."
+    },
+    {
+      "id": 201,
+      "difficulty": "Sedang",
       "questionText": "Di bawah ini manakah yang termasuk contoh **benda hidup (makhluk hidup)**?",
       "options": [
         { "id": "A", "text": "Batu kali" },
@@ -42,11 +72,25 @@
         { "id": "D", "text": "Buku tulis" }
       ],
       "correctAnswer": "B",
-      "explanation": "**Tanaman bunga mawar** adalah makhluk hidup karena membutuhkan air, bernapas, dan bisa bertumbuh tinggi. Sedangkan batu, meja, dan buku adalah benda mati."
+      "explanation": "**Tanaman mawar** adalah makhluk hidup karena membutuhkan air, bernapas, dan dapat tumbuh besar."
     },
     {
-      "id": 4,
-      "questionText": "Untuk menjaga kebersihan gigi agar tidak berlubang dan nafas tetap segar, kita harus menyikat gigi sebanyak...",
+      "id": 202,
+      "difficulty": "Sedang",
+      "questionText": "Saat menyentuh permukaan bulu kucing yang lembut atau es batu yang dingin, kita merasakannya menggunakan...",
+      "options": [
+        { "id": "A", "text": "Kulit (indra peraba)" },
+        { "id": "B", "text": "Lidah" },
+        { "id": "C", "text": "Telinga" },
+        { "id": "D", "text": "Hidung" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "**Kulit** adalah indra peraba yang dapat merasakan suhu panas/dingin dan tekstur kasar/halus."
+    },
+    {
+      "id": 203,
+      "difficulty": "Sedang",
+      "questionText": "Untuk menjaga kebersihan gigi agar tidak berlubang, kita dianjurkan menyikat gigi sebanyak...",
       "options": [
         { "id": "A", "text": "1 kali seminggu" },
         { "id": "B", "text": "Minimal 2 kali sehari (pagi dan sebelum tidur malam)" },
@@ -54,8 +98,111 @@
         { "id": "D", "text": "1 kali sebulan" }
       ],
       "correctAnswer": "B",
-      "explanation": "Kita dianjurkan menyikat gigi minimal **2 kali sehari**, yaitu setelah sarapan pagi dan sebelum tidur malam agar terhindar dari kuman penyebab gigi berlubang."
+      "explanation": "Menyikat gigi dianjurkan minimal **2 kali sehari** agar terhindar dari kuman dan gigi berlubang."
+    },
+    {
+      "id": 301,
+      "difficulty": "Sulit",
+      "questionText": "Benda langit yang bersinar terang pada siang hari dan memberikan kehangatan bagi bumi adalah...",
+      "options": [
+        { "id": "A", "text": "Bulan" },
+        { "id": "B", "text": "Bintang" },
+        { "id": "C", "text": "Matahari" },
+        { "id": "D", "text": "Awan" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "**Matahari** adalah sumber cahaya dan panas terbesar yang menerangi bumi saat siang hari."
+    },
+    {
+      "id": 302,
+      "difficulty": "Sulit",
+      "questionText": "Kucing memerlukan makanan dan air setiap hari karena kucing adalah...",
+      "options": [
+        { "id": "A", "text": "Benda mati" },
+        { "id": "B", "text": "Makhluk hidup" },
+        { "id": "C", "text": "Robot" },
+        { "id": "D", "text": "Batu" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Semua **makhluk hidup** (manusia, hewan, dan tumbuhan) membutuhkan makan dan minum untuk bertahan hidup dan bertumbuh."
+    },
+    {
+      "id": 105,
+      "difficulty": "Mudah",
+      "questionText": "Bagian tubuh yang kita gunakan untuk berjalan, berlari, dan menendang bola adalah...",
+      "options": [
+        { "id": "A", "text": "Tangan" },
+        { "id": "B", "text": "Kaki" },
+        { "id": "C", "text": "Kepala" },
+        { "id": "D", "text": "Pundak" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "**Kaki** adalah anggota gerak tubuh bagian bawah untuk berjalan, berlari, dan melompat."
+    },
+    {
+      "id": 106,
+      "difficulty": "Mudah",
+      "questionText": "Sebelum makan dan setelah selesai bermain di luar, kita wajib mencuci tangan menggunakan...",
+      "options": [
+        { "id": "A", "text": "Air bersih dan sabun" },
+        { "id": "B", "text": "Minyak goreng" },
+        { "id": "C", "text": "Kertas tisu saja tanpa air" },
+        { "id": "D", "text": "Air sirup" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mencuci tangan dengan **air mengalir dan sabun** membunuh kuman penyakit sebelum menyentuh makanan."
+    },
+    {
+      "id": 204,
+      "difficulty": "Sedang",
+      "questionText": "Hewan peliharaan di bawah ini yang berjalan menggunakan empat (4) buah kaki adalah...",
+      "options": [
+        { "id": "A", "text": "Kucing dan Sapi" },
+        { "id": "B", "text": "Ayam dan Bebek" },
+        { "id": "C", "text": "Burung kutilang" },
+        { "id": "D", "text": "Ikan cupang" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "**Kucing dan sapi** memiliki 4 kaki, sedangkan unggas seperti ayam dan bebek memiliki 2 kaki."
+    },
+    {
+      "id": 205,
+      "difficulty": "Sedang",
+      "questionText": "Kuku tangan yang panjang dan hitam harus segera dipotong secara teratur agar...",
+      "options": [
+        { "id": "A", "text": "Menjadi sarang kuman" },
+        { "id": "B", "text": "Bersih dan tidak menjadi sarang penyakit" },
+        { "id": "C", "text": "Mudah mencakar teman" },
+        { "id": "D", "text": "Terasa gatal" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Kuku harus dipotong agar tetap **bersih dan bebas kuman kotoran**."
+    },
+    {
+      "id": 303,
+      "difficulty": "Sulit",
+      "questionText": "Jika tanaman hias di pot tidak pernah disiram air dan diletakkan di tempat gelap, maka tanaman tersebut akan...",
+      "options": [
+        { "id": "A", "text": "Tumbuh semakin subur dan tinggi" },
+        { "id": "B", "text": "Layu kemudian mati" },
+        { "id": "C", "text": "Berbuah lebat" },
+        { "id": "D", "text": "Berbunga warna-warni" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Tumbuhan memerlukan **air dan sinar matahari** untuk bertahan hidup. Tanpa keduanya, tanaman akan layu dan mati."
+    },
+    {
+      "id": 304,
+      "difficulty": "Sulit",
+      "questionText": "Saat malam hari cuaca cerah tanpa mendung, kita dapat melihat benda langit ciptaan Tuhan yang memancarkan cahaya lembut, yaitu...",
+      "options": [
+        { "id": "A", "text": "Matahari" },
+        { "id": "B", "text": "Bulan dan Bintang" },
+        { "id": "C", "text": "Pelangi" },
+        { "id": "D", "text": "Petir" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Pada malam hari, langit dihiasi oleh **Bulan dan taburan Bintang**."
     }
   ]
 }
-
