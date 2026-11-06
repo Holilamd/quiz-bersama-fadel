@@ -1,0 +1,31 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import QuizPlayer from '../../../components/QuizPlayer';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const allQuizzes = await getCollection('quiz');
+
+  return allQuizzes.map((quiz) => {
+    return {
+      params: {
+        category: quiz.data.category,
+        slug: quiz.id,
+      },
+      props: {
+        quiz: quiz.data,
+      },
+    };
+  });
+}
+
+const { quiz } = Astro.props;
+---
+
+<Layout
+  title={`${quiz.title} - ${quiz.categoryName || quiz.category} | AsahOtak`}
+  description={quiz.description || `Latihan soal interaktif ${quiz.title} jenjang ${quiz.level}`}
+>
+  <QuizPlayer client:load quiz={quiz} />
+</Layout>
+

@@ -1,0 +1,49 @@
+{
+  "id": "ipa-kelas-2-hewan-tumbuhan",
+  "title": "Tempat Hidup Hewan & Bagian Tumbuhan",
+  "category": "ipa",
+  "categoryName": "IPA & IPAS",
+  "description": "Latihan mengenal tempat hidup hewan di darat dan di air, serta memahami fungsi akar, batang, daun, dan bunga pada tanaman.",
+  "level": "Kelas 2 SD",
+  "difficulty": "Mudah",
+  "duration": 10,
+  "questions": [
+    {
+      "id": 1,
+      "questionText": "Bagian tumbuhan yang berada di dalam tanah dan bertugas menyerap air serta mineral dari dalam tanah adalah...",
+      "options": [
+        { "id": "A", "text": "Daun" },
+        { "id": "B", "text": "Bunga" },
+        { "id": "C", "text": "Akar" },
+        { "id": "D", "text": "Buah" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "**Akar** tumbuh ke dalam tanah untuk menopang tumbuhan agar berdiri kokoh serta menyerap air dan zat hara dari dalam tanah."
+    },
+    {
+      "id": 2,
+      "questionText": "Katak dapat hidup di dua alam, yaitu di daratan dan di air. Hewan yang dapat hidup di dua alam disebut...",
+      "options": [
+        { "id": "A", "text": "Herbivora" },
+        { "id": "B", "text": "Karnivora" },
+        { "id": "C", "text": "Amfibi" },
+        { "id": "D", "text": "Reptil" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Hewan yang dapat hidup di dua alam (darat dan air) disebut **hewan amfibi**, contohnya katak dan salamander."
+    },
+    {
+      "id": 3,
+      "questionText": "Bagian tumbuhan yang berwarna hijau dan berfungsi sebagai tempat memasak makanan bagi tumbuhan adalah...",
+      "options": [
+        { "id": "A", "text": "Batang" },
+        { "id": "B", "text": "Daun" },
+        { "id": "C", "text": "Akar" },
+        { "id": "D", "text": "Biji" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "**Daun** mengandung zat hijau daun (klorofil) yang berfungsi membuat makanan bagi tumbuhan dengan bantuan sinar matahari."
+    }
+  ]
+}
+

@@ -1,0 +1,61 @@
+{
+  "id": "mat-kelas-4-pecahan-luas-sudut",
+  "title": "Operasi Pecahan, Luas Bangun, & KPK",
+  "category": "matematika",
+  "categoryName": "Matematika",
+  "description": "Latihan penjumlahan pecahan berpenyebut sama, mencari luas persegi panjang, keliling, dan menentukan Kelipatan Persekutuan Terkecil (KPK).",
+  "level": "Kelas 4 SD",
+  "difficulty": "Sedang",
+  "duration": 20,
+  "questions": [
+    {
+      "id": 1,
+      "questionText": "Berapakah hasil dari penjumlahan pecahan berikut ini?\n$$\\frac{2}{7} + \\frac{3}{7} = \\dots$$",
+      "options": [
+        { "id": "A", "text": "$\\frac{5}{14}$" },
+        { "id": "B", "text": "$\\frac{5}{7}$" },
+        { "id": "C", "text": "$\\frac{6}{7}$" },
+        { "id": "D", "text": "$\\frac{1}{7}$" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Pada pecahan dengan penyebut yang sama, kita hanya menjumlahkan pembilangnya saja:\n$$\\frac{2 + 3}{7} = \\frac{5}{7}$$\nPenyebutnya tetap angka 7."
+    },
+    {
+      "id": 2,
+      "questionText": "Sebuah lapangan bulu tangkis berbentuk persegi panjang memiliki panjang $p = 12\\text{ meter}$ dan lebar $l = 6\\text{ meter}$. Berapakah Luas ($L$) lapangan tersebut?\n$$L = p \\times l$$",
+      "options": [
+        { "id": "A", "text": "$36\\text{ m}^2$" },
+        { "id": "B", "text": "$48\\text{ m}^2$" },
+        { "id": "C", "text": "$72\\text{ m}^2$" },
+        { "id": "D", "text": "$84\\text{ m}^2$" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Gunakan rumus luas persegi panjang:\n$$L = \\text{panjang} \\times \\text{lebar}$$\n$$L = 12 \\times 6 = 72\\text{ m}^2$$"
+    },
+    {
+      "id": 3,
+      "questionText": "Berapakah Kelipatan Persekutuan Terkecil (KPK) dari bilangan 4 dan 6?",
+      "options": [
+        { "id": "A", "text": "8" },
+        { "id": "B", "text": "12" },
+        { "id": "C", "text": "18" },
+        { "id": "D", "text": "24" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Mari kita tulis kelipatan dari masing-masing bilangan:\n- Kelipatan 4: $4, 8, \\mathbf{12}, 16, 20, 24, \\dots$\n- Kelipatan 6: $6, \\mathbf{12}, 18, 24, \\dots$\nKelipatan persekutuan yang paling kecil pertama kali muncul adalah angka **12**."
+    },
+    {
+      "id": 4,
+      "questionText": "Sudut yang besarnya tepat $90^\\circ$ dan berbentuk seperti sudut siku-siku pada sudut meja dinamakan sudut...",
+      "options": [
+        { "id": "A", "text": "Sudut Lancip (kurang dari $90^\\circ$)" },
+        { "id": "B", "text": "Sudut Siku-siku ($90^\\circ$)" },
+        { "id": "C", "text": "Sudut Tumpul (lebih dari $90^\\circ$)" },
+        { "id": "D", "text": "Sudut Lurus ($180^\\circ$)" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Sudut yang besarnya tepat $90^\\circ$ disebut **Sudut Siku-siku**."
+    }
+  ]
+}
+

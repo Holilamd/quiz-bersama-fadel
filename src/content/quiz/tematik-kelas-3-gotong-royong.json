@@ -1,0 +1,37 @@
+{
+  "id": "tematik-kelas-3-gotong-royong",
+  "title": "Gotong Royong & Aturan di Sekolah",
+  "category": "tematik",
+  "categoryName": "Tematik & Umum",
+  "description": "Latihan pengamalan sila Pancasila, kerja sama dalam regu piket kelas, dan sikap saling menghargai teman.",
+  "level": "Kelas 3 SD",
+  "difficulty": "Mudah",
+  "duration": 10,
+  "questions": [
+    {
+      "id": 1,
+      "questionText": "Manfaat melakukan piket kebersihan kelas bersama teman-teman sekelas secara gotong royong adalah...",
+      "options": [
+        { "id": "A", "text": "Pekerjaan menjadi lebih lama selesai" },
+        { "id": "B", "text": "Kelas menjadi cepat bersih dan pekerjaan terasa lebih ringan" },
+        { "id": "C", "text": "Hanya satu orang yang lelah" },
+        { "id": "D", "text": "Membuat ruangan menjadi semakin kotor" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Gotong royong membuat pekerjaan berat menjadi **terasa ringan dan cepat selesai**, serta mempererat kerukunan antar teman."
+    },
+    {
+      "id": 2,
+      "questionText": "Simbol sila ke-3 Pancasila *\"Persatuan Indonesia\"* yang melambangkan tempat berteduh dan persatuan bangsa Indonesia adalah...",
+      "options": [
+        { "id": "A", "text": "Bintang emas" },
+        { "id": "B", "text": "Rantai emas" },
+        { "id": "C", "text": "Pohon beringin" },
+        { "id": "D", "text": "Kepala banteng" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Simbol **sila ke-3 (Persatuan Indonesia)** adalah **Pohon Beringin** yang memiliki akar gantung kuat dan daun lebat menaungi seluruh rakyat."
+    }
+  ]
+}
+

@@ -1,0 +1,66 @@
+---
+import type { Quiz } from '../content/config';
+
+interface Props {
+  quiz: Quiz;
+  slug: string;
+}
+
+const { quiz, slug } = Astro.props;
+
+const difficultyBadge = {
+  Mudah: 'bg-emerald-50 text-emerald-700 border-emerald-200',
+  Sedang: 'bg-blue-50 text-blue-700 border-blue-200',
+  Sulit: 'bg-amber-50 text-amber-700 border-amber-200',
+};
+---
+
+<div class="flex flex-col justify-between bg-white rounded-xl border border-slate-200 p-5 hover:border-slate-300 transition">
+  <div>
+    <!-- Badges Row -->
+    <div class="flex items-center justify-between gap-2 mb-2.5">
+      <span class="text-xs font-semibold px-2.5 py-0.5 rounded bg-slate-100 text-slate-700">
+        {quiz.level}
+      </span>
+      <span
+        class={`text-xs font-semibold px-2 py-0.5 rounded border ${
+          difficultyBadge[quiz.difficulty] || 'bg-slate-50 text-slate-600'
+        }`}
+      >
+        Tingkat {quiz.difficulty}
+      </span>
+    </div>
+
+    <!-- Title & Description -->
+    <h3 class="text-base font-bold text-slate-900 leading-snug">
+      {quiz.title}
+    </h3>
+    <p class="text-xs text-slate-500 mt-2 line-clamp-2 leading-relaxed">
+      {quiz.description || 'Latihan soal mandiri lengkap dengan kunci jawaban dan pembahasan.'}
+    </p>
+
+    <!-- Meta Info -->
+    <div class="mt-4 flex items-center gap-3 text-xs text-slate-500">
+      <span class="inline-flex items-center gap-1">
+        <svg class="w-3.5 h-3.5 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        {quiz.duration} Menit
+      </span>
+      <span>&bull;</span>
+      <span>{quiz.questions.length} Butir Soal di Bank</span>
+    </div>
+  </div>
+
+  <!-- Action CTA -->
+  <div class="mt-5 pt-3 border-t border-slate-100">
+    <a
+      href={`/quiz/${quiz.category}/${slug}`}
+      class="w-full inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg font-semibold text-xs sm:text-sm text-white bg-blue-600 hover:bg-blue-700 active:bg-blue-800 transition"
+    >
+      <span>Mulai Latihan</span>
+      <span aria-hidden="true">&rarr;</span>
+    </a>
+  </div>
+</div>

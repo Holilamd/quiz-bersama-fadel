@@ -1,0 +1,37 @@
+{
+  "id": "bahasa-kelas-2-membaca-pemahaman",
+  "title": "Membaca Cerita & Huruf Kapital",
+  "category": "bahasa",
+  "categoryName": "Bahasa Indonesia",
+  "description": "Latihan membaca cerita anak, menemukan informasi penting, penggunaan huruf kapital untuk nama orang & hari, serta tanda titik.",
+  "level": "Kelas 2 SD",
+  "difficulty": "Mudah",
+  "duration": 10,
+  "questions": [
+    {
+      "id": 1,
+      "questionText": "Bacalah teks berikut:\n*\"Setiap hari Minggu pagi, Dimas membantu Ayah menyiram tanaman bunga di halaman rumah. Ibu membuatkan teh hangat dan pisang goreng untuk mereka berdua.\"*\n\nSiapa yang membantu Ayah menyiram tanaman bunga?",
+      "options": [
+        { "id": "A", "text": "Ibu" },
+        { "id": "B", "text": "Dimas" },
+        { "id": "C", "text": "Kakek" },
+        { "id": "D", "text": "Paman" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Berdasarkan kalimat pertama teks di atas: *\"Setiap hari Minggu pagi, **Dimas** membantu Ayah menyiram tanaman...\"* Jadi yang membantu Ayah adalah **Dimas**."
+    },
+    {
+      "id": 2,
+      "questionText": "Penulisan huruf kapital yang benar pada nama orang dan hari berikut ini adalah...",
+      "options": [
+        { "id": "A", "text": "pada hari senin, siti pergi ke perpustakaan." },
+        { "id": "B", "text": "Pada hari Senin, Siti pergi ke perpustakaan." },
+        { "id": "C", "text": "Pada Hari senin, siti Pergi ke perpustakaan." },
+        { "id": "D", "text": "pada hari Senin, siti pergi ke perpustakaan." }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Huruf kapital digunakan pada: awal kalimat (**P**ada), nama hari (**S**enin), dan nama orang (**S**iti). Kalimat diakhiri dengan tanda titik."
+    }
+  ]
+}
+

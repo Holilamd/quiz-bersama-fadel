@@ -1,0 +1,61 @@
+{
+  "id": "mat-kelas-3-pecahan-keliling",
+  "title": "Pecahan Sederhana & Keliling Bangun",
+  "category": "matematika",
+  "categoryName": "Matematika",
+  "description": "Latihan mengenal pecahan 1/2, 1/4, menghitung pembagian bersisa/tanpa sisa, dan menghitung keliling bangun persegi.",
+  "level": "Kelas 3 SD",
+  "difficulty": "Sedang",
+  "duration": 15,
+  "questions": [
+    {
+      "id": 1,
+      "questionText": "Sebuah pizza dipotong menjadi 4 bagian yang sama besar. Rina memakan 1 potong pizza tersebut. Bagian pizza yang dimakan Rina dapat dituliskan dalam bentuk pecahan...",
+      "options": [
+        { "id": "A", "text": "$\\frac{1}{2}$" },
+        { "id": "B", "text": "$\\frac{1}{4}$" },
+        { "id": "C", "text": "$\\frac{3}{4}$" },
+        { "id": "D", "text": "$\\frac{4}{1}$" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Pecahan dituliskan sebagai $\\frac{\\text{bagian yang diambil}}{\\text{total potongan}}$. Karena Rina memakan 1 dari 4 potongan sama besar, pecahannya adalah: $$\\frac{1}{4}$$"
+    },
+    {
+      "id": 2,
+      "questionText": "Pak Guru memiliki 36 pensil yang akan dibagikan sama rata kepada 4 kelompok belajar siswa. Berapa banyak pensil yang didapat oleh setiap kelompok?\n$$36 \\div 4 = \\dots$$",
+      "options": [
+        { "id": "A", "text": "7 pensil" },
+        { "id": "B", "text": "8 pensil" },
+        { "id": "C", "text": "9 pensil" },
+        { "id": "D", "text": "10 pensil" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Pembagian adalah kebalikan dari perkalian. Karena $4 \\times 9 = 36$, maka:\n$$36 \\div 4 = 9$$\nSetiap kelompok mendapatkan **9 pensil**."
+    },
+    {
+      "id": 3,
+      "questionText": "Sebuah papan catur berbentuk persegi memiliki panjang sisi $s = 20\\text{ cm}$. Berapakah keliling ($K$) papan catur tersebut?\n$$K = 4 \\times s$$",
+      "options": [
+        { "id": "A", "text": "$40\\text{ cm}$" },
+        { "id": "B", "text": "$60\\text{ cm}$" },
+        { "id": "C", "text": "$80\\text{ cm}$" },
+        { "id": "D", "text": "$100\\text{ cm}$" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Rumus keliling persegi adalah menjumlahkan keempat sisinya yang sama panjang:\n$$K = 4 \\times 20 = 80\\text{ cm}$$"
+    },
+    {
+      "id": 4,
+      "questionText": "Ibu membeli gula pasir seberat $2\\text{ kilogram}$ di pasar. Jika diubah ke dalam satuan gram, berapakah berat gula tersebut?\n(Ingat: $1\\text{ kg} = 1.000\\text{ gram}$)",
+      "options": [
+        { "id": "A", "text": "$200\\text{ gram}$" },
+        { "id": "B", "text": "$1.500\\text{ gram}$" },
+        { "id": "C", "text": "$2.000\\text{ gram}$" },
+        { "id": "D", "text": "$20.000\\text{ gram}$" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Karena $1\\text{ kg} = 1.000\\text{ gram}$, maka:\n$$2\\text{ kg} = 2 \\times 1.000 = 2.000\\text{ gram}$$"
+    }
+  ]
+}
+

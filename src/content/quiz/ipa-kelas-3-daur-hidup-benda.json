@@ -1,0 +1,49 @@
+{
+  "id": "ipa-kelas-3-daur-hidup-benda",
+  "title": "Daur Hidup Kupu-kupu & Wujud Benda",
+  "category": "ipa",
+  "categoryName": "IPA & IPAS",
+  "description": "Latihan metamorfosis sempurna pada serangga, katak, serta perubahan wujud zat mencair, membeku, dan menguap.",
+  "level": "Kelas 3 SD",
+  "difficulty": "Sedang",
+  "duration": 15,
+  "questions": [
+    {
+      "id": 1,
+      "questionText": "Urutan daur hidup (metamorfosis sempurna) kupu-kupu yang benar adalah...",
+      "options": [
+        { "id": "A", "text": "Telur → Ulat (Larva) → Kepompong (Pupa) → Kupu-kupu" },
+        { "id": "B", "text": "Telur → Kupu-kupu muda → Kepompong → Ulat" },
+        { "id": "C", "text": "Kepompong → Telur → Ulat → Kupu-kupu" },
+        { "id": "D", "text": "Ulat → Telur → Kepompong → Kupu-kupu" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Tahapan daur hidup kupu-kupu dimulai dari **Telur** yang menetas menjadi **Ulat (Larva)** yang suka makan daun, kemudian berubah menjadi **Kepompong (Pupa)**, dan akhirnya keluar menjadi **Kupu-kupu dewasa** yang indah."
+    },
+    {
+      "id": 2,
+      "questionText": "Ketika es batu diletakkan di tempat terbuka di bawah terik matahari, es batu tersebut berubah menjadi air. Peristiwa perubahan wujud dari padat menjadi cair disebut...",
+      "options": [
+        { "id": "A", "text": "Membeku" },
+        { "id": "B", "text": "Mencair / Melebur" },
+        { "id": "C", "text": "Menguap" },
+        { "id": "D", "text": "Mengembun" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Perubahan wujud benda dari **padat menjadi cair** akibat menerima panas dinamakan **mencair**."
+    },
+    {
+      "id": 3,
+      "questionText": "Benda berikut yang memiliki sifat bentuknya selalu berubah-ubah mengikuti bentuk wadahnya, namun volumenya tetap adalah benda...",
+      "options": [
+        { "id": "A", "text": "Padat (seperti batu)" },
+        { "id": "B", "text": "Cair (seperti minyak goreng dan air)" },
+        { "id": "C", "text": "Gas (seperti udara di dalam balon)" },
+        { "id": "D", "text": "Besi" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Ciri khas **benda cair** adalah bentuknya selalu mengikuti wadahnya (misal saat dituangkan ke botol atau gelas), namun ukuran volumenya tetap."
+    }
+  ]
+}
+

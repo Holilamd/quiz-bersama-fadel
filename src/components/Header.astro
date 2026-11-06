@@ -1,0 +1,52 @@
+---
+const navLinks = [
+  { href: '/', label: 'Beranda' },
+  { href: '/quiz/matematika', label: 'Matematika' },
+  { href: '/quiz/ipa', label: 'IPAS (IPA)' },
+  { href: '/quiz/bahasa', label: 'Bahasa Indonesia' },
+  { href: '/quiz/tematik', label: 'Tematik & PPKn' },
+];
+---
+
+<header class="sticky top-0 z-40 w-full border-b border-slate-200 bg-white shadow-[0_1px_2px_rgba(0,0,0,0.03)]">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+    <!-- Brand Logo -->
+    <a href="/" class="flex items-center gap-3">
+      <div class="w-9 h-9 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-lg shadow-sm">
+        AO
+      </div>
+      <div class="leading-tight">
+        <span class="font-bold text-lg text-slate-900 tracking-tight block">
+          Asah<span class="text-blue-600">Otak</span>
+        </span>
+        <span class="text-[11px] text-slate-500 font-medium block">
+          Bank Soal Kelas 1–4 SD
+        </span>
+      </div>
+    </a>
+
+    <!-- Nav Links -->
+    <nav class="hidden md:flex items-center gap-1">
+      {
+        navLinks.map((link) => (
+          <a
+            href={link.href}
+            class="px-3 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-700 hover:bg-slate-100 rounded-md transition"
+          >
+            {link.label}
+          </a>
+        ))
+      }
+    </nav>
+
+    <!-- Right Action -->
+    <div class="flex items-center gap-2">
+      <a
+        href="/#paket-soal"
+        class="inline-flex items-center px-3.5 py-2 text-xs sm:text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 active:bg-blue-800 rounded-lg transition"
+      >
+        Mulai Latihan
+      </a>
+    </div>
+  </div>
+</header>

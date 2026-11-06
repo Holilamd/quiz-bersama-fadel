@@ -1,0 +1,49 @@
+{
+  "id": "ipa-kelas-4-gaya-dan-fotosintesis",
+  "title": "Gaya, Energi, & Fotosintesis Tumbuhan",
+  "category": "ipa",
+  "categoryName": "IPA & IPAS",
+  "description": "Latihan mengenal pengaruh gaya dorong dan tarik, gaya gravitasi bumi, perubahan bentuk energi, dan proses fotosintesis pada daun.",
+  "level": "Kelas 4 SD",
+  "difficulty": "Sedang",
+  "duration": 15,
+  "questions": [
+    {
+      "id": 1,
+      "questionText": "Buah mangga yang sudah matang di pohon jatuh ke bawah menuju tanah. Hal tersebut disebabkan oleh adanya gaya...",
+      "options": [
+        { "id": "A", "text": "Gaya Gesek" },
+        { "id": "B", "text": "Gaya Magnet" },
+        { "id": "C", "text": "Gaya Gravitasi Bumi" },
+        { "id": "D", "text": "Gaya Pegas" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "**Gaya gravitasi bumi** adalah gaya tarik bumi yang menyebabkan semua benda yang dilepaskan di udara akan selalu jatuh ke bawah menuju permukaan bumi."
+    },
+    {
+      "id": 2,
+      "questionText": "Tumbuhan hijau mampu membuat makanannya sendiri melalui proses fotosintesis pada daun. Gas yang diserap oleh daun dari udara untuk fotosintesis adalah...",
+      "options": [
+        { "id": "A", "text": "Oksigen ($O_2$)" },
+        { "id": "B", "text": "Karbon Dioksida ($CO_2$)" },
+        { "id": "C", "text": "Nitrogen" },
+        { "id": "D", "text": "Uap Minyak" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Pada proses fotosintesis, daun menyerap **Karbon Dioksida ($CO_2$)** dari udara dan air ($H_2O$) dari tanah dengan bantuan cahaya matahari dan klorofil, lalu menghasilkan glukosa (makanan) serta melepaskan gas **Oksigen ($O_2$)** yang kita hirup."
+    },
+    {
+      "id": 3,
+      "questionText": "Saat kita menyalakan setrika listrik untuk merapikan pakaian sekolah, terjadi perubahan bentuk energi dari...",
+      "options": [
+        { "id": "A", "text": "Energi listrik menjadi energi gerak" },
+        { "id": "B", "text": "Energi listrik menjadi energi panas (kalor)" },
+        { "id": "C", "text": "Energi kimia menjadi energi cahaya" },
+        { "id": "D", "text": "Energi panas menjadi energi bunyi" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Setrika listrik mengubah aliran **energi listrik menjadi energi panas** yang membuat alas setrika menjadi hangat dan licin untuk merapikan baju."
+    }
+  ]
+}
+

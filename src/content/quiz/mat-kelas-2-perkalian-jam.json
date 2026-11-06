@@ -1,0 +1,117 @@
+{
+  "id": "mat-kelas-2-perkalian-jam",
+  "title": "Perkalian Dasar & Membaca Jam",
+  "category": "matematika",
+  "categoryName": "Matematika",
+  "description": "Latihan perkalian penjumlahan berulang, membaca jam dinding, dan pengurangan ratusan dengan 3 tingkat kesulitan.",
+  "level": "Kelas 2 SD",
+  "difficulty": "Sedang",
+  "duration": 15,
+  "shuffleCount": 5,
+  "questions": [
+    {
+      "id": 101,
+      "difficulty": "Mudah",
+      "questionText": "Berapakah hasil perkalian dasar berikut?\n$$2 \\times 5 = \\dots$$",
+      "options": [
+        { "id": "A", "text": "7" },
+        { "id": "B", "text": "10" },
+        { "id": "C", "text": "12" },
+        { "id": "D", "text": "15" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "$$2 \\times 5 = 5 + 5 = 10$$"
+    },
+    {
+      "id": 102,
+      "difficulty": "Mudah",
+      "questionText": "Sebuah jam dinding menunjukkan jarum pendek di angka 9 dan jarum panjang tepat di angka 12. Jam tersebut menunjukkan pukul...",
+      "options": [
+        { "id": "A", "text": "09.00" },
+        { "id": "B", "text": "12.00" },
+        { "id": "C", "text": "09.12" },
+        { "id": "D", "text": "12.09" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Jarum pendek di angka 9 dan jarum panjang di angka 12 berarti pukul **09.00** tepat."
+    },
+    {
+      "id": 103,
+      "difficulty": "Mudah",
+      "questionText": "Berapakah hasil dari $3 \\times 3 = \\dots$?",
+      "options": [
+        { "id": "A", "text": "6" },
+        { "id": "B", "text": "9" },
+        { "id": "C", "text": "12" },
+        { "id": "D", "text": "15" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "$$3 \\times 3 = 3 + 3 + 3 = 9$$"
+    },
+    {
+      "id": 201,
+      "difficulty": "Sedang",
+      "questionText": "Bentuk penjumlahan berulang $4 + 4 + 4 + 4 + 4$ jika dituliskan dalam bentuk perkalian adalah...\n$$4 + 4 + 4 + 4 + 4 = \\dots$$",
+      "options": [
+        { "id": "A", "text": "$4 \\times 4$" },
+        { "id": "B", "text": "$5 \\times 4$" },
+        { "id": "C", "text": "$4 \\times 5$" },
+        { "id": "D", "text": "$5 + 4$" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Angka 4 dijumlahkan 5 kali, maka bentuk perkaliannya adalah $5 \\times 4 = 20$."
+    },
+    {
+      "id": 202,
+      "difficulty": "Sedang",
+      "questionText": "Di atas meja ada 3 buah piring. Setiap piring berisi 6 butir kue donat. Berapa banyak seluruh donat di atas meja?\n$$3 \\times 6 = \\dots$$",
+      "options": [
+        { "id": "A", "text": "16 butir" },
+        { "id": "B", "text": "18 butir" },
+        { "id": "C", "text": "20 butir" },
+        { "id": "D", "text": "24 butir" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "$$3 \\times 6 = 6 + 6 + 6 = 18\\text{ butir}$$"
+    },
+    {
+      "id": 203,
+      "difficulty": "Sedang",
+      "questionText": "Berapakah hasil pengurangan ratusan berikut?\n$$250 - 120 = \\dots$$",
+      "options": [
+        { "id": "A", "text": "110" },
+        { "id": "B", "text": "120" },
+        { "id": "C", "text": "130" },
+        { "id": "D", "text": "140" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "$$250 - 120 = 130$$"
+    },
+    {
+      "id": 301,
+      "difficulty": "Sulit",
+      "questionText": "Jarum pendek berada di antara angka 2 dan 3, sedangkan jarum panjang tepat menunjuk angka 6. Waktu yang ditunjukkan adalah pukul...",
+      "options": [
+        { "id": "A", "text": "02.06" },
+        { "id": "B", "text": "02.30" },
+        { "id": "C", "text": "03.30" },
+        { "id": "D", "text": "06.15" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Jarum panjang di angka 6 menunjukkan lewat 30 menit. Karena jarum pendek di antara 2 dan 3, maka waktu adalah **02.30** (setengah tiga)."
+    },
+    {
+      "id": 302,
+      "difficulty": "Sulit",
+      "questionText": "Sebuah toko memiliki 4 kotak pensil warna. Tiap kotak berisi 10 pensil warna. Lalu terjual 8 pensil warna. Berapa sisa pensil warna di toko?\n$$(4 \\times 10) - 8 = \\dots$$",
+      "options": [
+        { "id": "A", "text": "28" },
+        { "id": "B", "text": "30" },
+        { "id": "C", "text": "32" },
+        { "id": "D", "text": "36" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Hitung perkalian dulu: $4 \\times 10 = 40$.\nLalu kurangi yang terjual: $40 - 8 = 32$.\nSisa pensil warna adalah **32 pensil**."
+    }
+  ]
+}

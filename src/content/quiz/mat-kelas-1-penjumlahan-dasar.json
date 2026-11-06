@@ -1,0 +1,156 @@
+{
+  "id": "mat-kelas-1-penjumlahan-dasar",
+  "title": "Berhitung Ceria & Penjumlahan 1-20",
+  "category": "matematika",
+  "categoryName": "Matematika",
+  "description": "Bank soal berhitung angka 1-20, penjumlahan buah, pengurangan, perbandingan, dan bangun datar dengan 3 tingkat kesulitan.",
+  "level": "Kelas 1 SD",
+  "difficulty": "Sedang",
+  "duration": 10,
+  "shuffleCount": 5,
+  "questions": [
+    {
+      "id": 101,
+      "difficulty": "Mudah",
+      "questionText": "Berapakah hasil dari penjumlahan jari tangan berikut?\n$$3 + 4 = \\dots$$",
+      "options": [
+        { "id": "A", "text": "5" },
+        { "id": "B", "text": "6" },
+        { "id": "C", "text": "7" },
+        { "id": "D", "text": "8" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "3 ditambah 4 sama dengan **7** ($3 + 4 = 7$)."
+    },
+    {
+      "id": 102,
+      "difficulty": "Mudah",
+      "questionText": "Ibu meletakkan 5 buah jeruk di piring, lalu Adik menambahkan 3 buah jeruk lagi. Berapa total jeruk di piring sekarang?\n$$5 + 3 = \\dots$$",
+      "options": [
+        { "id": "A", "text": "7 buah" },
+        { "id": "B", "text": "8 buah" },
+        { "id": "C", "text": "9 buah" },
+        { "id": "D", "text": "10 buah" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "$$5 + 3 = 8$$\nTotal jeruk sekarang ada **8 buah**."
+    },
+    {
+      "id": 103,
+      "difficulty": "Mudah",
+      "questionText": "Bentuk bangun datar uang koin atau roda sepeda adalah...",
+      "options": [
+        { "id": "A", "text": "Segitiga" },
+        { "id": "B", "text": "Lingkaran" },
+        { "id": "C", "text": "Persegi" },
+        { "id": "D", "text": "Persegi Panjang" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Uang koin dan roda sepeda berbentuk bulat melingkar sempurna, yaitu **Lingkaran**."
+    },
+    {
+      "id": 104,
+      "difficulty": "Mudah",
+      "questionText": "Berapakah hasil pengurangan berikut?\n$$7 - 3 = \\dots$$",
+      "options": [
+        { "id": "A", "text": "3" },
+        { "id": "B", "text": "4" },
+        { "id": "C", "text": "5" },
+        { "id": "D", "text": "6" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Dari angka 7, hitung mundur sebanyak 3 langkah: 6, 5, 4. Hasilnya adalah **4**."
+    },
+    {
+      "id": 201,
+      "difficulty": "Sedang",
+      "questionText": "Ibu mempunyai 7 buah apel di keranjang. Lalu Ayah membeli lagi 5 buah apel. Berapakah jumlah semua apel sekarang?\n$$7 + 5 = \\dots$$",
+      "options": [
+        { "id": "A", "text": "10 buah" },
+        { "id": "B", "text": "11 buah" },
+        { "id": "C", "text": "12 buah" },
+        { "id": "D", "text": "13 buah" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "$$7 + 5 = 12$$\nJumlah semua apel Ibu dan Ayah adalah **12 buah**."
+    },
+    {
+      "id": 202,
+      "difficulty": "Sedang",
+      "questionText": "Budi memiliki 14 kelereng. Saat bermain di taman, 4 kelerengnya hilang. Berapa sisa kelereng Budi sekarang?\n$$14 - 4 = \\dots$$",
+      "options": [
+        { "id": "A", "text": "9 kelereng" },
+        { "id": "B", "text": "10 kelereng" },
+        { "id": "C", "text": "11 kelereng" },
+        { "id": "D", "text": "12 kelereng" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "$$14 - 4 = 10$$\nSisa kelereng Budi sekarang adalah **10 kelereng**."
+    },
+    {
+      "id": 203,
+      "difficulty": "Sedang",
+      "questionText": "Tanda perbandingan yang tepat untuk mengisi titik-titik di bawah ini adalah:\n$$15 \\dots 18$$",
+      "options": [
+        { "id": "A", "text": "< (Lebih kecil)" },
+        { "id": "B", "text": "> (Lebih besar)" },
+        { "id": "C", "text": "= (Sama dengan)" },
+        { "id": "D", "text": "+ (Ditambah)" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15 lebih kecil daripada 18 ($15 < 18$)."
+    },
+    {
+      "id": 204,
+      "difficulty": "Sedang",
+      "questionText": "Bangun datar yang memiliki 3 buah sisi dan 3 buah sudut lancip menyerupai potongan pizza adalah...",
+      "options": [
+        { "id": "A", "text": "Lingkaran" },
+        { "id": "B", "text": "Persegi" },
+        { "id": "C", "text": "Segitiga" },
+        { "id": "D", "text": "Persegi Panjang" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "**Segitiga** memiliki 3 sisi dan 3 sudut."
+    },
+    {
+      "id": 301,
+      "difficulty": "Sulit",
+      "questionText": "Berapakah angka yang tepat untuk mengisi titik-titik berikut agar bernilai benar?\n$$8 + \\dots = 15$$",
+      "options": [
+        { "id": "A", "text": "6" },
+        { "id": "B", "text": "7" },
+        { "id": "C", "text": "8" },
+        { "id": "D", "text": "9" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Untuk mencari angka pengisi titik-titik, kurangkan hasil dengan angka yang ada:\n$$15 - 8 = 7$$\nMaka $8 + 7 = 15$."
+    },
+    {
+      "id": 302,
+      "difficulty": "Sulit",
+      "questionText": "Lanjutan dari urutan pola loncat 2 berikut adalah:\n$$2, 4, 6, 8, \\dots$$",
+      "options": [
+        { "id": "A", "text": "9" },
+        { "id": "B", "text": "10" },
+        { "id": "C", "text": "11" },
+        { "id": "D", "text": "12" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Pola bertambah 2: $8 + 2 = 10$. Jadi angka berikutnya adalah **10**."
+    },
+    {
+      "id": 303,
+      "difficulty": "Sulit",
+      "questionText": "Siti memiliki 9 permen. Diberi Kakak 6 permen, lalu dimakan Siti 3 permen. Berapa sisa permen Siti sekarang?\n$$9 + 6 - 3 = \\dots$$",
+      "options": [
+        { "id": "A", "text": "11 permen" },
+        { "id": "B", "text": "12 permen" },
+        { "id": "C", "text": "13 permen" },
+        { "id": "D", "text": "14 permen" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Hitung bertahap:\n1. $9 + 6 = 15$\n2. $15 - 3 = 12$\nSisa permen Siti adalah **12 permen**."
+    }
+  ]
+}

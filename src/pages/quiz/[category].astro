@@ -1,0 +1,88 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import QuizCard from '../../components/QuizCard.astro';
+import { CATEGORIES } from '../../utils/categories';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const allQuizzes = await getCollection('quiz');
+
+  return Object.keys(CATEGORIES).map((catKey) => {
+    const categoryInfo = CATEGORIES[catKey];
+    const categoryQuizzes = allQuizzes.filter(
+      (q) => q.data.category.toLowerCase() === catKey.toLowerCase()
+    );
+
+    return {
+      params: { category: catKey },
+      props: {
+        categoryInfo,
+        quizzes: categoryQuizzes,
+      },
+    };
+  });
+}
+
+const { category } = Astro.params;
+const { categoryInfo, quizzes } = Astro.props;
+---
+
+<Layout
+  title={`Soal ${categoryInfo?.name || category} | AsahOtak`}
+  description={`Kumpulan soal latihan ${categoryInfo?.name || category} untuk siswa sekolah dasar lengkap dengan kunci dan pembahasan.`}
+>
+  <div class="space-y-6">
+    <!-- Breadcrumb -->
+    <nav class="flex items-center gap-2 text-xs text-slate-500">
+      <a href="/" class="hover:text-blue-700 transition">Beranda</a>
+      <span>/</span>
+      <span class="text-slate-800 font-semibold">{categoryInfo?.name || category}</span>
+    </nav>
+
+    <!-- Header Banner Category -->
+    <div class="bg-white rounded-xl border border-slate-200 p-6 sm:p-8">
+      <div class="max-w-2xl">
+        <span class="text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-slate-100 text-slate-700">
+          Mata Pelajaran
+        </span>
+        <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">
+          {categoryInfo?.name || category}
+        </h1>
+        <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+          {categoryInfo?.description}
+        </p>
+        <p class="mt-4 text-xs font-semibold text-slate-500">
+          Tersedia {quizzes.length} topik materi latihan
+        </p>
+      </div>
+    </div>
+
+    <!-- List of Quizzes -->
+    <div class="space-y-4">
+      <h2 class="text-lg font-bold text-slate-900">Pilih Topik Soal</h2>
+
+      {
+        quizzes.length === 0 ? (
+          <div class="text-center py-12 bg-white rounded-xl border border-slate-200 p-6 space-y-3">
+            <h3 class="text-base font-bold text-slate-800">Belum Ada Soal</h3>
+            <p class="text-xs text-slate-500 max-w-sm mx-auto">
+              Materi latihan untuk mata pelajaran ini sedang dalam penyusunan.
+            </p>
+            <a
+              href="/"
+              class="inline-block px-4 py-2 rounded-lg font-semibold text-xs text-white bg-blue-600 hover:bg-blue-700 transition"
+            >
+              Kembali ke Beranda
+            </a>
+          </div>
+        ) : (
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {quizzes.map((quiz) => (
+              <QuizCard quiz={quiz.data} slug={quiz.id} />
+            ))}
+          </div>
+        )
+      }
+    </div>
+  </div>
+</Layout>

@@ -1,0 +1,101 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CategoryCard from '../components/CategoryCard.astro';
+import QuizCard from '../components/QuizCard.astro';
+import { CATEGORIES, GRADE_LEVELS } from '../utils/categories';
+import { getCollection } from 'astro:content';
+
+const allQuizzes = await getCollection('quiz');
+
+const quizCounts = Object.keys(CATEGORIES).reduce(
+  (acc, key) => {
+    acc[key] = allQuizzes.filter((q) => q.data.category === key).length;
+    return acc;
+  },
+  {} as Record<string, number>
+);
+---
+
+<Layout title="Beranda | Latihan Soal Siswa SD Kelas 1–4">
+  <!-- Hero Section Sederhana & Fungsional -->
+  <section class="py-10 md:py-14 border-b border-slate-200 bg-white -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 mb-8">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-800 text-xs font-semibold mb-4">
+        <span>Bahan Belajar Mandiri Kurikulum SD</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+        Latihan Soal Harian untuk Siswa Kelas 1–4 SD
+      </h1>
+
+      <p class="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+        Pilih mata pelajaran di bawah untuk mulai berlatih. Setiap sesi kuis dilengkapi batas waktu, pilihan ganda, serta kunci jawaban dan langkah penyelesaian.
+      </p>
+
+      <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
+        <a
+          href="#paket-soal"
+          class="px-5 py-2.5 rounded-lg font-semibold text-sm text-white bg-blue-600 hover:bg-blue-700 transition"
+        >
+          Lihat Daftar Soal
+        </a>
+        <a
+          href="/quiz/matematika"
+          class="px-5 py-2.5 rounded-lg font-semibold text-sm text-slate-700 bg-slate-100 hover:bg-slate-200 transition"
+        >
+          Matematika SD &rarr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Kelas Cepat -->
+  <section class="mb-8">
+    <div class="bg-white rounded-xl border border-slate-200 p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+      <span class="text-xs font-bold text-slate-700 uppercase tracking-wider">Pilih Jenjang Kelas:</span>
+      <div class="flex flex-wrap items-center gap-1.5">
+        {
+          GRADE_LEVELS.map((g) => (
+            <span class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-blue-50 hover:text-blue-700 transition cursor-default">
+              {g.label}
+            </span>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Kategori Mata Pelajaran -->
+  <section class="mb-10 space-y-4">
+    <div class="flex items-center justify-between">
+      <h2 class="text-xl font-bold text-slate-900">Mata Pelajaran</h2>
+      <span class="text-xs text-slate-500">{Object.keys(CATEGORIES).length} Bidang Studi</span>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      {
+        Object.values(CATEGORIES).map((cat) => (
+          <CategoryCard category={cat} quizCount={quizCounts[cat.slug] || 0} />
+        ))
+      }
+    </div>
+  </section>
+
+  <!-- Daftar Paket Soal Siap Dikerjakan -->
+  <section id="paket-soal" class="space-y-4 pb-10">
+    <div class="flex items-center justify-between">
+      <div>
+        <h2 class="text-xl font-bold text-slate-900">Daftar Paket Latihan</h2>
+        <p class="text-xs text-slate-500 mt-0.5">Pilih topik materi yang ingin dipelajari hari ini.</p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {
+        allQuizzes.map((quiz) => (
+          <QuizCard quiz={quiz.data} slug={quiz.id} />
+        ))
+      }
+    </div>
+  </section>
+</Layout>

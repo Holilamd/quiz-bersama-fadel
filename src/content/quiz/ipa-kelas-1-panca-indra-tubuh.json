@@ -1,0 +1,61 @@
+{
+  "id": "ipa-kelas-1-panca-indra-tubuh",
+  "title": "Mengenal Panca Indra & Tubuh Kita",
+  "category": "ipa",
+  "categoryName": "IPA & IPAS",
+  "description": "Latihan mengenal fungsi mata, telinga, hidung, lidah, kulit, serta membedakan benda hidup dan tak hidup di sekitar kita.",
+  "level": "Kelas 1 SD",
+  "difficulty": "Mudah",
+  "duration": 10,
+  "questions": [
+    {
+      "id": 1,
+      "questionText": "Saat mendengarkan suara lonceng sekolah berbunyi atau kicauan burung di pagi hari, kita menggunakan panca indra...",
+      "options": [
+        { "id": "A", "text": "Mata" },
+        { "id": "B", "text": "Telinga" },
+        { "id": "C", "text": "Hidung" },
+        { "id": "D", "text": "Lidah" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "**Telinga** adalah indra pendengaran yang berfungsi untuk menangkap suara di sekitar kita."
+    },
+    {
+      "id": 2,
+      "questionText": "Bagian tubuh yang kita gunakan untuk mengecap rasa manis permen, asin garam, dan pahit obat adalah...",
+      "options": [
+        { "id": "A", "text": "Gigi" },
+        { "id": "B", "text": "Bibir" },
+        { "id": "C", "text": "Lidah" },
+        { "id": "D", "text": "Hidung" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "**Lidah** adalah indra pengecap yang memiliki bintil perasa untuk mendeteksi rasa manis, asin, asam, dan pahit."
+    },
+    {
+      "id": 3,
+      "questionText": "Di bawah ini manakah yang termasuk contoh **benda hidup (makhluk hidup)**?",
+      "options": [
+        { "id": "A", "text": "Batu kali" },
+        { "id": "B", "text": "Tanaman bunga mawar" },
+        { "id": "C", "text": "Meja belajar" },
+        { "id": "D", "text": "Buku tulis" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "**Tanaman bunga mawar** adalah makhluk hidup karena membutuhkan air, bernapas, dan bisa bertumbuh tinggi. Sedangkan batu, meja, dan buku adalah benda mati."
+    },
+    {
+      "id": 4,
+      "questionText": "Untuk menjaga kebersihan gigi agar tidak berlubang dan nafas tetap segar, kita harus menyikat gigi sebanyak...",
+      "options": [
+        { "id": "A", "text": "1 kali seminggu" },
+        { "id": "B", "text": "Minimal 2 kali sehari (pagi dan sebelum tidur malam)" },
+        { "id": "C", "text": "Hanya saat mau bermain" },
+        { "id": "D", "text": "1 kali sebulan" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Kita dianjurkan menyikat gigi minimal **2 kali sehari**, yaitu setelah sarapan pagi dan sebelum tidur malam agar terhindar dari kuman penyebab gigi berlubang."
+    }
+  ]
+}
+
