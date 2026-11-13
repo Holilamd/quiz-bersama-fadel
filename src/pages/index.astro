@@ -29,15 +29,15 @@ const quizCounts = Object.keys(CATEGORIES).reduce(
       </h1>
 
       <p class="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-        Pilih mata pelajaran di bawah untuk mulai berlatih. Setiap sesi kuis dilengkapi batas waktu, pilihan ganda, serta kunci jawaban dan langkah penyelesaian.
+        Pilih mata pelajaran atau topik di bawah untuk mulai berlatih. Setiap sesi kuis dilengkapi batas waktu, pilihan ganda acak, kunci jawaban, dan penerbitan sertifikat penghargaan (nilai 90+).
       </p>
 
       <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
         <a
           href="#paket-soal"
-          class="px-5 py-2.5 rounded-lg font-semibold text-sm text-white bg-blue-600 hover:bg-blue-700 transition"
+          class="px-5 py-2.5 rounded-lg font-semibold text-sm text-white bg-blue-600 hover:bg-blue-700 transition shadow-sm"
         >
-          Lihat Daftar Soal
+          Lihat Semua Soal ({allQuizzes.length} Paket)
         </a>
         <a
           href="/quiz/matematika"
@@ -49,18 +49,59 @@ const quizCounts = Object.keys(CATEGORIES).reduce(
     </div>
   </section>
 
-  <!-- Filter Kelas Cepat -->
+  <!-- Filter & Pencarian Interaktif -->
   <section class="mb-8">
-    <div class="bg-white rounded-xl border border-slate-200 p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-      <span class="text-xs font-bold text-slate-700 uppercase tracking-wider">Pilih Jenjang Kelas:</span>
-      <div class="flex flex-wrap items-center gap-1.5">
-        {
-          GRADE_LEVELS.map((g) => (
-            <span class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-blue-50 hover:text-blue-700 transition cursor-default">
-              {g.label}
-            </span>
-          ))
-        }
+    <div class="bg-white rounded-xl border border-slate-200 p-4 sm:p-5 shadow-sm space-y-3.5">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <span class="text-xs font-bold text-slate-700 uppercase tracking-wider">
+          Filter Jenjang Kelas:
+        </span>
+        <div class="flex flex-wrap items-center gap-1.5" id="grade-filter-container">
+          {
+            GRADE_LEVELS.map((g, idx) => (
+              <button
+                type="button"
+                data-grade-filter={g.id}
+                class={`grade-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold transition ${
+                  idx === 0
+                    ? 'bg-blue-600 text-white shadow-sm'
+                    : 'bg-slate-100 text-slate-700 hover:bg-blue-50 hover:text-blue-700'
+                }`}
+              >
+                {g.label}
+              </button>
+            ))
+          }
+        </div>
+      </div>
+
+      <!-- Kotak Pencarian Topik -->
+      <div class="pt-2 border-t border-slate-100 flex flex-col sm:flex-row items-center gap-2">
+        <div class="relative w-full">
+          <svg
+            class="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input
+            id="search-quiz-input"
+            type="text"
+            placeholder="Cari materi soal (misal: pecahan, perkalian, panca indra, norma, pantun)..."
+            class="w-full pl-9 pr-4 py-2 text-xs sm:text-sm rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent text-slate-900 bg-slate-50/50"
+          />
+        </div>
+        <button
+          id="reset-filter-btn"
+          type="button"
+          class="hidden sm:inline-flex shrink-0 px-3 py-2 text-xs font-semibold text-slate-600 hover:text-slate-900 bg-slate-100 hover:bg-slate-200 rounded-lg transition"
+        >
+          Reset Filter
+        </button>
       </div>
     </div>
   </section>
@@ -69,7 +110,7 @@ const quizCounts = Object.keys(CATEGORIES).reduce(
   <section class="mb-10 space-y-4">
     <div class="flex items-center justify-between">
       <h2 class="text-xl font-bold text-slate-900">Mata Pelajaran</h2>
-      <span class="text-xs text-slate-500">{Object.keys(CATEGORIES).length} Bidang Studi</span>
+      <span class="text-xs text-slate-500">{Object.keys(CATEGORIES).length} Bidang Studi &bull; {allQuizzes.length} Paket Soal</span>
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -82,15 +123,32 @@ const quizCounts = Object.keys(CATEGORIES).reduce(
   </section>
 
   <!-- Daftar Paket Soal Siap Dikerjakan -->
-  <section id="paket-soal" class="space-y-4 pb-10">
+  <section id="paket-soal" class="space-y-4 pb-12">
     <div class="flex items-center justify-between">
       <div>
         <h2 class="text-xl font-bold text-slate-900">Daftar Paket Latihan</h2>
-        <p class="text-xs text-slate-500 mt-0.5">Pilih topik materi yang ingin dipelajari hari ini.</p>
+        <p class="text-xs text-slate-500 mt-0.5" id="filtered-quiz-count">
+          Menampilkan {allQuizzes.length} paket soal kurikulum SD
+        </p>
       </div>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <!-- Empty State -->
+    <div id="no-quiz-found" class="hidden text-center py-12 bg-white rounded-xl border border-slate-200 p-6 space-y-3">
+      <h3 class="text-base font-bold text-slate-800">Paket Soal Tidak Ditemukan</h3>
+      <p class="text-xs text-slate-500 max-w-sm mx-auto">
+        Tidak ada paket latihan yang sesuai dengan kata kunci pencarian atau filter jenjang kelas yang dipilih.
+      </p>
+      <button
+        id="clear-search-btn"
+        type="button"
+        class="inline-block px-4 py-2 rounded-lg font-semibold text-xs text-white bg-blue-600 hover:bg-blue-700 transition"
+      >
+        Tampilkan Semua Paket Soal
+      </button>
+    </div>
+
+    <div id="quiz-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
       {
         allQuizzes.map((quiz) => (
           <QuizCard quiz={quiz.data} slug={quiz.id} />
@@ -98,4 +156,94 @@ const quizCounts = Object.keys(CATEGORIES).reduce(
       }
     </div>
   </section>
+
+  <script is:inline>
+    const filterBtns = document.querySelectorAll('.grade-filter-btn');
+    const searchInput = document.getElementById('search-quiz-input');
+    const resetBtn = document.getElementById('reset-filter-btn');
+    const clearBtn = document.getElementById('clear-search-btn');
+    const quizCards = document.querySelectorAll('.quiz-card');
+    const countDisplay = document.getElementById('filtered-quiz-count');
+    const noQuizFound = document.getElementById('no-quiz-found');
+
+    let currentGrade = 'all';
+    let currentSearch = '';
+
+    function applyFilter() {
+      let visibleCount = 0;
+
+      quizCards.forEach((card) => {
+        const grade = card.getAttribute('data-grade') || '';
+        const title = card.getAttribute('data-title') || '';
+        const desc = card.getAttribute('data-description') || '';
+
+        const matchesGrade = currentGrade === 'all' || grade === currentGrade;
+        const matchesSearch =
+          !currentSearch ||
+          title.includes(currentSearch) ||
+          desc.includes(currentSearch) ||
+          grade.toLowerCase().includes(currentSearch);
+
+        if (matchesGrade && matchesSearch) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      if (countDisplay) {
+        countDisplay.textContent = `Menampilkan ${visibleCount} paket latihan`;
+      }
+
+      if (noQuizFound) {
+        if (visibleCount === 0) {
+          noQuizFound.classList.remove('hidden');
+        } else {
+          noQuizFound.classList.add('hidden');
+        }
+      }
+    }
+
+    filterBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach((b) => {
+          b.classList.remove('bg-blue-600', 'text-white', 'shadow-sm');
+          b.classList.add('bg-slate-100', 'text-slate-700');
+        });
+        btn.classList.remove('bg-slate-100', 'text-slate-700');
+        btn.classList.add('bg-blue-600', 'text-white', 'shadow-sm');
+
+        currentGrade = btn.getAttribute('data-grade-filter') || 'all';
+        applyFilter();
+      });
+    });
+
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        currentSearch = e.target.value.toLowerCase().trim();
+        applyFilter();
+      });
+    }
+
+    function resetAll() {
+      currentGrade = 'all';
+      currentSearch = '';
+      if (searchInput) searchInput.value = '';
+
+      filterBtns.forEach((b, idx) => {
+        if (idx === 0) {
+          b.classList.add('bg-blue-600', 'text-white', 'shadow-sm');
+          b.classList.remove('bg-slate-100', 'text-slate-700');
+        } else {
+          b.classList.remove('bg-blue-600', 'text-white', 'shadow-sm');
+          b.classList.add('bg-slate-100', 'text-slate-700');
+        }
+      });
+      applyFilter();
+    }
+
+    if (resetBtn) resetBtn.addEventListener('click', resetAll);
+    if (clearBtn) clearBtn.addEventListener('click', resetAll);
+  </script>
 </Layout>

@@ -15,7 +15,13 @@ const difficultyBadge = {
 };
 ---
 
-<div class="flex flex-col justify-between bg-white rounded-xl border border-slate-200 p-5 hover:border-slate-300 transition">
+<div
+  class="quiz-card flex flex-col justify-between bg-white rounded-xl border border-slate-200 p-5 hover:border-slate-300 transition"
+  data-grade={quiz.level}
+  data-category={quiz.category}
+  data-title={quiz.title.toLowerCase()}
+  data-description={(quiz.description || '').toLowerCase()}
+>
   <div>
     <!-- Badges Row -->
     <div class="flex items-center justify-between gap-2 mb-2.5">

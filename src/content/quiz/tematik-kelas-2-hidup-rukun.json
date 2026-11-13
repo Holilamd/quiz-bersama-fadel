@@ -1,0 +1,208 @@
+{
+  "id": "tematik-kelas-2-hidup-rukun",
+  "title": "Hidup Rukun, Gotong Royong, dan Pengamalan Pancasila",
+  "category": "tematik",
+  "categoryName": "Tematik & PPKn",
+  "description": "Latihan pengamalan nilai-nilai sila Pancasila dalam kehidupan bertetangga, toleransi bermain, dan hidup rukun untuk kelas 2 SD.",
+  "level": "Kelas 2 SD",
+  "difficulty": "Sedang",
+  "duration": 15,
+  "shuffleCount": 5,
+  "questions": [
+    {
+      "id": 1,
+      "questionText": "Sila ketiga Pancasila berbunyi 'Persatuan Indonesia'. Simbol dari sila ketiga tersebut adalah ....",
+      "options": [
+        { "id": "A", "text": "Pohon Beringin" },
+        { "id": "B", "text": "Kepala Banteng" },
+        { "id": "C", "text": "Padi dan Kapas" },
+        { "id": "D", "text": "Rantai Emas" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Pohon beringin melambangkan tempat berteduh dan persatuan seluruh rakyat Indonesia di bawah naungan negara.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 2,
+      "questionText": "Saat sedang bermain bersama, temanmu yang berbeda agama berpamitan untuk melaksanakan ibadah. Sikapmu yang paling tepat adalah ....",
+      "options": [
+        { "id": "A", "text": "Mempersilakan dengan senang hati dan tidak mengganggunya" },
+        { "id": "B", "text": "Melarangnya beribadah dan memaksanya terus bermain" },
+        { "id": "C", "text": "Menertawakan tata cara ibadahnya" },
+        { "id": "D", "text": "Memusuhinya dan tidak mau berteman lagi" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Menghormati teman yang hendak beribadah merupakan cerminan toleransi beragama sesuai pengamalan sila ke-1 Pancasila.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 3,
+      "questionText": "Contoh perilaku hidup rukun di lingkungan rumah bersama saudara kandung adalah ....",
+      "options": [
+        { "id": "A", "text": "Berbagi makanan dan mainan bersama adik" },
+        { "id": "B", "text": "Berebut remote televisi setiap sore" },
+        { "id": "C", "text": "Menuduh saudara saat berbuat salah" },
+        { "id": "D", "text": "Suka mengganggu adik yang sedang belajar" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Saling menyayangi, meminjamkan mainan, dan berbagi makanan menciptakan suasana rumah yang rukun dan damai.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 4,
+      "questionText": "Simbol sila keempat Pancasila, yaitu 'Kerakyatan yang dipimpin oleh hikmat kebijaksanaan dalam permusyawaratan/perwakilan', adalah ....",
+      "options": [
+        { "id": "A", "text": "Kepala Banteng" },
+        { "id": "B", "text": "Padi dan Kapas" },
+        { "id": "C", "text": "Pohon Beringin" },
+        { "id": "D", "text": "Bintang Tunggal" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Banteng adalah hewan sosial yang suka berkumpul. Hal ini melambangkan musyawarah masyarakat Indonesia dalam mengambil keputusan bersama.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 5,
+      "questionText": "Ketika memilih ketua kelas, musyawarah dan pemungutan suara diadakan dengan tujuan untuk ....",
+      "options": [
+        { "id": "A", "text": "Mencapai kesepakatan bersama secara adil" },
+        { "id": "B", "text": "Menunjuk teman yang paling kaya" },
+        { "id": "C", "text": "Membuat suasana kelas menjadi gaduh" },
+        { "id": "D", "text": "Memilih orang yang paling suka membelikan jajan" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Musyawarah mufakat bertujuan menghasilkan keputusan yang disepakati dan dihormati oleh seluruh anggota kelas.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 6,
+      "questionText": "Simbol sila kelima Pancasila, yaitu 'Keadilan sosial bagi seluruh rakyat Indonesia', adalah ....",
+      "options": [
+        { "id": "A", "text": "Padi dan Kapas" },
+        { "id": "B", "text": "Pohon Beringin" },
+        { "id": "C", "text": "Rantai Baja" },
+        { "id": "D", "text": "Kepala Banteng" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Padi melambangkan pangan (makanan) dan kapas melambangkan sandang (pakaian), kebutuhan pokok dasar untuk mencapai kemakmuran rakyat yang adil.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 7,
+      "questionText": "Menghargai hasil karya gambar teman yang dipajang di papan mading kelas merupakan bentuk pengamalan sila ke- ....",
+      "options": [
+        { "id": "A", "text": "5 (Keadilan sosial)" },
+        { "id": "B", "text": "1 (Ketuhanan)" },
+        { "id": "C", "text": "3 (Persatuan)" },
+        { "id": "D", "text": "4 (Kerakyatan)" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Menghargai hasil karya orang lain merupakan salah satu butir pengamalan sila kelima Pancasila.",
+      "difficulty": "Sulit"
+    },
+    {
+      "id": 8,
+      "questionText": "Ketika bermain bola bersama teman di lapangan, sikap sportif yang harus dijunjung tinggi adalah ....",
+      "options": [
+        { "id": "A", "text": "Menerima kekalahan dengan lapang dada dan mematuhi aturan main" },
+        { "id": "B", "text": "Marah dan memukul teman jika tim kita kalah" },
+        { "id": "C", "text": "Sengaja menjegal lawan dengan kasar" },
+        { "id": "D", "text": "Membawa kabur bola karena tidak mau kalah" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Sportivitas mengajarkan kita jujur, mematuhi peraturan permainan, serta menghargai keunggulan lawan tanpa dendam.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 9,
+      "questionText": "Hak anak di lingkungan rumah yang harus dipenuhi oleh orang tua adalah ....",
+      "options": [
+        { "id": "A", "text": "Mendapatkan kasih sayang dan pendidikan" },
+        { "id": "B", "text": "Membantu mencuci piring kotor" },
+        { "id": "C", "text": "Merapikan kamar tidur sendiri" },
+        { "id": "D", "text": "Membayar uang listrik dan air rumah" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Hak adalah hal yang patut diterima, seperti kasih sayang, makanan sehat, dan pendidikan. Sedangkan merapikan kamar adalah kewajiban anak.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 10,
+      "questionText": "Kewajiban utama seorang murid di sekolah adalah ....",
+      "options": [
+        { "id": "A", "text": "Belajar dengan sungguh-sungguh dan menaati tata tertib" },
+        { "id": "B", "text": "Mengajar materi di ruang guru" },
+        { "id": "C", "text": "Menjual makanan di kantin sekolah" },
+        { "id": "D", "text": "Membeli perlengkapan kelas baru" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Tugas utama siswa adalah menuntut ilmu dengan tekun, mendengarkan bimbingan guru, dan mematuhi aturan sekolah.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 11,
+      "questionText": "Jika kita melihat teman terjatuh dari sepeda di depan rumah, sikap yang benar adalah ....",
+      "options": [
+        { "id": "A", "text": "Segera menolongnya berdiri dan mengobati lukanya" },
+        { "id": "B", "text": "Menertawakannya beramai-ramai" },
+        { "id": "C", "text": "Membiarkannya tergeletak di jalan" },
+        { "id": "D", "text": "Mengejek karena kurang hati-hati" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Tolong-menolong antar sesama tanpa pamrih adalah perbuatan mulia sesuai nilai kemanusiaan.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 12,
+      "questionText": "Kegiatan ronda malam di lingkungan kampung bermanfaat untuk ....",
+      "options": [
+        { "id": "A", "text": "Menjaga keamanan dan ketertiban desa" },
+        { "id": "B", "text": "Mengobrol dan membuat kebisingan tengah malam" },
+        { "id": "C", "text": "Mencari keuntungan pribadi warga" },
+        { "id": "D", "text": "Menghindari pekerjaan di rumah" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Pos ronda atau siskamling bertujuan menjaga keamanan warga dari tindak kejahatan dan memelihara kedamaian desa.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 13,
+      "questionText": "Perbedaan suku bangsa, logat bicara, dan warna kulit di antara teman sekelas harus disikapi dengan rasa ....",
+      "options": [
+        { "id": "A", "text": "Saling menghargai dan tetap bersatu" },
+        { "id": "B", "text": "Membeda-bedakan saat memilih teman bermain" },
+        { "id": "C", "text": "Mengejek ciri fisik teman" },
+        { "id": "D", "text": "Menjauhi teman yang berbeda asal daerah" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Keberagaman bangsa merupakan kekayaan Indonesia yang harus dipersatukan dengan semboyan Bhinneka Tunggal Ika.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 14,
+      "questionText": "Saat giliran teman kita berbicara menyampaikan pendapat dalam diskusi kelompok, sikap kita sebaiknya ....",
+      "options": [
+        { "id": "A", "text": "Mendengarkan dengan cermat hingga selesai berbicara" },
+        { "id": "B", "text": "Langsung memotong bicaranya dengan suara keras" },
+        { "id": "C", "text": "Menutup telinga dan memalingkan muka" },
+        { "id": "D", "text": "Mengabaikan pendapat yang disampaikannya" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Sopan santun berdiskusi mengharuskan kita mendengarkan teman hingga selesai sebelum mengemukakan tanggapan.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 15,
+      "questionText": "Di bawah perisai burung Garuda Pancasila, terdapat pita putih bertuliskan semboyan negara, yaitu ....",
+      "options": [
+        { "id": "A", "text": "Bhinneka Tunggal Ika" },
+        { "id": "B", "text": "Tut Wuri Handayani" },
+        { "id": "C", "text": "Ing Ngarso Sung Tulodo" },
+        { "id": "D", "text": "Pancasila Sakti" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Pita yang dicengkeram kedua kaki burung Garuda bertuliskan semboyan luhur bangsa: 'Bhinneka Tunggal Ika'.",
+      "difficulty": "Sedang"
+    }
+  ]
+}

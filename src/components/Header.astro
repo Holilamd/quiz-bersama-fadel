@@ -1,18 +1,20 @@
 ---
+const currentPath = Astro.url.pathname;
+
 const navLinks = [
-  { href: '/', label: 'Beranda' },
+  { href: '/', label: 'Beranda', icon: 'home' },
   { href: '/quiz/matematika', label: 'Matematika' },
-  { href: '/quiz/ipa', label: 'IPAS (IPA)' },
+  { href: '/quiz/ipa', label: 'IPAS (Sains)' },
   { href: '/quiz/bahasa', label: 'Bahasa Indonesia' },
   { href: '/quiz/tematik', label: 'Tematik & PPKn' },
 ];
 ---
 
-<header class="sticky top-0 z-40 w-full border-b border-slate-200 bg-white shadow-[0_1px_2px_rgba(0,0,0,0.03)]">
+<header class="sticky top-0 z-40 w-full border-b border-slate-200 bg-white/95 backdrop-blur shadow-[0_1px_3px_rgba(0,0,0,0.03)]">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
     <!-- Brand Logo -->
-    <a href="/" class="flex items-center gap-3">
-      <div class="w-9 h-9 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-lg shadow-sm">
+    <a href="/" class="flex items-center gap-2.5 group">
+      <div class="w-9 h-9 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-base shadow-sm group-hover:bg-blue-700 transition">
         AO
       </div>
       <div class="leading-tight">
@@ -25,28 +27,120 @@ const navLinks = [
       </div>
     </a>
 
-    <!-- Nav Links -->
+    <!-- Desktop Nav Links -->
     <nav class="hidden md:flex items-center gap-1">
       {
-        navLinks.map((link) => (
-          <a
-            href={link.href}
-            class="px-3 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-700 hover:bg-slate-100 rounded-md transition"
-          >
-            {link.label}
-          </a>
-        ))
+        navLinks.map((link) => {
+          const isActive = currentPath === link.href || (link.href !== '/' && currentPath.startsWith(link.href));
+          return (
+            <a
+              href={link.href}
+              class={`px-3 py-1.5 text-xs sm:text-sm font-semibold rounded-lg transition inline-flex items-center gap-1.5 ${
+                isActive
+                  ? 'bg-blue-50 text-blue-700 font-bold border border-blue-200/60'
+                  : 'text-slate-600 hover:text-blue-700 hover:bg-slate-100'
+              }`}
+            >
+              {link.icon === 'home' && (
+                <svg class="w-4 h-4 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              )}
+              {link.label}
+            </a>
+          );
+        })
       }
     </nav>
 
-    <!-- Right Action -->
+    <!-- Right Action & Mobile Toggle -->
     <div class="flex items-center gap-2">
       <a
-        href="/#paket-soal"
-        class="inline-flex items-center px-3.5 py-2 text-xs sm:text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 active:bg-blue-800 rounded-lg transition"
+        href="/"
+        class="inline-flex md:hidden items-center gap-1 px-3 py-1.5 text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-lg transition"
+        title="Kembali ke Beranda"
       >
-        Mulai Latihan
+        <svg class="w-3.5 h-3.5 text-slate-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+        <span>Beranda</span>
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <button
+        id="mobile-menu-btn"
+        type="button"
+        class="md:hidden p-2 text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-lg transition"
+        aria-label="Buka Menu Navigasi"
+      >
+        <svg id="menu-icon-bars" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <svg id="menu-icon-close" class="w-5 h-5 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <a
+        href="/#paket-soal"
+        class="hidden sm:inline-flex items-center px-3.5 py-2 text-xs sm:text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 active:bg-blue-800 rounded-lg transition"
+      >
+        Pilih Soal
       </a>
     </div>
   </div>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-4 space-y-1">
+    {
+      navLinks.map((link) => {
+        const isActive = currentPath === link.href || (link.href !== '/' && currentPath.startsWith(link.href));
+        return (
+          <a
+            href={link.href}
+            class={`flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm font-semibold transition ${
+              isActive
+                ? 'bg-blue-50 text-blue-700'
+                : 'text-slate-700 hover:bg-slate-100 hover:text-blue-700'
+            }`}
+          >
+            {link.icon === 'home' && (
+              <svg class="w-4 h-4 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+            )}
+            <span>{link.label}</span>
+          </a>
+        );
+      })
+    }
+  </div>
+
+  <script is:inline>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const iconBars = document.getElementById('menu-icon-bars');
+    const iconClose = document.getElementById('menu-icon-close');
+
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        const isClosed = menu.classList.contains('hidden');
+        if (isClosed) {
+          menu.classList.remove('hidden');
+          iconBars.classList.add('hidden');
+          iconClose.classList.remove('hidden');
+        } else {
+          menu.classList.add('hidden');
+          iconBars.classList.remove('hidden');
+          iconClose.classList.add('hidden');
+        }
+      });
+    }
+  </script>
 </header>

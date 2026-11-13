@@ -1,0 +1,208 @@
+{
+  "id": "mat-kelas-2-uang-dan-panjang",
+  "title": "Pengukuran Panjang, Berat Benda, dan Nilai Uang Rupiah",
+  "category": "matematika",
+  "categoryName": "Matematika",
+  "description": "Latihan menghitung kesetaraan nilai mata uang rupiah, kembalian belanja, dan satuan baku panjang serta berat untuk kelas 2 SD.",
+  "level": "Kelas 2 SD",
+  "difficulty": "Sedang",
+  "duration": 15,
+  "shuffleCount": 5,
+  "questions": [
+    {
+      "id": 1,
+      "questionText": "Alat ukur yang paling tepat digunakan untuk mengukur panjang buku tulis atau pensil adalah ....",
+      "options": [
+        { "id": "A", "text": "Penggaris berskala sentimeter (cm)" },
+        { "id": "B", "text": "Meteran rol gulung jalan" },
+        { "id": "C", "text": "Timbangan kue" },
+        { "id": "D", "text": "Jam dinding" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Penggaris dengan satuan sentimeter (cm) adalah alat ukur yang paling cocok dan mudah untuk mengukur panjang benda-benda kecil seperti buku dan pensil.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 2,
+      "questionText": "Panjang seutas tali adalah 2 meter. Panjang tali tersebut setara dengan .... sentimeter (cm).",
+      "options": [
+        { "id": "A", "text": "200 cm" },
+        { "id": "B", "text": "20 cm" },
+        { "id": "C", "text": "2.000 cm" },
+        { "id": "D", "text": "2 cm" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Ingat konversi satuan panjang dasar: $1\\text{ m} = 100\\text{ cm}$. Maka $2\\text{ m} = 2 \\times 100 = 200\\text{ cm}$.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 3,
+      "questionText": "Siti memiliki 3 lembar uang seribuan (Rp1.000,00) dan 1 keping uang lima ratusan (Rp500,00). Berapakah jumlah seluruh uang Siti?",
+      "options": [
+        { "id": "A", "text": "Rp3.500,00" },
+        { "id": "B", "text": "Rp4.000,00" },
+        { "id": "C", "text": "Rp3.000,00" },
+        { "id": "D", "text": "Rp2.500,00" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Tiga lembar uang seribuan $= 3 \\times 1.000 = 3.000$. Ditambah satu keping lima ratus rupiah $= 3.000 + 500 = \\text{Rp}3.500,00$.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 4,
+      "questionText": "Edo membeli sebuah pulpen seharga Rp3.000,00. Edo membayar dengan selembar uang lima ribuan (Rp5.000,00). Berapakah uang kembalian yang diterima Edo?",
+      "options": [
+        { "id": "A", "text": "Rp2.000,00" },
+        { "id": "B", "text": "Rp1.000,00" },
+        { "id": "C", "text": "Rp3.000,00" },
+        { "id": "D", "text": "Rp8.000,00" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Kembalian dihitung dengan: Uang bayar dikurangi harga barang, yaitu $5.000 - 3.000 = \\text{Rp}2.000,00$.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 5,
+      "questionText": "Panjang pita merah adalah 150 cm dan panjang pita biru adalah 250 cm. Berapakah panjang kedua pita tersebut jika digabungkan?",
+      "options": [
+        { "id": "A", "text": "400 cm (4 meter)" },
+        { "id": "B", "text": "350 cm" },
+        { "id": "C", "text": "300 cm" },
+        { "id": "D", "text": "500 cm" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Jumlah panjang pita: $150\\text{ cm} + 250\\text{ cm} = 400\\text{ cm}$. Karena $100\\text{ cm} = 1\\text{ m}$, maka $400\\text{ cm} = 4\\text{ m}$.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 6,
+      "questionText": "Manakah kelompok uang berikut yang bernilai tepat **Rp10.000,00**?",
+      "options": [
+        { "id": "A", "text": "5 lembar uang dua ribuan (Rp2.000,00)" },
+        { "id": "B", "text": "2 lembar uang dua ribuan (Rp2.000,00)" },
+        { "id": "C", "text": "3 lembar uang lima ribuan (Rp5.000,00)" },
+        { "id": "D", "text": "10 keping uang lima ratusan (Rp500,00)" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "$5 \\times 2.000 = 10.000$. Jadi 5 lembar uang dua ribuan bernilai tepat Rp10.000,00.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 7,
+      "questionText": "Satuan baku yang biasa digunakan untuk menimbang berat beras, buah semangka, atau gula pasir adalah ....",
+      "options": [
+        { "id": "A", "text": "Kilogram (kg)" },
+        { "id": "B", "text": "Meter (m)" },
+        { "id": "C", "text": "Liter (L)" },
+        { "id": "D", "text": "Sentimeter (cm)" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Satuan berat benda padat adalah gram (g) dan kilogram (kg). Berat $1\\text{ kg} = 1.000\\text{ gram}$.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 8,
+      "questionText": "Ibu membeli 3 kilogram tepung terigu. Berapa gram (g) tepung terigu yang dibeli ibu?",
+      "options": [
+        { "id": "A", "text": "3.000 gram" },
+        { "id": "B", "text": "300 gram" },
+        { "id": "C", "text": "30 gram" },
+        { "id": "D", "text": "30.000 gram" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Karena $1\\text{ kg} = 1.000\\text{ gram}$, maka $3\\text{ kg} = 3 \\times 1.000 = 3.000\\text{ gram}$.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 9,
+      "questionText": "Ayah mempunyai kawat sepanjang 5 meter. Dipotong untuk mengikat pagar sepanjang 180 cm. Berapakah sisa panjang kawat ayah sekarang?",
+      "options": [
+        { "id": "A", "text": "320 cm" },
+        { "id": "B", "text": "380 cm" },
+        { "id": "C", "text": "420 cm" },
+        { "id": "D", "text": "220 cm" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Ubah ke satuan cm: $5\\text{ m} = 500\\text{ cm}$. Sisa kawat: $500 - 180 = 320\\text{ cm}$.",
+      "difficulty": "Sulit"
+    },
+    {
+      "id": 10,
+      "questionText": "Uang pecahan kertas rupiah yang berwarna merah dan bernilai paling besar adalah ....",
+      "options": [
+        { "id": "A", "text": "Rp100.000,00" },
+        { "id": "B", "text": "Rp50.000,00" },
+        { "id": "C", "text": "Rp20.000,00" },
+        { "id": "D", "text": "Rp10.000,00" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Uang pecahan seratus ribu rupiah (Rp100.000,00) memiliki warna dominan merah dengan gambar tokoh proklamator Ir. Soekarno dan Drs. Mohammad Hatta.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 11,
+      "questionText": "Beni memiliki 2 keping uang lima ratusan dan 4 keping uang dua ratusan. Total nilai uang Beni adalah ....",
+      "options": [
+        { "id": "A", "text": "Rp1.800,00" },
+        { "id": "B", "text": "Rp1.500,00" },
+        { "id": "C", "text": "Rp2.000,00" },
+        { "id": "D", "text": "Rp1.200,00" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Nilai uang: $(2 \\times 500) + (4 \\times 200) = 1.000 + 800 = \\text{Rp}1.800,00$.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 12,
+      "questionText": "Benda berikut yang beratnya kira-kira **kurang dari 1 kilogram** adalah ....",
+      "options": [
+        { "id": "A", "text": "Sebuah buku tulis tipis" },
+        { "id": "B", "text": "Satu karung beras 25 kg" },
+        { "id": "C", "text": "Sepeda motor" },
+        { "id": "D", "text": "Satu kulkas dua pintu" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Sebuah buku tulis tipis beratnya hanya sekitar 50 sampai 100 gram, sehingga jauh lebih ringan dari 1 kilogram.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 13,
+      "questionText": "Toko buku menjual penghapus Rp1.500,00 dan pensil Rp2.500,00. Dayu membeli 1 penghapus dan 1 pensil. Jika Dayu membayar dengan uang Rp5.000,00, berapa uang kembalian yang diterimanya?",
+      "options": [
+        { "id": "A", "text": "Rp1.000,00" },
+        { "id": "B", "text": "Rp2.000,00" },
+        { "id": "C", "text": "Rp500,00" },
+        { "id": "D", "text": "Rp1.500,00" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Total belanja $= 1.500 + 2.500 = 4.000$. Kembalian $= 5.000 - 4.000 = \\text{Rp}1.000,00$.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 14,
+      "questionText": "Panjang meja belajar Lani adalah $1\\text{ m } 25\\text{ cm}$. Panjang meja tersebut jika dinyatakan dalam sentimeter (cm) seluruhnya adalah ....",
+      "options": [
+        { "id": "A", "text": "125 cm" },
+        { "id": "B", "text": "150 cm" },
+        { "id": "C", "text": "250 cm" },
+        { "id": "D", "text": "1.025 cm" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "$1\\text{ m } 25\\text{ cm} = 100\\text{ cm} + 25\\text{ cm} = 125\\text{ cm}$.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 15,
+      "questionText": "Timbangan pasar menunjukkan jarum pada angka 2 kg 500 gram mangga. Berapakah berat mangga tersebut dalam gram?",
+      "options": [
+        { "id": "A", "text": "2.500 gram" },
+        { "id": "B", "text": "250 gram" },
+        { "id": "C", "text": "700 gram" },
+        { "id": "D", "text": "25.000 gram" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "$2\\text{ kg} = 2.000\\text{ gram}$. Ditambah 500 gram $= 2.000 + 500 = 2.500\\text{ gram}$.",
+      "difficulty": "Sulit"
+    }
+  ]
+}

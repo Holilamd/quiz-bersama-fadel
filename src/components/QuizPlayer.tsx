@@ -16,6 +16,7 @@ import {
   RefreshCw,
   Award,
   Lock,
+  Home,
 } from 'lucide-react';
 
 interface QuizPlayerProps {
@@ -85,6 +86,7 @@ export const QuizPlayer: React.FC<QuizPlayerProps> = ({ quiz }) => {
   // Modals & Sertifikat
   const [showConfirmModal, setShowConfirmModal] = useState<boolean>(false);
   const [showNewQuizConfirmModal, setShowNewQuizConfirmModal] = useState<boolean>(false);
+  const [showHomeConfirmModal, setShowHomeConfirmModal] = useState<boolean>(false);
   const [pendingDifficulty, setPendingDifficulty] = useState<'Semua' | 'Mudah' | 'Sedang' | 'Sulit' | null>(null);
   const [studentName, setStudentName] = useState<string>('');
   const [showCertificateModal, setShowCertificateModal] = useState<boolean>(false);
@@ -209,6 +211,15 @@ export const QuizPlayer: React.FC<QuizPlayerProps> = ({ quiz }) => {
     }
   };
 
+  const handleHomeClick = () => {
+    const hasProgress = Object.keys(selectedAnswers).length > 0;
+    if (!isSubmitted && hasProgress) {
+      setShowHomeConfirmModal(true);
+    } else {
+      window.location.href = '/';
+    }
+  };
+
   const handleRetrySameQuestions = () => {
     setSelectedAnswers({});
     setFlaggedQuestions(new Set());
@@ -316,13 +327,23 @@ export const QuizPlayer: React.FC<QuizPlayerProps> = ({ quiz }) => {
       <div className="max-w-4xl mx-auto space-y-6 pb-16">
         {/* Navigasi Atas */}
         <div className="flex flex-wrap items-center justify-between gap-3">
-          <a
-            href={`/quiz/${quiz.category}`}
-            className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-slate-600 hover:text-blue-700 transition"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            Kembali ke Daftar {quiz.categoryName || quiz.category}
-          </a>
+          <div className="flex items-center gap-2">
+            <a
+              href="/"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-slate-700 bg-white hover:bg-slate-50 border border-slate-300 rounded-lg transition"
+              title="Kembali ke Menu Beranda"
+            >
+              <Home className="w-3.5 h-3.5 text-blue-600" />
+              <span>Beranda</span>
+            </a>
+            <a
+              href={`/quiz/${quiz.category}`}
+              className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-slate-600 hover:text-blue-700 transition"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              <span>Daftar {quiz.categoryName || quiz.category}</span>
+            </a>
+          </div>
 
           <div className="flex items-center gap-2">
             <button
@@ -592,6 +613,24 @@ export const QuizPlayer: React.FC<QuizPlayerProps> = ({ quiz }) => {
           })}
         </div>
 
+        {/* Navigasi Bawah Menuju Beranda atau Topik Lain */}
+        <div className="pt-4 flex flex-wrap items-center justify-between gap-3 border-t border-slate-200">
+          <a
+            href="/"
+            className="inline-flex items-center gap-2 px-4 py-2 text-xs sm:text-sm font-bold text-slate-700 bg-white hover:bg-slate-50 border border-slate-300 rounded-lg transition shadow-sm"
+          >
+            <Home className="w-4 h-4 text-blue-600" />
+            <span>Kembali ke Menu Beranda</span>
+          </a>
+
+          <a
+            href={`/quiz/${quiz.category}`}
+            className="inline-flex items-center gap-1.5 px-4 py-2 text-xs sm:text-sm font-bold text-blue-700 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-lg transition"
+          >
+            <span>Pilih Topik {quiz.categoryName || quiz.category} Lainnya &rarr;</span>
+          </a>
+        </div>
+
         {/* Modal Sertifikat */}
         {showCertificateModal && (
           <CertificateModal
@@ -637,14 +676,26 @@ export const QuizPlayer: React.FC<QuizPlayerProps> = ({ quiz }) => {
           </div>
         </div>
 
-        <button
-          type="button"
-          onClick={() => triggerNewQuizRequest()}
-          className="inline-flex items-center gap-1 text-xs font-semibold text-slate-700 hover:text-blue-700 py-1 transition"
-        >
-          <RefreshCw className="w-3.5 h-3.5" />
-          <span>Ganti Paket Soal</span>
-        </button>
+        <div className="flex items-center gap-2">
+          <button
+            type="button"
+            onClick={handleHomeClick}
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-lg transition"
+            title="Kembali ke Menu Beranda"
+          >
+            <Home className="w-3.5 h-3.5 text-slate-500" />
+            <span>Beranda</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => triggerNewQuizRequest()}
+            className="inline-flex items-center gap-1 text-xs font-semibold text-slate-700 hover:text-blue-700 py-1 transition"
+          >
+            <RefreshCw className="w-3.5 h-3.5" />
+            <span>Ganti Paket Soal</span>
+          </button>
+        </div>
       </div>
 
       {/* Header Info Kuis */}
@@ -937,6 +988,38 @@ export const QuizPlayer: React.FC<QuizPlayerProps> = ({ quiz }) => {
               >
                 Ganti Soal Baru
               </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Modal Konfirmasi Kembali ke Beranda */}
+      {showHomeConfirmModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/40 backdrop-blur-[2px]">
+          <div className="bg-white rounded-xl max-w-sm w-full p-5 border border-slate-200 shadow-lg">
+            <div className="flex items-center gap-2 text-slate-900 font-bold text-base mb-2">
+              <Home className="w-5 h-5 text-blue-600" />
+              <span>Kembali ke Beranda?</span>
+            </div>
+            <p className="text-xs text-slate-600 mb-5 leading-relaxed">
+              Jawaban dan sisa waktu kuis Anda tetap tersimpan otomatis di browser ini. Anda dapat melanjutkannya kembali kapan saja.
+            </p>
+
+            <div className="flex items-center justify-end gap-2">
+              <button
+                type="button"
+                onClick={() => setShowHomeConfirmModal(false)}
+                className="px-3 py-1.5 text-xs font-semibold text-slate-700 hover:bg-slate-100 rounded-lg transition"
+              >
+                Lanjutkan Kuis
+              </button>
+              <a
+                href="/"
+                className="px-4 py-1.5 text-xs font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition inline-flex items-center gap-1"
+              >
+                <Home className="w-3.5 h-3.5" />
+                <span>Buka Beranda</span>
+              </a>
             </div>
           </div>
         </div>

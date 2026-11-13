@@ -1,0 +1,208 @@
+{
+  "id": "bahasa-kelas-4-ide-pokok-dan-paragraf",
+  "title": "Ide Pokok Paragraf, Teks Narasi, dan Imbuhan",
+  "category": "bahasa",
+  "categoryName": "Bahasa Indonesia",
+  "description": "Latihan menentukan ide pokok dan gagasan pendukung paragraf, kata berimbuhan awalan me-, dan teknik wawancara untuk kelas 4 SD.",
+  "level": "Kelas 4 SD",
+  "difficulty": "Sedang",
+  "duration": 20,
+  "shuffleCount": 5,
+  "questions": [
+    {
+      "id": 1,
+      "questionText": "Gagasan utama atau inti dari suatu permasalahan yang dibahas dalam sebuah paragraf disebut ....",
+      "options": [
+        { "id": "A", "text": "Ide pokok (gagasan pokok)" },
+        { "id": "B", "text": "Kalimat penjelas" },
+        { "id": "C", "text": "Kata penghubung" },
+        { "id": "D", "text": "Judul bab" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Ide pokok atau gagasan utama adalah inti pikiran atau tema sentral yang menjadi dasar pengembangan sebuah paragraf.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 2,
+      "questionText": "Paragraf yang letak kalimat utamanya berada di **awal paragraf** dinamakan paragraf ....",
+      "options": [
+        { "id": "A", "text": "Deduktif" },
+        { "id": "B", "text": "Induktif" },
+        { "id": "C", "text": "Campuran" },
+        { "id": "D", "text": "Naratif" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Paragraf deduktif menempatkan kalimat utama di awal, disusul penjelasan umum ke khusus. Jika di akhir disebut induktif.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 3,
+      "questionText": "Bacalah paragraf berikut:\n*\"Bawang merah mengandung banyak manfaat bagi kesehatan tubuh. Bawang merah kaya akan vitamin C, serat, dan zat besi. Kandungan antioksidan di dalamnya dapat meningkatkan daya tahan tubuh serta membantu mencegah berbagai penyakit.\"*\nIde pokok paragraf tersebut adalah ....",
+      "options": [
+        { "id": "A", "text": "Manfaat bawang merah bagi kesehatan tubuh" },
+        { "id": "B", "text": "Cara menanam bawang merah di kebun" },
+        { "id": "C", "text": "Harga bawang merah di pasar tradisional" },
+        { "id": "D", "text": "Kandungan vitamin C pada semua sayuran" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Kalimat pertama menyatakan bawang merah memiliki banyak manfaat bagi kesehatan, dan kalimat-kalimat berikutnya merincikan manfaat tersebut.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 4,
+      "questionText": "Bila awalan **me-** bertemu kata dasar **tulis**, bentuk kata berimbuhan yang terbentuk adalah ....",
+      "options": [
+        { "id": "A", "text": "Menulis" },
+        { "id": "B", "text": "Mentulis" },
+        { "id": "C", "text": "Mengtulis" },
+        { "id": "D", "text": "Memtulis" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Awalan me- bertemu huruf awal 't' akan mengalami peluluhan menjadi 'men-', sehingga menjadi 'menulis'.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 5,
+      "questionText": "Bila awalan **me-** bertemu kata dasar **sapu**, bentuk kata berimbuhan yang tepat adalah ....",
+      "options": [
+        { "id": "A", "text": "Menyapu" },
+        { "id": "B", "text": "Mensapu" },
+        { "id": "C", "text": "Mengsapu" },
+        { "id": "D", "text": "Mesapu" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Awalan me- bila bergabung dengan kata dasar berawalan huruf 's' meluluh menjadi 'meny-', sehingga kata 'sapu' menjadi 'menyapu'.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 6,
+      "questionText": "Orang yang memberikan informasi atau menjawab pertanyaan dalam kegiatan wawancara disebut ....",
+      "options": [
+        { "id": "A", "text": "Narasumber" },
+        { "id": "B", "text": "Pewawancara" },
+        { "id": "C", "text": "Moderator" },
+        { "id": "D", "text": "Notulen" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Narasumber adalah sumber informasi yang diwawancarai, sedangkan pihak yang bertanya disebut pewawancara.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 7,
+      "questionText": "Manakah pertanyaan wawancara yang santun untuk menanyakan proses pembuatan kerajinan gerabah?",
+      "options": [
+        { "id": "A", "text": "\"Bolehkah Bapak menjelaskan bagaimana langkah-langkah membuat gerabah dari tanah liat ini?\"" },
+        { "id": "B", "text": "\"Hei Bapak, cepat beri tahu cara buat guci ini sekarang!\"" },
+        { "id": "C", "text": "\"Mengapa Bapak mau repot-repot membuat barang kotor ini?\"" },
+        { "id": "D", "text": "\"Berapa untung uang yang Bapak peroleh hari ini?\"" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Pertanyaan wawancara yang baik menggunakan kalimat pembuka yang sopan, ramah, dan terarah pada topik keahlian narasumber.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 8,
+      "questionText": "Kalimat berikut yang merupakan **kalimat efektif** adalah ....",
+      "options": [
+        { "id": "A", "text": "Para siswa sedang mendengarkan penjelasan guru di kelas." },
+        { "id": "B", "text": "Para siswa-siswa sekalian sedang mendengarkan penjelasan guru." },
+        { "id": "C", "text": "Siswa-siswa banyak sekali sedang mendengarkan penjelasan guru." },
+        { "id": "D", "text": "Semua para siswa yang ada sedang mendengarkan penjelasan guru." }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Kata 'para siswa' sudah bermakna jamak, tidak perlu diulang 'siswa-siswa' atau ditambah 'sekalian/banyak' agar tidak terjadi pemborosan kata (pleonasme).",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 9,
+      "questionText": "Bacalah teks berikut:\n*\"Kancil terkenal sangat cerdik di rimba belantara. Ia selalu mampu menemukan jalan keluar saat menghadapi bahaya.\"*\nKata **cerdik** pada kutipan tersebut memiliki arti ....",
+      "options": [
+        { "id": "A", "text": "Banyak akal dan pandai" },
+        { "id": "B", "text": "Kuat dan berani" },
+        { "id": "C", "text": "Licik dan suka mencuri" },
+        { "id": "D", "text": "Cepat saat berlari" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Cerdik berarti pintar, banyak ide dan akal untuk mengatasi persoalan dengan tangkas.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 10,
+      "questionText": "Kata hubung (konjungsi) yang menyatakan **hubungan perlawanan** antarklausa adalah ....",
+      "options": [
+        { "id": "A", "text": "Tetapi" },
+        { "id": "B", "text": "Dan" },
+        { "id": "C", "text": "Serta" },
+        { "id": "D", "text": "Lalu" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Konjungsi 'tetapi' atau 'melainkan' menyatakan pertentangan atau perlawanan, sedangkan 'dan'/'serta' adalah penggabungan.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 11,
+      "questionText": "Gabungan awalan **ber-** dengan kata dasar **ajar** yang benar menurut kaidah bahasa Indonesia adalah ....",
+      "options": [
+        { "id": "A", "text": "Belajar" },
+        { "id": "B", "text": "Berajar" },
+        { "id": "C", "text": "Beraajar" },
+        { "id": "D", "text": "Mengajar" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Pengecualian khusus dalam morfologi bahasa Indonesia: awalan ber- + ajar berubah menjadi 'belajar' (huruf 'r' berubah menjadi 'l').",
+      "difficulty": "Sulit"
+    },
+    {
+      "id": 12,
+      "questionText": "Teks yang berisi petunjuk langkah-langkah melakukan atau membuat sesuatu secara runtut disebut teks ....",
+      "options": [
+        { "id": "A", "text": "Prosedur" },
+        { "id": "B", "text": "Narasi" },
+        { "id": "C", "text": "Deskripsi" },
+        { "id": "D", "text": "Argumentasi" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Teks prosedur menjelaskan tahapan-tahapan yang jelas dan urut untuk menyelesaikan sebuah tindakan atau membuat karya.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 13,
+      "questionText": "Perhatikan kalimat:\n*\"Andi tidak masuk sekolah ... badannya demam tinggi.\"*\nKata penghubung penjelas sebab yang tepat untuk mengisi titik-titik adalah ....",
+      "options": [
+        { "id": "A", "text": "karena" },
+        { "id": "B", "text": "walaupun" },
+        { "id": "C", "text": "sehingga" },
+        { "id": "D", "text": "agar" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Konjungsi 'karena' atau 'sebab' menerangkan alasan atau hubungan sebab akibat mengapa Andi tidak masuk sekolah.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 14,
+      "questionText": "Penulisan tanda petik dua (\") untuk mengapit kalimat langsung yang tepat adalah ....",
+      "options": [
+        { "id": "A", "text": "Ibu berpesan, \"Jangan lupa mencuci tangan sebelum makan!\"" },
+        { "id": "B", "text": "Ibu berpesan, Jangan lupa \"mencuci tangan\" sebelum makan!" },
+        { "id": "C", "text": "\"Ibu berpesan, Jangan lupa mencuci tangan sebelum makan!\"" },
+        { "id": "D", "text": "Ibu berpesan Jangan lupa mencuci tangan sebelum makan!\"" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Tanda petik mengapit kutipan ujaran langsung, diawali huruf kapital di dalam petik dan tanda seru/titik berada di dalam tanda petik penutup.",
+      "difficulty": "Sulit"
+    },
+    {
+      "id": 15,
+      "questionText": "Bacalah teks berikut:\n*\"Pohon beringin tua itu berdiri tegak di tengah alun-alun kota. Daunnya yang rimbun memberikan keteduhan bagi siapa saja yang berteduh dari terik matahari siang.\"*\nParagraf tersebut termasuk jenis paragraf ....",
+      "options": [
+        { "id": "A", "text": "Deskripsi" },
+        { "id": "B", "text": "Persuasi" },
+        { "id": "C", "text": "Argumentasi" },
+        { "id": "D", "text": "Eksposisi" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Paragraf deskripsi menggambarkan objek (pohon beringin rimbun) secara jelas melalui panca indra seolah pembaca melihat sendiri suasananya.",
+      "difficulty": "Sulit"
+    }
+  ]
+}

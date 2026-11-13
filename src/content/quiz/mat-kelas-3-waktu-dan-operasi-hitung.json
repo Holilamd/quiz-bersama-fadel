@@ -1,0 +1,208 @@
+{
+  "id": "mat-kelas-3-waktu-dan-operasi-hitung",
+  "title": "Waktu, Durasi Jam-Menit, dan Operasi Hitung Campuran",
+  "category": "matematika",
+  "categoryName": "Matematika",
+  "description": "Latihan menghitung durasi waktu kegiatan, konversi jam ke menit, perkalian ratusan, dan pembagian untuk kelas 3 SD.",
+  "level": "Kelas 3 SD",
+  "difficulty": "Sedang",
+  "duration": 20,
+  "shuffleCount": 5,
+  "questions": [
+    {
+      "id": 1,
+      "questionText": "1 jam setara dengan .... menit.",
+      "options": [
+        { "id": "A", "text": "60 menit" },
+        { "id": "B", "text": "100 menit" },
+        { "id": "C", "text": "24 menit" },
+        { "id": "D", "text": "30 menit" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Standar satuan waktu: 1 hari = 24 jam, 1 jam = 60 menit, 1 menit = 60 detik.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 2,
+      "questionText": "Budi mulai belajar kelompok pukul 08.00 pagi dan selesai pukul 10.30 pagi. Berapa lama Budi belajar kelompok?",
+      "options": [
+        { "id": "A", "text": "2 jam 30 menit" },
+        { "id": "B", "text": "1 jam 30 menit" },
+        { "id": "C", "text": "3 jam" },
+        { "id": "D", "text": "2 jam" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Durasi dihitung dari selisih waktu: $10.30 - 08.00 = 2\\text{ jam } 30\\text{ menit}$.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 3,
+      "questionText": "Berapakah hasil dari $125 \\times 4$?",
+      "options": [
+        { "id": "A", "text": "500" },
+        { "id": "B", "text": "450" },
+        { "id": "C", "text": "600" },
+        { "id": "D", "text": "480" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Perkalian bersusun: $125 \\times 4 = (100 \\times 4) + (25 \\times 4) = 400 + 100 = 500$.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 4,
+      "questionText": "Sebuah toko memiliki 96 butir telur ayam yang dimasukkan sama rata ke dalam 8 kotak karton. Berapakah isi telur di setiap kotak?",
+      "options": [
+        { "id": "A", "text": "12 butir" },
+        { "id": "B", "text": "14 butir" },
+        { "id": "C", "text": "11 butir" },
+        { "id": "D", "text": "16 butir" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Pembagian: $96 : 8 = 12$. Jadi setiap kotak karton berisi tepat 12 butir telur.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 5,
+      "questionText": "Lani membaca buku cerita selama 2 jam 15 menit. Berapa menit lama waktu Lani membaca buku tersebut?",
+      "options": [
+        { "id": "A", "text": "135 menit" },
+        { "id": "B", "text": "125 menit" },
+        { "id": "C", "text": "115 menit" },
+        { "id": "D", "text": "145 menit" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Konversi ke menit: $2\\text{ jam} = 2 \\times 60 = 120\\text{ menit}$. Ditambah 15 menit $= 120 + 15 = 135\\text{ menit}$.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 6,
+      "questionText": "Berapakah hasil operasi hitung campuran: $250 + 50 \\times 3$?",
+      "options": [
+        { "id": "A", "text": "400" },
+        { "id": "B", "text": "900" },
+        { "id": "C", "text": "350" },
+        { "id": "D", "text": "450" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Aturan urutan operasi: perkalian harus dikerjakan lebih dulu sebelum penjumlahan! $50 \\times 3 = 150$. Lalu $250 + 150 = 400$.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 7,
+      "questionText": "Kereta api berangkat dari Stasiun A pukul 14.15 dan tiba di Stasiun B pukul 17.45. Berapakah lama perjalanan kereta api tersebut?",
+      "options": [
+        { "id": "A", "text": "3 jam 30 menit" },
+        { "id": "B", "text": "3 jam 15 menit" },
+        { "id": "C", "text": "4 jam" },
+        { "id": "D", "text": "2 jam 45 menit" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Selisih waktu tiba dan berangkat: $17.45 - 14.15 = 3\\text{ jam } 30\\text{ menit}$.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 8,
+      "questionText": "Berapakah hasil pembagian dari $144 : 6$?",
+      "options": [
+        { "id": "A", "text": "24" },
+        { "id": "B", "text": "22" },
+        { "id": "C", "text": "26" },
+        { "id": "D", "text": "18" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "$144 : 6 = (120 : 6) + (24 : 6) = 20 + 4 = 24$.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 9,
+      "questionText": "Pak Ahmad memanen 3 keranjang buah jeruk. Setiap keranjang berisi 135 buah jeruk. Berapa total seluruh buah jeruk hasil panen Pak Ahmad?",
+      "options": [
+        { "id": "A", "text": "405 buah" },
+        { "id": "B", "text": "395 buah" },
+        { "id": "C", "text": "415 buah" },
+        { "id": "D", "text": "385 buah" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Perkalian: $3 \\times 135 = 3 \\times 100 + 3 \\times 30 + 3 \\times 5 = 300 + 90 + 15 = 405$ buah.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 10,
+      "questionText": "Ibu mulai memasak di dapur pukul 09.45. Jika ibu memasak selama 45 menit, pukul berapakah ibu selesai memasak?",
+      "options": [
+        { "id": "A", "text": "Pukul 10.30" },
+        { "id": "B", "text": "Pukul 10.15" },
+        { "id": "C", "text": "Pukul 10.45" },
+        { "id": "D", "text": "Pukul 11.00" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "09.45 ditambah 15 menit menjadi pukul 10.00. Sisa 30 menit lagi menjadi pukul 10.30.",
+      "difficulty": "Sulit"
+    },
+    {
+      "id": 11,
+      "questionText": "Berapakah hasil dari $(350 - 175) + 225$?",
+      "options": [
+        { "id": "A", "text": "400" },
+        { "id": "B", "text": "380" },
+        { "id": "C", "text": "425" },
+        { "id": "D", "text": "350" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Kerjakan tanda kurung terlebih dahulu: $350 - 175 = 175$. Selanjutnya $175 + 225 = 400$.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 12,
+      "questionText": "Sebuah lapangan berbentuk persegi panjang memiliki panjang 20 meter dan lebar 10 meter. Berapakah keliling lapangan tersebut?",
+      "options": [
+        { "id": "A", "text": "60 meter" },
+        { "id": "B", "text": "200 meter" },
+        { "id": "C", "text": "30 meter" },
+        { "id": "D", "text": "50 meter" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Rumus keliling persegi panjang: $K = 2 \\times (p + l) = 2 \\times (20 + 10) = 2 \\times 30 = 60\\text{ meter}$.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 13,
+      "questionText": "Berapakah hasil dari $240 : 4 \\times 5$?",
+      "options": [
+        { "id": "A", "text": "300" },
+        { "id": "B", "text": "12" },
+        { "id": "C", "text": "60" },
+        { "id": "D", "text": "200" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Operasi kali dan bagi setara, kerjakan urut dari kiri ke kanan: $240 : 4 = 60$. Lalu $60 \\times 5 = 300$.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 14,
+      "questionText": "Sebuah pabrik roti mengemas 350 bungkus roti setiap hari. Berapa bungkus roti yang dihasilkan pabrik tersebut selama 6 hari kerja?",
+      "options": [
+        { "id": "A", "text": "2.100 bungkus" },
+        { "id": "B", "text": "1.800 bungkus" },
+        { "id": "C", "text": "2.050 bungkus" },
+        { "id": "D", "text": "2.400 bungkus" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Perkalian: $350 \\times 6 = (300 \\times 6) + (50 \\times 6) = 1.800 + 300 = 2.100$ bungkus roti.",
+      "difficulty": "Sulit"
+    },
+    {
+      "id": 15,
+      "questionText": "Taman bermain dibuka mulai pukul 07.30 sampai pukul 17.00. Berapa lama taman bermain tersebut buka dalam sehari?",
+      "options": [
+        { "id": "A", "text": "9 jam 30 menit" },
+        { "id": "B", "text": "8 jam 30 menit" },
+        { "id": "C", "text": "10 jam" },
+        { "id": "D", "text": "9 jam" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Dari pukul 07.30 ke 17.00: Dari 07.30 ke 16.30 adalah 9 jam, ditambah 30 menit lagi menjadi pukul 17.00. Total = 9 jam 30 menit.",
+      "difficulty": "Sulit"
+    }
+  ]
+}

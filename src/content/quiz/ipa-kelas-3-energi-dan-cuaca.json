@@ -1,0 +1,208 @@
+{
+  "id": "ipa-kelas-3-energi-dan-cuaca",
+  "title": "Bentuk Energi di Sekitar Kita dan Siklus Cuaca",
+  "category": "ipa",
+  "categoryName": "IPAS (Sains)",
+  "description": "Latihan mengenal sumber energi panas, gerak, cahaya, listrik, serta pengaruh cuaca dan siklus air bumi untuk kelas 3 SD.",
+  "level": "Kelas 3 SD",
+  "difficulty": "Sedang",
+  "duration": 15,
+  "shuffleCount": 5,
+  "questions": [
+    {
+      "id": 1,
+      "questionText": "Sumber energi panas dan cahaya terbesar bagi kehidupan di planet bumi adalah ....",
+      "options": [
+        { "id": "A", "text": "Matahari" },
+        { "id": "B", "text": "Bulan" },
+        { "id": "C", "text": "Gunung berapi" },
+        { "id": "D", "text": "Baterai" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Matahari memancarkan energi panas dan cahaya alami yang menerangi bumi, menghangatkan suhu udara, dan membantu proses fotosintesis tumbuhan.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 2,
+      "questionText": "Perubahan energi yang terjadi saat menyalakan kipas angin listrik adalah dari energi listrik menjadi energi ....",
+      "options": [
+        { "id": "A", "text": "Gerak" },
+        { "id": "B", "text": "Panas" },
+        { "id": "C", "text": "Cahaya" },
+        { "id": "D", "text": "Kimia" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Arus listrik memutar baling-baling kipas angin sehingga energi listrik diubah menjadi energi gerak mekanik.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 3,
+      "questionText": "Benda berikut yang mengubah energi listrik menjadi **energi panas** saat digunakan adalah ....",
+      "options": [
+        { "id": "A", "text": "Setrika baju dan penanak nasi (magic com)" },
+        { "id": "B", "text": "Lampu senter dan radio" },
+        { "id": "C", "text": "Kipas angin dan blender" },
+        { "id": "D", "text": "Jam dinding baterai" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Setrika dan penanak nasi memanfaatkan elemen pemanas untuk mengubah energi listrik menjadi panas yang merapikan pakaian atau mematangkan beras.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 4,
+      "questionText": "Keadaan udara di suatu tempat tertentu dalam jangka waktu yang relatif singkat dinamakan ....",
+      "options": [
+        { "id": "A", "text": "Cuaca" },
+        { "id": "B", "text": "Iklim" },
+        { "id": "C", "text": "Musim" },
+        { "id": "D", "text": "Suhu abadi" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Cuaca dapat berubah setiap jam atau hari (misal cerah, mendung, berangin, hujan), sedangkan iklim meliputi wilayah luas dalam waktu puluhan tahun.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 5,
+      "questionText": "Alat ukur yang digunakan untuk mengetahui derajat suhu panas atau dinginnya udara adalah ....",
+      "options": [
+        { "id": "A", "text": "Termometer" },
+        { "id": "B", "text": "Barometer" },
+        { "id": "C", "text": "Higrometer" },
+        { "id": "D", "text": "Anemometer" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Termometer berfungsi mengukur suhu benda atau udara dalam satuan derajat Celsius (°C).",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 6,
+      "questionText": "Pada kincir angin raksasa di pembangkit listrik, baling-baling dapat berputar karena memanfaatkan energi gerak dari ....",
+      "options": [
+        { "id": "A", "text": "Hembusan angin" },
+        { "id": "B", "text": "Panas bumi" },
+        { "id": "C", "text": "Sinar bulan" },
+        { "id": "D", "text": "Suara petir" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Angin yang bertiup kencang menggerakkan baling-baling kincir angin dan memutar generator listrik (PLTB).",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 7,
+      "questionText": "Proses penguapan air laut dan danau menjadi uap air akibat paparan panas sinar matahari dinamakan ....",
+      "options": [
+        { "id": "A", "text": "Evaporasi (penguapan)" },
+        { "id": "B", "text": "Kondensasi (pengembunan)" },
+        { "id": "C", "text": "Presipitasi (hujan)" },
+        { "id": "D", "text": "Infiltrasi" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Evaporasi adalah perubahan air cair di permukaan bumi menjadi uap gas yang naik ke lapisan atmosfer karena panas matahari.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 8,
+      "questionText": "Kumpulan titik-titik air halus hasil pengembunan uap air yang melayang-layang tinggi di angkasa dinamakan ....",
+      "options": [
+        { "id": "A", "text": "Awan" },
+        { "id": "B", "text": "Pelangi" },
+        { "id": "C", "text": "Angin topan" },
+        { "id": "D", "text": "Bintang" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Uap air yang mendingin di langit mengalami kondensasi membentuk butiran air halus yang berkumpul menjadi awan.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 9,
+      "questionText": "Ketika awan mendung gelap tampak tebal di langit dan udara terasa dingin, hal tersebut menandakan cuaca akan ....",
+      "options": [
+        { "id": "A", "text": "Hujan" },
+        { "id": "B", "text": "Panas terik" },
+        { "id": "C", "text": "Kemarau panjang" },
+        { "id": "D", "text": "Bulan purnama" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Awan hitam tebal (kumulonimbus) mengandung banyak tetesan air yang sudah jenuh dan akan jatuh ke bumi sebagai hujan.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 10,
+      "questionText": "Sumber energi alternatif yang ramah lingkungan dan tidak akan pernah habis digunakan adalah ....",
+      "options": [
+        { "id": "A", "text": "Sinar matahari, angin, dan aliran air" },
+        { "id": "B", "text": "Minyak bumi dan bensin" },
+        { "id": "C", "text": "Batu bara" },
+        { "id": "D", "text": "Gas elpiji tabung" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Energi terbarukan seperti matahari, angin, dan air mengalir selalu tersedia di alam tanpa menghasilkan polusi berbahaya.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 11,
+      "questionText": "Makanan yang kita makan setiap hari mengandung energi .... yang berguna bagi tubuh untuk beraktivitas dan berlari.",
+      "options": [
+        { "id": "A", "text": "Kimia" },
+        { "id": "B", "text": "Nuklir" },
+        { "id": "C", "text": "Listrik" },
+        { "id": "D", "text": "Magnet" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Nutrisi makanan dicerna oleh tubuh untuk melepaskan energi kimia menjadi energi gerak dan energi panas tubuh.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 12,
+      "questionText": "Saat cuaca terik dan panas di siang hari, pakaian yang paling nyaman dikenakan agar mudah menyerap keringat adalah pakaian ....",
+      "options": [
+        { "id": "A", "text": "Berbahan katun tipis berwarna cerah" },
+        { "id": "B", "text": "Jaket wol tebal berwarna hitam pekat" },
+        { "id": "C", "text": "Jas hujan plastik kedap udara" },
+        { "id": "D", "text": "Baju rajut musim dingin" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Kain katun menyerap keringat dengan baik dan warna cerah memantulkan panas sinar matahari sehingga tubuh tidak gerah.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 13,
+      "questionText": "Peralatan elektronik di rumah harus dimatikan bila sudah tidak digunakan. Tindakan ini bertujuan untuk ....",
+      "options": [
+        { "id": "A", "text": "Menghemat energi listrik dan biaya pengeluaran" },
+        { "id": "B", "text": "Membuat rumah menjadi gelap gulita" },
+        { "id": "C", "text": "Merusak alat elektronik" },
+        { "id": "D", "text": "Mempercepat naiknya tagihan listrik" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mematikan lampu, televisi, dan AC saat keluar ruangan adalah perilaku bijak dan bertanggung jawab menghemat energi bumi.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 14,
+      "questionText": "Gejala alam berupa lengkungan cahaya warna-warni yang sering muncul di langit setelah hujan reda disebut ....",
+      "options": [
+        { "id": "A", "text": "Pelangi" },
+        { "id": "B", "text": "Petir" },
+        { "id": "C", "text": "Gerhana" },
+        { "id": "D", "text": "Kabut asap" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Pelangi terbentuk karena pembiasan cahaya matahari oleh butir-butir tetesan air hujan di atmosfer.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 15,
+      "questionText": "Mengapa daun tanaman dapat mengering dan layu pada musim kemarau yang berkepanjangan?",
+      "options": [
+        { "id": "A", "text": "Karena tanah kekurangan pasokan air dan penguapan tinggi" },
+        { "id": "B", "text": "Karena terlalu banyak air hujan merendam akar" },
+        { "id": "C", "text": "Karena suhu udara terlalu dingin membeku" },
+        { "id": "D", "text": "Karena tanaman terlalu banyak menerima pupuk" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Tanpa air dari hujan atau penyiraman teratur di cuaca terik, akar tanaman tidak mampu menyerap air untuk fotosintesis.",
+      "difficulty": "Sulit"
+    }
+  ]
+}

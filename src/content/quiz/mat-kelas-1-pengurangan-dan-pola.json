@@ -1,0 +1,208 @@
+{
+  "id": "mat-kelas-1-pengurangan-dan-pola",
+  "title": "Pengurangan Bilangan 1–20 dan Pola Gambar",
+  "category": "matematika",
+  "categoryName": "Matematika",
+  "description": "Latihan berhitung pengurangan bilangan 1 sampai 20, menentukan pola loncat, dan membandingkan kuantitas benda untuk kelas 1 SD.",
+  "level": "Kelas 1 SD",
+  "difficulty": "Mudah",
+  "duration": 15,
+  "shuffleCount": 5,
+  "questions": [
+    {
+      "id": 1,
+      "questionText": "Berapakah hasil dari $10 - 4$?",
+      "options": [
+        { "id": "A", "text": "6" },
+        { "id": "B", "text": "5" },
+        { "id": "C", "text": "7" },
+        { "id": "D", "text": "14" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Jika kita memiliki 10 buah apel lalu dimakan 4 buah, maka sisanya adalah $10 - 4 = 6$ buah.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 2,
+      "questionText": "Budi mempunyai 8 kelereng. Diberikan kepada adiknya 3 kelereng. Sisa kelereng Budi sekarang adalah ....",
+      "options": [
+        { "id": "A", "text": "5 kelereng" },
+        { "id": "B", "text": "4 kelereng" },
+        { "id": "C", "text": "6 kelereng" },
+        { "id": "D", "text": "11 kelereng" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Kelereng Budi berkurang: $8 - 3 = 5$ butir kelereng.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 3,
+      "questionText": "Perhatikan pola bilangan berikut: $2, 4, 6, 8, ...$\nBilangan selanjutnya untuk melengkapi pola adalah ....",
+      "options": [
+        { "id": "A", "text": "10" },
+        { "id": "B", "text": "9" },
+        { "id": "C", "text": "11" },
+        { "id": "D", "text": "12" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Pola tersebut merupakan barisan bilangan loncat 2 (+2). Setelah 8, angka berikutnya adalah $8 + 2 = 10$.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 4,
+      "questionText": "Berapakah hasil dari $15 - 7$?",
+      "options": [
+        { "id": "A", "text": "8" },
+        { "id": "B", "text": "7" },
+        { "id": "C", "text": "9" },
+        { "id": "D", "text": "6" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Pengurangan $15 - 7 = 8$.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 5,
+      "questionText": "Ibu menggoreng 12 potong pisang goreng. Dimakan oleh ayah dan anak-anak sebanyak 9 potong. Berapakah sisa pisang goreng ibu di piring?",
+      "options": [
+        { "id": "A", "text": "3 potong" },
+        { "id": "B", "text": "4 potong" },
+        { "id": "C", "text": "2 potong" },
+        { "id": "D", "text": "5 potong" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Sisa pisang goreng dihitung dengan $12 - 9 = 3$ potong.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 6,
+      "questionText": "Bandingkan kedua bilangan ini: **18** dan **13**.\nKalimat perbandingan yang benar adalah ....",
+      "options": [
+        { "id": "A", "text": "18 lebih dari 13" },
+        { "id": "B", "text": "18 kurang dari 13" },
+        { "id": "C", "text": "18 sama dengan 13" },
+        { "id": "D", "text": "18 lebih sedikit dari 13" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Angka 18 bernilai lebih besar daripada 13, sehingga 18 lebih banyak (lebih dari) 13.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 7,
+      "questionText": "Pada bilangan **17**, angka **1** menempati nilai tempat .... dan angka **7** menempati nilai tempat ....",
+      "options": [
+        { "id": "A", "text": "1 puluhan dan 7 satuan" },
+        { "id": "B", "text": "1 satuan dan 7 puluhan" },
+        { "id": "C", "text": "1 ratusan dan 7 satuan" },
+        { "id": "D", "text": "1 puluhan dan 7 ratusan" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Bilangan $17 = 10 + 7$, terdiri dari 1 puluhan (bernilai 10) dan 7 satuan.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 8,
+      "questionText": "Berapakah hasil dari $20 - 11$?",
+      "options": [
+        { "id": "A", "text": "9" },
+        { "id": "B", "text": "8" },
+        { "id": "C", "text": "10" },
+        { "id": "D", "text": "11" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Pengurangan $20 - 11 = 9$.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 9,
+      "questionText": "Perhatikan pola bilangan mundur berikut: $15, 14, 13, 12, ...$\nBilangan selanjutnya adalah ....",
+      "options": [
+        { "id": "A", "text": "11" },
+        { "id": "B", "text": "10" },
+        { "id": "C", "text": "16" },
+        { "id": "D", "text": "9" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Pola ini menghitung mundur berkurang satu (-1). Setelah 12 adalah $12 - 1 = 11$.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 10,
+      "questionText": "Berapakah nilai titik-titik pada operasi hitung ini: $9 + ... = 16$?",
+      "options": [
+        { "id": "A", "text": "7" },
+        { "id": "B", "text": "6" },
+        { "id": "C", "text": "8" },
+        { "id": "D", "text": "5" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Untuk mencari bilangan yang hilang, hitung selisihnya: $16 - 9 = 7$. Jadi $9 + 7 = 16$.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 11,
+      "questionText": "Benda di bawah ini yang berbentuk bangun datar **lingkaran** adalah ....",
+      "options": [
+        { "id": "A", "text": "Uang koin logam" },
+        { "id": "B", "text": "Buku tulis" },
+        { "id": "C", "text": "Papan tulis" },
+        { "id": "D", "text": "Penggaris segitiga" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Uang koin logam dan roda sepeda berbentuk lingkaran bundar tidak memiliki sudut siku.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 12,
+      "questionText": "Bangun datar **segitiga** memiliki sudut sebanyak ....",
+      "options": [
+        { "id": "A", "text": "3 sudut" },
+        { "id": "B", "text": "4 sudut" },
+        { "id": "C", "text": "2 sudut" },
+        { "id": "D", "text": "0 sudut" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Segitiga memiliki 3 sisi dan 3 titik sudut.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 13,
+      "questionText": "Lani membawa 14 pensil warna. 5 pensil warna dipinjam Siti, dan 2 pensil warna dipinjam Edo. Berapa sisa pensil warna Lani sekarang?",
+      "options": [
+        { "id": "A", "text": "7 pensil warna" },
+        { "id": "B", "text": "8 pensil warna" },
+        { "id": "C", "text": "6 pensil warna" },
+        { "id": "D", "text": "9 pensil warna" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Total pensil yang dipinjam adalah $5 + 2 = 7$. Maka sisa pensil Lani adalah $14 - 7 = 7$ batang.",
+      "difficulty": "Sulit"
+    },
+    {
+      "id": 14,
+      "questionText": "Perhatikan pola lompat 5 berikut: $5, 10, 15, ...$\nAngka yang tepat untuk mengisi titik-titik adalah ....",
+      "options": [
+        { "id": "A", "text": "20" },
+        { "id": "B", "text": "16" },
+        { "id": "C", "text": "18" },
+        { "id": "D", "text": "25" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Setiap bilangan bertambah 5 (+5). Maka $15 + 5 = 20$.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 15,
+      "questionText": "Urutkan bilangan berikut dari yang **terkecil ke terbesar**: **19, 12, 15, 8**.",
+      "options": [
+        { "id": "A", "text": "8, 12, 15, 19" },
+        { "id": "B", "text": "19, 15, 12, 8" },
+        { "id": "C", "text": "8, 15, 12, 19" },
+        { "id": "D", "text": "12, 8, 15, 19" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Urutan dari nilai paling kecil menuju paling besar adalah 8 disusul 12, 15, lalu 19.",
+      "difficulty": "Sulit"
+    }
+  ]
+}

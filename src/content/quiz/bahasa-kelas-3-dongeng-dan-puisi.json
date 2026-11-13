@@ -1,0 +1,208 @@
+{
+  "id": "bahasa-kelas-3-dongeng-dan-puisi",
+  "title": "Memahami Cerita Dongeng, Watak Tokoh, dan Kosakata",
+  "category": "bahasa",
+  "categoryName": "Bahasa Indonesia",
+  "description": "Latihan menelaah isi dongeng atau fabel, mengenali watak tokoh, pesan moral, dan penggunaan tanda baca untuk kelas 3 SD.",
+  "level": "Kelas 3 SD",
+  "difficulty": "Sedang",
+  "duration": 15,
+  "shuffleCount": 5,
+  "questions": [
+    {
+      "id": 1,
+      "questionText": "Cerita khayalan yang tokohnya diperankan oleh hewan yang bisa berbicara seperti manusia disebut ....",
+      "options": [
+        { "id": "A", "text": "Fabel" },
+        { "id": "B", "text": "Legenda" },
+        { "id": "C", "text": "Mite" },
+        { "id": "D", "text": "Sage" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Fabel adalah dongeng atau cerita binatang yang menggambarkan watak dan budi pekerti manusia.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 2,
+      "questionText": "Pesan kebaikan atau pelajaran hidup yang ingin disampaikan oleh pengarang dongeng kepada pembaca dinamakan ....",
+      "options": [
+        { "id": "A", "text": "Amanat" },
+        { "id": "B", "text": "Alur cerita" },
+        { "id": "C", "text": "Latar tempat" },
+        { "id": "D", "text": "Tokoh utama" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Amanat adalah pesan moral atau nasihat baik yang terkandung di dalam sebuah cerita untuk direnungkan pembaca.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 3,
+      "questionText": "Bacalah teks singkat berikut:\n*\"Semut selalu rajin mengumpulkan biji-bijian di musim kemarau, sedangkan Belalang hanya bernyanyi dan bermalas-malasan sepanjang hari.\"*\nWatak tokoh Belalang dalam cerita tersebut adalah ....",
+      "options": [
+        { "id": "A", "text": "Pemalas dan lalai" },
+        { "id": "B", "text": "Rajin dan hemat" },
+        { "id": "C", "text": "Sombong dan jahat" },
+        { "id": "D", "text": "Suka menolong sesama" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Teks menyatakan belalang hanya bernyanyi dan bermalas-malasan, yang menggambarkan watak pemalas.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 4,
+      "questionText": "Persamaan kata (sinonim) dari kata **pandai** adalah ....",
+      "options": [
+        { "id": "A", "text": "Pintar" },
+        { "id": "B", "text": "Kuat" },
+        { "id": "C", "text": "Lincah" },
+        { "id": "D", "text": "Cepat" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Sinonim adalah kata yang memiliki arti sama atau serupa. Pandai bersinonim dengan pintar atau cerdas.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 5,
+      "questionText": "Lawan kata (antonim) dari kata **dermawan** (suka memberi) adalah ....",
+      "options": [
+        { "id": "A", "text": "Pelit (kikir)" },
+        { "id": "B", "text": "Pemarah" },
+        { "id": "C", "text": "Pemalu" },
+        { "id": "D", "text": "Penakut" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Dermawan artinya suka membagikan hartanya kepada orang yang membutuhkan, kebalikannya adalah pelit atau kikir.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 6,
+      "questionText": "Tempat dan waktu terjadinya peristiwa di dalam cerita dinamakan ....",
+      "options": [
+        { "id": "A", "text": "Latar (setting)" },
+        { "id": "B", "text": "Amanat" },
+        { "id": "C", "text": "Tokoh" },
+        { "id": "D", "text": "Judul" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Latar cerita meliputi keterangan tempat (misal: di hutan), waktu (pagi/malam), serta suasana kejadian.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 7,
+      "questionText": "Penulisan huruf kapital pada nama hari dan bulan yang tepat adalah ....",
+      "options": [
+        { "id": "A", "text": "Pada hari Minggu, 17 Agustus 1945 Indonesia merdeka." },
+        { "id": "B", "text": "Pada hari minggu, 17 agustus 1945 Indonesia merdeka." },
+        { "id": "C", "text": "Pada Hari minggu, 17 Agustus 1945 Indonesia merdeka." },
+        { "id": "D", "text": "Pada hari Minggu, 17 agustus 1945 indonesia merdeka." }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Nama hari (Minggu) dan nama bulan (Agustus) serta nama negara (Indonesia) wajib diawali dengan huruf kapital.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 8,
+      "questionText": "Kata tanya yang tepat untuk menanyakan **alasan atau penyebab** terjadinya suatu peristiwa adalah ....",
+      "options": [
+        { "id": "A", "text": "Mengapa" },
+        { "id": "B", "text": "Di mana" },
+        { "id": "C", "text": "Berapa" },
+        { "id": "D", "text": "Kapan" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Kata tanya 'Mengapa' atau 'Kenapa' berfungsi menanyakan sebab atau latar belakang suatu hal.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 9,
+      "questionText": "Perhatikan kalimat perintah berikut: *\"Tolong tutup pintu itu rapat-rapat...\"*\nTanda baca yang paling tepat diletakkan di akhir kalimat perintah adalah ....",
+      "options": [
+        { "id": "A", "text": "Tanda seru (!)" },
+        { "id": "B", "text": "Tanda tanya (?)" },
+        { "id": "C", "text": "Tanda koma (,)" },
+        { "id": "D", "text": "Tanda hubung (-)" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Kalimat perintah atau ajakan diakhiri dengan tanda seru (!).",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 10,
+      "questionText": "Bacalah puisi anak berikut:\n*\"Kau terbang ke sana kemari,*\n*Sayapmu mungil beraneka warna,*\n*Hinggap di kelopak melati mekar.\"*\nObjek yang digambarkan dalam puisi tersebut adalah ....",
+      "options": [
+        { "id": "A", "text": "Kupu-kupu" },
+        { "id": "B", "text": "Ular sawah" },
+        { "id": "C", "text": "Ikan cupang" },
+        { "id": "D", "text": "Kucing anggora" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Ciri bersayap warna-warni yang gemar hinggap menghisap nektar pada kelopak bunga adalah kupu-kupu.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 11,
+      "questionText": "Kata dasar dari kata **menyayangi** adalah ....",
+      "options": [
+        { "id": "A", "text": "Sayang" },
+        { "id": "B", "text": "Nyayang" },
+        { "id": "C", "text": "Yayangi" },
+        { "id": "D", "text": "Menyaya" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Kata 'menyayangi' mendapat awalan me- dan akhiran -i dari kata dasar 'sayang'.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 12,
+      "questionText": "Perhatikan susunan kalimat acak berikut:\n1) Dayu menyiram bunga matahari di halaman rumah.\n2) Di pagi hari yang cerah, Dayu bangun tidur dengan gembira.\n3) Setelah sarapan pagi, ia mengambil ceret penyiram air.\nUrutan peristiwa yang tepat agar menjadi paragraf yang padu adalah ....",
+      "options": [
+        { "id": "A", "text": "2) - 3) - 1)" },
+        { "id": "B", "text": "1) - 2) - 3)" },
+        { "id": "C", "text": "3) - 1) - 2)" },
+        { "id": "D", "text": "2) - 1) - 3)" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Urutan logis waktu kegiatan: Dayu bangun pagi (2), sarapan lalu mengambil ceret air (3), kemudian menyiram tanaman (1).",
+      "difficulty": "Sulit"
+    },
+    {
+      "id": 13,
+      "questionText": "Ungkapan **buah tangan** memiliki arti ....",
+      "options": [
+        { "id": "A", "text": "Oleh-oleh" },
+        { "id": "B", "text": "Hasil kerja keras" },
+        { "id": "C", "text": "Anak kesayangan" },
+        { "id": "D", "text": "Tangan yang terluka" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Ungkapan 'buah tangan' adalah kiasan bahasa Indonesia yang berarti barang bawaan atau oleh-oleh dari bepergian.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 14,
+      "questionText": "Manakah penggunaan tanda koma (,) yang tepat dalam rincian benda?",
+      "options": [
+        { "id": "A", "text": "Ibu membeli apel, jeruk, dan mangga di pasar." },
+        { "id": "B", "text": "Ibu membeli apel jeruk dan, mangga di pasar." },
+        { "id": "C", "text": "Ibu membeli, apel, jeruk dan mangga di pasar." },
+        { "id": "D", "text": "Ibu membeli apel, jeruk, dan, mangga di pasar." }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Tanda koma digunakan di antara unsur-unsur dalam pemerincian kata, diikuti konjungsi 'dan' sebelum unsur terakhir.",
+      "difficulty": "Sulit"
+    },
+    {
+      "id": 15,
+      "questionText": "Ungkapan **rendah hati** memiliki arti kebalikan dari ....",
+      "options": [
+        { "id": "A", "text": "Tinggi hati (sombong)" },
+        { "id": "B", "text": "Murah hati (dermawan)" },
+        { "id": "C", "text": "Besar kepala" },
+        { "id": "D", "text": "Kecil hati" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Rendah hati artinya tidak sombong atau bersahaja. Kebalikannya adalah tinggi hati atau sombong.",
+      "difficulty": "Sulit"
+    }
+  ]
+}

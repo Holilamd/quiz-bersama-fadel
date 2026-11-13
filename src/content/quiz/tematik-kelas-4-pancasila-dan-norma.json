@@ -1,0 +1,208 @@
+{
+  "id": "tematik-kelas-4-pancasila-dan-norma",
+  "title": "Norma Masyarakat, Hak Kewajiban, dan Nilai Luhur Pancasila",
+  "category": "tematik",
+  "categoryName": "Tematik & PPKn",
+  "description": "Latihan memahami empat jenis norma masyarakat, hak dan kewajiban warga negara cilik, serta pelestarian budaya bangsa untuk kelas 4 SD.",
+  "level": "Kelas 4 SD",
+  "difficulty": "Sedang",
+  "duration": 20,
+  "shuffleCount": 5,
+  "questions": [
+    {
+      "id": 1,
+      "questionText": "Aturan atau pedoman tingkah laku yang berlaku dalam masyarakat yang wajib ditaati disebut ....",
+      "options": [
+        { "id": "A", "text": "Norma" },
+        { "id": "B", "text": "Hak" },
+        { "id": "C", "text": "Keinginan" },
+        { "id": "D", "text": "Bakat" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Norma adalah kaidah atau pedoman yang mengatur perilaku manusia dalam kehidupan bermasyarakat agar tercipta ketertiban.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 2,
+      "questionText": "Norma yang bersumber dari wahyu Tuhan Yang Maha Esa dan memiliki sanksi berupa dosa atau pahala di akhirat adalah norma ....",
+      "options": [
+        { "id": "A", "text": "Agama" },
+        { "id": "B", "text": "Hukum" },
+        { "id": "C", "text": "Kesopanan" },
+        { "id": "D", "text": "Kesusilaan" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Norma agama memuat perintah dan larangan yang bersumber langsung dari kitab suci ajaran Tuhan Yang Maha Esa.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 3,
+      "questionText": "Mencium tangan orang tua saat berpamitan dan berbicara santun kepada orang yang lebih tua merupakan contoh penerapan norma ....",
+      "options": [
+        { "id": "A", "text": "Kesopanan" },
+        { "id": "B", "text": "Hukum" },
+        { "id": "C", "text": "Agama" },
+        { "id": "D", "text": "Kebiasaan liar" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Norma kesopanan lahir dari tata krama, adat istiadat, dan kesantunan pergaulan sehari-hari di masyarakat.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 4,
+      "questionText": "Norma yang dibuat oleh lembaga resmi negara, bersifat tegas, mengikat, dan memiliki sanksi nyata seperti denda atau penjara adalah norma ....",
+      "options": [
+        { "id": "A", "text": "Hukum" },
+        { "id": "B", "text": "Kesusilaan" },
+        { "id": "C", "text": "Kesopanan" },
+        { "id": "D", "text": "Adat lokal" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Norma hukum dibuat oleh aparat berwenang (pemerintah dan DPR) dan ditegakkan oleh penegak hukum seperti polisi dan pengadilan.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 5,
+      "questionText": "Bila seseorang berbohong atau mencuri barang milik orang lain, hatinya merasa gelisah, bersalah, dan malu. Hal ini merupakan sanksi dari pelanggaran norma ....",
+      "options": [
+        { "id": "A", "text": "Kesusilaan (hati nurani)" },
+        { "id": "B", "text": "Kesopanan" },
+        { "id": "C", "text": "Hukum lalu lintas" },
+        { "id": "D", "text": "Peraturan olahraga" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Norma kesusilaan bersumber dari bisikan suara hati nurani manusia mengenai hal baik dan buruk.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 6,
+      "questionText": "Antara pelaksanaan **hak** dan **kewajiban** dalam kehidupan sehari-hari harus berjalan secara ....",
+      "options": [
+        { "id": "A", "text": "Seimbang dan mendahulukan kewajiban" },
+        { "id": "B", "text": "Menuntut hak terlebih dahulu tanpa mau berbuat" },
+        { "id": "C", "text": "Hanya menjalankan hak saja" },
+        { "id": "D", "text": "Mengabaikan kewajiban kepada negara" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Hak dan kewajiban harus seimbang. Sebelum menuntut hak, kita wajib menunaikan kewajiban dengan penuh tanggung jawab.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 7,
+      "questionText": "Contoh kewajiban warga masyarakat dalam menjaga kelestarian lingkungan adalah ....",
+      "options": [
+        { "id": "A", "text": "Ikut serta dalam kegiatan kerja bakti membersihkan saluran air" },
+        { "id": "B", "text": "Menikmati udara segar di taman kota" },
+        { "id": "C", "text": "Memperoleh air bersih untuk minum" },
+        { "id": "D", "text": "Membuang limbah sampah plastik ke sungai" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Kerja bakti gotong royong membersihkan selokan adalah kewajiban warga demi mencegah banjir dan sarang nyamuk.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 8,
+      "questionText": "Rumah adat khas dari suku Minangkabau di Sumatera Barat dengan atap runcing menyerupai tanduk kerbau dinamakan ....",
+      "options": [
+        { "id": "A", "text": "Rumah Gadang" },
+        { "id": "B", "text": "Rumah Joglo" },
+        { "id": "C", "text": "Rumah Tongkonan" },
+        { "id": "D", "text": "Rumah Honai" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Rumah Gadang adalah rumah adat Sumatera Barat dengan atap gonjong khas berbentuk tanduk kerbau.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 9,
+      "questionText": "Rumah adat Honai yang memiliki atap jerami melingkar tanpa jendela merupakan rumah adat dari daerah ....",
+      "options": [
+        { "id": "A", "text": "Papua" },
+        { "id": "B", "text": "Jawa Tengah" },
+        { "id": "C", "text": "Kalimantan Barat" },
+        { "id": "D", "text": "Bali" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Rumah Honai adalah rumah adat masyarakat pegunungan Papua yang berfungsi menjaga kehangatan dari udara dingin.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 10,
+      "questionText": "Ketika musyawarah tidak mencapai mufakat bulat, keputusan bersama dapat diambil melalui jalan ....",
+      "options": [
+        { "id": "A", "text": "Pemungutan suara terbanyak (voting)" },
+        { "id": "B", "text": "Adu kekuatan fisik" },
+        { "id": "C", "text": "Membatalkan seluruh kegiatan" },
+        { "id": "D", "text": "Menentukan sendiri oleh orang terkaya" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Voting atau pemungutan suara merupakan cara demokratis yang sah apabila musyawarah mufakat belum mencapai kesepakatan.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 11,
+      "questionText": "Sikap yang wajib kita tunjukkan terhadap keputusan musyawarah yang telah disepakati bersama adalah ....",
+      "options": [
+        { "id": "A", "text": "Melaksanakannya dengan ikhlas dan penuh tanggung jawab" },
+        { "id": "B", "text": "Menolaknya karena usul kita tidak terpilih" },
+        { "id": "C", "text": "Mencela anggota yang berbeda pilihan" },
+        { "id": "D", "text": "Tidak mau ikut serta dalam kegiatan" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Seluruh peserta musyawarah wajib mematuhi dan menjalankan hasil mufakat bersama dengan itikad baik.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 12,
+      "questionText": "Senjata tradisional suku Jawa yang terkenal dan memiliki bilah berlekuk adalah ....",
+      "options": [
+        { "id": "A", "text": "Keris" },
+        { "id": "B", "text": "Rencong" },
+        { "id": "C", "text": "Mandau" },
+        { "id": "D", "text": "Kujang" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Keris adalah senjata tradisional khas masyarakat Jawa, sedangkan Rencong dari Aceh, Mandau dari Dayak Kalimantan, dan Kujang dari Jawa Barat.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 13,
+      "questionText": "Kain tenun bermotif khas Indonesia yang diakui dunia internasional dan dibuat menggunakan lilin malam serta canting adalah ....",
+      "options": [
+        { "id": "A", "text": "Batik" },
+        { "id": "B", "text": "Ulos" },
+        { "id": "C", "text": "Songket" },
+        { "id": "D", "text": "Sasirangan" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Batik merupakan warisan budaya luhur Indonesia yang diakui UNESCO sebagai warisan kemanusiaan.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 14,
+      "questionText": "Setiap pengendara sepeda motor wajib mengenakan helm standar nasional Indonesia (SNI). Ketaatan ini merupakan wujud mematuhi norma ....",
+      "options": [
+        { "id": "A", "text": "Hukum lalu lintas" },
+        { "id": "B", "text": "Kesusilaan" },
+        { "id": "C", "text": "Adat istiadat" },
+        { "id": "D", "text": "Budi pekerti" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Aturan mengenakan helm diatur dalam undang-undang lalu lintas (norma hukum) demi keselamatan pengendara di jalan raya.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 15,
+      "questionText": "Lagu kebangsaan negara Republik Indonesia adalah .... yang diciptakan oleh ....",
+      "options": [
+        { "id": "A", "text": "Indonesia Raya oleh W.R. Soepratman" },
+        { "id": "B", "text": "Bagimu Negeri oleh Kusbini" },
+        { "id": "C", "text": "Halo-Halo Bandung oleh Ismail Marzuki" },
+        { "id": "D", "text": "Garuda Pancasila oleh Prohar Sudharnoto" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Lagu kebangsaan Indonesia Raya diciptakan oleh Wage Rudolf Soepratman dan pertama kali diperdengarkan pada Kongres Pemuda II tanggal 28 Oktober 1928.",
+      "difficulty": "Sulit"
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "id": "tematik-kelas-1-aturan-dan-keluarga",
+  "title": "Aturan di Rumah, Sekolah, dan Lambang Pancasila",
+  "category": "tematik",
+  "categoryName": "Tematik & PPKn",
+  "description": "Latihan mengenal aturan sopan santun di rumah, tata tertib sekolah, dan lambang sila-sila Pancasila untuk kelas 1 SD.",
+  "level": "Kelas 1 SD",
+  "difficulty": "Mudah",
+  "duration": 15,
+  "shuffleCount": 5,
+  "questions": [
+    {
+      "id": 1,
+      "questionText": "Lambang negara kesatuan Republik Indonesia adalah burung ....",
+      "options": [
+        { "id": "A", "text": "Garuda Pancasila" },
+        { "id": "B", "text": "Cendrawasih" },
+        { "id": "C", "text": "Merpati Putih" },
+        { "id": "D", "text": "Elang Jawa" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Burung Garuda Pancasila adalah lambang negara resmi Indonesia dengan semboyan Bhinneka Tunggal Ika.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 2,
+      "questionText": "Simbol sila pertama Pancasila, yaitu 'Ketuhanan Yang Maha Esa', adalah gambar ....",
+      "options": [
+        { "id": "A", "text": "Bintang emas" },
+        { "id": "B", "text": "Rantai emas" },
+        { "id": "C", "text": "Pohon beringin" },
+        { "id": "D", "text": "Padi dan kapas" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Sila ke-1 dilambangkan dengan Bintang bercahaya keemasan di tengah perisai burung Garuda.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 3,
+      "questionText": "Sebelum berangkat ke sekolah di pagi hari, sebaiknya kita .... kepada ayah dan ibu.",
+      "options": [
+        { "id": "A", "text": "Berpamitan dan mencium tangan" },
+        { "id": "B", "text": "Langsung lari tanpa bicara" },
+        { "id": "C", "text": "Menangis meminta uang jajan" },
+        { "id": "D", "text": "Bersembunyi di dalam kamar" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Berpamitan dan mencium tangan kedua orang tua sebelum bepergian adalah wujud rasa hormat dan sopan santun anak.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 4,
+      "questionText": "Setelah bangun tidur di pagi hari, tindakan baik yang harus kita lakukan pada tempat tidur adalah ....",
+      "options": [
+        { "id": "A", "text": "Merapikan sprei dan melipat selimut" },
+        { "id": "B", "text": "Membiarkannya berantakan" },
+        { "id": "C", "text": "Menunggu ibu membersihkannya" },
+        { "id": "D", "text": "Melemparkan bantal ke lantai" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Merapikan tempat tidur sendiri melatih kemandirian dan rasa tanggung jawab menjaga kerapian rumah.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 5,
+      "questionText": "Saat bapak atau ibu guru sedang menerangkan pelajaran di depan kelas, sikap kita sebaiknya ....",
+      "options": [
+        { "id": "A", "text": "Mendengarkan dengan tenang dan tertib" },
+        { "id": "B", "text": "Bercanda dengan teman sebangku" },
+        { "id": "C", "text": "Tidur di atas meja" },
+        { "id": "D", "text": "Berlari-lari di lorong kelas" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mendengarkan guru yang sedang mengajar menunjukkan sikap hormat dan patuh pada tata tertib sekolah.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 6,
+      "questionText": "Simbol sila kedua Pancasila, yaitu 'Kemanusiaan yang adil dan beradab', adalah ....",
+      "options": [
+        { "id": "A", "text": "Rantai emas" },
+        { "id": "B", "text": "Kepala banteng" },
+        { "id": "C", "text": "Pohon beringin" },
+        { "id": "D", "text": "Bintang" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Sila ke-2 Pancasila dilambangkan oleh untaian mata rantai gelang emas berbentuk lingkaran dan persegi yang saling terhubung erat.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 7,
+      "questionText": "Keluarga inti terdiri dari ....",
+      "options": [
+        { "id": "A", "text": "Ayah, ibu, dan anak" },
+        { "id": "B", "text": "Paman, bibi, dan kakek" },
+        { "id": "C", "text": "Tetangga sebelah rumah" },
+        { "id": "D", "text": "Teman sekolah dan guru" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Keluarga inti (batih) terdiri atas ayah sebagai kepala keluarga, ibu, dan anak-anak.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 8,
+      "questionText": "Di mana kita harus membuang bungkus makanan atau sampah bekas kertas?",
+      "options": [
+        { "id": "A", "text": "Di tempat sampah" },
+        { "id": "B", "text": "Di bawah laci meja kelas" },
+        { "id": "C", "text": "Di halaman sekolah secara sembarangan" },
+        { "id": "D", "text": "Di selokan air depan rumah" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Membuang sampah pada tempat sampah menjaga lingkungan sekolah dan rumah selalu bersih, sehat, dan terbebas dari kuman.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 9,
+      "questionText": "Sebelum kita makan bersama di meja makan, kebiasaan baik yang harus dilakukan adalah ....",
+      "options": [
+        { "id": "A", "text": "Mencuci tangan dan berdoa" },
+        { "id": "B", "text": "Menonton televisi sambil berteriak" },
+        { "id": "C", "text": "Langsung menyuap makanan tanpa cuci tangan" },
+        { "id": "D", "text": "Bermain tanah di pekarangan" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mencuci tangan dengan sabun dan berdoa adalah tata tertib makan sehat dan wujud syukur kepada Tuhan.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 10,
+      "questionText": "Jika adik sedang menangis karena mainannya terjatuh, sikap kakak yang terpuji adalah ....",
+      "options": [
+        { "id": "A", "text": "Menghibur dan membantu mengambilkannya" },
+        { "id": "B", "text": "Mengejek adik agar menangis lebih keras" },
+        { "id": "C", "text": "Merampas mainannya" },
+        { "id": "D", "text": "Meninggalkan adik sendirian" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Sebagai kakak yang menyayangi keluarga, kita harus peduli, menghibur, dan menolong adik.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 11,
+      "questionText": "Warna bendera kebangsaan negara Indonesia adalah ....",
+      "options": [
+        { "id": "A", "text": "Merah dan Putih" },
+        { "id": "B", "text": "Merah, Putih, dan Biru" },
+        { "id": "C", "text": "Kuning dan Hijau" },
+        { "id": "D", "text": "Biru dan Putih" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Bendera negara Indonesia bernama Sang Saka Merah Putih: merah artinya berani, putih artinya suci.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 12,
+      "questionText": "Saat bel tanda masuk berbunyi di sekolah, seluruh siswa segera berbaris dengan tertib di ....",
+      "options": [
+        { "id": "A", "text": "Depan pintu kelas masing-masing" },
+        { "id": "B", "text": "Kantin sekolah" },
+        { "id": "C", "text": "Ruang UKS" },
+        { "id": "D", "text": "Tempat parkir motor" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Berbaris rapi di depan kelas sebelum masuk merupakan pembiasaan disiplin dan ketertiban belajar di sekolah dasar.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 13,
+      "questionText": "Ketika teman meminjamkan pensil kepadamu, ucapan yang benar setelah memakainya adalah ....",
+      "options": [
+        { "id": "A", "text": "Terima kasih banyak" },
+        { "id": "B", "text": "Minta maaf" },
+        { "id": "C", "text": "Bagus pensilmu" },
+        { "id": "D", "text": "Selamat tinggal" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mengucapkan 'terima kasih' merupakan bentuk penghargaan dan sopan santun atas kebaikan bantuan teman.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 14,
+      "questionText": "Bekerja sama membersihkan kelas bersama regu piket membuat pekerjaan menjadi terasa ....",
+      "options": [
+        { "id": "A", "text": "Lebih ringan dan cepat selesai" },
+        { "id": "B", "text": "Lebih berat dan lama" },
+        { "id": "C", "text": "Membosankan" },
+        { "id": "D", "text": "Membuat capek sendirian" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Gotong royong dan kerja sama meringankan beban pekerjaan dan mempererat kerukunan antar teman sekelas.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 15,
+      "questionText": "Semboyan 'Bhinneka Tunggal Ika' pada cengkeraman kaki burung Garuda memiliki arti ....",
+      "options": [
+        { "id": "A", "text": "Berbeda-beda tetapi tetap satu jua" },
+        { "id": "B", "text": "Bersatu kita teguh bercerai kita runtuh" },
+        { "id": "C", "text": "Maju terus pantang mundur" },
+        { "id": "D", "text": "Adil dan makmur selamanya" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Bhinneka Tunggal Ika artinya meskipun masyarakat Indonesia beraneka ragam suku, budaya, dan agama, kita tetap bersatu sebagai satu bangsa.",
+      "difficulty": "Sulit"
+    }
+  ]
+}

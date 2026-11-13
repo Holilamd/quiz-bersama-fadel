@@ -1,0 +1,208 @@
+{
+  "id": "ipa-kelas-4-wujud-zat-dan-perubahan",
+  "title": "Materi, Wujud Zat, dan Karakteristik Perubahannya",
+  "category": "ipa",
+  "categoryName": "IPAS (Sains)",
+  "description": "Latihan meneliti sifat zat padat, cair, gas, serta 6 peristiwa perubahan wujud benda dalam kehidupan sehari-hari untuk kelas 4 SD.",
+  "level": "Kelas 4 SD",
+  "difficulty": "Sedang",
+  "duration": 20,
+  "shuffleCount": 5,
+  "questions": [
+    {
+      "id": 1,
+      "questionText": "Segala sesuatu yang memiliki massa dan menempati ruang dinamakan ....",
+      "options": [
+        { "id": "A", "text": "Materi (zat)" },
+        { "id": "B", "text": "Energi" },
+        { "id": "C", "text": "Cahaya" },
+        { "id": "D", "text": "Bayangan" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Materi adalah segala zat yang mempunyai massa (dapat ditimbang) dan menempati ruang (memiliki volume).",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 2,
+      "questionText": "Zat yang memiliki bentuk tetap dan volume tetap meskipun dipindahkan ke tempat yang berbeda adalah zat ....",
+      "options": [
+        { "id": "A", "text": "Padat (seperti batu atau kayu)" },
+        { "id": "B", "text": "Cair (seperti minyak goreng)" },
+        { "id": "C", "text": "Gas (seperti udara balon)" },
+        { "id": "D", "text": "Plasma" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Benda padat memiliki susunan partikel yang sangat rapat dan terikat kuat, sehingga bentuk dan volumenya tidak berubah.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 3,
+      "questionText": "Sifat zat cair yang tepat adalah ....",
+      "options": [
+        { "id": "A", "text": "Bentuknya berubah mengikuti wadahnya, namun volumenya tetap" },
+        { "id": "B", "text": "Bentuk dan volumenya selalu tetap" },
+        { "id": "C", "text": "Bentuk dan volumenya selalu berubah-ubah bebas" },
+        { "id": "D", "text": "Tidak memiliki berat atau massa" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Air yang dituangkan ke dalam gelas akan berbentuk gelas, bila dituangkan ke dalam mangkuk akan berbentuk mangkuk, namun jumlah volumenya tetap sama.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 4,
+      "questionText": "Peristiwa perubahan wujud benda dari **padat menjadi cair** dinamakan ....",
+      "options": [
+        { "id": "A", "text": "Mencair (melebur)" },
+        { "id": "B", "text": "Membeku" },
+        { "id": "C", "text": "Menguap" },
+        { "id": "D", "text": "Mengembun" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Contoh mencair adalah es batu yang diletakkan di ruangan terbuka atau mentega yang dipanaskan di atas wajan.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 5,
+      "questionText": "Air yang dimasukkan ke dalam ruang pendingin (freezer) kulkas lama-kelamaan akan berubah menjadi es batu yang keras. Peristiwa ini disebut ....",
+      "options": [
+        { "id": "A", "text": "Membeku" },
+        { "id": "B", "text": "Mencair" },
+        { "id": "C", "text": "Menyublim" },
+        { "id": "D", "text": "Menguap" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Membeku adalah perubahan wujud dari zat cair menjadi zat padat akibat pelepasan kalor (pendinginan).",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 6,
+      "questionText": "Saat ibu menjemur pakaian basah di bawah terik matahari, baju basah tersebut menjadi kering. Hal ini terjadi karena air pada pakaian mengalami proses ....",
+      "options": [
+        { "id": "A", "text": "Menguap (cair menjadi gas)" },
+        { "id": "B", "text": "Mengembun" },
+        { "id": "C", "text": "Membeku" },
+        { "id": "D", "text": "Menyublim" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Panas sinar matahari memanaskan molekul air di serat kain pakaian sehingga berubah menjadi uap air (menguap) ke udara.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 7,
+      "questionText": "Munculnya titik-titik tetesan air di bagian luar dinding gelas yang berisi air es dingin merupakan contoh dari peristiwa ....",
+      "options": [
+        { "id": "A", "text": "Mengembun (kondensasi)" },
+        { "id": "B", "text": "Mencair" },
+        { "id": "C", "text": "Menguap" },
+        { "id": "D", "text": "Bocor halus" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Uap air di udara luar menyentuh dinding gelas es yang dingin, suhunya turun lalu berubah wujud menjadi butiran air cair (mengembun).",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 8,
+      "questionText": "Kapur barus (kamper) yang diletakkan di dalam lemari pakaian lama-kelamaan ukurannya akan mengecil dan habis karena berubah langsung menjadi gas berbau harum. Peristiwa ini dinamakan ....",
+      "options": [
+        { "id": "A", "text": "Menyublim" },
+        { "id": "B", "text": "Mengkristal" },
+        { "id": "C", "text": "Mencair" },
+        { "id": "D", "text": "Mengembun" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Menyublim adalah perubahan wujud dari benda padat langsung menjadi gas tanpa melewati fase cair terlebih dahulu.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 9,
+      "questionText": "Peristiwa perubahan wujud gas langsung menjadi padat, seperti terbentuknya kristal es salju atau jelaga pada cerobong asap, dinamakan ....",
+      "options": [
+        { "id": "A", "text": "Mengkristal (deposisi)" },
+        { "id": "B", "text": "Menyublim" },
+        { "id": "C", "text": "Menguap" },
+        { "id": "D", "text": "Membeku" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Deposisi atau mengkristal adalah perubahan wujud materi dari gas langsung berubah menjadi padat akibat pendinginan ekstrem.",
+      "difficulty": "Sulit"
+    },
+    {
+      "id": 10,
+      "questionText": "Zat gas memiliki sifat khusus yaitu ....",
+      "options": [
+        { "id": "A", "text": "Mengisi seluruh ruangan yang ditempatinya dan menekan ke segala arah" },
+        { "id": "B", "text": "Memiliki bentuk yang kaku dan tetap" },
+        { "id": "C", "text": "Permukaannya selalu datar dan tenang" },
+        { "id": "D", "text": "Hanya dapat mengalir ke tempat yang lebih rendah" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Partikel gas bergerak sangat bebas ke segala arah dan mengisi penuh ruang wadahnya dengan tekanan merata.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 11,
+      "questionText": "Perubahan wujud yang memerlukan atau **menyerap panas (kalor)** dari lingkungan adalah ....",
+      "options": [
+        { "id": "A", "text": "Mencair, menguap, dan menyublim" },
+        { "id": "B", "text": "Membeku, mengembun, dan mengkristal" },
+        { "id": "C", "text": "Membeku dan mengembun saja" },
+        { "id": "D", "text": "Semua perubahan wujud melepas kalor" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mencair, menguap, dan menyublim memerlukan pemanasan (menyerap energi panas). Sebaliknya, membeku, mengembun, dan mengkristal melepas panas.",
+      "difficulty": "Sulit"
+    },
+    {
+      "id": 12,
+      "questionText": "Jika kita menuangkan air dari teko ke dalam botol minum, apa yang terjadi pada volume air tersebut?",
+      "options": [
+        { "id": "A", "text": "Volumenya tetap sama persis" },
+        { "id": "B", "text": "Volumenya bertambah menjadi dua kali lipat" },
+        { "id": "C", "text": "Volumenya berkurang secara drastis" },
+        { "id": "D", "text": "Volumenya hilang seluruhnya" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Meskipun bentuk zat cair berubah menyesuaikan wadah barunya (botol), volume zat cair tidak mengalami perubahan asalkan tidak tumpah.",
+      "difficulty": "Mudah"
+    },
+    {
+      "id": 13,
+      "questionText": "Di pagi hari, kita sering melihat tetesan embun menempel di pucuk-pucuk daun rumput meskipun malam harinya tidak turun hujan. Embun tersebut berasal dari ....",
+      "options": [
+        { "id": "A", "text": "Uap air di udara yang mendingin lalu mengembun" },
+        { "id": "B", "text": "Keringat yang keluar dari daun tanaman" },
+        { "id": "C", "text": "Air tanah yang tersemprot ke atas" },
+        { "id": "D", "text": "Air hujan yang terlambat turun" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Suhu udara malam dan dini hari yang dingin menyebabkan uap air di atmosfer mengembun menjadi butiran air di atas permukaan daun.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 14,
+      "questionText": "Petani garam di pesisir pantai memanfaatkan perubahan wujud .... untuk memisahkan butiran garam dari air laut dengan bantuan terik sinar matahari.",
+      "options": [
+        { "id": "A", "text": "Menguap (evaporasi)" },
+        { "id": "B", "text": "Membeku" },
+        { "id": "C", "text": "Menyublim" },
+        { "id": "D", "text": "Mencair" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Air laut dialirkan ke tambak garam. Sinar matahari menguapkan air murni ke udara, menyisakan butiran kristal garam putih di dasar tambak.",
+      "difficulty": "Sedang"
+    },
+    {
+      "id": 15,
+      "questionText": "Benda-benda di bawah ini yang semuanya termasuk kelompok **zat cair** adalah ....",
+      "options": [
+        { "id": "A", "text": "Kecap manis, susu cair, dan minyak kelapa" },
+        { "id": "B", "text": "Es batu, garam dapur, dan gula pasir" },
+        { "id": "C", "text": "Asap motor, uap air panas, dan oksigen" },
+        { "id": "D", "text": "Batu kerikil, sirup kental, dan udara" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Kecap, susu cair, dan minyak kelapa adalah fluida cair yang dapat mengalir dan menyesuaikan bentuk wadahnya.",
+      "difficulty": "Mudah"
+    }
+  ]
+}
