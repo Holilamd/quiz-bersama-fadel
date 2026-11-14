@@ -78,8 +78,21 @@ export function getStoredParticipants(): CompetitionParticipant[] {
 export function saveParticipantResult(participant: CompetitionParticipant): void {
   if (typeof window === 'undefined') return;
   try {
-    const existing = getStoredParticipants().filter((p) => p.id !== participant.id && !p.isCurrentUser);
-    existing.push(participant);
+    const existing = getStoredParticipants();
+    const normalizedName = participant.name.trim().toLowerCase();
+    // Hapus data lama peserta ini jika nama atau ID-nya sudah ada
+    const filtered = existing.filter(
+      (p) => p.id !== participant.id && p.name.trim().toLowerCase() !== normalizedName
+    );
+    filtered.push(participant);
+    localStorage.setItem(PARTICIPANTS_STORAGE_KEY, JSON.stringify(filtered));
+  } catch (e) {}
+}
+
+export function deleteStoredParticipant(participantId: string): void {
+  if (typeof window === 'undefined') return;
+  try {
+    const existing = getStoredParticipants().filter((p) => p.id !== participantId);
     localStorage.setItem(PARTICIPANTS_STORAGE_KEY, JSON.stringify(existing));
   } catch (e) {}
 }
@@ -89,100 +102,6 @@ export function resetStoredParticipants(): void {
   try {
     localStorage.removeItem(PARTICIPANTS_STORAGE_KEY);
   } catch (e) {}
-}
-
-// Generate realistic simulated competition participants
-export function getSimulatedParticipants(totalQ: number = 15): CompetitionParticipant[] {
-  return [
-    {
-      id: 'sim-1',
-      name: 'Nadia Putri Amanda',
-      school: 'SD Mentari Bangsa Jakarta',
-      grade: 'Kelas 4 SD',
-      score: 100,
-      correctCount: totalQ,
-      totalQuestions: totalQ,
-      timeSpentSeconds: 1240, // 20m 40s
-      submittedAt: '12:20:40',
-    },
-    {
-      id: 'sim-2',
-      name: 'Rafi Alamsyah',
-      school: 'SD Pertiwi Bandung',
-      grade: 'Kelas 4 SD',
-      score: 95,
-      correctCount: Math.round(totalQ * 0.95),
-      totalQuestions: totalQ,
-      timeSpentSeconds: 1480,
-      submittedAt: '12:24:40',
-    },
-    {
-      id: 'sim-3',
-      name: 'Kezia Aurelia',
-      school: 'SD Harapan Bangsa Surabaya',
-      grade: 'Kelas 4 SD',
-      score: 93,
-      correctCount: Math.round(totalQ * 0.93),
-      totalQuestions: totalQ,
-      timeSpentSeconds: 1650,
-      submittedAt: '12:27:30',
-    },
-    {
-      id: 'sim-4',
-      name: 'Dimas Bagaskara',
-      school: 'SD Cendekia Yogyakarta',
-      grade: 'Kelas 4 SD',
-      score: 87,
-      correctCount: Math.round(totalQ * 0.87),
-      totalQuestions: totalQ,
-      timeSpentSeconds: 1820,
-      submittedAt: '12:30:20',
-    },
-    {
-      id: 'sim-5',
-      name: 'Aisyah Zahra',
-      school: 'SD Islam Terpadu Semarang',
-      grade: 'Kelas 4 SD',
-      score: 85,
-      correctCount: Math.round(totalQ * 0.85),
-      totalQuestions: totalQ,
-      timeSpentSeconds: 2100,
-      submittedAt: '12:35:00',
-    },
-    {
-      id: 'sim-6',
-      name: 'Christian Wijaya',
-      school: 'SD Santo Yoseph Medan',
-      grade: 'Kelas 4 SD',
-      score: 80,
-      correctCount: Math.round(totalQ * 0.80),
-      totalQuestions: totalQ,
-      timeSpentSeconds: 2240,
-      submittedAt: '12:37:20',
-    },
-    {
-      id: 'sim-7',
-      name: 'Fathir Nugroho',
-      school: 'SD Negeri 1 Denpasar',
-      grade: 'Kelas 4 SD',
-      score: 75,
-      correctCount: Math.round(totalQ * 0.75),
-      totalQuestions: totalQ,
-      timeSpentSeconds: 2450,
-      submittedAt: '12:40:50',
-    },
-    {
-      id: 'sim-8',
-      name: 'Siti Rahmawati',
-      school: 'SD Teladan Makassar',
-      grade: 'Kelas 4 SD',
-      score: 70,
-      correctCount: Math.round(totalQ * 0.70),
-      totalQuestions: totalQ,
-      timeSpentSeconds: 2700,
-      submittedAt: '12:45:00',
-    },
-  ];
 }
 
 // Check room status based on real device time vs configured startTime & endTime

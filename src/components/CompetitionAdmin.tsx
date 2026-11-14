@@ -9,12 +9,15 @@ import {
   CheckCircle2,
   ExternalLink,
   Zap,
+  Trash2,
 } from 'lucide-react';
 import {
   type CompetitionRoomConfig,
+  type CompetitionParticipant,
   getCompetitionConfig,
   saveCompetitionConfig,
   getStoredParticipants,
+  deleteStoredParticipant,
   resetStoredParticipants,
   calculateRoomPhase,
   DEFAULT_COMPETITION_CONFIG,
@@ -29,13 +32,25 @@ export const CompetitionAdmin: React.FC<CompetitionAdminProps> = ({ quizzes }) =
   const [config, setConfig] = useState<CompetitionRoomConfig>(DEFAULT_COMPETITION_CONFIG);
   const [savedSuccess, setSavedSuccess] = useState<boolean>(false);
   const [participantsCount, setParticipantsCount] = useState<number>(0);
+  const [participantsList, setParticipantsList] = useState<CompetitionParticipant[]>([]);
   const [currentRealTime, setCurrentRealTime] = useState<string>('');
   const [currentPhase, setCurrentPhase] = useState<'LOBBY' | 'EXAM' | 'ANNOUNCEMENT'>('LOBBY');
+
+  const refreshParticipants = () => {
+    const data = getStoredParticipants();
+    // Urutkan skor tertinggi lalu waktu tercepat
+    data.sort((a, b) => {
+      if (b.score !== a.score) return b.score - a.score;
+      return a.timeSpentSeconds - b.timeSpentSeconds;
+    });
+    setParticipantsList(data);
+    setParticipantsCount(data.length);
+  };
 
   useEffect(() => {
     const loaded = getCompetitionConfig();
     setConfig(loaded);
-    setParticipantsCount(getStoredParticipants().length);
+    refreshParticipants();
 
     const interval = setInterval(() => {
       const now = new Date();
@@ -44,7 +59,17 @@ export const CompetitionAdmin: React.FC<CompetitionAdminProps> = ({ quizzes }) =
       setCurrentPhase(status.phase);
     }, 1000);
 
-    return () => clearInterval(interval);
+    const handleStorageChange = (e: StorageEvent) => {
+      if (e.key === 'asah_otak_competition_participants') {
+        refreshParticipants();
+      }
+    };
+    window.addEventListener('storage', handleStorageChange);
+
+    return () => {
+      clearInterval(interval);
+      window.removeEventListener('storage', handleStorageChange);
+    };
   }, []);
 
   const handleSave = (e?: React.FormEvent) => {
@@ -145,8 +170,15 @@ export const CompetitionAdmin: React.FC<CompetitionAdminProps> = ({ quizzes }) =
   const handleResetData = () => {
     if (window.confirm('Reset seluruh data peserta ujian yang tersimpan di room ini?')) {
       resetStoredParticipants();
-      setParticipantsCount(0);
-      alert('Data peserta berhasil di-reset.');
+      refreshParticipants();
+      alert('Seluruh data peserta berhasil di-reset.');
+    }
+  };
+
+  const handleDeleteParticipant = (id: string, name: string) => {
+    if (window.confirm(`Hapus data ujian peserta '${name}'?`)) {
+      deleteStoredParticipant(id);
+      refreshParticipants();
     }
   };
 
@@ -422,6 +454,101 @@ export const CompetitionAdmin: React.FC<CompetitionAdminProps> = ({ quizzes }) =
           </button>
         </div>
       </form>
+
+      {/* Daftar Peserta Asli Terdaftar (Tanpa Dummy) */}
+      <div className="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
+        <div className="p-4 sm:p-5 border-b border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+          <div>
+            <h3 className="text-sm font-bold text-slate-900 flex items-center gap-2">
+              <Users className="w-4 h-4 text-blue-600" />
+              <span>Daftar Peserta Asli Ujian ({participantsList.length} Peserta)</span>
+            </h3>
+            <p className="text-xs text-slate-500 mt-0.5">
+              Hanya menampilkan data peserta asli yang telah mengumpulkan lembar jawaban (100% data riil tanpa dummy).
+            </p>
+          </div>
+          {participantsList.length > 0 && (
+            <button
+              type="button"
+              onClick={handleResetData}
+              className="text-xs font-semibold text-rose-600 hover:text-rose-700 inline-flex items-center gap-1 self-start sm:self-auto"
+            >
+              <RotateCcw className="w-3.5 h-3.5" />
+              <span>Kosongkan Semua Peserta</span>
+            </button>
+          )}
+        </div>
+
+        {participantsList.length === 0 ? (
+          <div className="p-8 text-center text-slate-500 text-xs">
+            <Users className="w-8 h-8 text-slate-300 mx-auto mb-2" />
+            <p className="font-semibold text-slate-700">Belum Ada Peserta yang Mengumpulkan</p>
+            <p className="text-slate-400 mt-0.5">Data peserta asli akan otomatis muncul di sini begitu ada siswa yang mengumpulkan ujian.</p>
+          </div>
+        ) : (
+          <div className="overflow-x-auto">
+            <table className="w-full text-left text-xs">
+              <thead className="bg-slate-50 border-b border-slate-200 text-slate-600 uppercase font-bold text-[10px] tracking-wider">
+                <tr>
+                  <th className="py-3 px-4 text-center">Peringkat</th>
+                  <th className="py-3 px-4">Nama Peserta</th>
+                  <th className="py-3 px-4">Asal Sekolah</th>
+                  <th className="py-3 px-4 text-center">Jawaban Benar</th>
+                  <th className="py-3 px-4 text-center">Waktu Pengerjaan</th>
+                  <th className="py-3 px-4 text-center">Waktu Selesai</th>
+                  <th className="py-3 px-4 text-right">Skor Akhir</th>
+                  <th className="py-3 px-4 text-center">Aksi</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-100">
+                {participantsList.map((p, idx) => (
+                  <tr key={p.id} className="hover:bg-slate-50">
+                    <td className="py-3 px-4 text-center font-bold">
+                      <span
+                        className={`inline-flex items-center justify-center w-6 h-6 rounded-full text-xs font-bold ${
+                          idx === 0
+                            ? 'bg-amber-400 text-white'
+                            : idx === 1
+                            ? 'bg-slate-300 text-slate-800'
+                            : idx === 2
+                            ? 'bg-amber-600 text-white'
+                            : 'text-slate-600'
+                        }`}
+                      >
+                        {idx + 1}
+                      </span>
+                    </td>
+                    <td className="py-3 px-4 font-bold text-slate-900">{p.name}</td>
+                    <td className="py-3 px-4 text-slate-600">{p.school}</td>
+                    <td className="py-3 px-4 text-center text-slate-700">
+                      {p.correctCount}/{p.totalQuestions}
+                    </td>
+                    <td className="py-3 px-4 text-center text-slate-600">
+                      {Math.floor(p.timeSpentSeconds / 60)}m {p.timeSpentSeconds % 60}s
+                    </td>
+                    <td className="py-3 px-4 text-center text-slate-500 font-mono text-[11px]">
+                      {p.submittedAt} WIB
+                    </td>
+                    <td className="py-3 px-4 text-right font-black text-sm text-blue-700">
+                      {p.score}
+                    </td>
+                    <td className="py-3 px-4 text-center">
+                      <button
+                        type="button"
+                        onClick={() => handleDeleteParticipant(p.id, p.name)}
+                        className="p-1.5 text-slate-400 hover:text-rose-600 transition rounded hover:bg-rose-50"
+                        title="Hapus peserta ini"
+                      >
+                        <Trash2 className="w-4 h-4" />
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

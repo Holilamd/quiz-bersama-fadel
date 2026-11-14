@@ -2,9 +2,9 @@ import { test, describe } from 'node:test';
 import assert from 'node:assert/strict';
 import {
   calculateRoomPhase,
-  getSimulatedParticipants,
   DEFAULT_COMPETITION_CONFIG,
   type CompetitionRoomConfig,
+  type CompetitionParticipant,
 } from '../src/utils/competition.ts';
 
 describe('Unit Test: Competition Phase Engine (calculateRoomPhase)', () => {
@@ -66,35 +66,83 @@ describe('Unit Test: Competition Phase Engine (calculateRoomPhase)', () => {
   });
 });
 
-describe('Unit Test: Simulated Participants Data', () => {
-  test('Menghasilkan peserta simulasi dengan struktur valid', () => {
-    const participants = getSimulatedParticipants(15);
+describe('Unit Test: Leaderboard Peserta Asli (Tanpa Dummy)', () => {
+  test('Peserta tunggal (misal: Muhammad Fadel Alfarizqi) otomatis menjadi Juara 1', () => {
+    const singleParticipant: CompetitionParticipant[] = [
+      {
+        id: 'user-fadel',
+        name: 'Muhammad Fadel Alfarizqi',
+        school: 'SD Peserta',
+        grade: 'Kelas 4 SD',
+        score: 7,
+        correctCount: 1,
+        totalQuestions: 15,
+        timeSpentSeconds: 420,
+        submittedAt: '12:07:00',
+        isCurrentUser: true,
+      },
+    ];
 
-    assert.ok(participants.length >= 5, 'Jumlah peserta simulasi minimal 5');
-
-    participants.forEach((p, idx) => {
-      assert.ok(p.id, `Peserta #${idx} harus punya id`);
-      assert.ok(p.name, `Peserta #${idx} harus punya nama`);
-      assert.ok(p.school, `Peserta #${idx} harus punya asal sekolah`);
-      assert.ok(p.score >= 0 && p.score <= 100, `Skor peserta #${idx} harus antara 0-100`);
-      assert.equal(p.totalQuestions, 15, `Total soal harus sesuai parameter`);
-      assert.ok(p.correctCount <= 15, `Jawaban benar tidak boleh melebihi total soal`);
-      assert.ok(p.timeSpentSeconds > 0, `Waktu pengerjaan harus > 0 detik`);
-    });
-  });
-
-  test('Peringkat leaderboard terurut berdasarkan skor tertinggi lalu waktu tercepat', () => {
-    const participants = getSimulatedParticipants(15);
-    const sorted = [...participants].sort((a, b) => {
+    const sorted = [...singleParticipant].sort((a, b) => {
       if (b.score !== a.score) return b.score - a.score;
       return a.timeSpentSeconds - b.timeSpentSeconds;
     });
 
-    // Peringkat 1 harus memiliki skor >= peringkat 2
-    assert.ok(sorted[0].score >= sorted[1].score);
-    // Jika skor sama, durasi waktu juara 1 harus lebih singkat atau sama dengan juara 2
-    if (sorted[0].score === sorted[1].score) {
-      assert.ok(sorted[0].timeSpentSeconds <= sorted[1].timeSpentSeconds);
-    }
+    assert.equal(sorted.length, 1);
+    assert.equal(sorted[0].name, 'Muhammad Fadel Alfarizqi');
+    // Tidak ada peserta dummy yang menggeser Fadel ke posisi #9
+    const fadelRank = sorted.findIndex((p) => p.name === 'Muhammad Fadel Alfarizqi') + 1;
+    assert.equal(fadelRank, 1, 'Fadel harus menempati peringkat #1 karena satu-satunya peserta riil');
+  });
+
+  test('Peringkat multi-peserta riil terurut skor tertinggi lalu waktu tercepat', () => {
+    const realParticipants: CompetitionParticipant[] = [
+      {
+        id: 'p-1',
+        name: 'Ahmad Dahlan',
+        school: 'SD 1 Yogyakarta',
+        grade: 'Kelas 4 SD',
+        score: 80,
+        correctCount: 12,
+        totalQuestions: 15,
+        timeSpentSeconds: 600,
+        submittedAt: '12:10:00',
+      },
+      {
+        id: 'p-2',
+        name: 'Muhammad Fadel Alfarizqi',
+        school: 'SD Peserta',
+        grade: 'Kelas 4 SD',
+        score: 93,
+        correctCount: 14,
+        totalQuestions: 15,
+        timeSpentSeconds: 520,
+        submittedAt: '12:08:40',
+        isCurrentUser: true,
+      },
+      {
+        id: 'p-3',
+        name: 'Fatmawati',
+        school: 'SD 2 Jakarta',
+        grade: 'Kelas 4 SD',
+        score: 93,
+        correctCount: 14,
+        totalQuestions: 15,
+        timeSpentSeconds: 580, // Waktu lebih lama dari Fadel
+        submittedAt: '12:09:40',
+      },
+    ];
+
+    const sorted = [...realParticipants].sort((a, b) => {
+      if (b.score !== a.score) return b.score - a.score;
+      return a.timeSpentSeconds - b.timeSpentSeconds;
+    });
+
+    // Peringkat 1 harus Fadel (93 poin, 520s < 580s)
+    assert.equal(sorted[0].name, 'Muhammad Fadel Alfarizqi');
+    // Peringkat 2 harus Fatmawati (93 poin, 580s)
+    assert.equal(sorted[1].name, 'Fatmawati');
+    // Peringkat 3 harus Ahmad Dahlan (80 poin)
+    assert.equal(sorted[2].name, 'Ahmad Dahlan');
   });
 });

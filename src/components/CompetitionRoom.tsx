@@ -22,7 +22,6 @@ import {
   calculateRoomPhase,
   getStoredParticipants,
   saveParticipantResult,
-  getSimulatedParticipants,
   DEFAULT_COMPETITION_CONFIG,
 } from '../utils/competition';
 import type { Quiz, Question, QuestionOption } from '../content/config';
@@ -176,31 +175,46 @@ export const CompetitionRoom: React.FC<CompetitionRoomProps> = ({ quizzes }) => 
     saveParticipantResult(myResult);
   };
 
-  // Compute full leaderboard
+  // Storage listener to sync real participant updates across tabs
+  const [participantsVersion, setParticipantsVersion] = useState<number>(0);
+
+  useEffect(() => {
+    const handleStorage = (e: StorageEvent) => {
+      if (e.key === 'asah_otak_competition_participants') {
+        setParticipantsVersion((v) => v + 1);
+      }
+    };
+    window.addEventListener('storage', handleStorage);
+    return () => window.removeEventListener('storage', handleStorage);
+  }, []);
+
+  // Compute full leaderboard (100% DATA PESERTA ASLI, TANPA DATA DUMMY!)
   const leaderboard = useMemo(() => {
     const stored = getStoredParticipants();
-    const simulated = getSimulatedParticipants(config.totalQuestions);
 
-    // Merge stored participants with simulated ones
-    const combined = [...stored, ...simulated.filter((s) => !stored.some((p) => p.name === s.name))];
-
-    // Sort by: 1. Score desc, 2. Time spent asc (faster is better)
-    combined.sort((a, b) => {
+    // Urutkan peringkat berdasarkan:
+    // 1. Skor nilai tertinggi
+    // 2. Durasi pengerjaan tercepat
+    stored.sort((a, b) => {
       if (b.score !== a.score) return b.score - a.score;
       return a.timeSpentSeconds - b.timeSpentSeconds;
     });
 
-    return combined;
-  }, [config.totalQuestions, isSubmitted]);
+    return stored;
+  }, [config.totalQuestions, isSubmitted, participantsVersion]);
 
-  // Current user rank
+  // Posisi peringkat peserta saat ini di antara peserta asli
   const myRank = useMemo(() => {
-    const idx = leaderboard.findIndex((p) => p.isCurrentUser || p.name === studentName.trim());
+    const idx = leaderboard.findIndex(
+      (p) => p.isCurrentUser || (studentName.trim() && p.name.trim().toLowerCase() === studentName.trim().toLowerCase())
+    );
     return idx >= 0 ? idx + 1 : null;
   }, [leaderboard, studentName]);
 
   const myParticipantData = useMemo(() => {
-    return leaderboard.find((p) => p.isCurrentUser || p.name === studentName.trim());
+    return leaderboard.find(
+      (p) => p.isCurrentUser || (studentName.trim() && p.name.trim().toLowerCase() === studentName.trim().toLowerCase())
+    );
   }, [leaderboard, studentName]);
 
   // ====================================================
@@ -370,18 +384,25 @@ export const CompetitionRoom: React.FC<CompetitionRoomProps> = ({ quizzes }) => 
                   <p className="text-xs text-blue-200">{myParticipantData.school}</p>
                 </div>
 
-                <div className="flex items-center gap-4 bg-white/10 px-4 py-2.5 rounded-lg backdrop-blur-xs">
-                  <div className="text-center">
+                <div className="flex flex-wrap items-center justify-center sm:justify-end gap-3 bg-white/10 px-4 py-2.5 rounded-lg backdrop-blur-xs">
+                  <div className="text-center px-2">
                     <span className="text-[11px] text-blue-200 block">Peringkat</span>
                     <span className="text-2xl font-black text-amber-300">
-                      #{myRank}
+                      #{myRank} <span className="text-xs font-normal text-blue-200">/ {leaderboard.length}</span>
                     </span>
                   </div>
-                  <div className="w-px h-8 bg-white/20" />
-                  <div className="text-center">
+                  <div className="w-px h-8 bg-white/20 hidden sm:block" />
+                  <div className="text-center px-2">
                     <span className="text-[11px] text-blue-200 block">Skor Akhir</span>
                     <span className="text-2xl font-black text-white">
                       {myParticipantData.score}
+                    </span>
+                  </div>
+                  <div className="w-px h-8 bg-white/20 hidden sm:block" />
+                  <div className="text-center px-2">
+                    <span className="text-[11px] text-blue-200 block">Jawaban Benar</span>
+                    <span className="text-base font-bold text-emerald-200">
+                      {myParticipantData.correctCount} / {myParticipantData.totalQuestions}
                     </span>
                   </div>
                 </div>
@@ -406,110 +427,146 @@ export const CompetitionRoom: React.FC<CompetitionRoomProps> = ({ quizzes }) => 
           )}
         </div>
 
-        {/* Podium 3 Besar */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          {leaderboard.slice(0, 3).map((p, idx) => {
-            const medals = ['🥇 Juara 1', '🥈 Juara 2', '🥉 Juara 3'];
-            const colors = [
-              'border-amber-400 bg-amber-50/50',
-              'border-slate-300 bg-slate-50/50',
-              'border-amber-600/40 bg-amber-50/30',
-            ];
-            return (
-              <div
-                key={p.id}
-                className={`rounded-xl border-2 p-5 text-center shadow-xs flex flex-col justify-between ${colors[idx]}`}
-              >
-                <div>
-                  <span className="text-xs font-black uppercase tracking-wider text-slate-800 block">
-                    {medals[idx]}
-                  </span>
-                  <div className="w-12 h-12 rounded-full bg-white border border-slate-200 flex items-center justify-center mx-auto my-3 text-xl font-bold shadow-xs">
-                    {idx === 0 ? '🏆' : idx === 1 ? '🥈' : '🥉'}
-                  </div>
-                  <h4 className="text-sm font-bold text-slate-900 line-clamp-1">{p.name}</h4>
-                  <p className="text-[11px] text-slate-500 line-clamp-1 mt-0.5">{p.school}</p>
-                </div>
-                <div className="mt-4 pt-3 border-t border-slate-200/60 flex items-center justify-around text-xs">
-                  <div>
-                    <span className="text-[10px] text-slate-400 block">Nilai</span>
-                    <span className="font-extrabold text-slate-900 text-base">{p.score}</span>
-                  </div>
-                  <div>
-                    <span className="text-[10px] text-slate-400 block">Waktu</span>
-                    <span className="font-semibold text-slate-700">{Math.floor(p.timeSpentSeconds / 60)}m</span>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-
-        {/* Tabel Lengkap Leaderboard */}
-        <div className="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
-          <div className="p-4 sm:p-5 border-b border-slate-200 flex items-center justify-between">
-            <h3 className="text-sm font-bold text-slate-900 flex items-center gap-2">
-              <Users className="w-4 h-4 text-blue-600" />
-              <span>Daftar Peringkat Lengkap ({leaderboard.length} Peserta)</span>
-            </h3>
-            <span className="text-xs text-slate-500">Urut berdasarkan Skor & Waktu</span>
+        {/* Podium Juara (Hanya Menampilkan Peserta Asli) */}
+        {leaderboard.length === 0 ? (
+          <div className="bg-white rounded-xl border border-slate-200 p-8 sm:p-12 text-center shadow-xs max-w-md mx-auto">
+            <div className="w-12 h-12 rounded-full bg-slate-100 flex items-center justify-center mx-auto mb-3 text-slate-400">
+              <Users className="w-6 h-6" />
+            </div>
+            <h4 className="text-sm font-bold text-slate-800">Belum Ada Peserta yang Mengumpulkan</h4>
+            <p className="text-xs text-slate-500 mt-1 leading-relaxed">
+              Peringkat dan podium juara resmi akan otomatis muncul di sini begitu ada peserta yang telah menyelesaikan ujian.
+            </p>
           </div>
-
-          <div className="overflow-x-auto">
-            <table className="w-full text-left text-xs">
-              <thead className="bg-slate-50 border-b border-slate-200 text-slate-600 uppercase font-bold text-[10px] tracking-wider">
-                <tr>
-                  <th className="py-3 px-4 text-center">Peringkat</th>
-                  <th className="py-3 px-4">Nama Peserta</th>
-                  <th className="py-3 px-4">Asal Sekolah</th>
-                  <th className="py-3 px-4 text-center">Jawaban Benar</th>
-                  <th className="py-3 px-4 text-center">Waktu Pengerjaan</th>
-                  <th className="py-3 px-4 text-right">Skor Akhir</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-100">
-                {leaderboard.map((item, index) => {
-                  const isMe = item.isCurrentUser || item.name === studentName.trim();
-                  return (
-                    <tr
-                      key={item.id}
-                      className={isMe ? 'bg-blue-50/80 font-bold text-blue-900' : 'hover:bg-slate-50'}
-                    >
-                      <td className="py-3 px-4 text-center">
-                        <span
-                          className={`inline-flex items-center justify-center w-6 h-6 rounded-full text-xs font-bold ${
-                            index === 0
-                              ? 'bg-amber-400 text-white'
-                              : index === 1
-                              ? 'bg-slate-300 text-slate-800'
-                              : index === 2
-                              ? 'bg-amber-600 text-white'
-                              : 'text-slate-600'
-                          }`}
-                        >
-                          {index + 1}
-                        </span>
-                      </td>
-                      <td className="py-3 px-4 font-semibold text-slate-900">
-                        {item.name} {isMe && <span className="ml-1 text-[10px] text-blue-700 bg-blue-100 px-1.5 py-0.2 rounded font-bold">(Anda)</span>}
-                      </td>
-                      <td className="py-3 px-4 text-slate-600">{item.school}</td>
-                      <td className="py-3 px-4 text-center text-slate-700">
-                        {item.correctCount}/{item.totalQuestions}
-                      </td>
-                      <td className="py-3 px-4 text-center text-slate-600">
-                        {Math.floor(item.timeSpentSeconds / 60)}m {item.timeSpentSeconds % 60}s
-                      </td>
-                      <td className="py-3 px-4 text-right font-extrabold text-sm text-slate-900">
-                        {item.score}
-                      </td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
+        ) : (
+          <div
+            className={`grid gap-4 ${
+              leaderboard.length === 1
+                ? 'grid-cols-1 max-w-sm mx-auto'
+                : leaderboard.length === 2
+                ? 'grid-cols-1 sm:grid-cols-2 max-w-2xl mx-auto'
+                : 'grid-cols-1 sm:grid-cols-3'
+            }`}
+          >
+            {leaderboard.slice(0, 3).map((p, idx) => {
+              const medals = ['🥇 Juara 1', '🥈 Juara 2', '🥉 Juara 3'];
+              const colors = [
+                'border-amber-400 bg-amber-50/50',
+                'border-slate-300 bg-slate-50/50',
+                'border-amber-600/40 bg-amber-50/30',
+              ];
+              const isMe = p.isCurrentUser || (studentName.trim() && p.name.trim().toLowerCase() === studentName.trim().toLowerCase());
+              return (
+                <div
+                  key={p.id}
+                  className={`rounded-xl border-2 p-5 text-center shadow-xs flex flex-col justify-between ${colors[idx]}`}
+                >
+                  <div>
+                    <span className="text-xs font-black uppercase tracking-wider text-slate-800 block">
+                      {medals[idx]}
+                    </span>
+                    <div className="w-12 h-12 rounded-full bg-white border border-slate-200 flex items-center justify-center mx-auto my-3 text-xl font-bold shadow-xs">
+                      {idx === 0 ? '🏆' : idx === 1 ? '🥈' : '🥉'}
+                    </div>
+                    <h4 className="text-sm font-bold text-slate-900 line-clamp-1">
+                      {p.name} {isMe && <span className="text-[10px] text-blue-700 bg-blue-100 px-1 py-0.2 rounded font-bold ml-1">(Anda)</span>}
+                    </h4>
+                    <p className="text-[11px] text-slate-500 line-clamp-1 mt-0.5">{p.school}</p>
+                  </div>
+                  <div className="mt-4 pt-3 border-t border-slate-200/60 flex items-center justify-around text-xs">
+                    <div>
+                      <span className="text-[10px] text-slate-400 block">Nilai</span>
+                      <span className="font-extrabold text-slate-900 text-base">{p.score}</span>
+                    </div>
+                    <div>
+                      <span className="text-[10px] text-slate-400 block">Benar</span>
+                      <span className="font-bold text-emerald-700 text-xs">{p.correctCount}/{p.totalQuestions}</span>
+                    </div>
+                    <div>
+                      <span className="text-[10px] text-slate-400 block">Waktu</span>
+                      <span className="font-semibold text-slate-700">{Math.floor(p.timeSpentSeconds / 60)}m</span>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
-        </div>
+        )}
+
+        {/* Tabel Lengkap Leaderboard Peserta Asli */}
+        {leaderboard.length > 0 && (
+          <div className="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
+            <div className="p-4 sm:p-5 border-b border-slate-200 flex items-center justify-between">
+              <h3 className="text-sm font-bold text-slate-900 flex items-center gap-2">
+                <Users className="w-4 h-4 text-blue-600" />
+                <span>Daftar Peringkat Lengkap ({leaderboard.length} Peserta)</span>
+              </h3>
+              <span className="text-xs text-slate-500">Urut berdasarkan Skor & Waktu</span>
+            </div>
+
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-xs">
+                <thead className="bg-slate-50 border-b border-slate-200 text-slate-600 uppercase font-bold text-[10px] tracking-wider">
+                  <tr>
+                    <th className="py-3 px-4 text-center">Peringkat</th>
+                    <th className="py-3 px-4">Nama Peserta</th>
+                    <th className="py-3 px-4">Asal Sekolah</th>
+                    <th className="py-3 px-4 text-center">Jawaban Benar</th>
+                    <th className="py-3 px-4 text-center">Waktu Pengerjaan</th>
+                    <th className="py-3 px-4 text-right">Skor Akhir</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-100">
+                  {leaderboard.map((item, index) => {
+                    const isMe =
+                      item.isCurrentUser ||
+                      (studentName.trim() && item.name.trim().toLowerCase() === studentName.trim().toLowerCase());
+                    return (
+                      <tr
+                        key={item.id}
+                        className={isMe ? 'bg-blue-50/80 font-bold text-blue-900' : 'hover:bg-slate-50'}
+                      >
+                        <td className="py-3 px-4 text-center">
+                          <span
+                            className={`inline-flex items-center justify-center w-6 h-6 rounded-full text-xs font-bold ${
+                              index === 0
+                                ? 'bg-amber-400 text-white'
+                                : index === 1
+                                ? 'bg-slate-300 text-slate-800'
+                                : index === 2
+                                ? 'bg-amber-600 text-white'
+                                : 'text-slate-600'
+                            }`}
+                          >
+                            {index + 1}
+                          </span>
+                        </td>
+                        <td className="py-3 px-4 font-semibold text-slate-900">
+                          {item.name}{' '}
+                          {isMe && (
+                            <span className="ml-1 text-[10px] text-blue-700 bg-blue-100 px-1.5 py-0.2 rounded font-bold">
+                              (Anda)
+                            </span>
+                          )}
+                        </td>
+                        <td className="py-3 px-4 text-slate-600">{item.school}</td>
+                        <td className="py-3 px-4 text-center text-slate-700">
+                          {item.correctCount}/{item.totalQuestions}
+                        </td>
+                        <td className="py-3 px-4 text-center text-slate-600">
+                          {Math.floor(item.timeSpentSeconds / 60)}m {item.timeSpentSeconds % 60}s
+                        </td>
+                        <td className="py-3 px-4 text-right font-extrabold text-sm text-slate-900">
+                          {item.score}
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )}
 
         {/* Navigasi Bawah */}
         <div className="pt-2 flex flex-wrap items-center justify-between gap-3">
