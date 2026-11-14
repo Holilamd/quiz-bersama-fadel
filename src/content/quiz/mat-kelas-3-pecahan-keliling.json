@@ -6,18 +6,30 @@
   "description": "Latihan mengenal pecahan 1/2, 1/4, pembagian bilangan cacah, keliling persegi dan persegi panjang, serta satuan berat.",
   "level": "Kelas 3 SD",
   "difficulty": "Sedang",
-  "duration": 15,
-  "shuffleCount": 5,
+  "duration": 20,
+  "shuffleCount": 10,
   "questions": [
     {
       "id": 101,
       "difficulty": "Mudah",
       "questionText": "Sebuah semangka dibelah menjadi 2 bagian yang sama besar. Satu potong semangka bernilai pecahan...",
       "options": [
-        { "id": "A", "text": "$\\frac{1}{2}$" },
-        { "id": "B", "text": "$\\frac{1}{3}$" },
-        { "id": "C", "text": "$\\frac{1}{4}$" },
-        { "id": "D", "text": "$\\frac{2}{1}$" }
+        {
+          "id": "A",
+          "text": "$\\frac{1}{2}$"
+        },
+        {
+          "id": "B",
+          "text": "$\\frac{1}{3}$"
+        },
+        {
+          "id": "C",
+          "text": "$\\frac{1}{4}$"
+        },
+        {
+          "id": "D",
+          "text": "$\\frac{2}{1}$"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "Satu potong dari dua bagian sama besar bernilai setengah atau $\\frac{1}{2}$."
@@ -27,10 +39,22 @@
       "difficulty": "Mudah",
       "questionText": "Berapakah hasil pembagian berikut?\n$$24 \\div 3 = \\dots$$",
       "options": [
-        { "id": "A", "text": "6" },
-        { "id": "B", "text": "7" },
-        { "id": "C", "text": "8" },
-        { "id": "D", "text": "9" }
+        {
+          "id": "A",
+          "text": "6"
+        },
+        {
+          "id": "B",
+          "text": "7"
+        },
+        {
+          "id": "C",
+          "text": "8"
+        },
+        {
+          "id": "D",
+          "text": "9"
+        }
       ],
       "correctAnswer": "C",
       "explanation": "Karena $3 \\times 8 = 24$, maka $24 \\div 3 = 8$."
@@ -40,10 +64,22 @@
       "difficulty": "Mudah",
       "questionText": "Tali pramuka memiliki panjang $1\\text{ meter}$. Jika diubah ke dalam satuan sentimeter (cm), panjangnya adalah...",
       "options": [
-        { "id": "A", "text": "$10\\text{ cm}$" },
-        { "id": "B", "text": "$100\\text{ cm}$" },
-        { "id": "C", "text": "$500\\text{ cm}$" },
-        { "id": "D", "text": "$1.000\\text{ cm}$" }
+        {
+          "id": "A",
+          "text": "$10\\text{ cm}$"
+        },
+        {
+          "id": "B",
+          "text": "$100\\text{ cm}$"
+        },
+        {
+          "id": "C",
+          "text": "$500\\text{ cm}$"
+        },
+        {
+          "id": "D",
+          "text": "$1.000\\text{ cm}$"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "$1\\text{ meter} = 100\\text{ sentimeter}$."
@@ -53,10 +89,22 @@
       "difficulty": "Mudah",
       "questionText": "Sebuah persegi memiliki sisi $s = 5\\text{ cm}$. Berapakah keliling ($K$) persegi tersebut?\n$$K = 4 \\times s$$",
       "options": [
-        { "id": "A", "text": "$15\\text{ cm}$" },
-        { "id": "B", "text": "$20\\text{ cm}$" },
-        { "id": "C", "text": "$25\\text{ cm}$" },
-        { "id": "D", "text": "$30\\text{ cm}$" }
+        {
+          "id": "A",
+          "text": "$15\\text{ cm}$"
+        },
+        {
+          "id": "B",
+          "text": "$20\\text{ cm}$"
+        },
+        {
+          "id": "C",
+          "text": "$25\\text{ cm}$"
+        },
+        {
+          "id": "D",
+          "text": "$30\\text{ cm}$"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "$$K = 4 \\times 5 = 20\\text{ cm}$$"
@@ -66,10 +114,22 @@
       "difficulty": "Sedang",
       "questionText": "Sebuah pizza dipotong menjadi 4 bagian yang sama besar. Rina memakan 1 potong pizza tersebut. Bagian pizza yang dimakan Rina dapat dituliskan dalam bentuk pecahan...",
       "options": [
-        { "id": "A", "text": "$\\frac{1}{2}$" },
-        { "id": "B", "text": "$\\frac{1}{4}$" },
-        { "id": "C", "text": "$\\frac{3}{4}$" },
-        { "id": "D", "text": "$\\frac{4}{1}$" }
+        {
+          "id": "A",
+          "text": "$\\frac{1}{2}$"
+        },
+        {
+          "id": "B",
+          "text": "$\\frac{1}{4}$"
+        },
+        {
+          "id": "C",
+          "text": "$\\frac{3}{4}$"
+        },
+        {
+          "id": "D",
+          "text": "$\\frac{4}{1}$"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "Pecahan dituliskan sebagai $\\frac{\\text{bagian diambil}}{\\text{total potongan}} = \\frac{1}{4}$."
@@ -79,10 +139,22 @@
       "difficulty": "Sedang",
       "questionText": "Pak Guru memiliki 36 pensil yang dibagikan rata kepada 4 kelompok belajar. Berapa pensil yang didapat setiap kelompok?\n$$36 \\div 4 = \\dots$$",
       "options": [
-        { "id": "A", "text": "7 pensil" },
-        { "id": "B", "text": "8 pensil" },
-        { "id": "C", "text": "9 pensil" },
-        { "id": "D", "text": "10 pensil" }
+        {
+          "id": "A",
+          "text": "7 pensil"
+        },
+        {
+          "id": "B",
+          "text": "8 pensil"
+        },
+        {
+          "id": "C",
+          "text": "9 pensil"
+        },
+        {
+          "id": "D",
+          "text": "10 pensil"
+        }
       ],
       "correctAnswer": "C",
       "explanation": "$$36 \\div 4 = 9\\text{ pensil}$$"
@@ -92,10 +164,22 @@
       "difficulty": "Sedang",
       "questionText": "Tanda perbandingan yang tepat untuk mengisi pecahan berikut adalah:\n$$\\frac{1}{2} \\dots \\frac{1}{4}$$",
       "options": [
-        { "id": "A", "text": "> (Lebih besar dari)" },
-        { "id": "B", "text": "< (Lebih kecil dari)" },
-        { "id": "C", "text": "= (Sama dengan)" },
-        { "id": "D", "text": "+ (Ditambah)" }
+        {
+          "id": "A",
+          "text": "> (Lebih besar dari)"
+        },
+        {
+          "id": "B",
+          "text": "< (Lebih kecil dari)"
+        },
+        {
+          "id": "C",
+          "text": "= (Sama dengan)"
+        },
+        {
+          "id": "D",
+          "text": "+ (Ditambah)"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "Satu potong dari 2 bagian (setengah) lebih besar dari satu potong dari 4 bagian (seperempat):\n$$\\frac{1}{2} > \\frac{1}{4}$$"
@@ -105,10 +189,22 @@
       "difficulty": "Sedang",
       "questionText": "Sebuah papan catur berbentuk persegi memiliki panjang sisi $s = 20\\text{ cm}$. Berapakah keliling ($K$) papan catur tersebut?\n$$K = 4 \\times s$$",
       "options": [
-        { "id": "A", "text": "$40\\text{ cm}$" },
-        { "id": "B", "text": "$60\\text{ cm}$" },
-        { "id": "C", "text": "$80\\text{ cm}$" },
-        { "id": "D", "text": "$100\\text{ cm}$" }
+        {
+          "id": "A",
+          "text": "$40\\text{ cm}$"
+        },
+        {
+          "id": "B",
+          "text": "$60\\text{ cm}$"
+        },
+        {
+          "id": "C",
+          "text": "$80\\text{ cm}$"
+        },
+        {
+          "id": "D",
+          "text": "$100\\text{ cm}$"
+        }
       ],
       "correctAnswer": "C",
       "explanation": "$$K = 4 \\times 20 = 80\\text{ cm}$$"
@@ -118,10 +214,22 @@
       "difficulty": "Sedang",
       "questionText": "Ibu membeli gula pasir seberat $2\\text{ kilogram}$. Jika diubah ke dalam satuan gram, beratnya adalah...",
       "options": [
-        { "id": "A", "text": "$200\\text{ gram}$" },
-        { "id": "B", "text": "$1.500\\text{ gram}$" },
-        { "id": "C", "text": "$2.000\\text{ gram}$" },
-        { "id": "D", "text": "$20.000\\text{ gram}$" }
+        {
+          "id": "A",
+          "text": "$200\\text{ gram}$"
+        },
+        {
+          "id": "B",
+          "text": "$1.500\\text{ gram}$"
+        },
+        {
+          "id": "C",
+          "text": "$2.000\\text{ gram}$"
+        },
+        {
+          "id": "D",
+          "text": "$20.000\\text{ gram}$"
+        }
       ],
       "correctAnswer": "C",
       "explanation": "$2\\text{ kg} = 2 \\times 1.000 = 2.000\\text{ gram}$."
@@ -131,10 +239,22 @@
       "difficulty": "Sulit",
       "questionText": "Buku gambar berbentuk persegi panjang memiliki panjang $p = 15\\text{ cm}$ dan lebar $l = 10\\text{ cm}$. Berapakah keliling buku gambar tersebut?\n$$K = 2 \\times (p + l)$$",
       "options": [
-        { "id": "A", "text": "$25\\text{ cm}$" },
-        { "id": "B", "text": "$40\\text{ cm}$" },
-        { "id": "C", "text": "$50\\text{ cm}$" },
-        { "id": "D", "text": "$60\\text{ cm}$" }
+        {
+          "id": "A",
+          "text": "$25\\text{ cm}$"
+        },
+        {
+          "id": "B",
+          "text": "$40\\text{ cm}$"
+        },
+        {
+          "id": "C",
+          "text": "$50\\text{ cm}$"
+        },
+        {
+          "id": "D",
+          "text": "$60\\text{ cm}$"
+        }
       ],
       "correctAnswer": "C",
       "explanation": "Jumlahkan panjang dan lebar: $15 + 10 = 25\\text{ cm}$.\nLalu kalikan dua: $2 \\times 25 = 50\\text{ cm}$."
@@ -144,10 +264,22 @@
       "difficulty": "Sulit",
       "questionText": "Sebuah kue dipotong menjadi 8 bagian sama rata. Budi memakan 2 potong dan Ayah memakan 3 potong. Berapa bagian kue yang sudah dimakan seluruhnya?",
       "options": [
-        { "id": "A", "text": "$\\frac{3}{8}$" },
-        { "id": "B", "text": "$\\frac{4}{8}$" },
-        { "id": "C", "text": "$\\frac{5}{8}$" },
-        { "id": "D", "text": "$\\frac{6}{8}$" }
+        {
+          "id": "A",
+          "text": "$\\frac{3}{8}$"
+        },
+        {
+          "id": "B",
+          "text": "$\\frac{4}{8}$"
+        },
+        {
+          "id": "C",
+          "text": "$\\frac{5}{8}$"
+        },
+        {
+          "id": "D",
+          "text": "$\\frac{6}{8}$"
+        }
       ],
       "correctAnswer": "C",
       "explanation": "Jumlahkan potongan yang dimakan Budi dan Ayah: $2 + 3 = 5$ potong dari total 8 potongan, yaitu: $$\\frac{5}{8}$$"
@@ -157,13 +289,225 @@
       "difficulty": "Sulit",
       "questionText": "Di sebuah peternakan terdapat 56 butir telur ayam. Telur tersebut dimasukkan sama rata ke dalam 7 kotak karton. Berapa butir telur di setiap kotak?",
       "options": [
-        { "id": "A", "text": "6 butir" },
-        { "id": "B", "text": "7 butir" },
-        { "id": "C", "text": "8 butir" },
-        { "id": "D", "text": "9 butir" }
+        {
+          "id": "A",
+          "text": "6 butir"
+        },
+        {
+          "id": "B",
+          "text": "7 butir"
+        },
+        {
+          "id": "C",
+          "text": "8 butir"
+        },
+        {
+          "id": "D",
+          "text": "9 butir"
+        }
       ],
       "correctAnswer": "C",
       "explanation": "$$56 \\div 7 = 8\\text{ butir}$$"
+    },
+    {
+      "id": 304,
+      "difficulty": "Mudah",
+      "questionText": "Sebuah cokelat batangan terdiri dari 6 petak kecil. Siti memakan 1 petak cokelat tersebut. Bagian cokelat yang tersisa adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "$\\frac{5}{6}$"
+        },
+        {
+          "id": "B",
+          "text": "$\\frac{1}{6}$"
+        },
+        {
+          "id": "C",
+          "text": "$\\frac{4}{6}$"
+        },
+        {
+          "id": "D",
+          "text": "$\\frac{6}{5}$"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Sisa petak $= 6 - 1 = 5$ petak dari 6 petak, atau bernilai $\\frac{5}{6}$ bagian."
+    },
+    {
+      "id": 305,
+      "difficulty": "Sedang",
+      "questionText": "Berapakah hasil dari $48 \\div 6$?",
+      "options": [
+        {
+          "id": "A",
+          "text": "8"
+        },
+        {
+          "id": "B",
+          "text": "7"
+        },
+        {
+          "id": "C",
+          "text": "9"
+        },
+        {
+          "id": "D",
+          "text": "6"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Karena $6 \\times 8 = 48$, maka $48 \\div 6 = 8$."
+    },
+    {
+      "id": 306,
+      "difficulty": "Sedang",
+      "questionText": "Taman bunga berbentuk persegi panjang dengan panjang 25 meter dan lebar 15 meter. Berapakah keliling taman bunga tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "80 meter"
+        },
+        {
+          "id": "B",
+          "text": "40 meter"
+        },
+        {
+          "id": "C",
+          "text": "375 meter"
+        },
+        {
+          "id": "D",
+          "text": "70 meter"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "$$K = 2 \\times (p + l) = 2 \\times (25 + 15) = 2 \\times 40 = 80\\text{ meter}$$."
+    },
+    {
+      "id": 307,
+      "difficulty": "Mudah",
+      "questionText": "Pada pecahan $\\frac{3}{7}$, angka **3** disebut .... dan angka **7** disebut ....",
+      "options": [
+        {
+          "id": "A",
+          "text": "Pembilang dan penyebut"
+        },
+        {
+          "id": "B",
+          "text": "Penyebut dan pembilang"
+        },
+        {
+          "id": "C",
+          "text": "Pengali dan pembagi"
+        },
+        {
+          "id": "D",
+          "text": "Satuan dan puluhan"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Angka di bagian atas pecahan adalah pembilang, dan angka di bagian bawah adalah penyebut."
+    },
+    {
+      "id": 308,
+      "difficulty": "Sedang",
+      "questionText": "Urutkan pecahan berikut dari yang **terkecil ke terbesar**: $\\frac{1}{8}, \\frac{5}{8}, \\frac{3}{8}$.",
+      "options": [
+        {
+          "id": "A",
+          "text": "$\\frac{1}{8}, \\frac{3}{8}, \\frac{5}{8}$"
+        },
+        {
+          "id": "B",
+          "text": "$\\frac{5}{8}, \\frac{3}{8}, \\frac{1}{8}$"
+        },
+        {
+          "id": "C",
+          "text": "$\\frac{3}{8}, \\frac{1}{8}, \\frac{5}{8}$"
+        },
+        {
+          "id": "D",
+          "text": "$\\frac{1}{8}, \\frac{5}{8}, \\frac{3}{8}$"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Pada penyebut yang sama (8), cukup urutkan angka pembilangnya: $1 < 3 < 5$."
+    },
+    {
+      "id": 309,
+      "difficulty": "Sulit",
+      "questionText": "Sebuah segitiga sama sisi memiliki panjang sisi 14 cm. Berapakah keliling segitiga tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "42 cm"
+        },
+        {
+          "id": "B",
+          "text": "28 cm"
+        },
+        {
+          "id": "C",
+          "text": "56 cm"
+        },
+        {
+          "id": "D",
+          "text": "36 cm"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Segitiga sama sisi memiliki 3 sisi sama panjang. Keliling $= 3 \\times 14 = 42\\text{ cm}$."
+    },
+    {
+      "id": 310,
+      "difficulty": "Sulit",
+      "questionText": "Ayah mempunyai kawat sepanjang 240 cm. Kawat tersebut dibentuk menjadi sebuah persegi tanpa sisa. Berapakah panjang masing-masing sisi persegi tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "60 cm"
+        },
+        {
+          "id": "B",
+          "text": "80 cm"
+        },
+        {
+          "id": "C",
+          "text": "120 cm"
+        },
+        {
+          "id": "D",
+          "text": "40 cm"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Keliling persegi $= 4 \\times s = 240\\text{ cm}$. Sisi $= 240 \\div 4 = 60\\text{ cm}$."
+    },
+    {
+      "id": 311,
+      "difficulty": "Sedang",
+      "questionText": "Berapakah hasil dari penjumlahan pecahan: $$\\frac{2}{9} + \\frac{4}{9} = \\dots$$?",
+      "options": [
+        {
+          "id": "A",
+          "text": "$\\frac{6}{9}$ (atau $\\frac{2}{3}$)"
+        },
+        {
+          "id": "B",
+          "text": "$\\frac{6}{18}$"
+        },
+        {
+          "id": "C",
+          "text": "$\\frac{8}{9}$"
+        },
+        {
+          "id": "D",
+          "text": "$\\frac{2}{9}$"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Penyebut sama (9), jumlahkan pembilang: $2 + 4 = 6$. Hasilnya $\\frac{6}{9}$."
     }
   ]
 }

@@ -31,6 +31,7 @@ interface SavedSession {
   currentIndex: number;
   timeLeft: number;
   selectedDifficulty: 'Semua' | 'Mudah' | 'Sedang' | 'Sulit';
+  sessionQuestionCount?: number;
   isSubmitted: boolean;
 }
 
@@ -75,6 +76,8 @@ export const QuizPlayer: React.FC<QuizPlayerProps> = ({ quiz }) => {
   const storageKey = `asah_otak_session_${quiz.id}`;
   const initialDurationSeconds = quiz.duration * 60;
 
+  const defaultCount = Math.min(10, quiz.questions.length);
+  const [sessionQuestionCount, setSessionQuestionCount] = useState<number>(defaultCount);
   const [selectedDifficulty, setSelectedDifficulty] = useState<'Semua' | 'Mudah' | 'Sedang' | 'Sulit'>('Semua');
   const [activeQuestions, setActiveQuestions] = useState<Question[]>([]);
   const [currentIndex, setCurrentIndex] = useState<number>(0);
@@ -88,6 +91,7 @@ export const QuizPlayer: React.FC<QuizPlayerProps> = ({ quiz }) => {
   const [showNewQuizConfirmModal, setShowNewQuizConfirmModal] = useState<boolean>(false);
   const [showHomeConfirmModal, setShowHomeConfirmModal] = useState<boolean>(false);
   const [pendingDifficulty, setPendingDifficulty] = useState<'Semua' | 'Mudah' | 'Sedang' | 'Sulit' | null>(null);
+  const [pendingCount, setPendingCount] = useState<number | null>(null);
   const [studentName, setStudentName] = useState<string>('');
   const [showCertificateModal, setShowCertificateModal] = useState<boolean>(false);
 
@@ -97,7 +101,10 @@ export const QuizPlayer: React.FC<QuizPlayerProps> = ({ quiz }) => {
   const timerRef = useRef<NodeJS.Timeout | null>(null);
   const isInitialized = useRef<boolean>(false);
 
-  const createFreshQuizSet = (difficulty: 'Semua' | 'Mudah' | 'Sedang' | 'Sulit'): Question[] => {
+  const createFreshQuizSet = (
+    difficulty: 'Semua' | 'Mudah' | 'Sedang' | 'Sulit',
+    count: number = sessionQuestionCount
+  ): Question[] => {
     let pool = quiz.questions;
     if (difficulty !== 'Semua') {
       const filtered = quiz.questions.filter((q) => q.difficulty === difficulty);
@@ -107,7 +114,7 @@ export const QuizPlayer: React.FC<QuizPlayerProps> = ({ quiz }) => {
     }
 
     const shuffledPool = shuffleArray(pool);
-    const countToTake = Math.min(quiz.shuffleCount || 5, shuffledPool.length);
+    const countToTake = Math.min(count, shuffledPool.length);
     const selectedSubset = shuffledPool.slice(0, countToTake);
     return selectedSubset.map(randomizeQuestion);
   };
@@ -127,6 +134,9 @@ export const QuizPlayer: React.FC<QuizPlayerProps> = ({ quiz }) => {
           setCurrentIndex(parsed.currentIndex || 0);
           setTimeLeft(parsed.timeLeft !== undefined ? parsed.timeLeft : initialDurationSeconds);
           setSelectedDifficulty(parsed.selectedDifficulty || 'Semua');
+          if (parsed.sessionQuestionCount) {
+            setSessionQuestionCount(parsed.sessionQuestionCount);
+          }
           setIsSubmitted(Boolean(parsed.isSubmitted));
           isInitialized.current = true;
           return;
@@ -136,12 +146,13 @@ export const QuizPlayer: React.FC<QuizPlayerProps> = ({ quiz }) => {
       console.warn('Gagal membaca data sesi:', e);
     }
 
-    const freshQuestions = createFreshQuizSet('Semua');
+    const freshQuestions = createFreshQuizSet('Semua', defaultCount);
     setActiveQuestions(freshQuestions);
     setSelectedAnswers({});
     setFlaggedQuestions(new Set());
     setCurrentIndex(0);
     setTimeLeft(initialDurationSeconds);
+    setSessionQuestionCount(defaultCount);
     setIsSubmitted(false);
     isInitialized.current = true;
   }, [quiz.id]);
@@ -159,13 +170,14 @@ export const QuizPlayer: React.FC<QuizPlayerProps> = ({ quiz }) => {
         currentIndex,
         timeLeft,
         selectedDifficulty,
+        sessionQuestionCount,
         isSubmitted,
       };
       localStorage.setItem(storageKey, JSON.stringify(sessionToSave));
     } catch (e) {
       console.warn('Gagal menyimpan sesi:', e);
     }
-  }, [activeQuestions, selectedAnswers, flaggedQuestions, currentIndex, timeLeft, selectedDifficulty, isSubmitted, quiz.id]);
+  }, [activeQuestions, selectedAnswers, flaggedQuestions, currentIndex, timeLeft, selectedDifficulty, sessionQuestionCount, isSubmitted, quiz.id]);
 
   // 3. Timer mundur
   useEffect(() => {
@@ -187,27 +199,37 @@ export const QuizPlayer: React.FC<QuizPlayerProps> = ({ quiz }) => {
     };
   }, [isSubmitted, activeQuestions]);
 
-  const handleStartNewQuestions = (diff: 'Semua' | 'Mudah' | 'Sedang' | 'Sulit' = selectedDifficulty) => {
-    const freshQuestions = createFreshQuizSet(diff);
+  const handleStartNewQuestions = (
+    diff: 'Semua' | 'Mudah' | 'Sedang' | 'Sulit' = selectedDifficulty,
+    count: number = sessionQuestionCount
+  ) => {
+    const freshQuestions = createFreshQuizSet(diff, count);
     setActiveQuestions(freshQuestions);
     setSelectedAnswers({});
     setFlaggedQuestions(new Set());
     setCurrentIndex(0);
     setTimeLeft(initialDurationSeconds);
     setSelectedDifficulty(diff);
+    setSessionQuestionCount(count);
     setIsSubmitted(false);
     setShowNewQuizConfirmModal(false);
     setPendingDifficulty(null);
+    setPendingCount(null);
   };
 
-  const triggerNewQuizRequest = (targetDiff?: 'Semua' | 'Mudah' | 'Sedang' | 'Sulit') => {
+  const triggerNewQuizRequest = (
+    targetDiff?: 'Semua' | 'Mudah' | 'Sedang' | 'Sulit',
+    targetCount?: number
+  ) => {
     const diff = targetDiff || selectedDifficulty;
+    const count = targetCount || sessionQuestionCount;
     const hasProgress = Object.keys(selectedAnswers).length > 0;
     if (!isSubmitted && hasProgress) {
       setPendingDifficulty(diff);
+      setPendingCount(count);
       setShowNewQuizConfirmModal(true);
     } else {
-      handleStartNewQuestions(diff);
+      handleStartNewQuestions(diff, count);
     }
   };
 
@@ -655,24 +677,51 @@ export const QuizPlayer: React.FC<QuizPlayerProps> = ({ quiz }) => {
 
   return (
     <div className="max-w-4xl mx-auto space-y-4 pb-12">
-      {/* Bar Atas: Filter Tingkat & Tombol Paket Baru */}
-      <div className="bg-white rounded-xl border border-slate-200 p-3.5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2.5">
-        <div className="flex items-center gap-2">
-          <span className="text-xs font-bold text-slate-700">Tingkat:</span>
-          <div className="flex items-center gap-1 bg-slate-100 p-1 rounded-lg text-xs font-semibold">
-            {(['Semua', 'Mudah', 'Sedang', 'Sulit'] as const).map((diff) => (
-              <button
-                key={diff}
-                type="button"
-                onClick={() => triggerNewQuizRequest(diff)}
-                className={`px-2.5 py-1 rounded transition ${selectedDifficulty === diff
-                    ? 'bg-white text-blue-700 shadow-sm'
-                    : 'text-slate-600 hover:text-slate-900'
-                  }`}
-              >
-                {diff === 'Semua' ? 'Campuran' : diff}
-              </button>
-            ))}
+      {/* Bar Atas: Filter Tingkat & Pilihan Jumlah Soal Testing */}
+      <div className="bg-white rounded-xl border border-slate-200 p-3.5 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-3 shadow-xs">
+        <div className="flex flex-wrap items-center gap-3">
+          {/* Tingkat Kesulitan */}
+          <div className="flex items-center gap-1.5">
+            <span className="text-xs font-bold text-slate-700">Tingkat:</span>
+            <div className="flex items-center gap-1 bg-slate-100 p-1 rounded-lg text-xs font-semibold">
+              {(['Semua', 'Mudah', 'Sedang', 'Sulit'] as const).map((diff) => (
+                <button
+                  key={diff}
+                  type="button"
+                  onClick={() => triggerNewQuizRequest(diff, sessionQuestionCount)}
+                  className={`px-2.5 py-1 rounded transition ${selectedDifficulty === diff
+                      ? 'bg-white text-blue-700 shadow-sm'
+                      : 'text-slate-600 hover:text-slate-900'
+                    }`}
+                >
+                  {diff === 'Semua' ? 'Campuran' : diff}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Pilihan Jumlah Soal Sesi Testing */}
+          <div className="flex items-center gap-1.5">
+            <span className="text-xs font-bold text-slate-700">Sesi Ujian:</span>
+            <div className="flex items-center gap-1 bg-slate-100 p-1 rounded-lg text-xs font-semibold">
+              {[
+                { label: '10 Soal (Standar)', count: 10 },
+                { label: '15 Soal', count: 15 },
+                { label: `Semua (${quiz.questions.length})`, count: quiz.questions.length },
+              ].map((item) => (
+                <button
+                  key={item.count}
+                  type="button"
+                  onClick={() => triggerNewQuizRequest(selectedDifficulty, item.count)}
+                  className={`px-2.5 py-1 rounded transition ${sessionQuestionCount === item.count
+                      ? 'bg-white text-blue-700 shadow-sm'
+                      : 'text-slate-600 hover:text-slate-900'
+                    }`}
+                >
+                  {item.label}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
 
@@ -689,11 +738,11 @@ export const QuizPlayer: React.FC<QuizPlayerProps> = ({ quiz }) => {
 
           <button
             type="button"
-            onClick={() => triggerNewQuizRequest()}
+            onClick={() => triggerNewQuizRequest(selectedDifficulty, sessionQuestionCount)}
             className="inline-flex items-center gap-1 text-xs font-semibold text-slate-700 hover:text-blue-700 py-1 transition"
           >
             <RefreshCw className="w-3.5 h-3.5" />
-            <span>Ganti Paket Soal</span>
+            <span>Acak Soal Baru</span>
           </button>
         </div>
       </div>
@@ -976,6 +1025,7 @@ export const QuizPlayer: React.FC<QuizPlayerProps> = ({ quiz }) => {
                 onClick={() => {
                   setShowNewQuizConfirmModal(false);
                   setPendingDifficulty(null);
+                  setPendingCount(null);
                 }}
                 className="px-3 py-1.5 text-xs font-semibold text-slate-700 hover:bg-slate-100 rounded-lg transition"
               >
@@ -983,7 +1033,12 @@ export const QuizPlayer: React.FC<QuizPlayerProps> = ({ quiz }) => {
               </button>
               <button
                 type="button"
-                onClick={() => handleStartNewQuestions(pendingDifficulty || selectedDifficulty)}
+                onClick={() =>
+                  handleStartNewQuestions(
+                    pendingDifficulty || selectedDifficulty,
+                    pendingCount || sessionQuestionCount
+                  )
+                }
                 className="px-4 py-1.5 text-xs font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition"
               >
                 Ganti Soal Baru

@@ -3,21 +3,33 @@
   "title": "Gaya, Energi, & Fotosintesis Tumbuhan",
   "category": "ipa",
   "categoryName": "IPAS (Sains)",
-  "description": "Latihan mengenal gaya gravitasi, gaya gesek, gaya magnet, perubahan energi, dan proses fotosintesis pada daun.",
+  "description": "Latihan mengenal macam-macam gaya, transformasi energi, proses fotosintesis pada daun, dan rantai makanan untuk kelas 4 SD.",
   "level": "Kelas 4 SD",
   "difficulty": "Sedang",
-  "duration": 15,
-  "shuffleCount": 5,
+  "duration": 20,
+  "shuffleCount": 10,
   "questions": [
     {
       "id": 101,
       "difficulty": "Mudah",
       "questionText": "Buah kelapa yang lepas dari tangkainya selalu jatuh ke bawah menuju tanah. Hal tersebut disebabkan oleh adanya...",
       "options": [
-        { "id": "A", "text": "Gaya Gesek" },
-        { "id": "B", "text": "Gaya Gravitasi Bumi" },
-        { "id": "C", "text": "Gaya Magnet" },
-        { "id": "D", "text": "Gaya Pegas" }
+        {
+          "id": "A",
+          "text": "Gaya Gesek"
+        },
+        {
+          "id": "B",
+          "text": "Gaya Gravitasi Bumi"
+        },
+        {
+          "id": "C",
+          "text": "Gaya Magnet"
+        },
+        {
+          "id": "D",
+          "text": "Gaya Pegas"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "**Gaya gravitasi bumi** menarik seluruh benda di sekitar bumi menuju pusat bumi ke bawah."
@@ -27,10 +39,22 @@
       "difficulty": "Mudah",
       "questionText": "Benda berikut ini yang dapat ditarik kuat oleh magnet adalah...",
       "options": [
-        { "id": "A", "text": "Paku besi dan klip kertas" },
-        { "id": "B", "text": "Buku tulis dan kertas" },
-        { "id": "C", "text": "Gelas kaca" },
-        { "id": "D", "text": "Penggaris plastik" }
+        {
+          "id": "A",
+          "text": "Paku besi dan klip kertas"
+        },
+        {
+          "id": "B",
+          "text": "Buku tulis dan kertas"
+        },
+        {
+          "id": "C",
+          "text": "Gelas kaca"
+        },
+        {
+          "id": "D",
+          "text": "Penggaris plastik"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "Benda berbahan logam besi seperti **paku dan klip kertas** dapat ditarik oleh magnet."
@@ -40,10 +64,22 @@
       "difficulty": "Mudah",
       "questionText": "Saat menyalakan kipas angin di kamar, terjadi perubahan energi listrik menjadi energi...",
       "options": [
-        { "id": "A", "text": "Gerak" },
-        { "id": "B", "text": "Panas" },
-        { "id": "C", "text": "Kimia" },
-        { "id": "D", "text": "Cahaya" }
+        {
+          "id": "A",
+          "text": "Gerak"
+        },
+        {
+          "id": "B",
+          "text": "Panas"
+        },
+        {
+          "id": "C",
+          "text": "Kimia"
+        },
+        {
+          "id": "D",
+          "text": "Cahaya"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "Kipas angin mengubah **energi listrik menjadi energi gerak** pada baling-balingnya."
@@ -53,10 +89,22 @@
       "difficulty": "Sedang",
       "questionText": "Gas yang diserap dari udara oleh daun tumbuhan hijau untuk proses fotosintesis adalah...",
       "options": [
-        { "id": "A", "text": "Oksigen ($O_2$)" },
-        { "id": "B", "text": "Karbon Dioksida ($CO_2$)" },
-        { "id": "C", "text": "Nitrogen" },
-        { "id": "D", "text": "Helium" }
+        {
+          "id": "A",
+          "text": "Oksigen ($O_2$)"
+        },
+        {
+          "id": "B",
+          "text": "Karbon Dioksida ($CO_2$)"
+        },
+        {
+          "id": "C",
+          "text": "Nitrogen"
+        },
+        {
+          "id": "D",
+          "text": "Helium"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "Tumbuhan menyerap **Karbon Dioksida ($CO_2$)** dari udara dan air dari tanah untuk membuat makanan."
@@ -66,10 +114,22 @@
       "difficulty": "Sedang",
       "questionText": "Hasil fotosintesis tumbuhan hijau yang dilepaskan ke udara dan sangat dibutuhkan manusia dan hewan untuk bernapas adalah...",
       "options": [
-        { "id": "A", "text": "Karbon Dioksida" },
-        { "id": "B", "text": "Oksigen ($O_2$)" },
-        { "id": "C", "text": "Asap" },
-        { "id": "D", "text": "Debu" }
+        {
+          "id": "A",
+          "text": "Karbon Dioksida"
+        },
+        {
+          "id": "B",
+          "text": "Oksigen ($O_2$)"
+        },
+        {
+          "id": "C",
+          "text": "Asap"
+        },
+        {
+          "id": "D",
+          "text": "Debu"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "Proses fotosintesis menghasilkan gas **Oksigen ($O_2$)** yang menyegarkan udara dan dihirup oleh makhluk hidup."
@@ -79,10 +139,22 @@
       "difficulty": "Sedang",
       "questionText": "Ban sepeda dibuat beralur kasar agar tidak mudah tergelincir di jalan licin. Hal tersebut bertujuan untuk memperbesar...",
       "options": [
-        { "id": "A", "text": "Gaya Gesek" },
-        { "id": "B", "text": "Gaya Gravitasi" },
-        { "id": "C", "text": "Gaya Magnet" },
-        { "id": "D", "text": "Gaya Pegas" }
+        {
+          "id": "A",
+          "text": "Gaya Gesek"
+        },
+        {
+          "id": "B",
+          "text": "Gaya Gravitasi"
+        },
+        {
+          "id": "C",
+          "text": "Gaya Magnet"
+        },
+        {
+          "id": "D",
+          "text": "Gaya Pegas"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "Alur ban memperbesar **gaya gesek** antara roda dan aspal sehingga sepeda tidak tergelincir."
@@ -92,10 +164,22 @@
       "difficulty": "Sulit",
       "questionText": "Saat kita menyalakan senter baterai, urutan perubahan energi yang terjadi adalah...",
       "options": [
-        { "id": "A", "text": "Energi Kimia → Energi Listrik → Energi Cahaya" },
-        { "id": "B", "text": "Energi Gerak → Energi Cahaya → Energi Panas" },
-        { "id": "C", "text": "Energi Panas → Energi Listrik → Energi Kimia" },
-        { "id": "D", "text": "Energi Listrik → Energi Kimia → Energi Gerak" }
+        {
+          "id": "A",
+          "text": "Energi Kimia → Energi Listrik → Energi Cahaya"
+        },
+        {
+          "id": "B",
+          "text": "Energi Gerak → Energi Cahaya → Energi Panas"
+        },
+        {
+          "id": "C",
+          "text": "Energi Panas → Energi Listrik → Energi Kimia"
+        },
+        {
+          "id": "D",
+          "text": "Energi Listrik → Energi Kimia → Energi Gerak"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "Baterai menyimpan **energi kimia**, diubah menjadi **energi listrik**, lalu disalurkan ke lampu menjadi **energi cahaya**."
@@ -105,13 +189,325 @@
       "difficulty": "Sulit",
       "questionText": "Dua buah kutub magnet yang senama (misalnya kutub Utara didekatkan dengan kutub Utara) akan mengalami...",
       "options": [
-        { "id": "A", "text": "Tarik-menarik" },
-        { "id": "B", "text": "Tolak-menolak" },
-        { "id": "C", "text": "Menempel erat" },
-        { "id": "D", "text": "Tidak terjadi reaksi apa pun" }
+        {
+          "id": "A",
+          "text": "Tarik-menarik"
+        },
+        {
+          "id": "B",
+          "text": "Tolak-menolak"
+        },
+        {
+          "id": "C",
+          "text": "Menempel erat"
+        },
+        {
+          "id": "D",
+          "text": "Tidak terjadi reaksi apa pun"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "Kutub magnet yang senama (U-U atau S-S) akan **saling tolak-menolak**, sedangkan kutub tidak senama (U-S) akan saling tarik-menarik."
+    },
+    {
+      "id": 303,
+      "difficulty": "Mudah",
+      "questionText": "Tarikan atau dorongan yang diberikan pada suatu benda sehingga benda dapat bergerak atau berubah bentuk disebut...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Gaya"
+        },
+        {
+          "id": "B",
+          "text": "Daya"
+        },
+        {
+          "id": "C",
+          "text": "Kecepatan"
+        },
+        {
+          "id": "D",
+          "text": "Massa"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Gaya adalah suatu tarikan atau dorongan yang dapat menyebabkan benda diam menjadi bergerak atau berubah wujud/arah."
+    },
+    {
+      "id": 304,
+      "difficulty": "Sedang",
+      "questionText": "Ketika kita menarik anak panah pada busur atau melontarkan batu dengan ketapel, gaya yang dimanfaatkan adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Gaya Pegas"
+        },
+        {
+          "id": "B",
+          "text": "Gaya Gravitasi"
+        },
+        {
+          "id": "C",
+          "text": "Gaya Gesek"
+        },
+        {
+          "id": "D",
+          "text": "Gaya Listrik Statis"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Karet ketapel dan tali busur bersifat elastis yang menyimpan energi potensial pegas (gaya pegas)."
+    },
+    {
+      "id": 305,
+      "difficulty": "Mudah",
+      "questionText": "Zat hijau daun yang berfungsi menangkap energi cahaya matahari untuk fotosintesis adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Klorofil"
+        },
+        {
+          "id": "B",
+          "text": "Stomata"
+        },
+        {
+          "id": "C",
+          "text": "Xilem"
+        },
+        {
+          "id": "D",
+          "text": "Floem"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Klorofil adalah pigmen warna hijau pada kloroplas daun yang menyerap energi radiasi matahari."
+    },
+    {
+      "id": 306,
+      "difficulty": "Sedang",
+      "questionText": "Bagian daun berupa pori-pori halus tempat keluar masuknya gas karbon dioksida dan oksigen dinamakan...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Stomata (mulut daun)"
+        },
+        {
+          "id": "B",
+          "text": "Urat daun"
+        },
+        {
+          "id": "C",
+          "text": "Kambium"
+        },
+        {
+          "id": "D",
+          "text": "Batang kayu"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Stomata atau mulut daun berfungsi sebagai organ pernapasan dan pertukaran gas bagi tumbuhan."
+    },
+    {
+      "id": 307,
+      "difficulty": "Mudah",
+      "questionText": "Contoh peristiwa yang menunjukkan bahwa gaya dapat mengubah bentuk benda adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Menekan adonan plastisin / tanah liat menjadi patung"
+        },
+        {
+          "id": "B",
+          "text": "Menendang bola diam hingga meluncur"
+        },
+        {
+          "id": "C",
+          "text": "Menangkap bola yang melayang"
+        },
+        {
+          "id": "D",
+          "text": "Mendorong gerobak maju"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Memijat plastisin atau meremas kaleng membuktikan bahwa gaya tekan dapat mengubah bentuk fisik suatu benda."
+    },
+    {
+      "id": 308,
+      "difficulty": "Sedang",
+      "questionText": "Sepatu bola dilengkapi pul-pul (paku tumpul) di bagian sol bawahnya dengan tujuan untuk...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Memperbesar gaya gesek agar pemain tidak mudah terpeleset di lapangan rumput"
+        },
+        {
+          "id": "B",
+          "text": "Memperkecil gaya gesek agar pemain bisa meluncur"
+        },
+        {
+          "id": "C",
+          "text": "Menambah beban berat sepatu"
+        },
+        {
+          "id": "D",
+          "text": "Menghilangkan gaya gravitasi"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Pul sepatu menancap pada rumput untuk memperbesar gesekan dengan tanah sehingga pijakan atlet kokoh."
+    },
+    {
+      "id": 309,
+      "difficulty": "Sulit",
+      "questionText": "Pada rantai makanan di sawah: Padi → Belalang → Katak → Ular → Elang. Makhluk hidup yang berperan sebagai **produsen** adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Padi"
+        },
+        {
+          "id": "B",
+          "text": "Belalang"
+        },
+        {
+          "id": "C",
+          "text": "Katak"
+        },
+        {
+          "id": "D",
+          "text": "Ular"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Padi adalah tumbuhan berklorofil yang mampu memproduksi makanannya sendiri melalui fotosintesis, bertindak sebagai produsen."
+    },
+    {
+      "id": 310,
+      "difficulty": "Sedang",
+      "questionText": "Penggaris plastik yang digosokkan ke rambut kering dapat menarik sobekan-sobekan kertas kecil. Hal ini disebabkan oleh timbulnya...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Gaya Listrik Statis"
+        },
+        {
+          "id": "B",
+          "text": "Gaya Magnet Permanen"
+        },
+        {
+          "id": "C",
+          "text": "Gaya Gravitasi"
+        },
+        {
+          "id": "D",
+          "text": "Gaya Otot"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Gesekan memindahkan muatan elektron sehingga penggaris bermuatan listrik statis dan mampu menarik kertas netral."
+    },
+    {
+      "id": 311,
+      "difficulty": "Sedang",
+      "questionText": "Bagian tumbuhan yang bertugas menyerap air dan garam mineral dari dalam tanah adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Akar"
+        },
+        {
+          "id": "B",
+          "text": "Batang"
+        },
+        {
+          "id": "C",
+          "text": "Bunga"
+        },
+        {
+          "id": "D",
+          "text": "Biji"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Rambut-rambut akar menembus tanah untuk menyerap air dan mineral yang kemudian dialirkan ke daun melalui batang."
+    },
+    {
+      "id": 312,
+      "difficulty": "Sulit",
+      "questionText": "Panel surya (solar cell) yang dipasang di atap rumah berfungsi mengubah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Energi cahaya matahari menjadi energi listrik"
+        },
+        {
+          "id": "B",
+          "text": "Energi gerak menjadi energi panas"
+        },
+        {
+          "id": "C",
+          "text": "Energi listrik menjadi energi nuklir"
+        },
+        {
+          "id": "D",
+          "text": "Energi angin menjadi energi kimia"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Sel fotovoltaik pada panel surya mengubah foton cahaya matahari menjadi arus listrik DC."
+    },
+    {
+      "id": 313,
+      "difficulty": "Mudah",
+      "questionText": "Hewan pemakan tumbuhan seperti sapi, kambing, dan kelinci dikelompokkan ke dalam hewan...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Herbivora"
+        },
+        {
+          "id": "B",
+          "text": "Karnivora"
+        },
+        {
+          "id": "C",
+          "text": "Omnivora"
+        },
+        {
+          "id": "D",
+          "text": "Insektivora"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Herbivora adalah pemakan rumput/daun/tumbuhan. Karnivora pemakan daging, dan omnivora pemakan segala."
+    },
+    {
+      "id": 314,
+      "difficulty": "Sulit",
+      "questionText": "Jika populasi katak di persawahan mendadak punah karena diburu, dampak yang paling mungkin terjadi pada ekosistem adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Populasi hama belalang meningkat drastis merusak padi"
+        },
+        {
+          "id": "B",
+          "text": "Padi tumbuh semakin subur"
+        },
+        {
+          "id": "C",
+          "text": "Ular sawah bertambah banyak"
+        },
+        {
+          "id": "D",
+          "text": "Elang tidak terpengaruh sama sekali"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Karena pemangsa alaminya (katak) hilang, belalang tidak terkendali sehingga populasinya meledak dan merusak tanaman padi petani."
     }
   ]
 }

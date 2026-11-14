@@ -6,18 +6,30 @@
   "description": "Bank soal berhitung angka 1-20, penjumlahan buah, pengurangan, perbandingan, dan bangun datar dengan 3 tingkat kesulitan.",
   "level": "Kelas 1 SD",
   "difficulty": "Sedang",
-  "duration": 10,
-  "shuffleCount": 5,
+  "duration": 20,
+  "shuffleCount": 10,
   "questions": [
     {
       "id": 101,
       "difficulty": "Mudah",
       "questionText": "Berapakah hasil dari penjumlahan jari tangan berikut?\n$$3 + 4 = \\dots$$",
       "options": [
-        { "id": "A", "text": "5" },
-        { "id": "B", "text": "6" },
-        { "id": "C", "text": "7" },
-        { "id": "D", "text": "8" }
+        {
+          "id": "A",
+          "text": "5"
+        },
+        {
+          "id": "B",
+          "text": "6"
+        },
+        {
+          "id": "C",
+          "text": "7"
+        },
+        {
+          "id": "D",
+          "text": "8"
+        }
       ],
       "correctAnswer": "C",
       "explanation": "3 ditambah 4 sama dengan **7** ($3 + 4 = 7$)."
@@ -27,10 +39,22 @@
       "difficulty": "Mudah",
       "questionText": "Ibu meletakkan 5 buah jeruk di piring, lalu Adik menambahkan 3 buah jeruk lagi. Berapa total jeruk di piring sekarang?\n$$5 + 3 = \\dots$$",
       "options": [
-        { "id": "A", "text": "7 buah" },
-        { "id": "B", "text": "8 buah" },
-        { "id": "C", "text": "9 buah" },
-        { "id": "D", "text": "10 buah" }
+        {
+          "id": "A",
+          "text": "7 buah"
+        },
+        {
+          "id": "B",
+          "text": "8 buah"
+        },
+        {
+          "id": "C",
+          "text": "9 buah"
+        },
+        {
+          "id": "D",
+          "text": "10 buah"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "$$5 + 3 = 8$$\nTotal jeruk sekarang ada **8 buah**."
@@ -40,10 +64,22 @@
       "difficulty": "Mudah",
       "questionText": "Bentuk bangun datar uang koin atau roda sepeda adalah...",
       "options": [
-        { "id": "A", "text": "Segitiga" },
-        { "id": "B", "text": "Lingkaran" },
-        { "id": "C", "text": "Persegi" },
-        { "id": "D", "text": "Persegi Panjang" }
+        {
+          "id": "A",
+          "text": "Segitiga"
+        },
+        {
+          "id": "B",
+          "text": "Lingkaran"
+        },
+        {
+          "id": "C",
+          "text": "Persegi"
+        },
+        {
+          "id": "D",
+          "text": "Persegi Panjang"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "Uang koin dan roda sepeda berbentuk bulat melingkar sempurna, yaitu **Lingkaran**."
@@ -53,10 +89,22 @@
       "difficulty": "Mudah",
       "questionText": "Berapakah hasil pengurangan berikut?\n$$7 - 3 = \\dots$$",
       "options": [
-        { "id": "A", "text": "3" },
-        { "id": "B", "text": "4" },
-        { "id": "C", "text": "5" },
-        { "id": "D", "text": "6" }
+        {
+          "id": "A",
+          "text": "3"
+        },
+        {
+          "id": "B",
+          "text": "4"
+        },
+        {
+          "id": "C",
+          "text": "5"
+        },
+        {
+          "id": "D",
+          "text": "6"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "Dari angka 7, hitung mundur sebanyak 3 langkah: 6, 5, 4. Hasilnya adalah **4**."
@@ -66,10 +114,22 @@
       "difficulty": "Sedang",
       "questionText": "Ibu mempunyai 7 buah apel di keranjang. Lalu Ayah membeli lagi 5 buah apel. Berapakah jumlah semua apel sekarang?\n$$7 + 5 = \\dots$$",
       "options": [
-        { "id": "A", "text": "10 buah" },
-        { "id": "B", "text": "11 buah" },
-        { "id": "C", "text": "12 buah" },
-        { "id": "D", "text": "13 buah" }
+        {
+          "id": "A",
+          "text": "10 buah"
+        },
+        {
+          "id": "B",
+          "text": "11 buah"
+        },
+        {
+          "id": "C",
+          "text": "12 buah"
+        },
+        {
+          "id": "D",
+          "text": "13 buah"
+        }
       ],
       "correctAnswer": "C",
       "explanation": "$$7 + 5 = 12$$\nJumlah semua apel Ibu dan Ayah adalah **12 buah**."
@@ -79,10 +139,22 @@
       "difficulty": "Sedang",
       "questionText": "Budi memiliki 14 kelereng. Saat bermain di taman, 4 kelerengnya hilang. Berapa sisa kelereng Budi sekarang?\n$$14 - 4 = \\dots$$",
       "options": [
-        { "id": "A", "text": "9 kelereng" },
-        { "id": "B", "text": "10 kelereng" },
-        { "id": "C", "text": "11 kelereng" },
-        { "id": "D", "text": "12 kelereng" }
+        {
+          "id": "A",
+          "text": "9 kelereng"
+        },
+        {
+          "id": "B",
+          "text": "10 kelereng"
+        },
+        {
+          "id": "C",
+          "text": "11 kelereng"
+        },
+        {
+          "id": "D",
+          "text": "12 kelereng"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "$$14 - 4 = 10$$\nSisa kelereng Budi sekarang adalah **10 kelereng**."
@@ -92,10 +164,22 @@
       "difficulty": "Sedang",
       "questionText": "Tanda perbandingan yang tepat untuk mengisi titik-titik di bawah ini adalah:\n$$15 \\dots 18$$",
       "options": [
-        { "id": "A", "text": "< (Lebih kecil)" },
-        { "id": "B", "text": "> (Lebih besar)" },
-        { "id": "C", "text": "= (Sama dengan)" },
-        { "id": "D", "text": "+ (Ditambah)" }
+        {
+          "id": "A",
+          "text": "< (Lebih kecil)"
+        },
+        {
+          "id": "B",
+          "text": "> (Lebih besar)"
+        },
+        {
+          "id": "C",
+          "text": "= (Sama dengan)"
+        },
+        {
+          "id": "D",
+          "text": "+ (Ditambah)"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "15 lebih kecil daripada 18 ($15 < 18$)."
@@ -105,10 +189,22 @@
       "difficulty": "Sedang",
       "questionText": "Bangun datar yang memiliki 3 buah sisi dan 3 buah sudut lancip menyerupai potongan pizza adalah...",
       "options": [
-        { "id": "A", "text": "Lingkaran" },
-        { "id": "B", "text": "Persegi" },
-        { "id": "C", "text": "Segitiga" },
-        { "id": "D", "text": "Persegi Panjang" }
+        {
+          "id": "A",
+          "text": "Lingkaran"
+        },
+        {
+          "id": "B",
+          "text": "Persegi"
+        },
+        {
+          "id": "C",
+          "text": "Segitiga"
+        },
+        {
+          "id": "D",
+          "text": "Persegi Panjang"
+        }
       ],
       "correctAnswer": "C",
       "explanation": "**Segitiga** memiliki 3 sisi dan 3 sudut."
@@ -118,10 +214,22 @@
       "difficulty": "Sulit",
       "questionText": "Berapakah angka yang tepat untuk mengisi titik-titik berikut agar bernilai benar?\n$$8 + \\dots = 15$$",
       "options": [
-        { "id": "A", "text": "6" },
-        { "id": "B", "text": "7" },
-        { "id": "C", "text": "8" },
-        { "id": "D", "text": "9" }
+        {
+          "id": "A",
+          "text": "6"
+        },
+        {
+          "id": "B",
+          "text": "7"
+        },
+        {
+          "id": "C",
+          "text": "8"
+        },
+        {
+          "id": "D",
+          "text": "9"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "Untuk mencari angka pengisi titik-titik, kurangkan hasil dengan angka yang ada:\n$$15 - 8 = 7$$\nMaka $8 + 7 = 15$."
@@ -131,10 +239,22 @@
       "difficulty": "Sulit",
       "questionText": "Lanjutan dari urutan pola loncat 2 berikut adalah:\n$$2, 4, 6, 8, \\dots$$",
       "options": [
-        { "id": "A", "text": "9" },
-        { "id": "B", "text": "10" },
-        { "id": "C", "text": "11" },
-        { "id": "D", "text": "12" }
+        {
+          "id": "A",
+          "text": "9"
+        },
+        {
+          "id": "B",
+          "text": "10"
+        },
+        {
+          "id": "C",
+          "text": "11"
+        },
+        {
+          "id": "D",
+          "text": "12"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "Pola bertambah 2: $8 + 2 = 10$. Jadi angka berikutnya adalah **10**."
@@ -144,10 +264,22 @@
       "difficulty": "Sulit",
       "questionText": "Siti memiliki 9 permen. Diberi Kakak 6 permen, lalu dimakan Siti 3 permen. Berapa sisa permen Siti sekarang?\n$$9 + 6 - 3 = \\dots$$",
       "options": [
-        { "id": "A", "text": "11 permen" },
-        { "id": "B", "text": "12 permen" },
-        { "id": "C", "text": "13 permen" },
-        { "id": "D", "text": "14 permen" }
+        {
+          "id": "A",
+          "text": "11 permen"
+        },
+        {
+          "id": "B",
+          "text": "12 permen"
+        },
+        {
+          "id": "C",
+          "text": "13 permen"
+        },
+        {
+          "id": "D",
+          "text": "14 permen"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "Hitung bertahap:\n1. $9 + 6 = 15$\n2. $15 - 3 = 12$\nSisa permen Siti adalah **12 permen**."
@@ -157,10 +289,22 @@
       "difficulty": "Mudah",
       "questionText": "Urutan bilangan dari yang **paling kecil** ke yang paling besar berikut ini adalah...",
       "options": [
-        { "id": "A", "text": "3, 6, 8, 10" },
-        { "id": "B", "text": "10, 8, 6, 3" },
-        { "id": "C", "text": "6, 3, 10, 8" },
-        { "id": "D", "text": "8, 6, 3, 10" }
+        {
+          "id": "A",
+          "text": "3, 6, 8, 10"
+        },
+        {
+          "id": "B",
+          "text": "10, 8, 6, 3"
+        },
+        {
+          "id": "C",
+          "text": "6, 3, 10, 8"
+        },
+        {
+          "id": "D",
+          "text": "8, 6, 3, 10"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "Urutan dari paling kecil ke paling besar adalah 3, 6, 8, lalu 10."
@@ -170,10 +314,22 @@
       "difficulty": "Mudah",
       "questionText": "Berapakah hasil dari pengurangan berikut?\n$$10 - 6 = \\dots$$",
       "options": [
-        { "id": "A", "text": "3" },
-        { "id": "B", "text": "4" },
-        { "id": "C", "text": "5" },
-        { "id": "D", "text": "6" }
+        {
+          "id": "A",
+          "text": "3"
+        },
+        {
+          "id": "B",
+          "text": "4"
+        },
+        {
+          "id": "C",
+          "text": "5"
+        },
+        {
+          "id": "D",
+          "text": "6"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "$$10 - 6 = 4$$"
@@ -183,10 +339,22 @@
       "difficulty": "Sedang",
       "questionText": "Benda di rumah seperti kardus mie instan atau lemari es berbentuk...",
       "options": [
-        { "id": "A", "text": "Bola" },
-        { "id": "B", "text": "Balok" },
-        { "id": "C", "text": "Kerucut" },
-        { "id": "D", "text": "Tabung" }
+        {
+          "id": "A",
+          "text": "Bola"
+        },
+        {
+          "id": "B",
+          "text": "Balok"
+        },
+        {
+          "id": "C",
+          "text": "Kerucut"
+        },
+        {
+          "id": "D",
+          "text": "Tabung"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "Kardus mie instan dan lemari es adalah bangun ruang berbentuk **Balok**."
@@ -196,10 +364,22 @@
       "difficulty": "Sedang",
       "questionText": "Berapakah hasil dari $20 - 8 = \\dots$?",
       "options": [
-        { "id": "A", "text": "10" },
-        { "id": "B", "text": "11" },
-        { "id": "C", "text": "12" },
-        { "id": "D", "text": "14" }
+        {
+          "id": "A",
+          "text": "10"
+        },
+        {
+          "id": "B",
+          "text": "11"
+        },
+        {
+          "id": "C",
+          "text": "12"
+        },
+        {
+          "id": "D",
+          "text": "14"
+        }
       ],
       "correctAnswer": "C",
       "explanation": "$$20 - 8 = 12$$"
@@ -209,10 +389,22 @@
       "difficulty": "Sulit",
       "questionText": "Lanjutan dari urutan pola bilangan loncat 3 berikut adalah:\n$$3, 6, 9, 12, \\dots$$",
       "options": [
-        { "id": "A", "text": "13" },
-        { "id": "B", "text": "14" },
-        { "id": "C", "text": "15" },
-        { "id": "D", "text": "16" }
+        {
+          "id": "A",
+          "text": "13"
+        },
+        {
+          "id": "B",
+          "text": "14"
+        },
+        {
+          "id": "C",
+          "text": "15"
+        },
+        {
+          "id": "D",
+          "text": "16"
+        }
       ],
       "correctAnswer": "C",
       "explanation": "Pola bertambah 3: $12 + 3 = 15$."
@@ -222,13 +414,100 @@
       "difficulty": "Sulit",
       "questionText": "Di lapangan ada 13 anak sedang bermain bola. Datang lagi 4 anak bergabung. Kemudian 5 anak pulang ke rumah. Berapa anak yang masih bermain di lapangan?",
       "options": [
-        { "id": "A", "text": "11 anak" },
-        { "id": "B", "text": "12 anak" },
-        { "id": "C", "text": "13 anak" },
-        { "id": "D", "text": "14 anak" }
+        {
+          "id": "A",
+          "text": "11 anak"
+        },
+        {
+          "id": "B",
+          "text": "12 anak"
+        },
+        {
+          "id": "C",
+          "text": "13 anak"
+        },
+        {
+          "id": "D",
+          "text": "14 anak"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "1. $13 + 4 = 17$\n2. $17 - 5 = 12$\nAnak yang masih di lapangan ada **12 anak**."
+    },
+    {
+      "id": 18,
+      "difficulty": "Sedang",
+      "questionText": "Berapakah hasil dari $9 + 9$?",
+      "options": [
+        {
+          "id": "A",
+          "text": "18"
+        },
+        {
+          "id": "B",
+          "text": "17"
+        },
+        {
+          "id": "C",
+          "text": "19"
+        },
+        {
+          "id": "D",
+          "text": "16"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "$$9 + 9 = 18$$."
+    },
+    {
+      "id": 19,
+      "difficulty": "Sedang",
+      "questionText": "Paman memetik 8 buah apel merah dan 7 buah apel hijau dari kebun. Berapa total seluruh apel yang dipetik paman?",
+      "options": [
+        {
+          "id": "A",
+          "text": "15 buah"
+        },
+        {
+          "id": "B",
+          "text": "14 buah"
+        },
+        {
+          "id": "C",
+          "text": "16 buah"
+        },
+        {
+          "id": "D",
+          "text": "17 buah"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "$$8 + 7 = 15\\text{ buah apel}$$."
+    },
+    {
+      "id": 20,
+      "difficulty": "Mudah",
+      "questionText": "Penjumlahan memiliki sifat pertukaran: $4 + 7 = 7 + ... = 11$. Angka yang tepat untuk titik-titik adalah ....",
+      "options": [
+        {
+          "id": "A",
+          "text": "4"
+        },
+        {
+          "id": "B",
+          "text": "7"
+        },
+        {
+          "id": "C",
+          "text": "11"
+        },
+        {
+          "id": "D",
+          "text": "3"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Sifat komutatif penjumlahan: $$4 + 7 = 7 + 4 = 11$$."
     }
   ]
 }

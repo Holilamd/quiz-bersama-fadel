@@ -6,18 +6,30 @@
   "description": "Latihan pengamalan sila Pancasila, kerja sama dalam piket kelas, hak dan kewajiban anak, serta sikap saling menghargai.",
   "level": "Kelas 3 SD",
   "difficulty": "Mudah",
-  "duration": 10,
-  "shuffleCount": 5,
+  "duration": 20,
+  "shuffleCount": 10,
   "questions": [
     {
       "id": 101,
       "difficulty": "Mudah",
       "questionText": "Manfaat melakukan piket kebersihan kelas bersama teman secara gotong royong adalah...",
       "options": [
-        { "id": "A", "text": "Pekerjaan menjadi lebih lama" },
-        { "id": "B", "text": "Pekerjaan cepat selesai dan terasa lebih ringan" },
-        { "id": "C", "text": "Hanya satu anak yang lelah" },
-        { "id": "D", "text": "Ruangan kelas bertambah kotor" }
+        {
+          "id": "A",
+          "text": "Pekerjaan menjadi lebih lama"
+        },
+        {
+          "id": "B",
+          "text": "Pekerjaan cepat selesai dan terasa lebih ringan"
+        },
+        {
+          "id": "C",
+          "text": "Hanya satu anak yang lelah"
+        },
+        {
+          "id": "D",
+          "text": "Ruangan kelas bertambah kotor"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "Gotong royong membuat pekerjaan berat terasa **lebih ringan dan cepat selesai**."
@@ -27,10 +39,22 @@
       "difficulty": "Mudah",
       "questionText": "Simbol sila ke-1 Pancasila *\"Ketuhanan Yang Maha Esa\"* adalah...",
       "options": [
-        { "id": "A", "text": "Bintang Emas" },
-        { "id": "B", "text": "Rantai Emas" },
-        { "id": "C", "text": "Pohon Beringin" },
-        { "id": "D", "text": "Padi dan Kapas" }
+        {
+          "id": "A",
+          "text": "Bintang Emas"
+        },
+        {
+          "id": "B",
+          "text": "Rantai Emas"
+        },
+        {
+          "id": "C",
+          "text": "Pohon Beringin"
+        },
+        {
+          "id": "D",
+          "text": "Padi dan Kapas"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "Simbol sila ke-1 adalah **Bintang Emas**."
@@ -40,10 +64,22 @@
       "difficulty": "Mudah",
       "questionText": "Contoh kewajiban siswa saat berada di dalam kelas ketika guru sedang menerangkan pelajaran adalah...",
       "options": [
-        { "id": "A", "text": "Mengobrol dengan teman sebangku" },
-        { "id": "B", "text": "Mendengarkan dengan tertib dan tenang" },
-        { "id": "C", "text": "Bermain pesawat kertas" },
-        { "id": "D", "text": "Tidur di atas meja" }
+        {
+          "id": "A",
+          "text": "Mengobrol dengan teman sebangku"
+        },
+        {
+          "id": "B",
+          "text": "Mendengarkan dengan tertib dan tenang"
+        },
+        {
+          "id": "C",
+          "text": "Bermain pesawat kertas"
+        },
+        {
+          "id": "D",
+          "text": "Tidur di atas meja"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "Kewajiban siswa adalah **mendengarkan penjelasan guru dengan tertib**."
@@ -53,10 +89,22 @@
       "difficulty": "Sedang",
       "questionText": "Simbol sila ke-3 Pancasila *\"Persatuan Indonesia\"* yang melambangkan persatuan bangsa Indonesia adalah...",
       "options": [
-        { "id": "A", "text": "Bintang emas" },
-        { "id": "B", "text": "Rantai emas" },
-        { "id": "C", "text": "Pohon beringin" },
-        { "id": "D", "text": "Kepala banteng" }
+        {
+          "id": "A",
+          "text": "Bintang emas"
+        },
+        {
+          "id": "B",
+          "text": "Rantai emas"
+        },
+        {
+          "id": "C",
+          "text": "Pohon beringin"
+        },
+        {
+          "id": "D",
+          "text": "Kepala banteng"
+        }
       ],
       "correctAnswer": "C",
       "explanation": "Simbol sila ke-3 adalah **Pohon Beringin**."
@@ -66,10 +114,22 @@
       "difficulty": "Sedang",
       "questionText": "Sikap yang tepat saat melihat teman terjatuh dari sepeda di halaman sekolah adalah...",
       "options": [
-        { "id": "A", "text": "Menertawakannya" },
-        { "id": "B", "text": "Segera menolong dan mengantarnya ke ruang UKS" },
-        { "id": "C", "text": "Pura-pura tidak melihat" },
-        { "id": "D", "text": "Membiarkannya menangis sendirian" }
+        {
+          "id": "A",
+          "text": "Menertawakannya"
+        },
+        {
+          "id": "B",
+          "text": "Segera menolong dan mengantarnya ke ruang UKS"
+        },
+        {
+          "id": "C",
+          "text": "Pura-pura tidak melihat"
+        },
+        {
+          "id": "D",
+          "text": "Membiarkannya menangis sendirian"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "Sebagai teman yang baik, kita harus **segera menolong teman yang kesusahan**."
@@ -79,10 +139,22 @@
       "difficulty": "Sedang",
       "questionText": "Sesuatu yang berhak kita terima setelah kita melaksanakan kewajiban dinamakan...",
       "options": [
-        { "id": "A", "text": "Hak" },
-        { "id": "B", "text": "Tugas" },
-        { "id": "C", "text": "Aturan" },
-        { "id": "D", "text": "Hukuman" }
+        {
+          "id": "A",
+          "text": "Hak"
+        },
+        {
+          "id": "B",
+          "text": "Tugas"
+        },
+        {
+          "id": "C",
+          "text": "Aturan"
+        },
+        {
+          "id": "D",
+          "text": "Hukuman"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "**Hak** adalah sesuatu yang pantas kita peroleh setelah melaksanakan kewajiban."
@@ -92,10 +164,22 @@
       "difficulty": "Sulit",
       "questionText": "Musyawarah untuk mufakat dalam memilih ketua kelas merupakan pengamalan Pancasila, yaitu sila ke-...",
       "options": [
-        { "id": "A", "text": "Sila ke-1" },
-        { "id": "B", "text": "Sila ke-2" },
-        { "id": "C", "text": "Sila ke-4 (Kepala Banteng)" },
-        { "id": "D", "text": "Sila ke-5" }
+        {
+          "id": "A",
+          "text": "Sila ke-1"
+        },
+        {
+          "id": "B",
+          "text": "Sila ke-2"
+        },
+        {
+          "id": "C",
+          "text": "Sila ke-4 (Kepala Banteng)"
+        },
+        {
+          "id": "D",
+          "text": "Sila ke-5"
+        }
       ],
       "correctAnswer": "C",
       "explanation": "Musyawarah adalah wujud pengamalan **Sila ke-4** yang disimbolkan dengan **Kepala Banteng**."
@@ -105,10 +189,22 @@
       "difficulty": "Sulit",
       "questionText": "Semboyan negara Indonesia *\"Bhinneka Tunggal Ika\"* memiliki makna...",
       "options": [
-        { "id": "A", "text": "Berbeda-beda tetapi tetap satu jua" },
-        { "id": "B", "text": "Sama rata sama rasa" },
-        { "id": "C", "text": "Bersatu kita teguh bercerai kita runtuh" },
-        { "id": "D", "text": "Maju terus pantang mundur" }
+        {
+          "id": "A",
+          "text": "Berbeda-beda tetapi tetap satu jua"
+        },
+        {
+          "id": "B",
+          "text": "Sama rata sama rasa"
+        },
+        {
+          "id": "C",
+          "text": "Bersatu kita teguh bercerai kita runtuh"
+        },
+        {
+          "id": "D",
+          "text": "Maju terus pantang mundur"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "Makna Bhinneka Tunggal Ika adalah **berbeda-beda suku, agama, dan budaya tetapi tetap satu bangsa Indonesia**."
@@ -118,10 +214,22 @@
       "difficulty": "Mudah",
       "questionText": "Simbol sila ke-2 Pancasila *\"Kemanusiaan yang adil dan beradab\"* adalah...",
       "options": [
-        { "id": "A", "text": "Rantai Emas" },
-        { "id": "B", "text": "Bintang Emas" },
-        { "id": "C", "text": "Pohon Beringin" },
-        { "id": "D", "text": "Kepala Banteng" }
+        {
+          "id": "A",
+          "text": "Rantai Emas"
+        },
+        {
+          "id": "B",
+          "text": "Bintang Emas"
+        },
+        {
+          "id": "C",
+          "text": "Pohon Beringin"
+        },
+        {
+          "id": "D",
+          "text": "Kepala Banteng"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "Simbol sila ke-2 Pancasila adalah gelang **Rantai Emas** yang saling bertaut."
@@ -131,10 +239,22 @@
       "difficulty": "Mudah",
       "questionText": "Simbol sila ke-5 Pancasila *\"Keadilan sosial bagi seluruh rakyat Indonesia\"* yang melambangkan kebutuhan pangan dan sandang adalah...",
       "options": [
-        { "id": "A", "text": "Padi dan Kapas" },
-        { "id": "B", "text": "Bintang Emas" },
-        { "id": "C", "text": "Rantai Emas" },
-        { "id": "D", "text": "Pohon Beringin" }
+        {
+          "id": "A",
+          "text": "Padi dan Kapas"
+        },
+        {
+          "id": "B",
+          "text": "Bintang Emas"
+        },
+        {
+          "id": "C",
+          "text": "Rantai Emas"
+        },
+        {
+          "id": "D",
+          "text": "Pohon Beringin"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "Simbol sila ke-5 adalah **Padi dan Kapas** yang melambangkan kemakmuran pangan dan pakaian."
@@ -144,10 +264,22 @@
       "difficulty": "Sedang",
       "questionText": "Saat berada di perpustakaan sekolah untuk membaca buku, aturan yang wajib kita patuhi adalah...",
       "options": [
-        { "id": "A", "text": "Berteriak memanggil teman" },
-        { "id": "B", "text": "Menjaga ketenangan dan tidak berisik" },
-        { "id": "C", "text": "Makan dan minum sambil berlarian" },
-        { "id": "D", "text": "Menyobek halaman buku" }
+        {
+          "id": "A",
+          "text": "Berteriak memanggil teman"
+        },
+        {
+          "id": "B",
+          "text": "Menjaga ketenangan dan tidak berisik"
+        },
+        {
+          "id": "C",
+          "text": "Makan dan minum sambil berlarian"
+        },
+        {
+          "id": "D",
+          "text": "Menyobek halaman buku"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "Di perpustakaan kita wajib **menjaga ketenangan** agar pengunjung lain dapat membaca dengan fokus."
@@ -157,10 +289,22 @@
       "difficulty": "Sedang",
       "questionText": "Sikap toleransi saat teman yang berbeda agama sedang menjalankan ibadahnya adalah...",
       "options": [
-        { "id": "A", "text": "Menghormati dan tidak mengganggu ketenangannya" },
-        { "id": "B", "text": "Mengajaknya bermain bola" },
-        { "id": "C", "text": "Mengejek cara beribadahnya" },
-        { "id": "D", "text": "Memutar musik dengan suara keras" }
+        {
+          "id": "A",
+          "text": "Menghormati dan tidak mengganggu ketenangannya"
+        },
+        {
+          "id": "B",
+          "text": "Mengajaknya bermain bola"
+        },
+        {
+          "id": "C",
+          "text": "Mengejek cara beribadahnya"
+        },
+        {
+          "id": "D",
+          "text": "Memutar musik dengan suara keras"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "Sikap terpuji antarsesama umat beragama adalah **menghormati dan tidak mengganggu** saat beribadah."
@@ -170,10 +314,22 @@
       "difficulty": "Sulit",
       "questionText": "Saat diadakan musyawarah pemilihan ketua regu pramuka, salah satu teman sedang menyampaikan usulannya. Sikap yang benar adalah...",
       "options": [
-        { "id": "A", "text": "Mendengarkan dengan tertib sampai selesai berbicara" },
-        { "id": "B", "text": "Langsung memotong pembicaraannya" },
-        { "id": "C", "text": "Meninggalkan ruangan musyawarah" },
-        { "id": "D", "text": "Menertawakan pendapat teman" }
+        {
+          "id": "A",
+          "text": "Mendengarkan dengan tertib sampai selesai berbicara"
+        },
+        {
+          "id": "B",
+          "text": "Langsung memotong pembicaraannya"
+        },
+        {
+          "id": "C",
+          "text": "Meninggalkan ruangan musyawarah"
+        },
+        {
+          "id": "D",
+          "text": "Menertawakan pendapat teman"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "Dalam musyawarah, kita wajib **menghargai dan mendengarkan pendapat orang lain** sampai selesai sebelum giliran kita berbicara."
@@ -183,13 +339,175 @@
       "difficulty": "Sulit",
       "questionText": "Menghargai keberagaman suku dan adat istiadat teman di sekolah mencerminkan pengamalan Pancasila, khususnya sila...",
       "options": [
-        { "id": "A", "text": "Sila ke-1" },
-        { "id": "B", "text": "Sila ke-3 (Persatuan Indonesia)" },
-        { "id": "C", "text": "Sila ke-2" },
-        { "id": "D", "text": "Sila ke-5" }
+        {
+          "id": "A",
+          "text": "Sila ke-1"
+        },
+        {
+          "id": "B",
+          "text": "Sila ke-3 (Persatuan Indonesia)"
+        },
+        {
+          "id": "C",
+          "text": "Sila ke-2"
+        },
+        {
+          "id": "D",
+          "text": "Sila ke-5"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "Menjaga kerukunan dan persatuan di tengah perbedaan suku bangsa adalah pengamalan **Sila ke-3 Pancasila**."
+    },
+    {
+      "id": 15,
+      "difficulty": "Sedang",
+      "questionText": "Sebelum musim penghujan tiba, warga desa biasanya bergotong royong membersihkan selokan dan parit agar ....",
+      "options": [
+        {
+          "id": "A",
+          "text": "Air mengalir lancar dan mencegah bencana banjir"
+        },
+        {
+          "id": "B",
+          "text": "Mencari ikan di selokan"
+        },
+        {
+          "id": "C",
+          "text": "Membuat jalan menjadi becek"
+        },
+        {
+          "id": "D",
+          "text": "Mengisi waktu kosong saja"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Saluran air yang bersih dari sampah mencegah genangan air dan luapan banjir."
+    },
+    {
+      "id": 16,
+      "difficulty": "Sedang",
+      "questionText": "Semboyan bangsa Indonesia yang mengajarkan persatuan di tengah keberagaman suku bangsa dan budaya adalah ....",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bhinneka Tunggal Ika"
+        },
+        {
+          "id": "B",
+          "text": "Tut Wuri Handayani"
+        },
+        {
+          "id": "C",
+          "text": "Habis Gelap Terbitlah Terang"
+        },
+        {
+          "id": "D",
+          "text": "Merdeka atau Mati"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Bhinneka Tunggal Ika bermakna berbeda-beda tetapi tetap satu jua."
+    },
+    {
+      "id": 17,
+      "difficulty": "Sedang",
+      "questionText": "Peribahasa Indonesia yang menggambarkan manfaat kerja sama adalah ....",
+      "options": [
+        {
+          "id": "A",
+          "text": "Berat sama dipikul, ringan sama dijinjing"
+        },
+        {
+          "id": "B",
+          "text": "Ada udang di balik batu"
+        },
+        {
+          "id": "C",
+          "text": "Tong kosong nyaring bunyinya"
+        },
+        {
+          "id": "D",
+          "text": "Air tenang menghanyutkan"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Peribahasa tersebut bermakna suka dan duka dirasakan bersama melalui kerja sama."
+    },
+    {
+      "id": 18,
+      "difficulty": "Sedang",
+      "questionText": "Salah satu kewajiban anak terhadap fasilitas umum di taman kota adalah ....",
+      "options": [
+        {
+          "id": "A",
+          "text": "Menjaga dan tidak merusak tanaman atau bangku taman"
+        },
+        {
+          "id": "B",
+          "text": "Mencoret-coret dinding taman"
+        },
+        {
+          "id": "C",
+          "text": "Memetik bunga sesuka hati"
+        },
+        {
+          "id": "D",
+          "text": "Membawa pulang ayunan ke rumah"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Fasilitas umum adalah milik bersama yang harus dijaga kebersihan dan kelestariannya."
+    },
+    {
+      "id": 19,
+      "difficulty": "Mudah",
+      "questionText": "Ketika bendera Merah Putih dinaikkan di tiang bendera saat upacara, sikap kita adalah berdiri tegak dan ....",
+      "options": [
+        {
+          "id": "A",
+          "text": "Melakukan penghormatan dengan khidmat"
+        },
+        {
+          "id": "B",
+          "text": "Bertepuk tangan meriah"
+        },
+        {
+          "id": "C",
+          "text": "Bercanda dengan teman"
+        },
+        {
+          "id": "D",
+          "text": "Duduk beristirahat"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Menghormati bendera negara merupakan wujud cinta tanah air dan patriotisme."
+    },
+    {
+      "id": 20,
+      "difficulty": "Sulit",
+      "questionText": "Membagi tugas kelompok secara adil tanpa membeda-bedakan latar belakang teman merupakan pengamalan sila ke- ....",
+      "options": [
+        {
+          "id": "A",
+          "text": "5 (Keadilan sosial bagi seluruh rakyat Indonesia)"
+        },
+        {
+          "id": "B",
+          "text": "1"
+        },
+        {
+          "id": "C",
+          "text": "2"
+        },
+        {
+          "id": "D",
+          "text": "3"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Sikap adil dalam berbagi peran kelompok merupakan pengamalan nilai keadilan sosial."
     }
   ]
 }

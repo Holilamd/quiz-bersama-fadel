@@ -6,17 +6,29 @@
   "description": "Latihan mengenal huruf vokal, konsonan, pemenggalan suku kata, dan melengkapi kata sehari-hari untuk kelas 1 SD.",
   "level": "Kelas 1 SD",
   "difficulty": "Mudah",
-  "duration": 15,
-  "shuffleCount": 5,
+  "duration": 20,
+  "shuffleCount": 10,
   "questions": [
     {
       "id": 1,
       "questionText": "Huruf vokal terdiri dari lima huruf, yaitu a, i, u, e, dan ....",
       "options": [
-        { "id": "A", "text": "o" },
-        { "id": "B", "text": "b" },
-        { "id": "C", "text": "m" },
-        { "id": "D", "text": "k" }
+        {
+          "id": "A",
+          "text": "o"
+        },
+        {
+          "id": "B",
+          "text": "b"
+        },
+        {
+          "id": "C",
+          "text": "m"
+        },
+        {
+          "id": "D",
+          "text": "k"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "Huruf vokal dalam abjad bahasa Indonesia ada 5, yaitu a, i, u, e, dan o. Huruf lainnya dinamakan huruf konsonan.",
@@ -26,10 +38,22 @@
       "id": 2,
       "questionText": "Berapakah jumlah suku kata pada kata **buku**?",
       "options": [
-        { "id": "A", "text": "1 suku kata" },
-        { "id": "B", "text": "2 suku kata (bu - ku)" },
-        { "id": "C", "text": "3 suku kata" },
-        { "id": "D", "text": "4 suku kata" }
+        {
+          "id": "A",
+          "text": "1 suku kata"
+        },
+        {
+          "id": "B",
+          "text": "2 suku kata (bu - ku)"
+        },
+        {
+          "id": "C",
+          "text": "3 suku kata"
+        },
+        {
+          "id": "D",
+          "text": "4 suku kata"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "Kata 'buku' dipenggal menjadi dua suku kata: bu - ku.",
@@ -39,10 +63,22 @@
       "id": 3,
       "questionText": "Kata **sepatu** terdiri dari suku kata ....",
       "options": [
-        { "id": "A", "text": "se - pa - tu" },
-        { "id": "B", "text": "sep - a - tu" },
-        { "id": "C", "text": "se - pat - u" },
-        { "id": "D", "text": "sepa - tu" }
+        {
+          "id": "A",
+          "text": "se - pa - tu"
+        },
+        {
+          "id": "B",
+          "text": "sep - a - tu"
+        },
+        {
+          "id": "C",
+          "text": "se - pat - u"
+        },
+        {
+          "id": "D",
+          "text": "sepa - tu"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "Pemenggalan suku kata yang tepat untuk sepatu adalah se - pa - tu (3 suku kata).",
@@ -52,10 +88,22 @@
       "id": 4,
       "questionText": "Lengkapilah kata berikut: **k - ... - r - s - i** (tempat untuk duduk). Huruf yang tepat adalah ....",
       "options": [
-        { "id": "A", "text": "u" },
-        { "id": "B", "text": "a" },
-        { "id": "C", "text": "o" },
-        { "id": "D", "text": "i" }
+        {
+          "id": "A",
+          "text": "u"
+        },
+        {
+          "id": "B",
+          "text": "a"
+        },
+        {
+          "id": "C",
+          "text": "o"
+        },
+        {
+          "id": "D",
+          "text": "i"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "Benda tempat duduk adalah k-u-r-s-i (kursi). Huruf vokal yang hilang adalah 'u'.",
@@ -65,10 +113,22 @@
       "id": 5,
       "questionText": "Hewan yang bersuara 'kukuruyuk' di pagi hari adalah ....",
       "options": [
-        { "id": "A", "text": "Ayam jantan" },
-        { "id": "B", "text": "Kucing" },
-        { "id": "C", "text": "Kambing" },
-        { "id": "D", "text": "Bebek" }
+        {
+          "id": "A",
+          "text": "Ayam jantan"
+        },
+        {
+          "id": "B",
+          "text": "Kucing"
+        },
+        {
+          "id": "C",
+          "text": "Kambing"
+        },
+        {
+          "id": "D",
+          "text": "Bebek"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "Ayam jago/jantan berkokok dengan suara kukuruyuk di pagi hari.",
@@ -78,10 +138,22 @@
       "id": 6,
       "questionText": "Huruf pertama pada awal kalimat harus ditulis dengan huruf ....",
       "options": [
-        { "id": "A", "text": "Kapital (huruf besar)" },
-        { "id": "B", "text": "Kecil" },
-        { "id": "C", "text": "Miring" },
-        { "id": "D", "text": "Tebal" }
+        {
+          "id": "A",
+          "text": "Kapital (huruf besar)"
+        },
+        {
+          "id": "B",
+          "text": "Kecil"
+        },
+        {
+          "id": "C",
+          "text": "Miring"
+        },
+        {
+          "id": "D",
+          "text": "Tebal"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "Aturan penulisan bahasa Indonesia mengharuskan setiap awal kalimat dimulai dengan huruf kapital.",
@@ -91,10 +163,22 @@
       "id": 7,
       "questionText": "Kalimat yang diakhiri dengan tanda tanya (?) adalah kalimat ....",
       "options": [
-        { "id": "A", "text": "Tanya" },
-        { "id": "B", "text": "Perintah" },
-        { "id": "C", "text": "Berita" },
-        { "id": "D", "text": "Seru" }
+        {
+          "id": "A",
+          "text": "Tanya"
+        },
+        {
+          "id": "B",
+          "text": "Perintah"
+        },
+        {
+          "id": "C",
+          "text": "Berita"
+        },
+        {
+          "id": "D",
+          "text": "Seru"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "Tanda tanya (?) digunakan khusus pada akhir kalimat tanya untuk menanyakan sesuatu.",
@@ -104,10 +188,22 @@
       "id": 8,
       "questionText": "Manakah susunan kata yang benar agar menjadi kalimat yang runtut? (membaca - Siti - buku)",
       "options": [
-        { "id": "A", "text": "Siti membaca buku." },
-        { "id": "B", "text": "Membaca Siti buku." },
-        { "id": "C", "text": "Buku membaca Siti." },
-        { "id": "D", "text": "Buku Siti membaca." }
+        {
+          "id": "A",
+          "text": "Siti membaca buku."
+        },
+        {
+          "id": "B",
+          "text": "Membaca Siti buku."
+        },
+        {
+          "id": "C",
+          "text": "Buku membaca Siti."
+        },
+        {
+          "id": "D",
+          "text": "Buku Siti membaca."
+        }
       ],
       "correctAnswer": "A",
       "explanation": "Susunan kalimat baku berpola Subjek - Predikat - Objek, yaitu Siti (orang yang melakukan) membaca (kegiatan) buku (benda).",
@@ -117,10 +213,22 @@
       "id": 9,
       "questionText": "Ibu memotong sayur menggunakan ....",
       "options": [
-        { "id": "A", "text": "Pisau dapur" },
-        { "id": "B", "text": "Sendok makan" },
-        { "id": "C", "text": "Garpu" },
-        { "id": "D", "text": "Piring" }
+        {
+          "id": "A",
+          "text": "Pisau dapur"
+        },
+        {
+          "id": "B",
+          "text": "Sendok makan"
+        },
+        {
+          "id": "C",
+          "text": "Garpu"
+        },
+        {
+          "id": "D",
+          "text": "Piring"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "Pisau dapur adalah alat yang tajam untuk memotong sayuran, buah, dan bahan makanan lainnya.",
@@ -130,10 +238,22 @@
       "id": 10,
       "questionText": "Lawan kata (kebalikan) dari kata **bersih** adalah ....",
       "options": [
-        { "id": "A", "text": "Kotor" },
-        { "id": "B", "text": "Rapi" },
-        { "id": "C", "text": "Wangi" },
-        { "id": "D", "text": "Indah" }
+        {
+          "id": "A",
+          "text": "Kotor"
+        },
+        {
+          "id": "B",
+          "text": "Rapi"
+        },
+        {
+          "id": "C",
+          "text": "Wangi"
+        },
+        {
+          "id": "D",
+          "text": "Indah"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "Lawan kata atau antonim dari bersih adalah kotor.",
@@ -143,10 +263,22 @@
       "id": 11,
       "questionText": "Kata **sekolah** diawali dengan huruf konsonan ....",
       "options": [
-        { "id": "A", "text": "s" },
-        { "id": "B", "text": "e" },
-        { "id": "C", "text": "k" },
-        { "id": "D", "text": "o" }
+        {
+          "id": "A",
+          "text": "s"
+        },
+        {
+          "id": "B",
+          "text": "e"
+        },
+        {
+          "id": "C",
+          "text": "k"
+        },
+        {
+          "id": "D",
+          "text": "o"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "Huruf pertama kata 'sekolah' adalah huruf 's', yang tergolong huruf konsonan.",
@@ -156,10 +288,22 @@
       "id": 12,
       "questionText": "Jika kita berbuat salah kepada teman, sikap yang baik adalah segera mengucapkan ....",
       "options": [
-        { "id": "A", "text": "Permintaan maaf" },
-        { "id": "B", "text": "Terima kasih" },
-        { "id": "C", "text": "Tolong" },
-        { "id": "D", "text": "Sama-sama" }
+        {
+          "id": "A",
+          "text": "Permintaan maaf"
+        },
+        {
+          "id": "B",
+          "text": "Terima kasih"
+        },
+        {
+          "id": "C",
+          "text": "Tolong"
+        },
+        {
+          "id": "D",
+          "text": "Sama-sama"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "Ucapan maaf disampaikan dengan tulus saat kita melakukan kesalahan agar terjalin kerukunan.",
@@ -169,10 +313,22 @@
       "id": 13,
       "questionText": "Perhatikan kalimat: *... nama teman barumu?* Kata tanya yang tepat untuk melengkapi adalah ....",
       "options": [
-        { "id": "A", "text": "Siapa" },
-        { "id": "B", "text": "Di mana" },
-        { "id": "C", "text": "Kapan" },
-        { "id": "D", "text": "Berapa" }
+        {
+          "id": "A",
+          "text": "Siapa"
+        },
+        {
+          "id": "B",
+          "text": "Di mana"
+        },
+        {
+          "id": "C",
+          "text": "Kapan"
+        },
+        {
+          "id": "D",
+          "text": "Berapa"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "Kata tanya 'Siapa' digunakan untuk menanyakan nama orang atau tokoh.",
@@ -182,10 +338,22 @@
       "id": 14,
       "questionText": "Manakah kelompok kata yang semuanya memiliki 2 suku kata?",
       "options": [
-        { "id": "A", "text": "me-ja, kur-si, pen-sil" },
-        { "id": "B", "text": "se-pa-tu, bu-ku, tas" },
-        { "id": "C", "text": "peng-ga-ris, bo-la, ru-mah" },
-        { "id": "D", "text": "lem-a-ri, jam, pa-pan" }
+        {
+          "id": "A",
+          "text": "me-ja, kur-si, pen-sil"
+        },
+        {
+          "id": "B",
+          "text": "se-pa-tu, bu-ku, tas"
+        },
+        {
+          "id": "C",
+          "text": "peng-ga-ris, bo-la, ru-mah"
+        },
+        {
+          "id": "D",
+          "text": "lem-a-ri, jam, pa-pan"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "Me-ja (2), kur-si (2), dan pen-sil (2) seluruhnya terdiri dari tepat 2 suku kata.",
@@ -195,14 +363,151 @@
       "id": 15,
       "questionText": "Penulisan nama orang berikut yang benar dengan huruf kapital adalah ....",
       "options": [
-        { "id": "A", "text": "Budi Santoso" },
-        { "id": "B", "text": "budi santoso" },
-        { "id": "C", "text": "Budi santoso" },
-        { "id": "D", "text": "budi Santoso" }
+        {
+          "id": "A",
+          "text": "Budi Santoso"
+        },
+        {
+          "id": "B",
+          "text": "budi santoso"
+        },
+        {
+          "id": "C",
+          "text": "Budi santoso"
+        },
+        {
+          "id": "D",
+          "text": "budi Santoso"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "Setiap unsur nama orang harus diawali dengan huruf kapital (Budi Santoso).",
       "difficulty": "Sulit"
+    },
+    {
+      "id": 16,
+      "difficulty": "Mudah",
+      "questionText": "Berapakah jumlah huruf pada kata **sekolah**?",
+      "options": [
+        {
+          "id": "A",
+          "text": "7 huruf (s - e - k - o - l - a - h)"
+        },
+        {
+          "id": "B",
+          "text": "6 huruf"
+        },
+        {
+          "id": "C",
+          "text": "8 huruf"
+        },
+        {
+          "id": "D",
+          "text": "5 huruf"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Kata sekolah tersusun atas 7 huruf: s, e, k, o, l, a, h."
+    },
+    {
+      "id": 17,
+      "difficulty": "Mudah",
+      "questionText": "Pasangan huruf kapital dan huruf kecil yang benar di bawah ini adalah ....",
+      "options": [
+        {
+          "id": "A",
+          "text": "M - m"
+        },
+        {
+          "id": "B",
+          "text": "B - d"
+        },
+        {
+          "id": "C",
+          "text": "P - q"
+        },
+        {
+          "id": "D",
+          "text": "N - u"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Huruf kapital M berpasangan dengan huruf kecil m."
+    },
+    {
+      "id": 18,
+      "difficulty": "Mudah",
+      "questionText": "Benda yang digunakan untuk menulis di atas buku tulis adalah ....",
+      "options": [
+        {
+          "id": "A",
+          "text": "Pensil"
+        },
+        {
+          "id": "B",
+          "text": "Penghapus"
+        },
+        {
+          "id": "C",
+          "text": "Penggaris"
+        },
+        {
+          "id": "D",
+          "text": "Rautan"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Pensil atau pulpen digunakan untuk menorehkan tulisan pada kertas buku."
+    },
+    {
+      "id": 19,
+      "difficulty": "Sedang",
+      "questionText": "Lengkapilah kata berikut agar menjadi nama organ penglihatan: **m - a - t - ...**",
+      "options": [
+        {
+          "id": "A",
+          "text": "a (mata)"
+        },
+        {
+          "id": "B",
+          "text": "i (mati)"
+        },
+        {
+          "id": "C",
+          "text": "u (matu)"
+        },
+        {
+          "id": "D",
+          "text": "o (mato)"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Indra penglihatan adalah mata (m-a-t-a)."
+    },
+    {
+      "id": 20,
+      "difficulty": "Sedang",
+      "questionText": "Tanda baca yang diletakkan pada akhir kalimat berita adalah tanda ....",
+      "options": [
+        {
+          "id": "A",
+          "text": "Titik (.)"
+        },
+        {
+          "id": "B",
+          "text": "Tanya (?)"
+        },
+        {
+          "id": "C",
+          "text": "Seru (!)"
+        },
+        {
+          "id": "D",
+          "text": "Koma (,)"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Kalimat berita atau pernyataan diakhiri dengan tanda baca titik (.)."
     }
   ]
 }

@@ -23,7 +23,7 @@ export const quizSchema = z.object({
   level: z.string().default('SD'),
   difficulty: z.enum(['Mudah', 'Sedang', 'Sulit']).default('Sedang'),
   duration: z.number().positive(), // in minutes
-  shuffleCount: z.number().optional().default(5), // jumlah soal per sesi acak
+  shuffleCount: z.number().optional().default(10), // jumlah soal per sesi acak (default 10)
   questions: z.array(questionSchema).min(1),
 });
 

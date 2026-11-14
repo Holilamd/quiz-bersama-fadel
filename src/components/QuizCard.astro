@@ -46,7 +46,7 @@ const difficultyBadge = {
     </p>
 
     <!-- Meta Info -->
-    <div class="mt-4 flex items-center gap-3 text-xs text-slate-500">
+    <div class="mt-4 flex flex-wrap items-center gap-2 text-xs text-slate-500">
       <span class="inline-flex items-center gap-1">
         <svg class="w-3.5 h-3.5 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <circle cx="12" cy="12" r="10"></circle>
@@ -55,7 +55,9 @@ const difficultyBadge = {
         {quiz.duration} Menit
       </span>
       <span>&bull;</span>
-      <span>{quiz.questions.length} Butir Soal di Bank</span>
+      <span class="font-medium text-slate-700">{quiz.shuffleCount || 10} Soal per Ujian</span>
+      <span>&bull;</span>
+      <span>Bank: {quiz.questions.length} Soal</span>
     </div>
   </div>
 

@@ -6,18 +6,30 @@
   "description": "Latihan perkalian penjumlahan berulang, membaca jam dinding, dan pengurangan ratusan dengan 3 tingkat kesulitan.",
   "level": "Kelas 2 SD",
   "difficulty": "Sedang",
-  "duration": 15,
-  "shuffleCount": 5,
+  "duration": 20,
+  "shuffleCount": 10,
   "questions": [
     {
       "id": 101,
       "difficulty": "Mudah",
       "questionText": "Berapakah hasil perkalian dasar berikut?\n$$2 \\times 5 = \\dots$$",
       "options": [
-        { "id": "A", "text": "7" },
-        { "id": "B", "text": "10" },
-        { "id": "C", "text": "12" },
-        { "id": "D", "text": "15" }
+        {
+          "id": "A",
+          "text": "7"
+        },
+        {
+          "id": "B",
+          "text": "10"
+        },
+        {
+          "id": "C",
+          "text": "12"
+        },
+        {
+          "id": "D",
+          "text": "15"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "$$2 \\times 5 = 5 + 5 = 10$$"
@@ -27,10 +39,22 @@
       "difficulty": "Mudah",
       "questionText": "Sebuah jam dinding menunjukkan jarum pendek di angka 9 dan jarum panjang tepat di angka 12. Jam tersebut menunjukkan pukul...",
       "options": [
-        { "id": "A", "text": "09.00" },
-        { "id": "B", "text": "12.00" },
-        { "id": "C", "text": "09.12" },
-        { "id": "D", "text": "12.09" }
+        {
+          "id": "A",
+          "text": "09.00"
+        },
+        {
+          "id": "B",
+          "text": "12.00"
+        },
+        {
+          "id": "C",
+          "text": "09.12"
+        },
+        {
+          "id": "D",
+          "text": "12.09"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "Jarum pendek di angka 9 dan jarum panjang di angka 12 berarti pukul **09.00** tepat."
@@ -40,10 +64,22 @@
       "difficulty": "Mudah",
       "questionText": "Berapakah hasil dari $3 \\times 3 = \\dots$?",
       "options": [
-        { "id": "A", "text": "6" },
-        { "id": "B", "text": "9" },
-        { "id": "C", "text": "12" },
-        { "id": "D", "text": "15" }
+        {
+          "id": "A",
+          "text": "6"
+        },
+        {
+          "id": "B",
+          "text": "9"
+        },
+        {
+          "id": "C",
+          "text": "12"
+        },
+        {
+          "id": "D",
+          "text": "15"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "$$3 \\times 3 = 3 + 3 + 3 = 9$$"
@@ -53,10 +89,22 @@
       "difficulty": "Sedang",
       "questionText": "Bentuk penjumlahan berulang $4 + 4 + 4 + 4 + 4$ jika dituliskan dalam bentuk perkalian adalah...\n$$4 + 4 + 4 + 4 + 4 = \\dots$$",
       "options": [
-        { "id": "A", "text": "$4 \\times 4$" },
-        { "id": "B", "text": "$5 \\times 4$" },
-        { "id": "C", "text": "$4 \\times 5$" },
-        { "id": "D", "text": "$5 + 4$" }
+        {
+          "id": "A",
+          "text": "$4 \\times 4$"
+        },
+        {
+          "id": "B",
+          "text": "$5 \\times 4$"
+        },
+        {
+          "id": "C",
+          "text": "$4 \\times 5$"
+        },
+        {
+          "id": "D",
+          "text": "$5 + 4$"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "Angka 4 dijumlahkan 5 kali, maka bentuk perkaliannya adalah $5 \\times 4 = 20$."
@@ -66,10 +114,22 @@
       "difficulty": "Sedang",
       "questionText": "Di atas meja ada 3 buah piring. Setiap piring berisi 6 butir kue donat. Berapa banyak seluruh donat di atas meja?\n$$3 \\times 6 = \\dots$$",
       "options": [
-        { "id": "A", "text": "16 butir" },
-        { "id": "B", "text": "18 butir" },
-        { "id": "C", "text": "20 butir" },
-        { "id": "D", "text": "24 butir" }
+        {
+          "id": "A",
+          "text": "16 butir"
+        },
+        {
+          "id": "B",
+          "text": "18 butir"
+        },
+        {
+          "id": "C",
+          "text": "20 butir"
+        },
+        {
+          "id": "D",
+          "text": "24 butir"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "$$3 \\times 6 = 6 + 6 + 6 = 18\\text{ butir}$$"
@@ -79,10 +139,22 @@
       "difficulty": "Sedang",
       "questionText": "Berapakah hasil pengurangan ratusan berikut?\n$$250 - 120 = \\dots$$",
       "options": [
-        { "id": "A", "text": "110" },
-        { "id": "B", "text": "120" },
-        { "id": "C", "text": "130" },
-        { "id": "D", "text": "140" }
+        {
+          "id": "A",
+          "text": "110"
+        },
+        {
+          "id": "B",
+          "text": "120"
+        },
+        {
+          "id": "C",
+          "text": "130"
+        },
+        {
+          "id": "D",
+          "text": "140"
+        }
       ],
       "correctAnswer": "C",
       "explanation": "$$250 - 120 = 130$$"
@@ -92,10 +164,22 @@
       "difficulty": "Sulit",
       "questionText": "Jarum pendek berada di antara angka 2 dan 3, sedangkan jarum panjang tepat menunjuk angka 6. Waktu yang ditunjukkan adalah pukul...",
       "options": [
-        { "id": "A", "text": "02.06" },
-        { "id": "B", "text": "02.30" },
-        { "id": "C", "text": "03.30" },
-        { "id": "D", "text": "06.15" }
+        {
+          "id": "A",
+          "text": "02.06"
+        },
+        {
+          "id": "B",
+          "text": "02.30"
+        },
+        {
+          "id": "C",
+          "text": "03.30"
+        },
+        {
+          "id": "D",
+          "text": "06.15"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "Jarum panjang di angka 6 menunjukkan lewat 30 menit. Karena jarum pendek di antara 2 dan 3, maka waktu adalah **02.30** (setengah tiga)."
@@ -105,10 +189,22 @@
       "difficulty": "Sulit",
       "questionText": "Sebuah toko memiliki 4 kotak pensil warna. Tiap kotak berisi 10 pensil warna. Lalu terjual 8 pensil warna. Berapa sisa pensil warna di toko?\n$$(4 \\times 10) - 8 = \\dots$$",
       "options": [
-        { "id": "A", "text": "28" },
-        { "id": "B", "text": "30" },
-        { "id": "C", "text": "32" },
-        { "id": "D", "text": "36" }
+        {
+          "id": "A",
+          "text": "28"
+        },
+        {
+          "id": "B",
+          "text": "30"
+        },
+        {
+          "id": "C",
+          "text": "32"
+        },
+        {
+          "id": "D",
+          "text": "36"
+        }
       ],
       "correctAnswer": "C",
       "explanation": "Hitung perkalian dulu: $4 \\times 10 = 40$.\nLalu kurangi yang terjual: $40 - 8 = 32$.\nSisa pensil warna adalah **32 pensil**."
@@ -118,10 +214,22 @@
       "difficulty": "Mudah",
       "questionText": "Setiap bilangan yang dikalikan dengan angka 1 hasilnya adalah bilangan itu sendiri. Berapakah hasil dari:\n$$7 \\times 1 = \\dots$$",
       "options": [
-        { "id": "A", "text": "1" },
-        { "id": "B", "text": "7" },
-        { "id": "C", "text": "8" },
-        { "id": "D", "text": "0" }
+        {
+          "id": "A",
+          "text": "1"
+        },
+        {
+          "id": "B",
+          "text": "7"
+        },
+        {
+          "id": "C",
+          "text": "8"
+        },
+        {
+          "id": "D",
+          "text": "0"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "Semua bilangan dikalikan 1 menghasilkan bilangan itu sendiri: $7 \\times 1 = 7$."
@@ -131,10 +239,22 @@
       "difficulty": "Mudah",
       "questionText": "Berapakah hasil dari bilangan apa pun jika dikalikan dengan angka nol (0)?\n$$8 \\times 0 = \\dots$$",
       "options": [
-        { "id": "A", "text": "0" },
-        { "id": "B", "text": "8" },
-        { "id": "C", "text": "80" },
-        { "id": "D", "text": "1" }
+        {
+          "id": "A",
+          "text": "0"
+        },
+        {
+          "id": "B",
+          "text": "8"
+        },
+        {
+          "id": "C",
+          "text": "80"
+        },
+        {
+          "id": "D",
+          "text": "1"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "Semua bilangan jika dikalikan dengan nol hasilnya adalah **0**."
@@ -144,10 +264,22 @@
       "difficulty": "Sedang",
       "questionText": "Jika panjang sebuah pensil diukur menggunakan penggaris dari angka 0 cm sampai angka 12 cm, maka panjang pensil tersebut adalah...",
       "options": [
-        { "id": "A", "text": "10 cm" },
-        { "id": "B", "text": "11 cm" },
-        { "id": "C", "text": "12 cm" },
-        { "id": "D", "text": "13 cm" }
+        {
+          "id": "A",
+          "text": "10 cm"
+        },
+        {
+          "id": "B",
+          "text": "11 cm"
+        },
+        {
+          "id": "C",
+          "text": "12 cm"
+        },
+        {
+          "id": "D",
+          "text": "13 cm"
+        }
       ],
       "correctAnswer": "C",
       "explanation": "Panjang dari titik 0 ke angka 12 pada penggaris adalah **12 cm**."
@@ -157,10 +289,22 @@
       "difficulty": "Sedang",
       "questionText": "Di tempat parkir terdapat 5 buah sepeda motor. Setiap motor memiliki 2 buah roda. Berapakah jumlah seluruh roda sepeda motor tersebut?",
       "options": [
-        { "id": "A", "text": "7 roda" },
-        { "id": "B", "text": "8 roda" },
-        { "id": "C", "text": "10 roda" },
-        { "id": "D", "text": "12 roda" }
+        {
+          "id": "A",
+          "text": "7 roda"
+        },
+        {
+          "id": "B",
+          "text": "8 roda"
+        },
+        {
+          "id": "C",
+          "text": "10 roda"
+        },
+        {
+          "id": "D",
+          "text": "12 roda"
+        }
       ],
       "correctAnswer": "C",
       "explanation": "$$5 \\times 2 = 10\\text{ roda}$$"
@@ -170,10 +314,22 @@
       "difficulty": "Sulit",
       "questionText": "Pembagian adalah pengurangan berulang sampai habis bernilai 0. Bentuk $15 \\div 3$ jika dihitung dengan pengurangan berulang adalah...",
       "options": [
-        { "id": "A", "text": "$15 - 5 - 5 = 0$ (hasil 2)" },
-        { "id": "B", "text": "$15 - 3 - 3 - 3 - 3 - 3 = 0$ (hasil 5)" },
-        { "id": "C", "text": "$15 - 3 = 12$ (hasil 1)" },
-        { "id": "D", "text": "$15 - 15 = 0$ (hasil 0)" }
+        {
+          "id": "A",
+          "text": "$15 - 5 - 5 = 0$ (hasil 2)"
+        },
+        {
+          "id": "B",
+          "text": "$15 - 3 - 3 - 3 - 3 - 3 = 0$ (hasil 5)"
+        },
+        {
+          "id": "C",
+          "text": "$15 - 3 = 12$ (hasil 1)"
+        },
+        {
+          "id": "D",
+          "text": "$15 - 15 = 0$ (hasil 0)"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "Angka 15 dikurangi angka 3 sebanyak 5 kali sampai menghasilkan 0. Maka $15 \\div 3 = 5$."
@@ -183,13 +339,175 @@
       "difficulty": "Sulit",
       "questionText": "Rani mulai belajar pukul 18.30 dan selesai pukul 19.30 malam. Berapa lama waktu Rani belajar?",
       "options": [
-        { "id": "A", "text": "30 menit" },
-        { "id": "B", "text": "45 menit" },
-        { "id": "C", "text": "1 jam (60 menit)" },
-        { "id": "D", "text": "2 jam" }
+        {
+          "id": "A",
+          "text": "30 menit"
+        },
+        {
+          "id": "B",
+          "text": "45 menit"
+        },
+        {
+          "id": "C",
+          "text": "1 jam (60 menit)"
+        },
+        {
+          "id": "D",
+          "text": "2 jam"
+        }
       ],
       "correctAnswer": "C",
       "explanation": "Dari pukul 18.30 sampai pukul 19.30 adalah selang waktu **1 jam (60 menit)**."
+    },
+    {
+      "id": 305,
+      "difficulty": "Mudah",
+      "questionText": "Berapakah hasil dari $4 \\times 5$?",
+      "options": [
+        {
+          "id": "A",
+          "text": "20"
+        },
+        {
+          "id": "B",
+          "text": "18"
+        },
+        {
+          "id": "C",
+          "text": "24"
+        },
+        {
+          "id": "D",
+          "text": "25"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "$$4 \\times 5 = 5 + 5 + 5 + 5 = 20$$."
+    },
+    {
+      "id": 306,
+      "difficulty": "Sedang",
+      "questionText": "Jarum pendek menunjuk angka 7 dan jarum panjang menunjuk tepat angka 12. Pukul berapakah itu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Pukul 07.00"
+        },
+        {
+          "id": "B",
+          "text": "Pukul 12.07"
+        },
+        {
+          "id": "C",
+          "text": "Pukul 07.12"
+        },
+        {
+          "id": "D",
+          "text": "Pukul 06.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Ketika jarum panjang tepat di angka 12, jam menunjukkan waktu tepat (07.00)."
+    },
+    {
+      "id": 307,
+      "difficulty": "Sedang",
+      "questionText": "Ibu mempunyai 18 butir telur. Dibagikan sama rata kepada 3 tetangga. Setiap tetangga mendapat .... butir telur.",
+      "options": [
+        {
+          "id": "A",
+          "text": "6 butir"
+        },
+        {
+          "id": "B",
+          "text": "5 butir"
+        },
+        {
+          "id": "C",
+          "text": "7 butir"
+        },
+        {
+          "id": "D",
+          "text": "8 butir"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "$$18 \\div 3 = 6\\text{ butir telur}$$."
+    },
+    {
+      "id": 308,
+      "difficulty": "Sulit",
+      "questionText": "Satu jam terdiri dari 60 menit. Setengah jam setara dengan .... menit.",
+      "options": [
+        {
+          "id": "A",
+          "text": "30 menit"
+        },
+        {
+          "id": "B",
+          "text": "15 menit"
+        },
+        {
+          "id": "C",
+          "text": "45 menit"
+        },
+        {
+          "id": "D",
+          "text": "20 menit"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Setengah jam $= 60 \\div 2 = 30\\text{ menit}$."
+    },
+    {
+      "id": 309,
+      "difficulty": "Sedang",
+      "questionText": "Berapakah hasil dari $6 \\times 3 = \\dots$?",
+      "options": [
+        {
+          "id": "A",
+          "text": "18"
+        },
+        {
+          "id": "B",
+          "text": "15"
+        },
+        {
+          "id": "C",
+          "text": "21"
+        },
+        {
+          "id": "D",
+          "text": "24"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "$$6 \\times 3 = 3 + 3 + 3 + 3 + 3 + 3 = 18$$."
+    },
+    {
+      "id": 310,
+      "difficulty": "Sulit",
+      "questionText": "Pukul dua siang dalam penulisan waktu 24 jam ditulis sebagai pukul....",
+      "options": [
+        {
+          "id": "A",
+          "text": "14.00"
+        },
+        {
+          "id": "B",
+          "text": "02.00"
+        },
+        {
+          "id": "C",
+          "text": "12.02"
+        },
+        {
+          "id": "D",
+          "text": "16.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Setelah pukul 12.00 siang, waktu 24 jam berlanjut: pukul 1 siang $= 13.00$, pukul 2 siang $= 14.00$."
     }
   ]
 }

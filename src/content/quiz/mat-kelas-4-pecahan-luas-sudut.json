@@ -7,17 +7,29 @@
   "level": "Kelas 4 SD",
   "difficulty": "Sedang",
   "duration": 20,
-  "shuffleCount": 5,
+  "shuffleCount": 10,
   "questions": [
     {
       "id": 101,
       "difficulty": "Mudah",
       "questionText": "Berapakah hasil dari penjumlahan pecahan berpenyebut sama berikut?\n$$\\frac{1}{5} + \\frac{2}{5} = \\dots$$",
       "options": [
-        { "id": "A", "text": "$\\frac{3}{10}$" },
-        { "id": "B", "text": "$\\frac{3}{5}$" },
-        { "id": "C", "text": "$\\frac{2}{5}$" },
-        { "id": "D", "text": "$\\frac{1}{5}$" }
+        {
+          "id": "A",
+          "text": "$\\frac{3}{10}$"
+        },
+        {
+          "id": "B",
+          "text": "$\\frac{3}{5}$"
+        },
+        {
+          "id": "C",
+          "text": "$\\frac{2}{5}$"
+        },
+        {
+          "id": "D",
+          "text": "$\\frac{1}{5}$"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "Pada penyebut yang sama, jumlahkan pembilangnya: $1 + 2 = 3$. Hasilnya adalah $\\frac{3}{5}$."
@@ -27,10 +39,22 @@
       "difficulty": "Mudah",
       "questionText": "Sudut yang besarnya tepat $90^\\circ$ seperti sudut buku tulis dinamakan...",
       "options": [
-        { "id": "A", "text": "Sudut Lancip" },
-        { "id": "B", "text": "Sudut Siku-siku" },
-        { "id": "C", "text": "Sudut Tumpul" },
-        { "id": "D", "text": "Sudut Lurus" }
+        {
+          "id": "A",
+          "text": "Sudut Lancip"
+        },
+        {
+          "id": "B",
+          "text": "Sudut Siku-siku"
+        },
+        {
+          "id": "C",
+          "text": "Sudut Tumpul"
+        },
+        {
+          "id": "D",
+          "text": "Sudut Lurus"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "Sudut berukuran $90^\\circ$ adalah **Sudut Siku-siku**."
@@ -40,10 +64,22 @@
       "difficulty": "Mudah",
       "questionText": "Sebuah ubin berbentuk persegi memiliki panjang sisi $s = 10\\text{ cm}$. Berapakah Luas ($L$) ubin tersebut?\n$$L = s \\times s$$",
       "options": [
-        { "id": "A", "text": "$40\\text{ cm}^2$" },
-        { "id": "B", "text": "$100\\text{ cm}^2$" },
-        { "id": "C", "text": "$200\\text{ cm}^2$" },
-        { "id": "D", "text": "$10\\text{ cm}^2$" }
+        {
+          "id": "A",
+          "text": "$40\\text{ cm}^2$"
+        },
+        {
+          "id": "B",
+          "text": "$100\\text{ cm}^2$"
+        },
+        {
+          "id": "C",
+          "text": "$200\\text{ cm}^2$"
+        },
+        {
+          "id": "D",
+          "text": "$10\\text{ cm}^2$"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "$$L = 10 \\times 10 = 100\\text{ cm}^2$$"
@@ -53,10 +89,22 @@
       "difficulty": "Mudah",
       "questionText": "Sudut yang besarnya lebih kecil dari $90^\\circ$ disebut...",
       "options": [
-        { "id": "A", "text": "Sudut Lancip" },
-        { "id": "B", "text": "Sudut Siku-siku" },
-        { "id": "C", "text": "Sudut Tumpul" },
-        { "id": "D", "text": "Sudut Refleks" }
+        {
+          "id": "A",
+          "text": "Sudut Lancip"
+        },
+        {
+          "id": "B",
+          "text": "Sudut Siku-siku"
+        },
+        {
+          "id": "C",
+          "text": "Sudut Tumpul"
+        },
+        {
+          "id": "D",
+          "text": "Sudut Refleks"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "Sudut yang kurang dari $90^\\circ$ adalah **Sudut Lancip**."
@@ -66,10 +114,22 @@
       "difficulty": "Sedang",
       "questionText": "Berapakah hasil dari penjumlahan pecahan berikut ini?\n$$\\frac{2}{7} + \\frac{3}{7} = \\dots$$",
       "options": [
-        { "id": "A", "text": "$\\frac{5}{14}$" },
-        { "id": "B", "text": "$\\frac{5}{7}$" },
-        { "id": "C", "text": "$\\frac{6}{7}$" },
-        { "id": "D", "text": "$\\frac{1}{7}$" }
+        {
+          "id": "A",
+          "text": "$\\frac{5}{14}$"
+        },
+        {
+          "id": "B",
+          "text": "$\\frac{5}{7}$"
+        },
+        {
+          "id": "C",
+          "text": "$\\frac{6}{7}$"
+        },
+        {
+          "id": "D",
+          "text": "$\\frac{1}{7}$"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "$$\\frac{2 + 3}{7} = \\frac{5}{7}$$"
@@ -79,10 +139,22 @@
       "difficulty": "Sedang",
       "questionText": "Sebuah lapangan berbentuk persegi panjang memiliki panjang $p = 12\\text{ meter}$ dan lebar $l = 6\\text{ meter}$. Berapakah Luas ($L$) lapangan tersebut?\n$$L = p \\times l$$",
       "options": [
-        { "id": "A", "text": "$36\\text{ m}^2$" },
-        { "id": "B", "text": "$48\\text{ m}^2$" },
-        { "id": "C", "text": "$72\\text{ m}^2$" },
-        { "id": "D", "text": "$84\\text{ m}^2$" }
+        {
+          "id": "A",
+          "text": "$36\\text{ m}^2$"
+        },
+        {
+          "id": "B",
+          "text": "$48\\text{ m}^2$"
+        },
+        {
+          "id": "C",
+          "text": "$72\\text{ m}^2$"
+        },
+        {
+          "id": "D",
+          "text": "$84\\text{ m}^2$"
+        }
       ],
       "correctAnswer": "C",
       "explanation": "$$L = 12 \\times 6 = 72\\text{ m}^2$$"
@@ -92,10 +164,22 @@
       "difficulty": "Sedang",
       "questionText": "Berapakah Kelipatan Persekutuan Terkecil (KPK) dari bilangan 4 dan 6?",
       "options": [
-        { "id": "A", "text": "8" },
-        { "id": "B", "text": "12" },
-        { "id": "C", "text": "18" },
-        { "id": "D", "text": "24" }
+        {
+          "id": "A",
+          "text": "8"
+        },
+        {
+          "id": "B",
+          "text": "12"
+        },
+        {
+          "id": "C",
+          "text": "18"
+        },
+        {
+          "id": "D",
+          "text": "24"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "Kelipatan 4: $4, 8, \\mathbf{12}, 16, \\dots$\nKelipatan 6: $6, \\mathbf{12}, 18, \\dots$\nKPK dari 4 dan 6 adalah **12**."
@@ -105,10 +189,22 @@
       "difficulty": "Sedang",
       "questionText": "Bentuk pecahan paling sederhana dari $\\frac{4}{8}$ adalah...",
       "options": [
-        { "id": "A", "text": "$\\frac{1}{2}$" },
-        { "id": "B", "text": "$\\frac{1}{4}$" },
-        { "id": "C", "text": "$\\frac{2}{3}$" },
-        { "id": "D", "text": "$\\frac{3}{4}$" }
+        {
+          "id": "A",
+          "text": "$\\frac{1}{2}$"
+        },
+        {
+          "id": "B",
+          "text": "$\\frac{1}{4}$"
+        },
+        {
+          "id": "C",
+          "text": "$\\frac{2}{3}$"
+        },
+        {
+          "id": "D",
+          "text": "$\\frac{3}{4}$"
+        }
       ],
       "correctAnswer": "A",
       "explanation": "Bagi pembilang dan penyebut dengan angka 4:\n$$\\frac{4 \\div 4}{8 \\div 4} = \\frac{1}{2}$$"
@@ -118,10 +214,22 @@
       "difficulty": "Sulit",
       "questionText": "Berapakah Faktor Persekutuan Terbesar (FPB) dari 12 dan 18?",
       "options": [
-        { "id": "A", "text": "2" },
-        { "id": "B", "text": "3" },
-        { "id": "C", "text": "6" },
-        { "id": "D", "text": "9" }
+        {
+          "id": "A",
+          "text": "2"
+        },
+        {
+          "id": "B",
+          "text": "3"
+        },
+        {
+          "id": "C",
+          "text": "6"
+        },
+        {
+          "id": "D",
+          "text": "9"
+        }
       ],
       "correctAnswer": "C",
       "explanation": "Faktor dari 12: $1, 2, 3, 4, \\mathbf{6}, 12$\nFaktor dari 18: $1, 2, 3, \\mathbf{6}, 9, 18$\nFaktor terbesar yang sama adalah **6**."
@@ -131,10 +239,22 @@
       "difficulty": "Sulit",
       "questionText": "Sebuah kolam renang berbentuk persegi panjang memiliki panjang $20\\text{ meter}$ dan keliling $60\\text{ meter}$. Berapakah lebar kolam renang tersebut?",
       "options": [
-        { "id": "A", "text": "$8\\text{ meter}$" },
-        { "id": "B", "text": "$10\\text{ meter}$" },
-        { "id": "C", "text": "$12\\text{ meter}$" },
-        { "id": "D", "text": "$15\\text{ meter}$" }
+        {
+          "id": "A",
+          "text": "$8\\text{ meter}$"
+        },
+        {
+          "id": "B",
+          "text": "$10\\text{ meter}$"
+        },
+        {
+          "id": "C",
+          "text": "$12\\text{ meter}$"
+        },
+        {
+          "id": "D",
+          "text": "$15\\text{ meter}$"
+        }
       ],
       "correctAnswer": "B",
       "explanation": "$$K = 2 \\times (p + l)$$\n$$60 = 2 \\times (20 + l)$$\n$$30 = 20 + l \\implies l = 10\\text{ meter}$$"
@@ -144,13 +264,250 @@
       "difficulty": "Sulit",
       "questionText": "Ibu mempunyai $\\frac{6}{8}\\text{ kg}$ tepung terigu. Digunakan untuk membuat bolu sebanyak $\\frac{3}{8}\\text{ kg}$. Berapa sisa tepung terigu Ibu?\n$$\\frac{6}{8} - \\frac{3}{8} = \\dots$$",
       "options": [
-        { "id": "A", "text": "$\\frac{1}{8}\\text{ kg}$" },
-        { "id": "B", "text": "$\\frac{2}{8}\\text{ kg}$" },
-        { "id": "C", "text": "$\\frac{3}{8}\\text{ kg}$" },
-        { "id": "D", "text": "$\\frac{4}{8}\\text{ kg}$" }
+        {
+          "id": "A",
+          "text": "$\\frac{1}{8}\\text{ kg}$"
+        },
+        {
+          "id": "B",
+          "text": "$\\frac{2}{8}\\text{ kg}$"
+        },
+        {
+          "id": "C",
+          "text": "$\\frac{3}{8}\\text{ kg}$"
+        },
+        {
+          "id": "D",
+          "text": "$\\frac{4}{8}\\text{ kg}$"
+        }
       ],
       "correctAnswer": "C",
       "explanation": "$$\\frac{6 - 3}{8} = \\frac{3}{8}\\text{ kg}$$"
+    },
+    {
+      "id": 304,
+      "difficulty": "Mudah",
+      "questionText": "Sudut yang besarnya lebih besar dari $90^\\circ$ dan kurang dari $180^\\circ$ dinamakan...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sudut Tumpul"
+        },
+        {
+          "id": "B",
+          "text": "Sudut Lancip"
+        },
+        {
+          "id": "C",
+          "text": "Sudut Siku-siku"
+        },
+        {
+          "id": "D",
+          "text": "Sudut Lurus"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Sudut dengan rentang ukuran antara $90^\\circ$ sampai $180^\\circ$ disebut Sudut Tumpul."
+    },
+    {
+      "id": 305,
+      "difficulty": "Sedang",
+      "questionText": "Sebuah segitiga memiliki alas $a = 10\\text{ cm}$ dan tinggi $t = 8\\text{ cm}$. Berapakah Luas segitiga tersebut?\n$$L = \\frac{a \\times t}{2}$$",
+      "options": [
+        {
+          "id": "A",
+          "text": "$40\\text{ cm}^2$"
+        },
+        {
+          "id": "B",
+          "text": "$80\\text{ cm}^2$"
+        },
+        {
+          "id": "C",
+          "text": "$36\\text{ cm}^2$"
+        },
+        {
+          "id": "D",
+          "text": "$50\\text{ cm}^2$"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "$$L = \\frac{10 \\times 8}{2} = \\frac{80}{2} = 40\\text{ cm}^2$$."
+    },
+    {
+      "id": 306,
+      "difficulty": "Sedang",
+      "questionText": "Berapakah hasil dari pecahan campuran $1\\frac{1}{4}$ jika diubah menjadi pecahan biasa?",
+      "options": [
+        {
+          "id": "A",
+          "text": "$\\frac{5}{4}$"
+        },
+        {
+          "id": "B",
+          "text": "$\\frac{3}{4}$"
+        },
+        {
+          "id": "C",
+          "text": "$\\frac{6}{4}$"
+        },
+        {
+          "id": "D",
+          "text": "$\\frac{4}{4}$"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "$$1\\frac{1}{4} = \\frac{(1 \\times 4) + 1}{4} = \\frac{5}{4}$$."
+    },
+    {
+      "id": 307,
+      "difficulty": "Sulit",
+      "questionText": "Berapakah hasil penjumlahan pecahan berpenyebut beda berikut?\n$$\\frac{1}{2} + \\frac{1}{4} = \\dots$$",
+      "options": [
+        {
+          "id": "A",
+          "text": "$\\frac{3}{4}$"
+        },
+        {
+          "id": "B",
+          "text": "$\\frac{2}{6}$"
+        },
+        {
+          "id": "C",
+          "text": "$\\frac{2}{4}$"
+        },
+        {
+          "id": "D",
+          "text": "$\\frac{1}{4}$"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Samakan penyebut menjadi 4: $\\frac{1}{2} = \\frac{2}{4}$. Maka $\\frac{2}{4} + \\frac{1}{4} = \\frac{3}{4}$."
+    },
+    {
+      "id": 308,
+      "difficulty": "Sedang",
+      "questionText": "Sebuah bingkai foto persegi memiliki keliling $K = 48\\text{ cm}$. Berapakah panjang sisi ($s$) bingkai foto tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "$12\\text{ cm}$"
+        },
+        {
+          "id": "B",
+          "text": "$14\\text{ cm}$"
+        },
+        {
+          "id": "C",
+          "text": "$16\\text{ cm}$"
+        },
+        {
+          "id": "D",
+          "text": "$24\\text{ cm}$"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Keliling persegi $K = 4 \\times s$. Maka $s = 48 \\div 4 = 12\\text{ cm}$."
+    },
+    {
+      "id": 309,
+      "difficulty": "Sedang",
+      "questionText": "Alat yang digunakan khusus untuk mengukur besar derajat sudut secara tepat adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Busur derajat"
+        },
+        {
+          "id": "B",
+          "text": "Jangka"
+        },
+        {
+          "id": "C",
+          "text": "Meteran pita"
+        },
+        {
+          "id": "D",
+          "text": "Timbangan badan"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Busur derajat adalah alat ukur berskala setengah lingkaran dari $0^\\circ$ hingga $180^\\circ$."
+    },
+    {
+      "id": 310,
+      "difficulty": "Sulit",
+      "questionText": "Berapakah KPK dari bilangan 6 dan 8?",
+      "options": [
+        {
+          "id": "A",
+          "text": "24"
+        },
+        {
+          "id": "B",
+          "text": "16"
+        },
+        {
+          "id": "C",
+          "text": "48"
+        },
+        {
+          "id": "D",
+          "text": "14"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Kelipatan 6: 6, 12, 18, **24**, 30...\nKelipatan 8: 8, 16, **24**, 32...\nKPK dari 6 dan 8 adalah **24**."
+    },
+    {
+      "id": 311,
+      "difficulty": "Mudah",
+      "questionText": "Pecahan desimal dari $\\frac{1}{2}$ adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "0,5"
+        },
+        {
+          "id": "B",
+          "text": "0,2"
+        },
+        {
+          "id": "C",
+          "text": "0,25"
+        },
+        {
+          "id": "D",
+          "text": "0,05"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "$$\\frac{1}{2} = \\frac{5}{10} = 0,5$$."
+    },
+    {
+      "id": 312,
+      "difficulty": "Sulit",
+      "questionText": "Pak Danu memiliki kebun jagung persegi panjang seluas $240\\text{ m}^2$. Jika lebarnya $12\\text{ meter}$, berapakah panjang kebun jagung Pak Danu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "$20\\text{ meter}$"
+        },
+        {
+          "id": "B",
+          "text": "$18\\text{ meter}$"
+        },
+        {
+          "id": "C",
+          "text": "$22\\text{ meter}$"
+        },
+        {
+          "id": "D",
+          "text": "$25\\text{ meter}$"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "$$L = p \\times l \\implies 240 = p \\times 12 \\implies p = 240 \\div 12 = 20\\text{ meter}$$."
     }
   ]
 }
