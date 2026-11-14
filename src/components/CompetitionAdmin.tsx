@@ -10,6 +10,14 @@ import {
   ExternalLink,
   Zap,
   Trash2,
+  Lock,
+  KeyRound,
+  Eye,
+  EyeOff,
+  LogOut,
+  Shield,
+  AlertCircle,
+  X,
 } from 'lucide-react';
 import {
   type CompetitionRoomConfig,
@@ -21,6 +29,11 @@ import {
   resetStoredParticipants,
   calculateRoomPhase,
   DEFAULT_COMPETITION_CONFIG,
+  isAdminAuthenticated,
+  setAdminAuthenticated,
+  getAdminPassword,
+  setAdminPassword,
+  DEFAULT_ADMIN_USERNAME,
 } from '../utils/competition';
 import type { Quiz } from '../content/config';
 
@@ -29,6 +42,22 @@ interface CompetitionAdminProps {
 }
 
 export const CompetitionAdmin: React.FC<CompetitionAdminProps> = ({ quizzes }) => {
+  // Authentication State
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
+  const [isCheckingAuth, setIsCheckingAuth] = useState<boolean>(true);
+  const [loginUsername, setLoginUsername] = useState<string>('admin');
+  const [loginPassword, setLoginPassword] = useState<string>('');
+  const [showPassword, setShowPassword] = useState<boolean>(false);
+  const [rememberMe, setRememberMe] = useState<boolean>(true);
+  const [loginError, setLoginError] = useState<string>('');
+
+  // Change Password Modal State
+  const [showChangePasswordModal, setShowChangePasswordModal] = useState<boolean>(false);
+  const [newPasswordInput, setNewPasswordInput] = useState<string>('');
+  const [confirmPasswordInput, setConfirmPasswordInput] = useState<string>('');
+  const [changePasswordMsg, setChangePasswordMsg] = useState<{ text: string; isError: boolean } | null>(null);
+
+  // Competition Config & Participants
   const [config, setConfig] = useState<CompetitionRoomConfig>(DEFAULT_COMPETITION_CONFIG);
   const [savedSuccess, setSavedSuccess] = useState<boolean>(false);
   const [participantsCount, setParticipantsCount] = useState<number>(0);
@@ -48,6 +77,11 @@ export const CompetitionAdmin: React.FC<CompetitionAdminProps> = ({ quizzes }) =
   };
 
   useEffect(() => {
+    // Check initial authentication
+    const authStatus = isAdminAuthenticated();
+    setIsAuthenticated(authStatus);
+    setIsCheckingAuth(false);
+
     const loaded = getCompetitionConfig();
     setConfig(loaded);
     refreshParticipants();
@@ -71,6 +105,54 @@ export const CompetitionAdmin: React.FC<CompetitionAdminProps> = ({ quizzes }) =
       window.removeEventListener('storage', handleStorageChange);
     };
   }, []);
+
+  const handleLogin = (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoginError('');
+
+    const currentSavedPass = getAdminPassword();
+    if (loginUsername.trim().toLowerCase() !== DEFAULT_ADMIN_USERNAME.toLowerCase()) {
+      setLoginError('Username tidak valid. Gunakan username administrator yang benar.');
+      return;
+    }
+
+    if (loginPassword !== currentSavedPass) {
+      setLoginError('Password salah. Periksa kembali password administrator Anda.');
+      return;
+    }
+
+    setAdminAuthenticated(true, rememberMe);
+    setIsAuthenticated(true);
+    setLoginPassword('');
+  };
+
+  const handleLogout = () => {
+    if (window.confirm('Keluar dari sesi administrator?')) {
+      setAdminAuthenticated(false);
+      setIsAuthenticated(false);
+      setLoginPassword('');
+    }
+  };
+
+  const handleChangePassword = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!newPasswordInput || newPasswordInput.length < 4) {
+      setChangePasswordMsg({ text: 'Password baru minimal 4 karakter.', isError: true });
+      return;
+    }
+    if (newPasswordInput !== confirmPasswordInput) {
+      setChangePasswordMsg({ text: 'Konfirmasi password tidak cocok.', isError: true });
+      return;
+    }
+    setAdminPassword(newPasswordInput);
+    setChangePasswordMsg({ text: 'Password admin berhasil diperbarui!', isError: false });
+    setTimeout(() => {
+      setShowChangePasswordModal(false);
+      setChangePasswordMsg(null);
+      setNewPasswordInput('');
+      setConfirmPasswordInput('');
+    }, 1500);
+  };
 
   const handleSave = (e?: React.FormEvent) => {
     if (e) e.preventDefault();
@@ -194,14 +276,141 @@ export const CompetitionAdmin: React.FC<CompetitionAdminProps> = ({ quizzes }) =
     ANNOUNCEMENT: 'Ujian Selesai (Papan Pengumuman Peringkat Terbuka)',
   };
 
+  // ====================================================
+  // VIEW: LOADING AUTH STATE
+  // ====================================================
+  if (isCheckingAuth) {
+    return (
+      <div className="min-h-[40vh] flex flex-col items-center justify-center gap-3">
+        <div className="w-8 h-8 border-3 border-blue-600 border-t-transparent rounded-full animate-spin" />
+        <span className="text-xs text-slate-500 font-semibold">Memeriksa hak akses administrator...</span>
+      </div>
+    );
+  }
+
+  // ====================================================
+  // VIEW: LOGIN GATE ADMIN (JIKA BELUM LOGIN)
+  // ====================================================
+  if (!isAuthenticated) {
+    return (
+      <div className="max-w-md mx-auto my-8 sm:my-14 px-4">
+        <div className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm">
+          {/* Header Icon & Title */}
+          <div className="text-center mb-6">
+            <div className="w-14 h-14 rounded-2xl bg-blue-50 border border-blue-200 flex items-center justify-center mx-auto mb-3 text-blue-600 shadow-xs">
+              <Lock className="w-7 h-7" />
+            </div>
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-[11px] font-bold mb-2">
+              <Shield className="w-3.5 h-3.5 text-blue-600" />
+              <span>Portal Administrator AsahOtak</span>
+            </div>
+            <h1 className="text-2xl font-black text-slate-900 tracking-tight">
+              Login Admin Room
+            </h1>
+            <p className="text-xs text-slate-500 mt-1 leading-relaxed">
+              Silakan login untuk mengatur jadwal room kompetisi, memilih paket soal, dan memantau peringkat peserta.
+            </p>
+          </div>
+
+          {/* Form Login */}
+          <form onSubmit={handleLogin} className="space-y-4">
+            {loginError && (
+              <div className="p-3 rounded-lg bg-rose-50 border border-rose-200 text-rose-700 text-xs flex items-center gap-2">
+                <AlertCircle className="w-4 h-4 shrink-0" />
+                <span>{loginError}</span>
+              </div>
+            )}
+
+            <div>
+              <label className="block text-xs font-bold text-slate-700 mb-1">
+                Username Admin
+              </label>
+              <input
+                type="text"
+                value={loginUsername}
+                onChange={(e) => setLoginUsername(e.target.value)}
+                className="w-full px-3.5 py-2.5 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-600 text-slate-900"
+                placeholder="admin"
+                required
+              />
+            </div>
+
+            <div>
+              <label className="block text-xs font-bold text-slate-700 mb-1">
+                Password Admin
+              </label>
+              <div className="relative">
+                <input
+                  type={showPassword ? 'text' : 'password'}
+                  value={loginPassword}
+                  onChange={(e) => setLoginPassword(e.target.value)}
+                  className="w-full px-3.5 py-2.5 pr-10 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-600 text-slate-900 font-mono"
+                  placeholder="••••••••"
+                  required
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowPassword(!showPassword)}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600"
+                  tabIndex={-1}
+                >
+                  {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                </button>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-between text-xs pt-1">
+              <label className="flex items-center gap-2 cursor-pointer text-slate-600 select-none">
+                <input
+                  type="checkbox"
+                  checked={rememberMe}
+                  onChange={(e) => setRememberMe(e.target.checked)}
+                  className="rounded text-blue-600 focus:ring-blue-500"
+                />
+                <span>Ingat login di browser ini</span>
+              </label>
+            </div>
+
+            <button
+              type="submit"
+              className="w-full py-2.5 px-4 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm transition shadow-sm flex items-center justify-center gap-2"
+            >
+              <KeyRound className="w-4 h-4" />
+              <span>Masuk Panel Admin</span>
+            </button>
+          </form>
+
+          {/* Default Credentials Hint Box */}
+          <div className="mt-6 p-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-600 text-[11px] leading-relaxed">
+            <span className="font-bold text-slate-700 block mb-0.5">ℹ️ Akses Akun Default:</span>
+            <span>Username: <code className="bg-white px-1.5 py-0.5 rounded border border-slate-300 font-mono font-bold text-blue-700">admin</code></span>
+            <span className="mx-2">•</span>
+            <span>Password: <code className="bg-white px-1.5 py-0.5 rounded border border-slate-300 font-mono font-bold text-blue-700">admin123</code></span>
+            <p className="text-[10px] text-slate-400 mt-1">* Password dapat diganti setelah Anda login.</p>
+          </div>
+
+          <div className="mt-5 text-center">
+            <a href="/" className="text-xs text-slate-500 hover:text-blue-600 transition">
+              ← Kembali ke Beranda Utama
+            </a>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // ====================================================
+  // VIEW: AUTHENTICATED ADMIN PANEL
+  // ====================================================
   return (
     <div className="max-w-4xl mx-auto space-y-6 pb-16">
       {/* Header Admin */}
       <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
-          <div className="flex items-center gap-2">
-            <span className="text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-blue-100 text-blue-800">
-              Panel Pengaturan Admin
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 inline-flex items-center gap-1.5">
+              <span className="w-2 h-2 rounded-full bg-emerald-600 animate-pulse" />
+              <span>Admin Terverifikasi</span>
             </span>
             <span className="text-xs text-slate-500">Jam Perangkat: <b>{currentRealTime || '--:--:--'} WIB</b></span>
           </div>
@@ -213,18 +422,125 @@ export const CompetitionAdmin: React.FC<CompetitionAdminProps> = ({ quizzes }) =
           </p>
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
           <a
             href="/kompetisi"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition shadow-sm shrink-0"
+            className="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition shadow-sm shrink-0"
           >
             <span>Buka Room Peserta</span>
             <ExternalLink className="w-3.5 h-3.5" />
           </a>
+
+          <button
+            type="button"
+            onClick={() => setShowChangePasswordModal(true)}
+            className="inline-flex items-center gap-1.5 px-3 py-2 text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-lg transition"
+            title="Ganti Password Admin"
+          >
+            <KeyRound className="w-3.5 h-3.5 text-slate-600" />
+            <span>Ganti Password</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={handleLogout}
+            className="inline-flex items-center gap-1.5 px-3 py-2 text-xs font-semibold text-rose-700 bg-rose-50 hover:bg-rose-100 border border-rose-200 rounded-lg transition"
+            title="Keluar dari Panel Admin"
+          >
+            <LogOut className="w-3.5 h-3.5 text-rose-600" />
+            <span>Logout</span>
+          </button>
         </div>
       </div>
+
+      {/* Modal Ganti Password Admin */}
+      {showChangePasswordModal && (
+        <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
+          <div className="bg-white rounded-2xl max-w-sm w-full p-6 shadow-xl border border-slate-200">
+            <div className="flex items-center justify-between pb-3 border-b border-slate-100">
+              <h3 className="text-sm font-bold text-slate-900 flex items-center gap-2">
+                <KeyRound className="w-4 h-4 text-blue-600" />
+                <span>Ganti Password Admin</span>
+              </h3>
+              <button
+                type="button"
+                onClick={() => {
+                  setShowChangePasswordModal(false);
+                  setChangePasswordMsg(null);
+                }}
+                className="text-slate-400 hover:text-slate-600"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+
+            <form onSubmit={handleChangePassword} className="space-y-3 mt-4">
+              {changePasswordMsg && (
+                <div
+                  className={`p-2.5 rounded-lg text-xs font-semibold flex items-center gap-2 ${
+                    changePasswordMsg.isError
+                      ? 'bg-rose-50 border border-rose-200 text-rose-700'
+                      : 'bg-emerald-50 border border-emerald-200 text-emerald-800'
+                  }`}
+                >
+                  {changePasswordMsg.isError ? (
+                    <AlertCircle className="w-4 h-4 shrink-0" />
+                  ) : (
+                    <CheckCircle2 className="w-4 h-4 shrink-0 text-emerald-600" />
+                  )}
+                  <span>{changePasswordMsg.text}</span>
+                </div>
+              )}
+
+              <div>
+                <label className="block text-xs font-bold text-slate-700 mb-1">
+                  Password Baru (Min 4 Karakter)
+                </label>
+                <input
+                  type="password"
+                  value={newPasswordInput}
+                  onChange={(e) => setNewPasswordInput(e.target.value)}
+                  className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-600 text-slate-900"
+                  placeholder="Password baru..."
+                  required
+                />
+              </div>
+
+              <div>
+                <label className="block text-xs font-bold text-slate-700 mb-1">
+                  Konfirmasi Password Baru
+                </label>
+                <input
+                  type="password"
+                  value={confirmPasswordInput}
+                  onChange={(e) => setConfirmPasswordInput(e.target.value)}
+                  className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-600 text-slate-900"
+                  placeholder="Ulangi password baru..."
+                  required
+                />
+              </div>
+
+              <div className="flex items-center justify-end gap-2 pt-2">
+                <button
+                  type="button"
+                  onClick={() => setShowChangePasswordModal(false)}
+                  className="px-3 py-1.5 text-xs font-semibold text-slate-600 hover:bg-slate-100 rounded-lg transition"
+                >
+                  Batal
+                </button>
+                <button
+                  type="submit"
+                  className="px-4 py-1.5 text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition shadow-xs"
+                >
+                  Simpan Password
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
 
       {/* Live Status Banner */}
       <div className="bg-white rounded-xl border border-slate-200 p-4 shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-3">

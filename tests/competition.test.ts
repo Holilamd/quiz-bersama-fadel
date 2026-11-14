@@ -3,6 +3,9 @@ import assert from 'node:assert/strict';
 import {
   calculateRoomPhase,
   DEFAULT_COMPETITION_CONFIG,
+  DEFAULT_ADMIN_USERNAME,
+  DEFAULT_ADMIN_PASSWORD,
+  getAdminPassword,
   type CompetitionRoomConfig,
   type CompetitionParticipant,
 } from '../src/utils/competition.ts';
@@ -144,5 +147,25 @@ describe('Unit Test: Leaderboard Peserta Asli (Tanpa Dummy)', () => {
     assert.equal(sorted[1].name, 'Fatmawati');
     // Peringkat 3 harus Ahmad Dahlan (80 poin)
     assert.equal(sorted[2].name, 'Ahmad Dahlan');
+  });
+});
+
+describe('Unit Test: Admin Authentication Security', () => {
+  test('Kredensial default admin adalah admin / admin123', () => {
+    assert.equal(DEFAULT_ADMIN_USERNAME, 'admin');
+    assert.equal(DEFAULT_ADMIN_PASSWORD, 'admin123');
+    assert.equal(getAdminPassword(), 'admin123');
+  });
+
+  test('Validasi kredensial login admin: benar vs salah', () => {
+    const verifyLogin = (u: string, p: string) => {
+      return u.trim().toLowerCase() === DEFAULT_ADMIN_USERNAME.toLowerCase() && p === DEFAULT_ADMIN_PASSWORD;
+    };
+
+    assert.equal(verifyLogin('admin', 'admin123'), true, 'Kredensial benar harus berhasil login');
+    assert.equal(verifyLogin('ADMIN', 'admin123'), true, 'Username case-insensitive harus berhasil login');
+    assert.equal(verifyLogin('admin', 'wrongpass'), false, 'Password salah harus ditolak');
+    assert.equal(verifyLogin('user_biasa', 'admin123'), false, 'Username salah harus ditolak');
+    assert.equal(verifyLogin('', ''), false, 'Kredensial kosong harus ditolak');
   });
 });

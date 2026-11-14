@@ -41,6 +41,53 @@ export const DEFAULT_COMPETITION_CONFIG: CompetitionRoomConfig = {
 
 const ROOM_STORAGE_KEY = 'asah_otak_competition_room_config';
 const PARTICIPANTS_STORAGE_KEY = 'asah_otak_competition_participants';
+const ADMIN_AUTH_KEY = 'asah_otak_admin_auth';
+const ADMIN_PASSWORD_KEY = 'asah_otak_admin_password';
+
+export const DEFAULT_ADMIN_USERNAME = 'admin';
+export const DEFAULT_ADMIN_PASSWORD = 'admin123';
+
+export function getAdminPassword(): string {
+  if (typeof window === 'undefined') return DEFAULT_ADMIN_PASSWORD;
+  try {
+    return localStorage.getItem(ADMIN_PASSWORD_KEY) || DEFAULT_ADMIN_PASSWORD;
+  } catch {
+    return DEFAULT_ADMIN_PASSWORD;
+  }
+}
+
+export function setAdminPassword(newPassword: string): void {
+  if (typeof window === 'undefined') return;
+  try {
+    localStorage.setItem(ADMIN_PASSWORD_KEY, newPassword);
+  } catch {}
+}
+
+export function isAdminAuthenticated(): boolean {
+  if (typeof window === 'undefined') return false;
+  try {
+    const sessionAuth = sessionStorage.getItem(ADMIN_AUTH_KEY);
+    if (sessionAuth === 'true') return true;
+    const localAuth = localStorage.getItem(ADMIN_AUTH_KEY);
+    if (localAuth === 'true') return true;
+  } catch {}
+  return false;
+}
+
+export function setAdminAuthenticated(auth: boolean, remember: boolean = false): void {
+  if (typeof window === 'undefined') return;
+  try {
+    if (auth) {
+      sessionStorage.setItem(ADMIN_AUTH_KEY, 'true');
+      if (remember) {
+        localStorage.setItem(ADMIN_AUTH_KEY, 'true');
+      }
+    } else {
+      sessionStorage.removeItem(ADMIN_AUTH_KEY);
+      localStorage.removeItem(ADMIN_AUTH_KEY);
+    }
+  } catch {}
+}
 
 export function getCompetitionConfig(): CompetitionRoomConfig {
   if (typeof window === 'undefined') return DEFAULT_COMPETITION_CONFIG;
