@@ -1,0 +1,14 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CompetitionRoom from '../components/CompetitionRoom';
+import { getCollection } from 'astro:content';
+
+const allQuizzes = await getCollection('quiz');
+---
+
+<Layout
+  title="Room Kompetisi Online Serentak | AsahOtak"
+  description="Ruang ujian serentak online dan pengumuman peringkat resmi kompetisi siswa SD."
+>
+  <CompetitionRoom client:load quizzes={allQuizzes} />
+</Layout>

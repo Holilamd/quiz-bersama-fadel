@@ -34,6 +34,12 @@ const quizCounts = Object.keys(CATEGORIES).reduce(
 
       <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
         <a
+          href="/kompetisi"
+          class="px-5 py-2.5 rounded-lg font-bold text-sm text-white bg-amber-600 hover:bg-amber-700 transition shadow-sm flex items-center gap-1.5"
+        >
+          <span>🏆 Masuk Room Kompetisi</span>
+        </a>
+        <a
           href="#paket-soal"
           class="px-5 py-2.5 rounded-lg font-semibold text-sm text-white bg-blue-600 hover:bg-blue-700 transition shadow-sm"
         >
@@ -44,6 +50,38 @@ const quizCounts = Object.keys(CATEGORIES).reduce(
           class="px-5 py-2.5 rounded-lg font-semibold text-sm text-slate-700 bg-slate-100 hover:bg-slate-200 transition"
         >
           Matematika SD &rarr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner Room Kompetisi Serentak -->
+  <section class="mb-8">
+    <div class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white rounded-2xl p-6 sm:p-7 shadow-sm flex flex-col md:flex-row items-center justify-between gap-5">
+      <div class="space-y-2 text-center md:text-left max-w-xl">
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-amber-300 text-xs font-bold backdrop-blur-xs">
+          <span>🏆 Fitur Baru: Ujian & Try Out Serentak</span>
+        </div>
+        <h2 class="text-xl sm:text-2xl font-bold tracking-tight">
+          Room Kompetisi Siswa SD Online
+        </h2>
+        <p class="text-xs sm:text-sm text-blue-200 leading-relaxed">
+          Ujian bersama terjadwal dengan jam buka dan selesai serentak. Cek papan peringkat juara (leaderboard) dan raih piagam penghargaan resmi setelah ujian berakhir.
+        </p>
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center gap-2.5 shrink-0 w-full sm:w-auto">
+        <a
+          href="/kompetisi"
+          class="w-full sm:w-auto px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm text-slate-900 bg-amber-400 hover:bg-amber-300 transition shadow-sm text-center"
+        >
+          Masuk Room Kompetisi &rarr;
+        </a>
+        <a
+          href="/admin/kompetisi"
+          class="w-full sm:w-auto px-4 py-2.5 rounded-xl font-semibold text-xs text-white bg-white/10 hover:bg-white/20 transition text-center"
+        >
+          ⚙️ Setting Room (Admin)
         </a>
       </div>
     </div>

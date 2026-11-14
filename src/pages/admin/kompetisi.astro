@@ -1,0 +1,14 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CompetitionAdmin from '../../components/CompetitionAdmin';
+import { getCollection } from 'astro:content';
+
+const allQuizzes = await getCollection('quiz');
+---
+
+<Layout
+  title="Admin Panel: Setting Room Kompetisi | AsahOtak"
+  description="Panel pengaturan dinamis room kompetisi, jadwal waktu mulai dan selesai, serta manajemen peserta."
+>
+  <CompetitionAdmin client:load quizzes={allQuizzes} />
+</Layout>
